@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "elementalcircuits:mana_crystal_ore",
+    "elementalcircuits:natural_mana_node"
+  ],
+  "step": "underground_ores"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "elementalcircuits:block/natural_mana_node_off"
+  }
+}

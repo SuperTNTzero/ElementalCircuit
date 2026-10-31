@@ -1,0 +1,10 @@
+**/.gradle/
+**/.gradle-home/
+**/build/
+**/run/
+**/run-server/
+**/.mdk/
+**/__pycache__/
+tooling/
+.idea/
+*.iml

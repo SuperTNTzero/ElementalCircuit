@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "facing=north,material=wood": {
+      "model": "elementalcircuits:block/fixed/fixed_wood",
+      "y": 0
+    },
+    "facing=north,material=brass": {
+      "model": "elementalcircuits:block/fixed/fixed_brass",
+      "y": 0
+    },
+    "facing=north,material=crystal": {
+      "model": "elementalcircuits:block/fixed/fixed_crystal",
+      "y": 0
+    },
+    "facing=east,material=wood": {
+      "model": "elementalcircuits:block/fixed/fixed_wood",
+      "y": 90
+    },
+    "facing=east,material=brass": {
+      "model": "elementalcircuits:block/fixed/fixed_brass",
+      "y": 90
+    },
+    "facing=east,material=crystal": {
+      "model": "elementalcircuits:block/fixed/fixed_crystal",
+      "y": 90
+    },
+    "facing=south,material=wood": {
+      "model": "elementalcircuits:block/fixed/fixed_wood",
+      "y": 180
+    },
+    "facing=south,material=brass": {
+      "model": "elementalcircuits:block/fixed/fixed_brass",
+      "y": 180
+    },
+    "facing=south,material=crystal": {
+      "model": "elementalcircuits:block/fixed/fixed_crystal",
+      "y": 180
+    },
+    "facing=west,material=wood": {
+      "model": "elementalcircuits:block/fixed/fixed_wood",
+      "y": 270
+    },
+    "facing=west,material=brass": {
+      "model": "elementalcircuits:block/fixed/fixed_brass",
+      "y": 270
+    },
+    "facing=west,material=crystal": {
+      "model": "elementalcircuits:block/fixed/fixed_crystal",
+      "y": 270
+    }
+  }
+}

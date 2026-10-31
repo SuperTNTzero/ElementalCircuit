@@ -1,0 +1,11 @@
+{
+  "release": "0.12.0",
+  "core_assertions": 88097,
+  "game_tests": 74,
+  "client_screenshots": 61,
+  "godot_suites": 23,
+  "expected_corrupt_spell_error_logs": 7,
+  "jar": "build/libs/elemental-circuits-1.20.1-0.12.0.jar",
+  "bytes": 527720,
+  "sha256": "43559129b881801d67b8f21ca431654e86d91d54e5db399bbc2df8595e8e649a"
+}

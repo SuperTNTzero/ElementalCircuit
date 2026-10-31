@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+[[mods]]
+modId="elementalcircuits"
+version="0.14.0"
+displayName="元素法阵 · Elemental Circuits"
+authors="Elemental Circuits Project"
+description='''在六边形格盘上编排符文、布置魔力与信号线路，将有限魔力化为自己的法术。'''
+[[dependencies.elementalcircuits]]
+modId="forge"
+mandatory=true
+versionRange="[47.1.106,48)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.elementalcircuits]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"

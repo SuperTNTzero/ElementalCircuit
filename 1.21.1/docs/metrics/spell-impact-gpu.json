@@ -1,0 +1,26 @@
+[
+  {
+    "stage": 0,
+    "samples": 203,
+    "medianMs": 0.8363,
+    "p95Ms": 1.8048,
+    "quads": 300,
+    "draws": 1
+  },
+  {
+    "stage": 1,
+    "samples": 205,
+    "medianMs": 2.1097,
+    "p95Ms": 3.2703,
+    "quads": 8192,
+    "draws": 1
+  },
+  {
+    "stage": 2,
+    "samples": 206,
+    "medianMs": 0.0331,
+    "p95Ms": 0.35,
+    "quads": 0,
+    "draws": 0
+  }
+]

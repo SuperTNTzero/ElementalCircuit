@@ -1,0 +1,41 @@
+{
+  "blender": "5.2.3 LTS",
+  "atlas": "Aseprite 1.3.15.5 / 256x256 with 16px gutters",
+  "models": [
+    {
+      "model": "inscription_empty",
+      "vertices": 506,
+      "faces": 560
+    },
+    {
+      "model": "inscription_wood",
+      "vertices": 518,
+      "faces": 574
+    },
+    {
+      "model": "inscription_brass",
+      "vertices": 518,
+      "faces": 574
+    },
+    {
+      "model": "inscription_crystal",
+      "vertices": 518,
+      "faces": 574
+    },
+    {
+      "model": "wand_workbench",
+      "vertices": 184,
+      "faces": 138
+    },
+    {
+      "model": "wand_workbench_foot",
+      "vertices": 440,
+      "faces": 110
+    },
+    {
+      "model": "wand_workbench_head",
+      "vertices": 176,
+      "faces": 44
+    }
+  ]
+}

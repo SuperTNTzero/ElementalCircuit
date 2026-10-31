@@ -1,0 +1,179 @@
+{
+  "version": 2,
+  "styles": {
+    "BEAM": {
+      "sprite": 2,
+      "ticks": 4,
+      "width": 0.2,
+      "opacity": 0.95,
+      "copies": 8
+    },
+    "TRAIL": {
+      "sprite": 2,
+      "ticks": 5,
+      "width": 0.18,
+      "opacity": 0.95,
+      "copies": 5
+    },
+    "IMPACT": {
+      "sprite": 0,
+      "ticks": 12,
+      "width": 0.24,
+      "opacity": 0.95,
+      "copies": 14
+    },
+    "SHIELD": {
+      "sprite": 7,
+      "ticks": 2,
+      "width": 1,
+      "opacity": 0.8,
+      "copies": 6
+    },
+    "STEAM": {
+      "sprite": 1,
+      "ticks": 14,
+      "width": 0.4,
+      "opacity": 0.45,
+      "copies": 6
+    },
+    "START": {
+      "sprite": 7,
+      "ticks": 12,
+      "width": 0.6,
+      "opacity": 0.85,
+      "copies": 8
+    },
+    "CAST": {
+      "sprite": 7,
+      "ticks": 7,
+      "width": 0.24,
+      "opacity": 0.95,
+      "copies": 6
+    },
+    "FAN": {
+      "sprite": 2,
+      "ticks": 10,
+      "width": 0.04,
+      "opacity": 0.9,
+      "copies": 6
+    },
+    "WALL": {
+      "sprite": 2,
+      "ticks": 10,
+      "width": 0.04,
+      "opacity": 0.9,
+      "copies": 6
+    },
+    "RING": {
+      "sprite": 2,
+      "ticks": 10,
+      "width": 0.04,
+      "opacity": 0.9,
+      "copies": 6
+    },
+    "COLUMN": {
+      "sprite": 2,
+      "ticks": 10,
+      "width": 0.04,
+      "opacity": 0.9,
+      "copies": 6
+    },
+    "CROSS": {
+      "sprite": 2,
+      "ticks": 10,
+      "width": 0.04,
+      "opacity": 0.9,
+      "copies": 6
+    },
+    "DOME": {
+      "sprite": 2,
+      "ticks": 10,
+      "width": 0.04,
+      "opacity": 0.9,
+      "copies": 6
+    }
+  },
+  "elements": {
+    "PURE": {
+      "sprite": 12,
+      "color": "afc8ef",
+      "core": "f4f8ff",
+      "particles": 8,
+      "spread": 0.8,
+      "rise": 0.1,
+      "twist": 0.5
+    },
+    "EARTH": {
+      "sprite": 10,
+      "color": "e7ac52",
+      "core": "fff0c2",
+      "particles": 10,
+      "spread": 1.2,
+      "rise": -1.6,
+      "twist": 0.2
+    },
+    "WATER": {
+      "sprite": 6,
+      "color": "20baff",
+      "core": "ceffff",
+      "particles": 12,
+      "spread": 1.1,
+      "rise": -0.6,
+      "twist": 0.9
+    },
+    "FIRE": {
+      "sprite": 5,
+      "color": "ff591d",
+      "core": "fff2b0",
+      "particles": 14,
+      "spread": 1.15,
+      "rise": 1.5,
+      "twist": 0.4
+    },
+    "WIND": {
+      "sprite": 11,
+      "color": "83ffd0",
+      "core": "effff8",
+      "particles": 8,
+      "spread": 1.4,
+      "rise": 0.25,
+      "twist": 2.5
+    },
+    "LIGHTNING": {
+      "sprite": 9,
+      "color": "ad7dff",
+      "core": "f5edff",
+      "particles": 12,
+      "spread": 1.4,
+      "rise": 0.1,
+      "twist": 0
+    },
+    "LIGHT": {
+      "sprite": 4,
+      "color": "ffd461",
+      "core": "fffdf0",
+      "particles": 10,
+      "spread": 1.25,
+      "rise": 0.2,
+      "twist": 0.7
+    },
+    "SHADOW": {
+      "sprite": 15,
+      "color": "7436ce",
+      "core": "d9afff",
+      "particles": 12,
+      "spread": 1.2,
+      "rise": 0.15,
+      "twist": -1.8
+    },
+    "ARCANE": {
+      "sprite": 12,
+      "color": "f13da9",
+      "core": "ffe2fc",
+      "particles": 10,
+      "spread": 1.1,
+      "rise": 0,
+      "twist": -1.2
+    }
+  }
+}

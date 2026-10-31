@@ -1,0 +1,39 @@
+{
+  "version": "0.11.0",
+  "scope": "WorldCircuits entry only; stopped 4-slot carriers with 64 unwired signal runes per slot",
+  "warmup_samples": 10,
+  "measured_samples": 40,
+  "baseline_log": "build/audit/server-final.log",
+  "after_log": "build/refactor-final.log",
+  "not_whole_server_tick": true,
+  "rows": [
+    {
+      "carriers": 1,
+      "before_median_ms": 1.215,
+      "before_p95_ms": 2.412,
+      "after_median_ms": 0.069,
+      "after_p95_ms": 0.216
+    },
+    {
+      "carriers": 4,
+      "before_median_ms": 4.821,
+      "before_p95_ms": 8.355,
+      "after_median_ms": 0.098,
+      "after_p95_ms": 0.465
+    },
+    {
+      "carriers": 16,
+      "before_median_ms": 15.428,
+      "before_p95_ms": 19.453,
+      "after_median_ms": 0.314,
+      "after_p95_ms": 0.66
+    },
+    {
+      "carriers": 36,
+      "before_median_ms": 29.588,
+      "before_p95_ms": 34.117,
+      "after_median_ms": 0.344,
+      "after_p95_ms": 0.533
+    }
+  ]
+}

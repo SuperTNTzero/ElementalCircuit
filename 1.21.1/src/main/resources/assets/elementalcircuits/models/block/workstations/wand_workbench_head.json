@@ -1,0 +1,44 @@
+{
+  "loader": "neoforge:obj",
+  "model": "elementalcircuits:models/block/workstations/wand_workbench_head.obj",
+  "automatic_culling": false,
+  "flip_v": true,
+  "shade_quads": true,
+  "textures": {
+    "particle": "elementalcircuits:block/workstations",
+    "atlas": "elementalcircuits:block/workstations"
+  },
+  "display": {
+    "gui": {
+      "rotation": [
+        25,
+        225,
+        0
+      ],
+      "translation": [
+        -3,
+        -2,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "ground": {
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "fixed": {
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    }
+  }
+}

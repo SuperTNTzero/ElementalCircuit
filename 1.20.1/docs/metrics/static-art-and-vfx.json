@@ -1,0 +1,109 @@
+{
+  "release": "0.13.0",
+  "network_protocol": 10,
+  "core_assertions": 88188,
+  "game_tests": 78,
+  "godot_suites": 23,
+  "gui_screenshots": 61,
+  "effect_screenshots": 3,
+  "world_screenshots": 2,
+  "cursor_screenshots": 4,
+  "world_end_to_end": "passed: real channel, AFTER_PARTICLES, wrong dimension, expiry, logout",
+  "beam_64_blocks": {
+    "old_packets": 257,
+    "old_serialized_payload_bytes": 11822,
+    "new_packets": 1,
+    "new_serialized_payload_bytes": 84,
+    "includes_transport_framing": false
+  },
+  "effect_budget": {
+    "world_events_per_tick": 1024,
+    "player_events_per_tick": 512,
+    "events_per_batch": 128,
+    "client_active_events": 2048,
+    "quads_per_frame": 8192,
+    "spell_draws_per_frame": 1
+  },
+  "expected_corrupt_spell_error_logs": 7,
+  "jar": "build/libs/elemental-circuits-1.20.1-0.13.0.jar",
+  "bytes": 581629,
+  "sha256": "4abd673a1286ac7d91ff33bff5c4792dd558fcb92b16483423548f1210af477b",
+  "editor_before": [
+    {
+      "phase": "select",
+      "samples": 160,
+      "medianMs": 4.4856,
+      "p95Ms": 6.0905
+    },
+    {
+      "phase": "place",
+      "samples": 160,
+      "medianMs": 4.3908,
+      "p95Ms": 5.441
+    },
+    {
+      "phase": "route",
+      "samples": 160,
+      "medianMs": 5.0058,
+      "p95Ms": 6.3646
+    },
+    {
+      "phase": "drag",
+      "samples": 160,
+      "medianMs": 4.7179,
+      "p95Ms": 5.9799
+    }
+  ],
+  "editor_after": [
+    {
+      "phase": "select",
+      "samples": 160,
+      "medianMs": 3.9021,
+      "p95Ms": 4.7671
+    },
+    {
+      "phase": "place",
+      "samples": 160,
+      "medianMs": 3.8979,
+      "p95Ms": 5.4484
+    },
+    {
+      "phase": "route",
+      "samples": 160,
+      "medianMs": 3.4039,
+      "p95Ms": 4.7915
+    },
+    {
+      "phase": "drag",
+      "samples": 160,
+      "medianMs": 3.8226,
+      "p95Ms": 4.8652
+    }
+  ],
+  "visual_profile": [
+    {
+      "stage": 0,
+      "samples": 193,
+      "medianMs": 0.6059,
+      "p95Ms": 1.2695,
+      "quads": 88,
+      "draws": 1
+    },
+    {
+      "stage": 1,
+      "samples": 205,
+      "medianMs": 3.2101,
+      "p95Ms": 4.5622,
+      "quads": 8192,
+      "draws": 1
+    },
+    {
+      "stage": 2,
+      "samples": 205,
+      "medianMs": 0.0248,
+      "p95Ms": 0.0496,
+      "quads": 0,
+      "draws": 0
+    }
+  ]
+}

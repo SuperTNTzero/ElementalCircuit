@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "blockCost": 16384,
+  "sourceCost": 65536,
+  "impulsePerUnit": 16384,
+  "maxImpulse": 65536,
+  "maxTargets": 128,
+  "frostedIceDelay": 60
+}

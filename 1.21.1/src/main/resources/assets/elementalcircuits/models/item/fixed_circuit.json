@@ -1,0 +1,23 @@
+{
+  "parent": "elementalcircuits:item/fixed_circuit_wood",
+  "overrides": [
+    {
+      "predicate": {
+        "elementalcircuits:material": 0
+      },
+      "model": "elementalcircuits:item/fixed_circuit_wood"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:material": 1
+      },
+      "model": "elementalcircuits:item/fixed_circuit_brass"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:material": 2
+      },
+      "model": "elementalcircuits:item/fixed_circuit_crystal"
+    }
+  ]
+}

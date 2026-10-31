@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "elementalcircuits:block/fixed_top",
+    "front": "elementalcircuits:block/fixed_front",
+    "side": "elementalcircuits:block/fixed_side"
+  }
+}

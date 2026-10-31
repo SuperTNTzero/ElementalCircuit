@@ -1,0 +1,1571 @@
+{
+  "version": 2,
+  "sample_rate": 44100,
+  "sources": {
+    "jaggedstone/magical_1_0.ogg": {
+      "file": "jaggedstone/magical_1_0.ogg",
+      "pack": "jaggedstone",
+      "sha256": "119f9061a566c72c1c58444b03f8685b833079ef268dda02fe742eb34d3bc68f"
+    },
+    "jaggedstone/magical_2.ogg": {
+      "file": "jaggedstone/magical_2.ogg",
+      "pack": "jaggedstone",
+      "sha256": "84a70f63f3f21e5ba4a48285b760a663d422ad3feddba2f3cbadd94b76cdc52e"
+    },
+    "jaggedstone/magical_3.ogg": {
+      "file": "jaggedstone/magical_3.ogg",
+      "pack": "jaggedstone",
+      "sha256": "9fac648a1de869cf9ca2f4b3f1cd47f1766a3ee9d2fdec45831234401d7b2392"
+    },
+    "jaggedstone/magical_4.ogg": {
+      "file": "jaggedstone/magical_4.ogg",
+      "pack": "jaggedstone",
+      "sha256": "b7862d109b4013dfb2a389a10f8917203beb0efc458444bc5a1b8ada605cc118"
+    },
+    "jaggedstone/magical_5.ogg": {
+      "file": "jaggedstone/magical_5.ogg",
+      "pack": "jaggedstone",
+      "sha256": "69aaaaed729cacb518005a5d24074196db3c5fffc0ed2cd01ad864fbed4a62be"
+    },
+    "jaggedstone/magical_6_0.ogg": {
+      "file": "jaggedstone/magical_6_0.ogg",
+      "pack": "jaggedstone",
+      "sha256": "0a18ee3460cf3fd79c3771bbf94c20c26d34b65ab60d0b0e15694ffcad815955"
+    },
+    "jaggedstone/magical_7_0.ogg": {
+      "file": "jaggedstone/magical_7_0.ogg",
+      "pack": "jaggedstone",
+      "sha256": "2817da4f5df69ff993baffd6594a2f2a069f85ee2a02019f97db2246e350a76b"
+    },
+    "rubberduck-nature/sfx100v2_air_01.ogg": {
+      "file": "rubberduck-nature/sfx100v2_air_01.ogg",
+      "pack": "rubberduck-nature",
+      "sha256": "bb292a9fc082557e65199d01abe124459d910519b39c913ecb6c6f2207576d6f"
+    },
+    "rubberduck-nature/sfx100v2_air_02.ogg": {
+      "file": "rubberduck-nature/sfx100v2_air_02.ogg",
+      "pack": "rubberduck-nature",
+      "sha256": "c2d5d5f73b70c155797c1655bdd1850145a47606803e1d9b6dd9c59d35a6909a"
+    },
+    "rubberduck-nature/sfx100v2_air_03.ogg": {
+      "file": "rubberduck-nature/sfx100v2_air_03.ogg",
+      "pack": "rubberduck-nature",
+      "sha256": "df32019155c3a8b5fc77244126261695f762ba7018a4fc4c6d9ad201cedeb985"
+    },
+    "rubberduck-nature/sfx100v2_hit_01.ogg": {
+      "file": "rubberduck-nature/sfx100v2_hit_01.ogg",
+      "pack": "rubberduck-nature",
+      "sha256": "61b8b2a790e2c8dcf315886933aaefc89a8e4053d81c6869c264e40aa80f8233"
+    },
+    "rubberduck-nature/sfx100v2_stones_01.ogg": {
+      "file": "rubberduck-nature/sfx100v2_stones_01.ogg",
+      "pack": "rubberduck-nature",
+      "sha256": "20d293a892e1fa6330da2569065aa260a822198bddce2b183f8c11642e7deb4d"
+    },
+    "rubberduck-nature/sfx100v2_stones_03.ogg": {
+      "file": "rubberduck-nature/sfx100v2_stones_03.ogg",
+      "pack": "rubberduck-nature",
+      "sha256": "94d7e0978fd90621d2d24e8ea33eefbae2933a434bb14c643cc12ea5175cefa9"
+    },
+    "rubberduck-nature/sfx100v2_thunder_01.ogg": {
+      "file": "rubberduck-nature/sfx100v2_thunder_01.ogg",
+      "pack": "rubberduck-nature",
+      "sha256": "8a4f1dee999546b363f989eff92174375eeae7c241dc9beaa0892fb131ef12a9"
+    },
+    "rubberduck-rpg/item_gem_01.ogg": {
+      "file": "rubberduck-rpg/item_gem_01.ogg",
+      "pack": "rubberduck-rpg",
+      "sha256": "8a5d2964febb0c69cc4df2ee5257d173f2cae6960d9534df0001dbf356f27028"
+    },
+    "rubberduck-rpg/item_gem_02.ogg": {
+      "file": "rubberduck-rpg/item_gem_02.ogg",
+      "pack": "rubberduck-rpg",
+      "sha256": "a5f4b0b3ae0e272765619289ef6709513e0dfa0785d7559e8a223176a8bcf181"
+    },
+    "rubberduck-rpg/item_gem_03.ogg": {
+      "file": "rubberduck-rpg/item_gem_03.ogg",
+      "pack": "rubberduck-rpg",
+      "sha256": "7b29674b7c8fb0069814623d86fa56a3f370eedcde73d5ce1ecc7339be3a3cba"
+    },
+    "rubberduck-rpg/item_gem_04.ogg": {
+      "file": "rubberduck-rpg/item_gem_04.ogg",
+      "pack": "rubberduck-rpg",
+      "sha256": "e12eb95d0458675c2692831454ed09c7a680de966e7c705ce67a7e12560aa73a"
+    },
+    "rubberduck-rpg/item_stone_01.ogg": {
+      "file": "rubberduck-rpg/item_stone_01.ogg",
+      "pack": "rubberduck-rpg",
+      "sha256": "ca630a5d7420d031588b4f5f4e60273d5e6e30b71c6e5a34ec733fb10089b829"
+    },
+    "rubberduck-rpg/item_stone_03.ogg": {
+      "file": "rubberduck-rpg/item_stone_03.ogg",
+      "pack": "rubberduck-rpg",
+      "sha256": "91bc96742252fedcfed2b664f03336c33f6ffbc2039ba6fcaada32b9bb758da6"
+    },
+    "rubberduck-rpg/spell_01.ogg": {
+      "file": "rubberduck-rpg/spell_01.ogg",
+      "pack": "rubberduck-rpg",
+      "sha256": "09821a53c418c5eeeac4fa25bada9d245e822fed302eeeae9ae4151522a45ae5"
+    },
+    "rubberduck-rpg/spell_02.ogg": {
+      "file": "rubberduck-rpg/spell_02.ogg",
+      "pack": "rubberduck-rpg",
+      "sha256": "bf9c48b76921e56aa266172d969a2c08215d6ce0ffae7c3584f23fa05d3f8bd4"
+    },
+    "rubberduck-rpg/spell_fire_01.ogg": {
+      "file": "rubberduck-rpg/spell_fire_01.ogg",
+      "pack": "rubberduck-rpg",
+      "sha256": "02fa3a2c6e79e868e546802f45127c5cdda69aba6d5a24ac997ea66f81a816cb"
+    },
+    "rubberduck-rpg/spell_fire_02.ogg": {
+      "file": "rubberduck-rpg/spell_fire_02.ogg",
+      "pack": "rubberduck-rpg",
+      "sha256": "bf1eef4993f0adb4bd3a1c1ec91f8f6e4ddeb32d922671a14561846d5b7cab98"
+    },
+    "rubberduck-rpg/spell_fire_04.ogg": {
+      "file": "rubberduck-rpg/spell_fire_04.ogg",
+      "pack": "rubberduck-rpg",
+      "sha256": "64d653cd0cc6eb71bb45a1dfbba29eaa769ed5b663cce275082d6971e4f2ca8e"
+    },
+    "rubberduck-rpg/spell_fire_06.ogg": {
+      "file": "rubberduck-rpg/spell_fire_06.ogg",
+      "pack": "rubberduck-rpg",
+      "sha256": "66fa753e8033d08f3837d6ef1706b0450297db68c0d4b21782a03fd9ae960d63"
+    },
+    "rubberduck-rpg/spell_fire_07.ogg": {
+      "file": "rubberduck-rpg/spell_fire_07.ogg",
+      "pack": "rubberduck-rpg",
+      "sha256": "bb13cef9c0b0b4ec7f9335c356b14814c88418abd85dd3747cb62469e9ada93f"
+    },
+    "rubberduck-rpg/stones_01.ogg": {
+      "file": "rubberduck-rpg/stones_01.ogg",
+      "pack": "rubberduck-rpg",
+      "sha256": "d11ce95031c2c36ae2a00979620fa95a7a3f5c6d6f2ac86962ed292aa556be8d"
+    },
+    "rubberduck-rpg/stones_02.ogg": {
+      "file": "rubberduck-rpg/stones_02.ogg",
+      "pack": "rubberduck-rpg",
+      "sha256": "57dc6b85ee986e68ddc4b7fb2b41cc1c885151677d32439fdb299492a3103a65"
+    },
+    "rubberduck-water/bubble_01.ogg": {
+      "file": "rubberduck-water/bubble_01.ogg",
+      "pack": "rubberduck-water",
+      "sha256": "1d03d72347019be889280efc6de5ca5ea439d0b24b235e6db87e5bf7583ecb2b"
+    },
+    "rubberduck-water/bubble_02.ogg": {
+      "file": "rubberduck-water/bubble_02.ogg",
+      "pack": "rubberduck-water",
+      "sha256": "7992a1a4637ea727b177b3edbc086ec280167d67a8fad010bb8fb58893b2e2f2"
+    },
+    "rubberduck-water/splash_01.ogg": {
+      "file": "rubberduck-water/splash_01.ogg",
+      "pack": "rubberduck-water",
+      "sha256": "156f4df0fa1a552d1c4e451284a55000417ea871954dc4b5e0d4302a49e228a8"
+    },
+    "rubberduck-water/splash_02.ogg": {
+      "file": "rubberduck-water/splash_02.ogg",
+      "pack": "rubberduck-water",
+      "sha256": "eab0bb4bc01386528ba1e6244c6fd8940ee8d3c91ddb9e9cfea186e8560e04de"
+    },
+    "rubberduck-water/splash_03.ogg": {
+      "file": "rubberduck-water/splash_03.ogg",
+      "pack": "rubberduck-water",
+      "sha256": "ae2cff9a47934ece590dda45ff18acf89c5c98cb5497ce71c50b3a315b225a94"
+    },
+    "virix/Fire impact 1.wav": {
+      "file": "virix/Fire impact 1.wav",
+      "pack": "virix",
+      "sha256": "0fa4afbf37b12dc6c54f33cdded356b5f344a0156b84af94b70d843886c1efad"
+    },
+    "virix/Healing Full.wav": {
+      "file": "virix/Healing Full.wav",
+      "pack": "virix",
+      "sha256": "ad60bc48be1ac7451771505c0e169590af18241d38ff79b93aa6e5f186b1e54b"
+    },
+    "virix/Ice attack 2.wav": {
+      "file": "virix/Ice attack 2.wav",
+      "pack": "virix",
+      "sha256": "148e143241e6516c7229c366bb5574a29d556179ee2021c7e40bd3d5e5066311"
+    },
+    "virix/Misc 02.wav": {
+      "file": "virix/Misc 02.wav",
+      "pack": "virix",
+      "sha256": "21728538d4220720df0beceeb3d39da60c0b0ade9f6296ec493982755e9fe272"
+    },
+    "virix/Wind effects 5.wav": {
+      "file": "virix/Wind effects 5.wav",
+      "pack": "virix",
+      "sha256": "37424e27cceca69c0bf48a40465a8d7db2889816c67073378668af3317bb974a"
+    }
+  },
+  "packs": {
+    "rubberduck-rpg": {
+      "title": "80 CC0 RPG SFX",
+      "author": "rubberduck",
+      "url": "https://opengameart.org/node/86018",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "rubberduck-water": {
+      "title": "40 CC0 water/splash/slime SFX",
+      "author": "rubberduck",
+      "url": "https://opengameart.org/content/40-cc0-water-splash-slime-sfx",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "rubberduck-nature": {
+      "title": "100 CC0 SFX #2",
+      "author": "rubberduck",
+      "url": "https://opengameart.org/content/100-cc0-sfx-2",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "virix": {
+      "title": "Magic SFX Sample (five-file preview only)",
+      "author": "ViRiX Dreamcore (David Mckee)",
+      "url": "https://opengameart.org/content/magic-sfx-sample",
+      "license": "CC-BY-3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/"
+    },
+    "jaggedstone": {
+      "title": "Magic Spell SFX",
+      "author": "JaggedStone",
+      "url": "https://opengameart.org/content/magic-spell-sfx",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  },
+  "assets": [
+    {
+      "name": "circuit_start",
+      "event": "circuit_start",
+      "seconds": 0.64,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 9912,
+      "sha256": "059c7d05eb22cd866b6d9d6c8b7c959fcbf4ad1c14f0b40a27da7799ecef11ff",
+      "true_peak_4x": 0.750925,
+      "rms_dbfs": -19.12,
+      "onset_ms": 2.29,
+      "sources": [
+        "rubberduck-rpg/spell_02.ogg",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "circuit_start_2",
+      "event": "circuit_start",
+      "seconds": 0.64,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 8736,
+      "sha256": "7e168333f71587982948133580ae70b55cccf3ee0212fb0d489b01c42fbddebd",
+      "true_peak_4x": 0.725622,
+      "rms_dbfs": -18.92,
+      "onset_ms": 18.59,
+      "sources": [
+        "rubberduck-rpg/spell_01.ogg",
+        "rubberduck-rpg/item_gem_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "cast_pure",
+      "event": "cast_pure",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 8931,
+      "sha256": "0815cde1c4201676f7225924e604c9adb1cc96b779d318d86acdc8320e906194",
+      "true_peak_4x": 0.747395,
+      "rms_dbfs": -17.81,
+      "onset_ms": 2.81,
+      "sources": [
+        "rubberduck-rpg/spell_01.ogg",
+        "rubberduck-rpg/item_gem_01.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "cast_pure_2",
+      "event": "cast_pure",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 7516,
+      "sha256": "5632261b0a1234de3715438b253a0f814128f4bc905408976488aab5ca538db4",
+      "true_peak_4x": 0.793516,
+      "rms_dbfs": -20.12,
+      "onset_ms": 1.16,
+      "sources": [
+        "rubberduck-rpg/spell_02.ogg",
+        "rubberduck-rpg/item_gem_02.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "cast_pure_3",
+      "event": "cast_pure",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10545,
+      "sha256": "fff3d7179fdac94737493a04211b5d5d9b206809adec38e800064af3a00be35c",
+      "true_peak_4x": 0.628725,
+      "rms_dbfs": -17.73,
+      "onset_ms": 1.07,
+      "sources": [
+        "jaggedstone/magical_6_0.ogg",
+        "rubberduck-rpg/item_gem_03.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "cast_earth",
+      "event": "cast_earth",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 9063,
+      "sha256": "ee8e04a36a5717573d526ba68e053416433e928c128990d74e76b5483bfad207",
+      "true_peak_4x": 0.761215,
+      "rms_dbfs": -21.8,
+      "onset_ms": 1.32,
+      "sources": [
+        "rubberduck-rpg/stones_01.ogg",
+        "rubberduck-rpg/item_stone_01.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "cast_earth_2",
+      "event": "cast_earth",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10925,
+      "sha256": "85b7a785075847ae684ebb521ad706cf1aac871d74ab0e17d7540879ca9d0308",
+      "true_peak_4x": 0.776678,
+      "rms_dbfs": -21.0,
+      "onset_ms": 2.31,
+      "sources": [
+        "rubberduck-rpg/stones_02.ogg",
+        "rubberduck-rpg/item_stone_03.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "cast_earth_3",
+      "event": "cast_earth",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 9418,
+      "sha256": "173a8432583c419248e009ff9dd4eaab1506fdf066e5c89e57588cb4d9819dc2",
+      "true_peak_4x": 0.708622,
+      "rms_dbfs": -23.2,
+      "onset_ms": 2.27,
+      "sources": [
+        "rubberduck-nature/sfx100v2_stones_03.ogg",
+        "rubberduck-nature/sfx100v2_stones_01.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "cast_water",
+      "event": "cast_water",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10539,
+      "sha256": "28b213f4e08fec7696ac8d7e236aef0120771771d91de02d1ccb6cec9c01ec6e",
+      "true_peak_4x": 0.761785,
+      "rms_dbfs": -20.98,
+      "onset_ms": 1.59,
+      "sources": [
+        "rubberduck-water/splash_01.ogg",
+        "rubberduck-water/bubble_01.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "cast_water_2",
+      "event": "cast_water",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 9528,
+      "sha256": "86eb0abfcca9ba9ad78849a0508b6a28c6ba1dd2daffd22d49c00dc35e89e55e",
+      "true_peak_4x": 0.777845,
+      "rms_dbfs": -19.07,
+      "onset_ms": 1.97,
+      "sources": [
+        "rubberduck-water/splash_02.ogg",
+        "rubberduck-water/bubble_02.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "cast_water_3",
+      "event": "cast_water",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10041,
+      "sha256": "3e1c57599f0abc83c3c1f2b41a1e7f757fed6f9b7e951463ed1d49e04e5b06fe",
+      "true_peak_4x": 0.64177,
+      "rms_dbfs": -22.37,
+      "onset_ms": 1.9,
+      "sources": [
+        "rubberduck-water/splash_03.ogg",
+        "virix/Ice attack 2.wav",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "cast_fire",
+      "event": "cast_fire",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10507,
+      "sha256": "72558c207fe8178e99981323ab8d981f0338e197c9f9e69b4af8d39a61a95d0d",
+      "true_peak_4x": 0.538597,
+      "rms_dbfs": -17.85,
+      "onset_ms": 1.29,
+      "sources": [
+        "rubberduck-rpg/spell_fire_01.ogg",
+        "virix/Fire impact 1.wav",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "cast_fire_2",
+      "event": "cast_fire",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10458,
+      "sha256": "e07c6898d5aefbc286be5100caca278845cfef790220bcb9394db0b852dcd3f2",
+      "true_peak_4x": 0.621619,
+      "rms_dbfs": -17.9,
+      "onset_ms": 1.81,
+      "sources": [
+        "rubberduck-rpg/spell_fire_02.ogg",
+        "rubberduck-rpg/spell_fire_07.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "cast_fire_3",
+      "event": "cast_fire",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10222,
+      "sha256": "ff3fb4f1abfa13e270fb1768016d48622c3f15e94eb78830b1a543a2f7cbe20a",
+      "true_peak_4x": 0.703658,
+      "rms_dbfs": -17.95,
+      "onset_ms": 0.48,
+      "sources": [
+        "rubberduck-rpg/spell_fire_06.ogg",
+        "rubberduck-rpg/spell_fire_04.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "cast_wind",
+      "event": "cast_wind",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 8826,
+      "sha256": "c26326fdff1c4a6cdd7a9f2e6cb98c1a4f68b2736e63f6f18be7b954a5719fd6",
+      "true_peak_4x": 0.518153,
+      "rms_dbfs": -17.89,
+      "onset_ms": 7.32,
+      "sources": [
+        "virix/Wind effects 5.wav",
+        "rubberduck-nature/sfx100v2_air_03.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "cast_wind_2",
+      "event": "cast_wind",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10247,
+      "sha256": "363fbf954e31be111df393ca78042b5e8aeb4e948f0f1a9d74b25f01cc2d320a",
+      "true_peak_4x": 0.563248,
+      "rms_dbfs": -17.95,
+      "onset_ms": 2.15,
+      "sources": [
+        "rubberduck-nature/sfx100v2_air_01.ogg",
+        "rubberduck-rpg/spell_02.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "cast_wind_3",
+      "event": "cast_wind",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 9979,
+      "sha256": "f4aa46d5690c00dd8515f1145fda79ab71c6d901156f1e2d373cf07d3b1628c9",
+      "true_peak_4x": 0.628858,
+      "rms_dbfs": -17.88,
+      "onset_ms": 4.1,
+      "sources": [
+        "rubberduck-nature/sfx100v2_air_02.ogg",
+        "rubberduck-nature/sfx100v2_air_01.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "cast_lightning",
+      "event": "cast_lightning",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10164,
+      "sha256": "9a50d36c3f44d2373ac334fcfe6c2faf8db3b68578d178784297ef88f76d284d",
+      "true_peak_4x": 0.728578,
+      "rms_dbfs": -19.28,
+      "onset_ms": 1.9,
+      "sources": [
+        "rubberduck-nature/sfx100v2_thunder_01.ogg",
+        "virix/Ice attack 2.wav",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "cast_lightning_2",
+      "event": "cast_lightning",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10444,
+      "sha256": "b39227ffb8e3d363efb95b77eb791c028def9917508a2b83f7fe4ea3455716be",
+      "true_peak_4x": 0.695553,
+      "rms_dbfs": -17.9,
+      "onset_ms": 3.04,
+      "sources": [
+        "virix/Ice attack 2.wav",
+        "rubberduck-nature/sfx100v2_thunder_01.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "cast_lightning_3",
+      "event": "cast_lightning",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 8294,
+      "sha256": "7004ee850176502051e9ac29850488feb75bc1ff68495b575775d5a242b0a540",
+      "true_peak_4x": 0.766653,
+      "rms_dbfs": -18.55,
+      "onset_ms": 1.72,
+      "sources": [
+        "rubberduck-rpg/spell_01.ogg",
+        "rubberduck-rpg/item_gem_03.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "cast_light",
+      "event": "cast_light",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10095,
+      "sha256": "c3b14ce0a3f2b39c59e434661e94e425d9b4ce961e082f7c4c9d2ca23f69abe9",
+      "true_peak_4x": 0.653537,
+      "rms_dbfs": -17.94,
+      "onset_ms": 1.9,
+      "sources": [
+        "virix/Healing Full.wav",
+        "rubberduck-rpg/item_gem_04.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "cast_light_2",
+      "event": "cast_light",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 6956,
+      "sha256": "3691214db2c8a6454048d3cfab9fe16460fe9519a675316f411d06aa1af0770c",
+      "true_peak_4x": 0.767955,
+      "rms_dbfs": -21.9,
+      "onset_ms": 1.61,
+      "sources": [
+        "rubberduck-rpg/spell_02.ogg",
+        "rubberduck-rpg/item_gem_02.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "cast_light_3",
+      "event": "cast_light",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11184,
+      "sha256": "50936702e3ecfa7e72ea97b06b4f501e20aed4844c6a07fbe1bae1cf5aae7b3e",
+      "true_peak_4x": 0.668792,
+      "rms_dbfs": -17.83,
+      "onset_ms": 2.0,
+      "sources": [
+        "jaggedstone/magical_7_0.ogg",
+        "virix/Healing Full.wav",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "cast_shadow",
+      "event": "cast_shadow",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 8581,
+      "sha256": "6eb503e89fb3655352ff271e126126ca205a7677937c2952574c117603f19472",
+      "true_peak_4x": 0.436533,
+      "rms_dbfs": -17.77,
+      "onset_ms": 3.11,
+      "sources": [
+        "jaggedstone/magical_4.ogg",
+        "virix/Wind effects 5.wav",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "cast_shadow_2",
+      "event": "cast_shadow",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 9118,
+      "sha256": "8912057e7417f74cdf77276b61c56e5c20af921ee58d00f0200a228c427d114a",
+      "true_peak_4x": 0.378158,
+      "rms_dbfs": -17.7,
+      "onset_ms": 2.4,
+      "sources": [
+        "jaggedstone/magical_3.ogg",
+        "jaggedstone/magical_2.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "cast_shadow_3",
+      "event": "cast_shadow",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10272,
+      "sha256": "b24fbfb96f2cfe07d5eb149b85a254ec94b3b0072fca534c73d0ac441b761a06",
+      "true_peak_4x": 0.711495,
+      "rms_dbfs": -17.72,
+      "onset_ms": 3.56,
+      "sources": [
+        "virix/Misc 02.wav",
+        "jaggedstone/magical_5.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "cast_arcane",
+      "event": "cast_arcane",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10965,
+      "sha256": "6b51e1518c86528f8c9a51a42d9d90cf8af8c05bb9a8694fa0ad0ead588658c7",
+      "true_peak_4x": 0.671857,
+      "rms_dbfs": -18.37,
+      "onset_ms": 1.97,
+      "sources": [
+        "virix/Misc 02.wav",
+        "rubberduck-rpg/item_gem_04.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "cast_arcane_2",
+      "event": "cast_arcane",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10054,
+      "sha256": "048a4f50d7b406b593df9c5c209f472039dbeaa90c5d785555d9e780b9e5b008",
+      "true_peak_4x": 0.662308,
+      "rms_dbfs": -17.79,
+      "onset_ms": 2.15,
+      "sources": [
+        "jaggedstone/magical_1_0.ogg",
+        "virix/Ice attack 2.wav",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "cast_arcane_3",
+      "event": "cast_arcane",
+      "seconds": 0.66,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10882,
+      "sha256": "b50822405bff6302517f9ea9e41b78fe31840d30e83c8042faa8e4f13887ae5e",
+      "true_peak_4x": 0.529768,
+      "rms_dbfs": -17.73,
+      "onset_ms": 1.34,
+      "sources": [
+        "jaggedstone/magical_6_0.ogg",
+        "jaggedstone/magical_7_0.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_pure",
+      "event": "impact_pure",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 8659,
+      "sha256": "3bd839167a72f3e3ca253523ee12fc64b2b98223d28709ae00073f46b4d709e5",
+      "true_peak_4x": 0.706703,
+      "rms_dbfs": -19.87,
+      "onset_ms": 1.68,
+      "sources": [
+        "rubberduck-rpg/spell_01.ogg",
+        "rubberduck-rpg/item_gem_02.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_pure_2",
+      "event": "impact_pure",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 7427,
+      "sha256": "519b9bd524e059eb7ae0e898a772cc868d502fd26ddfd52fa6d53b98dc918655",
+      "true_peak_4x": 0.817058,
+      "rms_dbfs": -21.43,
+      "onset_ms": 2.0,
+      "sources": [
+        "rubberduck-rpg/spell_02.ogg",
+        "rubberduck-rpg/item_gem_03.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_pure_3",
+      "event": "impact_pure",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11338,
+      "sha256": "f58fc7d4eaec4f5d4b4909cdcc936fce0990a9b4f0c368ab95aa00fd73517603",
+      "true_peak_4x": 0.786209,
+      "rms_dbfs": -19.61,
+      "onset_ms": 1.11,
+      "sources": [
+        "jaggedstone/magical_6_0.ogg",
+        "rubberduck-rpg/item_gem_01.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_earth",
+      "event": "impact_earth",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 9880,
+      "sha256": "3e03ea5644800b92ac94879594aefe4f39fed256d92423c3c6115a25ef913fda",
+      "true_peak_4x": 0.773889,
+      "rms_dbfs": -23.67,
+      "onset_ms": 1.09,
+      "sources": [
+        "rubberduck-rpg/stones_01.ogg",
+        "rubberduck-rpg/item_stone_03.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_earth_2",
+      "event": "impact_earth",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11264,
+      "sha256": "6268ad04d8ec8cc63fc49b46c44f7a13459ecbf610bc69a8fde46b594ae1ce7c",
+      "true_peak_4x": 0.781555,
+      "rms_dbfs": -22.21,
+      "onset_ms": 2.27,
+      "sources": [
+        "rubberduck-rpg/stones_02.ogg",
+        "rubberduck-nature/sfx100v2_stones_01.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_earth_3",
+      "event": "impact_earth",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 9425,
+      "sha256": "26bfddee5135a8e63b63addfbe9c9a9c76467be29ed7e4dde13317b2fd44ac52",
+      "true_peak_4x": 0.724283,
+      "rms_dbfs": -23.96,
+      "onset_ms": 2.31,
+      "sources": [
+        "rubberduck-nature/sfx100v2_stones_03.ogg",
+        "rubberduck-rpg/item_stone_01.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_water",
+      "event": "impact_water",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11350,
+      "sha256": "3f248b6880bd8d19bca8ac5104f18750aa13362c908ad2a518c52273f03f30e8",
+      "true_peak_4x": 0.770301,
+      "rms_dbfs": -23.18,
+      "onset_ms": 1.61,
+      "sources": [
+        "rubberduck-water/splash_01.ogg",
+        "rubberduck-water/bubble_02.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_water_2",
+      "event": "impact_water",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11272,
+      "sha256": "e98d0fcbeac5ed717dd9b3226d044a45c46d37ed4fbc02f946c3bd1efa1d09f0",
+      "true_peak_4x": 0.783385,
+      "rms_dbfs": -18.87,
+      "onset_ms": 1.97,
+      "sources": [
+        "rubberduck-water/splash_02.ogg",
+        "virix/Ice attack 2.wav",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "impact_water_3",
+      "event": "impact_water",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 9540,
+      "sha256": "addc828961b67647b92d81946c278035a552c437d9e4151635de32fb2e9c72a1",
+      "true_peak_4x": 0.66495,
+      "rms_dbfs": -24.2,
+      "onset_ms": 1.9,
+      "sources": [
+        "rubberduck-water/splash_03.ogg",
+        "rubberduck-water/bubble_01.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_fire",
+      "event": "impact_fire",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11152,
+      "sha256": "5d71a86f387ccbdcc61ad6eaadca6c7d4550b591d577da082d553367a75efa7a",
+      "true_peak_4x": 0.756712,
+      "rms_dbfs": -18.28,
+      "onset_ms": 2.13,
+      "sources": [
+        "rubberduck-rpg/spell_fire_01.ogg",
+        "rubberduck-rpg/spell_fire_07.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_fire_2",
+      "event": "impact_fire",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11030,
+      "sha256": "372e06b6df52576a6e47216068d37793743845f5639e1c62a929365041dd37c5",
+      "true_peak_4x": 0.690568,
+      "rms_dbfs": -18.87,
+      "onset_ms": 1.79,
+      "sources": [
+        "rubberduck-rpg/spell_fire_02.ogg",
+        "rubberduck-rpg/spell_fire_04.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_fire_3",
+      "event": "impact_fire",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10628,
+      "sha256": "6ff5e83efa7d8e75d400602686f083900bf666fa13218b56a155d6a3795ecbfb",
+      "true_peak_4x": 0.719854,
+      "rms_dbfs": -16.95,
+      "onset_ms": 0.45,
+      "sources": [
+        "rubberduck-rpg/spell_fire_06.ogg",
+        "virix/Fire impact 1.wav",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "impact_wind",
+      "event": "impact_wind",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 9765,
+      "sha256": "33f4356033a9e227d71b90a79fbb88db78d036e82af081f0c30eb60362ec968d",
+      "true_peak_4x": 0.816635,
+      "rms_dbfs": -17.78,
+      "onset_ms": 2.18,
+      "sources": [
+        "virix/Wind effects 5.wav",
+        "rubberduck-rpg/spell_02.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "impact_wind_2",
+      "event": "impact_wind",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11144,
+      "sha256": "3c569976e740aec8651effe61cd3c4bd3c876a92ac76b0bc8971a5ae893e83a8",
+      "true_peak_4x": 0.785897,
+      "rms_dbfs": -16.67,
+      "onset_ms": 3.9,
+      "sources": [
+        "rubberduck-nature/sfx100v2_air_01.ogg",
+        "rubberduck-nature/sfx100v2_air_01.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_wind_3",
+      "event": "impact_wind",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10913,
+      "sha256": "81c54ce259929fbfd09a49ad8bfe561cb06ce8319c16ace223c4c82dde30e13d",
+      "true_peak_4x": 0.819126,
+      "rms_dbfs": -19.0,
+      "onset_ms": 3.65,
+      "sources": [
+        "rubberduck-nature/sfx100v2_air_02.ogg",
+        "rubberduck-nature/sfx100v2_air_03.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_lightning",
+      "event": "impact_lightning",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 9923,
+      "sha256": "11b38836c8ab1ebca24ca76a2b9198f4b70cc7cdf9853dc9b752b127e9a567af",
+      "true_peak_4x": 0.721092,
+      "rms_dbfs": -19.09,
+      "onset_ms": 0.77,
+      "sources": [
+        "rubberduck-nature/sfx100v2_thunder_01.ogg",
+        "rubberduck-nature/sfx100v2_thunder_01.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_lightning_2",
+      "event": "impact_lightning",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11498,
+      "sha256": "00c92c10bef34e94230cc5a2207b97cba58eb919408c2e8cd48b035991268af1",
+      "true_peak_4x": 0.810393,
+      "rms_dbfs": -18.74,
+      "onset_ms": 1.34,
+      "sources": [
+        "virix/Ice attack 2.wav",
+        "rubberduck-rpg/item_gem_03.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "impact_lightning_3",
+      "event": "impact_lightning",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11351,
+      "sha256": "49acfb7a680917e1731ace263ac9965d4118bc5fa335a28499ccad61623433ab",
+      "true_peak_4x": 0.809149,
+      "rms_dbfs": -17.95,
+      "onset_ms": 3.63,
+      "sources": [
+        "rubberduck-rpg/spell_01.ogg",
+        "virix/Ice attack 2.wav",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "impact_light",
+      "event": "impact_light",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11094,
+      "sha256": "5391170e15dfa3e94abc392538e4252e86ce3e45e1fee8f40982bf399b41d25f",
+      "true_peak_4x": 0.800536,
+      "rms_dbfs": -19.11,
+      "onset_ms": 2.02,
+      "sources": [
+        "virix/Healing Full.wav",
+        "rubberduck-rpg/item_gem_02.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "impact_light_2",
+      "event": "impact_light",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10925,
+      "sha256": "9ec83eceec6d9be3431ef432ec6a00c0a052738ef2d9271dbe6f802c97fe7184",
+      "true_peak_4x": 0.719599,
+      "rms_dbfs": -20.63,
+      "onset_ms": 1.56,
+      "sources": [
+        "rubberduck-rpg/spell_02.ogg",
+        "virix/Healing Full.wav",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "impact_light_3",
+      "event": "impact_light",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 12619,
+      "sha256": "dfb874a515f0a6e3d8c56e0f7818ea98d39f700dbbb958f7c624f5aa9006695e",
+      "true_peak_4x": 0.764787,
+      "rms_dbfs": -21.32,
+      "onset_ms": 1.81,
+      "sources": [
+        "jaggedstone/magical_7_0.ogg",
+        "rubberduck-rpg/item_gem_04.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_shadow",
+      "event": "impact_shadow",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 9927,
+      "sha256": "cf943054bcbb79679675f6ac6e3dd9d8f8add7ef9c5b0d4147a05eb0165fa97e",
+      "true_peak_4x": 0.596156,
+      "rms_dbfs": -16.49,
+      "onset_ms": 3.15,
+      "sources": [
+        "jaggedstone/magical_4.ogg",
+        "jaggedstone/magical_2.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_shadow_2",
+      "event": "impact_shadow",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10045,
+      "sha256": "e484a4685895485a5314eb924b507aaf46554bc87721ee395d77596495244512",
+      "true_peak_4x": 0.618568,
+      "rms_dbfs": -16.46,
+      "onset_ms": 2.43,
+      "sources": [
+        "jaggedstone/magical_3.ogg",
+        "jaggedstone/magical_5.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_shadow_3",
+      "event": "impact_shadow",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 10494,
+      "sha256": "df1fd4a11d151ac902985502de175a2a67f2714a88ff3f57e6f23bdc105dfeb6",
+      "true_peak_4x": 0.744193,
+      "rms_dbfs": -17.82,
+      "onset_ms": 3.63,
+      "sources": [
+        "virix/Misc 02.wav",
+        "virix/Wind effects 5.wav",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "impact_arcane",
+      "event": "impact_arcane",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11485,
+      "sha256": "cc7a877c19f8ce6ccfd367a6c4e7f7230fa74e5ac63ad04f3d45c801fda3f001",
+      "true_peak_4x": 0.815692,
+      "rms_dbfs": -18.28,
+      "onset_ms": 2.45,
+      "sources": [
+        "virix/Misc 02.wav",
+        "virix/Ice attack 2.wav",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "impact_arcane_2",
+      "event": "impact_arcane",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11428,
+      "sha256": "ba469d2636833764e91ef345093ff08a0513fbd3365f29f8b269898725d48bcd",
+      "true_peak_4x": 0.67129,
+      "rms_dbfs": -16.47,
+      "onset_ms": 2.04,
+      "sources": [
+        "jaggedstone/magical_1_0.ogg",
+        "jaggedstone/magical_7_0.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "impact_arcane_3",
+      "event": "impact_arcane",
+      "seconds": 0.78,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11772,
+      "sha256": "56eff615bc72c5f781c4d9d43acb3df3925a4675f5c1388cc1d706ebe274bd9d",
+      "true_peak_4x": 0.697486,
+      "rms_dbfs": -19.94,
+      "onset_ms": 1.34,
+      "sources": [
+        "jaggedstone/magical_6_0.ogg",
+        "rubberduck-rpg/item_gem_04.ogg",
+        "rubberduck-nature/sfx100v2_hit_01.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "shield_pure",
+      "event": "shield_pure",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 9853,
+      "sha256": "e3abe083e7655e047b635368ef9b91b8a60b0b49570eb29a0b73c772919a3eba",
+      "true_peak_4x": 0.736571,
+      "rms_dbfs": -19.73,
+      "onset_ms": 13.79,
+      "sources": [
+        "rubberduck-rpg/spell_01.ogg",
+        "rubberduck-rpg/item_gem_01.ogg",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "shield_pure_2",
+      "event": "shield_pure",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 9410,
+      "sha256": "0364343b907d1dc9d6484c14448ea9669fba52068e064fa105e2a100c5700e65",
+      "true_peak_4x": 0.742129,
+      "rms_dbfs": -23.19,
+      "onset_ms": 2.0,
+      "sources": [
+        "rubberduck-rpg/spell_02.ogg",
+        "rubberduck-rpg/item_gem_02.ogg",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "shield_earth",
+      "event": "shield_earth",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11003,
+      "sha256": "0670736d5cfcf9eecda1cbd934e34917e465005dc03de8b271ccbf280321b603",
+      "true_peak_4x": 0.741771,
+      "rms_dbfs": -23.47,
+      "onset_ms": 1.5,
+      "sources": [
+        "rubberduck-rpg/stones_01.ogg",
+        "rubberduck-rpg/item_stone_01.ogg",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "shield_earth_2",
+      "event": "shield_earth",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11745,
+      "sha256": "3dae56626d635c34a2dc0edd2bbfb53c7d527bcd30625c497c982742b16ac08b",
+      "true_peak_4x": 0.779696,
+      "rms_dbfs": -23.05,
+      "onset_ms": 2.29,
+      "sources": [
+        "rubberduck-rpg/stones_02.ogg",
+        "rubberduck-rpg/item_stone_03.ogg",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "shield_water",
+      "event": "shield_water",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 13450,
+      "sha256": "da6c06fb84dddcc4f00a1654312f23803e780ca48b1931012284356c877b2dfe",
+      "true_peak_4x": 0.7358,
+      "rms_dbfs": -23.14,
+      "onset_ms": 1.97,
+      "sources": [
+        "rubberduck-water/splash_01.ogg",
+        "rubberduck-water/bubble_01.ogg",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "shield_water_2",
+      "event": "shield_water",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 9994,
+      "sha256": "5f93fec3b39e302a048ec1e1fab90df8382e19e4b7e27563fd3b3f38c6b07a0d",
+      "true_peak_4x": 0.796107,
+      "rms_dbfs": -21.24,
+      "onset_ms": 2.13,
+      "sources": [
+        "rubberduck-water/splash_02.ogg",
+        "rubberduck-water/bubble_02.ogg",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "shield_fire",
+      "event": "shield_fire",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 13724,
+      "sha256": "f2e7d3d4b870d83051370c3f53ec37f12c2b4661d633613bba20db8d81875342",
+      "true_peak_4x": 0.580561,
+      "rms_dbfs": -19.72,
+      "onset_ms": 2.15,
+      "sources": [
+        "rubberduck-rpg/spell_fire_01.ogg",
+        "virix/Fire impact 1.wav",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "shield_fire_2",
+      "event": "shield_fire",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11123,
+      "sha256": "8443975a3374c283b18f53dfa913758e76c1958e4554aede3b60770462500381",
+      "true_peak_4x": 0.658296,
+      "rms_dbfs": -19.8,
+      "onset_ms": 1.81,
+      "sources": [
+        "rubberduck-rpg/spell_fire_02.ogg",
+        "rubberduck-rpg/spell_fire_07.ogg",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "shield_wind",
+      "event": "shield_wind",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 12308,
+      "sha256": "03eb565e1f25a97be3eaa8b8ef5d25983fefc57d06a71a12a9138da246dd146f",
+      "true_peak_4x": 0.552092,
+      "rms_dbfs": -19.72,
+      "onset_ms": 8.3,
+      "sources": [
+        "virix/Wind effects 5.wav",
+        "rubberduck-nature/sfx100v2_air_03.ogg",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "shield_wind_2",
+      "event": "shield_wind",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 14251,
+      "sha256": "c2069496297ef78bd24a72bba14d790fb4388f3ecbcf3f4a9079a1fa0ad912f4",
+      "true_peak_4x": 0.591389,
+      "rms_dbfs": -19.79,
+      "onset_ms": 3.67,
+      "sources": [
+        "rubberduck-nature/sfx100v2_air_01.ogg",
+        "rubberduck-rpg/spell_02.ogg",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "shield_lightning",
+      "event": "shield_lightning",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 14106,
+      "sha256": "a63729efc29c8e9837e531e89ac6f5d6a74e88326e3f2ed44a7a907eeeb60021",
+      "true_peak_4x": 0.582303,
+      "rms_dbfs": -19.67,
+      "onset_ms": 2.04,
+      "sources": [
+        "rubberduck-nature/sfx100v2_thunder_01.ogg",
+        "virix/Ice attack 2.wav",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "shield_lightning_2",
+      "event": "shield_lightning",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 14420,
+      "sha256": "bd553bf0e8f933ce3b1af771ccb4191c2a329be8e4e473bfc44b804674b08666",
+      "true_peak_4x": 0.721156,
+      "rms_dbfs": -19.73,
+      "onset_ms": 5.26,
+      "sources": [
+        "virix/Ice attack 2.wav",
+        "rubberduck-nature/sfx100v2_thunder_01.ogg",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "shield_light",
+      "event": "shield_light",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 13968,
+      "sha256": "a555328b8b029705256d91ff2bebb7da4f6d7d0df78f82c8af17eb4e8813c8e2",
+      "true_peak_4x": 0.656358,
+      "rms_dbfs": -19.75,
+      "onset_ms": 6.1,
+      "sources": [
+        "virix/Healing Full.wav",
+        "rubberduck-rpg/item_gem_04.ogg",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "shield_light_2",
+      "event": "shield_light",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 8452,
+      "sha256": "e3ac617aab4c3614b0f5a1cef0482743f1f13698ce5ec1c80e1185b5770cc8dd",
+      "true_peak_4x": 0.766919,
+      "rms_dbfs": -24.1,
+      "onset_ms": 1.59,
+      "sources": [
+        "rubberduck-rpg/spell_02.ogg",
+        "rubberduck-rpg/item_gem_02.ogg",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "shield_shadow",
+      "event": "shield_shadow",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11813,
+      "sha256": "fdea7904fb14b60fcbc229e8d8d76dc804392d0c611642af44b8ba6a96ac5116",
+      "true_peak_4x": 0.499659,
+      "rms_dbfs": -19.6,
+      "onset_ms": 3.15,
+      "sources": [
+        "jaggedstone/magical_4.ogg",
+        "virix/Wind effects 5.wav",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "shield_shadow_2",
+      "event": "shield_shadow",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 12938,
+      "sha256": "9a312942f6feb262675400cfa7c4b8496663bc19c545f9a77e08177104a8b887",
+      "true_peak_4x": 0.44679,
+      "rms_dbfs": -19.57,
+      "onset_ms": 2.49,
+      "sources": [
+        "jaggedstone/magical_3.ogg",
+        "jaggedstone/magical_2.ogg",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "shield_arcane",
+      "event": "shield_arcane",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 11948,
+      "sha256": "7508a3bbcef592aa5bb8ceb55f1e6b517d616b0f082bd7b925da1a80ead33fed",
+      "true_peak_4x": 0.72977,
+      "rms_dbfs": -20.33,
+      "onset_ms": 2.0,
+      "sources": [
+        "virix/Misc 02.wav",
+        "rubberduck-rpg/item_gem_04.ogg",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    },
+    {
+      "name": "shield_arcane_2",
+      "event": "shield_arcane",
+      "seconds": 1.1,
+      "channels": 1,
+      "sample_rate": 44100,
+      "bytes": 14335,
+      "sha256": "f65c96358b7864bb542fb8a373f182cdb2a473facfa08c36aa756a8fa18d09dd",
+      "true_peak_4x": 0.564334,
+      "rms_dbfs": -19.65,
+      "onset_ms": 3.31,
+      "sources": [
+        "jaggedstone/magical_1_0.ogg",
+        "virix/Ice attack 2.wav",
+        "rubberduck-rpg/item_gem_04.ogg"
+      ],
+      "license": "CC-BY-3.0"
+    }
+  ],
+  "modifications": "Stereo to mono, onset/tail trimming, pitch/EQ edits, layered mixing, short reflections, dynamics control, fade and OGG/Vorbis encoding."
+}

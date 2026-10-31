@@ -1,0 +1,160 @@
+{
+  "blender": "5.2.3 LTS",
+  "variants": [
+    {
+      "index": 0,
+      "vertices": 331,
+      "faces": 386
+    },
+    {
+      "index": 1,
+      "vertices": 324,
+      "faces": 380
+    },
+    {
+      "index": 2,
+      "vertices": 342,
+      "faces": 388
+    },
+    {
+      "index": 3,
+      "vertices": 363,
+      "faces": 426
+    },
+    {
+      "index": 4,
+      "vertices": 356,
+      "faces": 420
+    },
+    {
+      "index": 5,
+      "vertices": 374,
+      "faces": 428
+    },
+    {
+      "index": 6,
+      "vertices": 395,
+      "faces": 466
+    },
+    {
+      "index": 7,
+      "vertices": 388,
+      "faces": 460
+    },
+    {
+      "index": 8,
+      "vertices": 406,
+      "faces": 468
+    },
+    {
+      "index": 9,
+      "vertices": 365,
+      "faces": 430
+    },
+    {
+      "index": 10,
+      "vertices": 358,
+      "faces": 424
+    },
+    {
+      "index": 11,
+      "vertices": 376,
+      "faces": 432
+    },
+    {
+      "index": 12,
+      "vertices": 397,
+      "faces": 470
+    },
+    {
+      "index": 13,
+      "vertices": 390,
+      "faces": 464
+    },
+    {
+      "index": 14,
+      "vertices": 408,
+      "faces": 472
+    },
+    {
+      "index": 15,
+      "vertices": 429,
+      "faces": 510
+    },
+    {
+      "index": 16,
+      "vertices": 422,
+      "faces": 504
+    },
+    {
+      "index": 17,
+      "vertices": 440,
+      "faces": 512
+    },
+    {
+      "index": 18,
+      "vertices": 357,
+      "faces": 430
+    },
+    {
+      "index": 19,
+      "vertices": 350,
+      "faces": 424
+    },
+    {
+      "index": 20,
+      "vertices": 368,
+      "faces": 432
+    },
+    {
+      "index": 21,
+      "vertices": 389,
+      "faces": 470
+    },
+    {
+      "index": 22,
+      "vertices": 382,
+      "faces": 464
+    },
+    {
+      "index": 23,
+      "vertices": 400,
+      "faces": 472
+    },
+    {
+      "index": 24,
+      "vertices": 421,
+      "faces": 510
+    },
+    {
+      "index": 25,
+      "vertices": 414,
+      "faces": 504
+    },
+    {
+      "index": 26,
+      "vertices": 432,
+      "faces": 512
+    }
+  ],
+  "sharedParts": 9,
+  "source": "Authored locally in Blender via MCP",
+  "palette": [
+    "32291f",
+    "805d39",
+    "bc945d",
+    "c8a769",
+    "f1d699",
+    "536168",
+    "a0b4b9",
+    "d8e4dc",
+    "8b4e24",
+    "eda342",
+    "fff0ae",
+    "4d3467",
+    "a780d3",
+    "e3cfff",
+    "286b72",
+    "72d2c7"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "styles": {
+    "BEAM":   {"sprite": 2, "ticks": 3, "width": 0.09, "opacity": 0.9, "copies": 1},
+    "TRAIL":  {"sprite": 2, "ticks": 3, "width": 0.12, "opacity": 0.85, "copies": 1},
+    "IMPACT": {"sprite": 0, "ticks": 6, "width": 0.14, "opacity": 0.9, "copies": 12},
+    "SHIELD": {"sprite": 3, "ticks": 2, "width": 1.0, "opacity": 0.75, "copies": 1},
+    "STEAM":  {"sprite": 1, "ticks": 10, "width": 0.3, "opacity": 0.5, "copies": 6}
+  }
+}

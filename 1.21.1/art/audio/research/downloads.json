@@ -1,0 +1,145 @@
+[
+  {
+    "pack": "rubberduck-rpg",
+    "url": "https://opengameart.org/sites/default/files/80-CC0-RPG-SFX_0.zip",
+    "file": "sources\\rubberduck-rpg\\80-CC0-RPG-SFX_0.zip",
+    "size": 1845114,
+    "sha256": "1c2f06ff4e8563b5b8b745b23cf213c1474142a69bb82bd8f5e10d9b3f7a7bbd",
+    "licenses": [
+      [
+        "CC0",
+        "http://creativecommons.org/publicdomain/zero/1.0/"
+      ]
+    ]
+  },
+  {
+    "pack": "virix",
+    "url": "https://opengameart.org/sites/default/files/Magic%20SFX%20Preview%20Pack.zip",
+    "file": "sources\\virix\\Magic SFX Preview Pack.zip",
+    "size": 1619610,
+    "sha256": "77f964847ade8e84728a64cfc901d1d18b51459963c68e9f48bd19b0d0d8aa4e",
+    "licenses": [
+      [
+        "CC-BY 3.0",
+        "http://creativecommons.org/licenses/by/3.0/"
+      ]
+    ]
+  },
+  {
+    "pack": "jaggedstone",
+    "url": "https://opengameart.org/sites/default/files/magical_1_0.ogg",
+    "file": "sources\\jaggedstone\\magical_1_0.ogg",
+    "size": 59071,
+    "sha256": "119f9061a566c72c1c58444b03f8685b833079ef268dda02fe742eb34d3bc68f",
+    "licenses": [
+      [
+        "CC0",
+        "http://creativecommons.org/publicdomain/zero/1.0/"
+      ]
+    ]
+  },
+  {
+    "pack": "jaggedstone",
+    "url": "https://opengameart.org/sites/default/files/magical_2.ogg",
+    "file": "sources\\jaggedstone\\magical_2.ogg",
+    "size": 39689,
+    "sha256": "84a70f63f3f21e5ba4a48285b760a663d422ad3feddba2f3cbadd94b76cdc52e",
+    "licenses": [
+      [
+        "CC0",
+        "http://creativecommons.org/publicdomain/zero/1.0/"
+      ]
+    ]
+  },
+  {
+    "pack": "jaggedstone",
+    "url": "https://opengameart.org/sites/default/files/magical_3.ogg",
+    "file": "sources\\jaggedstone\\magical_3.ogg",
+    "size": 38266,
+    "sha256": "9fac648a1de869cf9ca2f4b3f1cd47f1766a3ee9d2fdec45831234401d7b2392",
+    "licenses": [
+      [
+        "CC0",
+        "http://creativecommons.org/publicdomain/zero/1.0/"
+      ]
+    ]
+  },
+  {
+    "pack": "jaggedstone",
+    "url": "https://opengameart.org/sites/default/files/magical_4.ogg",
+    "file": "sources\\jaggedstone\\magical_4.ogg",
+    "size": 79091,
+    "sha256": "b7862d109b4013dfb2a389a10f8917203beb0efc458444bc5a1b8ada605cc118",
+    "licenses": [
+      [
+        "CC0",
+        "http://creativecommons.org/publicdomain/zero/1.0/"
+      ]
+    ]
+  },
+  {
+    "pack": "jaggedstone",
+    "url": "https://opengameart.org/sites/default/files/magical_5.ogg",
+    "file": "sources\\jaggedstone\\magical_5.ogg",
+    "size": 37790,
+    "sha256": "69aaaaed729cacb518005a5d24074196db3c5fffc0ed2cd01ad864fbed4a62be",
+    "licenses": [
+      [
+        "CC0",
+        "http://creativecommons.org/publicdomain/zero/1.0/"
+      ]
+    ]
+  },
+  {
+    "pack": "jaggedstone",
+    "url": "https://opengameart.org/sites/default/files/magical_6_0.ogg",
+    "file": "sources\\jaggedstone\\magical_6_0.ogg",
+    "size": 37434,
+    "sha256": "0a18ee3460cf3fd79c3771bbf94c20c26d34b65ab60d0b0e15694ffcad815955",
+    "licenses": [
+      [
+        "CC0",
+        "http://creativecommons.org/publicdomain/zero/1.0/"
+      ]
+    ]
+  },
+  {
+    "pack": "jaggedstone",
+    "url": "https://opengameart.org/sites/default/files/magical_7_0.ogg",
+    "file": "sources\\jaggedstone\\magical_7_0.ogg",
+    "size": 76383,
+    "sha256": "2817da4f5df69ff993baffd6594a2f2a069f85ee2a02019f97db2246e350a76b",
+    "licenses": [
+      [
+        "CC0",
+        "http://creativecommons.org/publicdomain/zero/1.0/"
+      ]
+    ]
+  },
+  {
+    "pack": "rubberduck-water",
+    "url": "https://opengameart.org/sites/default/files/water-splash-slime-sfx.zip",
+    "file": "sources\\rubberduck-water\\water-splash-slime-sfx.zip",
+    "size": 2259262,
+    "sha256": "7cd39abb49d4362a37ba18dc0e454c7dc1d08029d4e5b683149046bc237b2eba",
+    "licenses": [
+      [
+        "CC0",
+        "http://creativecommons.org/publicdomain/zero/1.0/"
+      ]
+    ]
+  },
+  {
+    "pack": "rubberduck-nature",
+    "url": "https://opengameart.org/sites/default/files/sfx_100_v2.zip",
+    "file": "sources\\rubberduck-nature\\sfx_100_v2.zip",
+    "size": 2367871,
+    "sha256": "0fc61b4494e2e893c0c015ced4877b3f689c7d84a48cb61daecd7ddb52db797b",
+    "licenses": [
+      [
+        "CC0",
+        "http://creativecommons.org/publicdomain/zero/1.0/"
+      ]
+    ]
+  }
+]

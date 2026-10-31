@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  H",
+    " B ",
+    "T  "
+  ],
+  "key": {
+    "H": {
+      "item": "elementalcircuits:quartz_head"
+    },
+    "B": {
+      "item": "elementalcircuits:oak_body"
+    },
+    "T": {
+      "item": "elementalcircuits:wood_tail"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "elementalcircuits:circuit_wand"
+  }
+}

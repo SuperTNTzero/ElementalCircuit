@@ -1,0 +1,26 @@
+[
+  {
+    "phase": "select",
+    "samples": 160,
+    "medianMs": 4.2085,
+    "p95Ms": 5.6646
+  },
+  {
+    "phase": "place",
+    "samples": 160,
+    "medianMs": 3.378,
+    "p95Ms": 4.7837
+  },
+  {
+    "phase": "route",
+    "samples": 160,
+    "medianMs": 3.5104,
+    "p95Ms": 4.8838
+  },
+  {
+    "phase": "drag",
+    "samples": 160,
+    "medianMs": 4.1048,
+    "p95Ms": 5.1131
+  }
+]

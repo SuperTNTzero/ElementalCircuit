@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "minecraft:block/oak_planks",
+    "down": "minecraft:block/oak_planks",
+    "up": "elementalcircuits:block/inscription_table_top",
+    "north": "minecraft:block/bookshelf",
+    "south": "minecraft:block/bookshelf",
+    "east": "minecraft:block/bookshelf",
+    "west": "minecraft:block/bookshelf"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "range": 24,
+  "world_limit": 64,
+  "player_limit": 8,
+  "cell_size": 4,
+  "events": {
+    "START": {"cooldown_ticks": 8, "volume": 0.35},
+    "CAST": {"cooldown_ticks": 4, "volume": 0.65},
+    "IMPACT": {"cooldown_ticks": 3, "volume": 0.55},
+    "SHIELD": {"cooldown_ticks": 12, "volume": 0.7}
+  }
+}

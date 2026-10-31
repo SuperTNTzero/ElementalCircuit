@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_material": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:blaze_rod"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "elementalcircuits:blaze_body"
+    ]
+  }
+}

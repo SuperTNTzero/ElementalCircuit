@@ -1,0 +1,95 @@
+newmtl palette_00
+Kd 1 1 1
+Ka 0 0 0
+d 1
+map_Kd #p0
+
+newmtl palette_01
+Kd 1 1 1
+Ka 0 0 0
+d 1
+map_Kd #p1
+
+newmtl palette_02
+Kd 1 1 1
+Ka 0 0 0
+d 1
+map_Kd #p2
+
+newmtl palette_03
+Kd 1 1 1
+Ka 0 0 0
+d 1
+map_Kd #p3
+
+newmtl palette_04
+Kd 1 1 1
+Ka 0 0 0
+d 1
+map_Kd #p4
+
+newmtl palette_05
+Kd 1 1 1
+Ka 0 0 0
+d 1
+map_Kd #p5
+
+newmtl palette_06
+Kd 1 1 1
+Ka 0 0 0
+d 1
+map_Kd #p6
+
+newmtl palette_07
+Kd 1 1 1
+Ka 0 0 0
+d 1
+map_Kd #p7
+
+newmtl palette_08
+Kd 1 1 1
+Ka 0 0 0
+d 1
+map_Kd #p8
+
+newmtl palette_09
+Kd 1 1 1
+Ka 0 0 0
+d 1
+map_Kd #p9
+
+newmtl palette_10
+Kd 1 1 1
+Ka 0 0 0
+d 1
+map_Kd #p10
+
+newmtl palette_11
+Kd 1 1 1
+Ka 0 0 0
+d 1
+map_Kd #p11
+
+newmtl palette_12
+Kd 1 1 1
+Ka 0 0 0
+d 1
+map_Kd #p12
+
+newmtl palette_13
+Kd 1 1 1
+Ka 0 0 0
+d 1
+map_Kd #p13
+
+newmtl palette_14
+Kd 1 1 1
+Ka 0 0 0
+d 1
+map_Kd #p14
+
+newmtl palette_15
+Kd 1 1 1
+Ka 0 0 0
+d 1
+map_Kd #p15

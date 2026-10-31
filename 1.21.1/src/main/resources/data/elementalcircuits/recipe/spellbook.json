@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " A ",
+    " B ",
+    " W "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "B": {
+      "item": "minecraft:book"
+    },
+    "W": {
+      "item": "elementalcircuits:wood_plate"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "elementalcircuits:spellbook"
+  }
+}

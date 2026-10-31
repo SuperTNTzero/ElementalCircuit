@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "elementalcircuits:block/natural_mana_node_off"
+    },
+    "lit=true": {
+      "model": "elementalcircuits:block/natural_mana_node_on"
+    }
+  }
+}

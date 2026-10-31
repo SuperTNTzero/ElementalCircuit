@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "fanDegrees": 70,
+  "fanReach": 131072,
+  "fanHeight": 16384,
+  "wallThickness": 40960,
+  "slabHeight": 32768,
+  "ringInner": 42598,
+  "columnRadius": 32768,
+  "crossWidth": 13107,
+  "domeInner": 49152,
+  "groundOffset": 49152,
+  "blockProbes": 512
+}

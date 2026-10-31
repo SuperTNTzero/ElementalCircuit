@@ -1,0 +1,20 @@
+{
+  "blender": "5.2.3 LTS",
+  "models": [
+    {
+      "model": "fixed_wood",
+      "vertices": 304,
+      "faces": 348
+    },
+    {
+      "model": "fixed_brass",
+      "vertices": 316,
+      "faces": 362
+    },
+    {
+      "model": "fixed_crystal",
+      "vertices": 311,
+      "faces": 358
+    }
+  ]
+}

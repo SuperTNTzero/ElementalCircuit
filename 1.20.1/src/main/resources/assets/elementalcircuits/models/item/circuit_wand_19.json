@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "elementalcircuits:item/circuit_wand_19"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "blender": "5.2.3 LTS",
+  "models": [
+    {
+      "name": "spellbook_spine",
+      "vertices": 40,
+      "faces": 30
+    },
+    {
+      "name": "spellbook_front_cover",
+      "vertices": 95,
+      "faces": 76
+    },
+    {
+      "name": "spellbook_back_cover",
+      "vertices": 80,
+      "faces": 60
+    },
+    {
+      "name": "spellbook_front_pages",
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "name": "spellbook_back_pages",
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "name": "spellbook_turning_leaf",
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "name": "spellbook_closed",
+      "vertices": 231,
+      "faces": 178
+    },
+    {
+      "name": "notebook_spine",
+      "vertices": 40,
+      "faces": 30
+    },
+    {
+      "name": "notebook_front_cover",
+      "vertices": 95,
+      "faces": 76
+    },
+    {
+      "name": "notebook_back_cover",
+      "vertices": 80,
+      "faces": 60
+    },
+    {
+      "name": "notebook_front_pages",
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "name": "notebook_back_pages",
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "name": "notebook_turning_leaf",
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "name": "notebook_closed",
+      "vertices": 231,
+      "faces": 178
+    }
+  ],
+  "hinge": [
+    0.2,
+    0.5,
+    0.5
+  ],
+  "max_angle_degrees": 145,
+  "atlas": "Aseprite 512px with padded 64px paintings"
+}

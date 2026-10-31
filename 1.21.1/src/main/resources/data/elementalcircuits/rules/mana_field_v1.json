@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "cellSize": 8,
+  "stepTicks": 5,
+  "capacity": 8388608,
+  "ambient": 524288,
+  "diffusionDivisor": 12,
+  "decayDivisor": 4096,
+  "intakePerTick": 13107,
+  "crystal": 4194304,
+  "naturalCapacity": 268435456,
+  "artificialCapacity": 33554432,
+  "naturalPerStep": 32768,
+  "artificialPerStep": 65536
+}

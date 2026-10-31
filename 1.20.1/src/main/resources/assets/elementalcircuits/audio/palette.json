@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "sample_rate": 24000,
+  "seed": 20261030,
+  "durations": {"start": 0.28, "cast": 0.34, "impact": 0.26, "shield": 0.68},
+  "elements": {
+    "pure": {"frequency": 440, "noise": 0.12},
+    "earth": {"frequency": 88, "noise": 0.5},
+    "water": {"frequency": 310, "noise": 0.3},
+    "fire": {"frequency": 180, "noise": 0.85},
+    "wind": {"frequency": 520, "noise": 0.95},
+    "lightning": {"frequency": 1150, "noise": 0.75},
+    "light": {"frequency": 880, "noise": 0.03},
+    "shadow": {"frequency": 110, "noise": 0.4},
+    "arcane": {"frequency": 550, "noise": 0.18}
+  }
+}

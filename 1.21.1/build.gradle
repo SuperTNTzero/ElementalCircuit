@@ -1,0 +1,81 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+version = '0.24.0'
+group = 'dev.elementalcircuits'
+base { archivesName = 'elemental-circuits-1.21.1' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+repositories.configureEach {
+    if (providers.gradleProperty('useDependencyMirror').orNull == 'true' && it instanceof MavenArtifactRepository && it.url.toString().contains('maven.neoforged.net')) it.url = uri(it.url.toString().replace('https://maven.neoforged.net','https://neoforged.forgecdn.net'))
+}
+neoForge {
+    version = '21.1.265'
+    addModdingDependenciesTo sourceSets.test
+    runs {
+        client {
+            client()
+            if (providers.gradleProperty('editorSmoke').orNull == 'true') {
+                systemProperty 'elementalcircuits.editorSmoke', 'true'
+                if (providers.gradleProperty('showcaseCapture').orNull == 'true') systemProperty 'elementalcircuits.showcaseCapture', 'true'
+                gameDirectory = project.file('build/client-smoke')
+            }
+            if (providers.gradleProperty('wandSmoke').orNull == 'true') {
+                systemProperty 'elementalcircuits.wandSmoke', 'true'
+                gameDirectory = project.file('build/wand-smoke')
+            }
+            if (providers.gradleProperty('stationSmoke').orNull == 'true') {
+                systemProperty 'elementalcircuits.stationSmoke', 'true'
+                gameDirectory = project.file('build/station-smoke')
+            }
+            if (providers.gradleProperty('bookSmoke').orNull == 'true') {
+                systemProperty 'elementalcircuits.bookSmoke', 'true'
+                gameDirectory = project.file('build/book-smoke')
+            }
+            if (providers.gradleProperty('shapeSmoke').orNull == 'true') {
+                systemProperty 'elementalcircuits.shapeSmoke', 'true'
+                gameDirectory = project.file('build/shape-smoke')
+            }
+            if (providers.gradleProperty('fieldSmoke').orNull == 'true') {
+                systemProperty 'elementalcircuits.fieldSmoke', 'true'
+                gameDirectory = project.file('build/field-smoke')
+            }
+            if (providers.gradleProperty('vfxSmoke').orNull == 'true') {
+                systemProperty 'elementalcircuits.vfxSmoke', 'true'
+                gameDirectory = project.file('build/vfx-smoke')
+            }
+            if (providers.gradleProperty('audioSmoke').orNull == 'true') {
+                systemProperty 'elementalcircuits.audioSmoke', 'true'
+                systemProperty 'elementalcircuits.vfxWorldSmoke', 'true'
+                gameDirectory = project.file('build/audio-world-smoke')
+            }
+        }
+        server { server(); programArgument '--nogui'; gameDirectory = project.file('run-server') }
+        gameTestServer {
+            type = 'gameTestServer'
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'elementalcircuits'
+            gameDirectory = project.file('build/gametest')
+        }
+        configureEach { logLevel = org.slf4j.event.Level.INFO }
+    }
+    mods {
+        elementalcircuits {
+            sourceSet sourceSets.main
+            if (providers.gradleProperty('withGameTests').orNull == 'true' || providers.gradleProperty('editorSmoke').orNull == 'true' || providers.gradleProperty('audioSmoke').orNull == 'true' || providers.gradleProperty('vfxSmoke').orNull == 'true' || providers.gradleProperty('wandSmoke').orNull == 'true' || providers.gradleProperty('fieldSmoke').orNull == 'true' || providers.gradleProperty('stationSmoke').orNull == 'true' || providers.gradleProperty('shapeSmoke').orNull == 'true' || providers.gradleProperty('bookSmoke').orNull == 'true') sourceSet sourceSets.test
+        }
+    }
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('jar', Jar).configure { manifest.attributes('Implementation-Version': project.version) }
+tasks.named('processResources') {
+    from('THIRD_PARTY_NOTICES.md') { into 'META-INF' }
+    from('LICENSE.txt') { into 'META-INF' }
+}
+tasks.register('coreTest', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'dev.elementalcircuits.domain.CoreContracts'
+}
+tasks.named('check') { dependsOn 'coreTest' }
+// Contract suites have an explicit main entry; Minecraft integration uses runGameTestServer.
+tasks.named('test', Test) { failOnNoDiscoveredTests = false }

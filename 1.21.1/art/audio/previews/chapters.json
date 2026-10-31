@@ -1,0 +1,83 @@
+[
+  {
+    "element": "pure",
+    "start_seconds": 0.0,
+    "order": [
+      "cast",
+      "impact",
+      "shield"
+    ]
+  },
+  {
+    "element": "earth",
+    "start_seconds": 3.26,
+    "order": [
+      "cast",
+      "impact",
+      "shield"
+    ]
+  },
+  {
+    "element": "water",
+    "start_seconds": 6.52,
+    "order": [
+      "cast",
+      "impact",
+      "shield"
+    ]
+  },
+  {
+    "element": "fire",
+    "start_seconds": 9.78,
+    "order": [
+      "cast",
+      "impact",
+      "shield"
+    ]
+  },
+  {
+    "element": "wind",
+    "start_seconds": 13.04,
+    "order": [
+      "cast",
+      "impact",
+      "shield"
+    ]
+  },
+  {
+    "element": "lightning",
+    "start_seconds": 16.3,
+    "order": [
+      "cast",
+      "impact",
+      "shield"
+    ]
+  },
+  {
+    "element": "light",
+    "start_seconds": 19.56,
+    "order": [
+      "cast",
+      "impact",
+      "shield"
+    ]
+  },
+  {
+    "element": "shadow",
+    "start_seconds": 22.82,
+    "order": [
+      "cast",
+      "impact",
+      "shield"
+    ]
+  },
+  {
+    "element": "arcane",
+    "start_seconds": 26.08,
+    "order": [
+      "cast",
+      "impact",
+      "shield"
+    ]
+  }
+]

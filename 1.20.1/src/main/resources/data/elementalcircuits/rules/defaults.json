@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "material": "WOOD",
+  "conversion": 64225,
+  "inversion": 62259,
+  "coupling": 65470,
+  "nodeCapacity": 4194304,
+  "injection": 262144,
+  "interval": 10,
+  "window": 40,
+  "signalCost": 1,
+  "playerCapacity": 4194304,
+  "playerRegen": 262144,
+  "playerDelay": 40,
+  "range": 12,
+  "radius": 2,
+  "routingRetention": 64880,
+  "oppositionRetention": 62259
+}

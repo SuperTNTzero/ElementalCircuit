@@ -1,0 +1,14 @@
+{
+  "checks": 5696,
+  "runes": 28,
+  "routes": 35,
+  "steady_fire_casts": 6,
+  "steady_water_casts": 2,
+  "last_old_fire_tick_after_stimulus": 1,
+  "simultaneous_cast_ticks_in_switch_window": 0,
+  "swept_transitions": 20,
+  "sweep_latest_old_element_tick": 8,
+  "sweep_first_new_element_tick_min": 11,
+  "sweep_first_new_element_tick_max": 11,
+  "runtime_D_CLK_input_available": false
+}

@@ -1,0 +1,52 @@
+{
+  "version": "0.17.0",
+  "captures": [
+    {
+      "file": "inscription.png",
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "2a9c7bd911343a4e88f9b8386d28bfdb348572e3b574cb0ae809a4a22fbd0214",
+      "source": "Minecraft client; detached interface demonstration; not survival footage"
+    },
+    {
+      "file": "wand-workbench.png",
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "b837267e779b850249144021957edf52ef14956d40f856510c8a194fd3b80121",
+      "source": "Minecraft client; detached interface demonstration; not survival footage"
+    },
+    {
+      "file": "blueprint-notebook.png",
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "1a097e2aecb8ab32995bd2b7b737eac725422da5ddd1a9f13ba78d71dd02d6a5",
+      "source": "Minecraft client; detached interface demonstration; not survival footage"
+    },
+    {
+      "file": "spellbook.png",
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "28d8109a221bb420632cb0ba0071008113b16bdf416a7118e002c43f47e35eb0",
+      "source": "Minecraft client; detached interface demonstration; not survival footage"
+    },
+    {
+      "file": "element-switching.png",
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "c018c8e2e263247bcde6e1d817789a39abf0e180e40429e873f628f8312977b1",
+      "source": "Minecraft client; detached interface demonstration; not survival footage"
+    }
+  ],
+  "cover": "Layout draft based on the inscription screenshot; not gameplay footage",
+  "videoRecorded": false
+}

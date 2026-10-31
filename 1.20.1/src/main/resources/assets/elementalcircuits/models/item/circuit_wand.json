@@ -1,0 +1,170 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "elementalcircuits:item/circuit_wand_0"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 0
+      },
+      "model": "elementalcircuits:item/circuit_wand_0"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 1
+      },
+      "model": "elementalcircuits:item/circuit_wand_1"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 2
+      },
+      "model": "elementalcircuits:item/circuit_wand_2"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 3
+      },
+      "model": "elementalcircuits:item/circuit_wand_3"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 4
+      },
+      "model": "elementalcircuits:item/circuit_wand_4"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 5
+      },
+      "model": "elementalcircuits:item/circuit_wand_5"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 6
+      },
+      "model": "elementalcircuits:item/circuit_wand_6"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 7
+      },
+      "model": "elementalcircuits:item/circuit_wand_7"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 8
+      },
+      "model": "elementalcircuits:item/circuit_wand_8"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 9
+      },
+      "model": "elementalcircuits:item/circuit_wand_9"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 10
+      },
+      "model": "elementalcircuits:item/circuit_wand_10"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 11
+      },
+      "model": "elementalcircuits:item/circuit_wand_11"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 12
+      },
+      "model": "elementalcircuits:item/circuit_wand_12"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 13
+      },
+      "model": "elementalcircuits:item/circuit_wand_13"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 14
+      },
+      "model": "elementalcircuits:item/circuit_wand_14"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 15
+      },
+      "model": "elementalcircuits:item/circuit_wand_15"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 16
+      },
+      "model": "elementalcircuits:item/circuit_wand_16"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 17
+      },
+      "model": "elementalcircuits:item/circuit_wand_17"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 18
+      },
+      "model": "elementalcircuits:item/circuit_wand_18"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 19
+      },
+      "model": "elementalcircuits:item/circuit_wand_19"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 20
+      },
+      "model": "elementalcircuits:item/circuit_wand_20"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 21
+      },
+      "model": "elementalcircuits:item/circuit_wand_21"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 22
+      },
+      "model": "elementalcircuits:item/circuit_wand_22"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 23
+      },
+      "model": "elementalcircuits:item/circuit_wand_23"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 24
+      },
+      "model": "elementalcircuits:item/circuit_wand_24"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 25
+      },
+      "model": "elementalcircuits:item/circuit_wand_25"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 26
+      },
+      "model": "elementalcircuits:item/circuit_wand_26"
+    }
+  ]
+}

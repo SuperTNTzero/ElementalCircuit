@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "name": "circuit_start",
+      "seconds": 0.28,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 5135,
+      "peak": 0.66746
+    },
+    {
+      "name": "cast_pure",
+      "seconds": 0.34,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 5378,
+      "peak": 0.65688
+    },
+    {
+      "name": "cast_earth",
+      "seconds": 0.34,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 5326,
+      "peak": 0.65997
+    },
+    {
+      "name": "cast_water",
+      "seconds": 0.34,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 5522,
+      "peak": 0.63755
+    },
+    {
+      "name": "cast_fire",
+      "seconds": 0.34,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 5842,
+      "peak": 0.64498
+    },
+    {
+      "name": "cast_wind",
+      "seconds": 0.34,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 5588,
+      "peak": 0.73618
+    },
+    {
+      "name": "cast_lightning",
+      "seconds": 0.34,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 5644,
+      "peak": 0.63615
+    },
+    {
+      "name": "cast_light",
+      "seconds": 0.34,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 5299,
+      "peak": 0.64269
+    },
+    {
+      "name": "cast_shadow",
+      "seconds": 0.34,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 5313,
+      "peak": 0.65268
+    },
+    {
+      "name": "cast_arcane",
+      "seconds": 0.34,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 5519,
+      "peak": 0.65081
+    },
+    {
+      "name": "impact_pure",
+      "seconds": 0.26,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 4990,
+      "peak": 0.66239
+    },
+    {
+      "name": "impact_earth",
+      "seconds": 0.26,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 4897,
+      "peak": 0.64948
+    },
+    {
+      "name": "impact_water",
+      "seconds": 0.26,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 5050,
+      "peak": 0.66689
+    },
+    {
+      "name": "impact_fire",
+      "seconds": 0.26,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 5511,
+      "peak": 0.65825
+    },
+    {
+      "name": "impact_wind",
+      "seconds": 0.26,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 5132,
+      "peak": 0.69337
+    },
+    {
+      "name": "impact_lightning",
+      "seconds": 0.26,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 5345,
+      "peak": 0.64853
+    },
+    {
+      "name": "impact_light",
+      "seconds": 0.26,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 4965,
+      "peak": 0.66247
+    },
+    {
+      "name": "impact_shadow",
+      "seconds": 0.26,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 4901,
+      "peak": 0.6699
+    },
+    {
+      "name": "impact_arcane",
+      "seconds": 0.26,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 5110,
+      "peak": 0.67836
+    },
+    {
+      "name": "shield_pure",
+      "seconds": 0.68,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 7319,
+      "peak": 0.66896
+    },
+    {
+      "name": "shield_earth",
+      "seconds": 0.68,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 7175,
+      "peak": 0.63185
+    },
+    {
+      "name": "shield_water",
+      "seconds": 0.68,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 7548,
+      "peak": 0.65036
+    },
+    {
+      "name": "shield_fire",
+      "seconds": 0.68,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 8369,
+      "peak": 0.64378
+    },
+    {
+      "name": "shield_wind",
+      "seconds": 0.68,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 7589,
+      "peak": 0.65703
+    },
+    {
+      "name": "shield_lightning",
+      "seconds": 0.68,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 7756,
+      "peak": 0.70827
+    },
+    {
+      "name": "shield_light",
+      "seconds": 0.68,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 7099,
+      "peak": 0.65958
+    },
+    {
+      "name": "shield_shadow",
+      "seconds": 0.68,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 7149,
+      "peak": 0.65667
+    },
+    {
+      "name": "shield_arcane",
+      "seconds": 0.68,
+      "channels": 1,
+      "sample_rate": 24000,
+      "bytes": 7544,
+      "peak": 0.68229
+    }
+  ],
+  "total_bytes": 168015
+}

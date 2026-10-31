@@ -1,0 +1,11 @@
+{
+  "loader": "neoforge:obj",
+  "model": "elementalcircuits:models/item/book3d/spellbook_back_pages.obj",
+  "automatic_culling": false,
+  "flip_v": true,
+  "shade_quads": true,
+  "textures": {
+    "particle": "elementalcircuits:item/books",
+    "books": "elementalcircuits:item/books"
+  }
+}

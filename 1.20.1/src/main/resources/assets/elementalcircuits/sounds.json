@@ -1,0 +1,282 @@
+{
+  "circuit_start": {
+    "subtitle": "subtitles.elementalcircuits.start",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/circuit_start",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "cast_pure": {
+    "subtitle": "subtitles.elementalcircuits.cast",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/cast_pure",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "cast_earth": {
+    "subtitle": "subtitles.elementalcircuits.cast",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/cast_earth",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "cast_water": {
+    "subtitle": "subtitles.elementalcircuits.cast",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/cast_water",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "cast_fire": {
+    "subtitle": "subtitles.elementalcircuits.cast",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/cast_fire",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "cast_wind": {
+    "subtitle": "subtitles.elementalcircuits.cast",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/cast_wind",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "cast_lightning": {
+    "subtitle": "subtitles.elementalcircuits.cast",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/cast_lightning",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "cast_light": {
+    "subtitle": "subtitles.elementalcircuits.cast",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/cast_light",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "cast_shadow": {
+    "subtitle": "subtitles.elementalcircuits.cast",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/cast_shadow",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "cast_arcane": {
+    "subtitle": "subtitles.elementalcircuits.cast",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/cast_arcane",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "impact_pure": {
+    "subtitle": "subtitles.elementalcircuits.impact",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/impact_pure",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "impact_earth": {
+    "subtitle": "subtitles.elementalcircuits.impact",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/impact_earth",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "impact_water": {
+    "subtitle": "subtitles.elementalcircuits.impact",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/impact_water",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "impact_fire": {
+    "subtitle": "subtitles.elementalcircuits.impact",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/impact_fire",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "impact_wind": {
+    "subtitle": "subtitles.elementalcircuits.impact",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/impact_wind",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "impact_lightning": {
+    "subtitle": "subtitles.elementalcircuits.impact",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/impact_lightning",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "impact_light": {
+    "subtitle": "subtitles.elementalcircuits.impact",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/impact_light",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "impact_shadow": {
+    "subtitle": "subtitles.elementalcircuits.impact",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/impact_shadow",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "impact_arcane": {
+    "subtitle": "subtitles.elementalcircuits.impact",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/impact_arcane",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "shield_pure": {
+    "subtitle": "subtitles.elementalcircuits.shield",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/shield_pure",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "shield_earth": {
+    "subtitle": "subtitles.elementalcircuits.shield",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/shield_earth",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "shield_water": {
+    "subtitle": "subtitles.elementalcircuits.shield",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/shield_water",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "shield_fire": {
+    "subtitle": "subtitles.elementalcircuits.shield",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/shield_fire",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "shield_wind": {
+    "subtitle": "subtitles.elementalcircuits.shield",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/shield_wind",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "shield_lightning": {
+    "subtitle": "subtitles.elementalcircuits.shield",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/shield_lightning",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "shield_light": {
+    "subtitle": "subtitles.elementalcircuits.shield",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/shield_light",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "shield_shadow": {
+    "subtitle": "subtitles.elementalcircuits.shield",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/shield_shadow",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  },
+  "shield_arcane": {
+    "subtitle": "subtitles.elementalcircuits.shield",
+    "sounds": [
+      {
+        "name": "elementalcircuits:spell/shield_arcane",
+        "attenuation_distance": 24,
+        "preload": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+All rights reserved.
+
+Project-specific source code, documentation and generated placeholder assets in this
+directory belong to the project author. No redistribution license is granted here.
+
+EXCEPTION: Third-party spell audio and adapted spell sound mixes are excluded from
+the reservation above. Their CC0-1.0 / CC-BY-3.0 terms, authors, source links and
+modification notices are in THIRD_PARTY_NOTICES.md (included in the JAR under
+META-INF/). Asset-by-asset licenses are in assets/elementalcircuits/audio/sources.json.
+Project contributions to CC0-only mixes are dedicated under CC0-1.0; contributions
+to mixes containing CC-BY-3.0 material are offered under CC-BY-3.0. No endorsement
+by the original authors is implied.
+
+The included Gradle wrapper is an unmodified tool generated from Gradle 8.1.1,
+licensed under the Apache License, Version 2.0. Its license is available at:
+https://www.apache.org/licenses/LICENSE-2.0
+
+Minecraft, NeoForge, ForgeGradle, Gson and other build/runtime dependencies retain
+their own licenses. Minecraft game files are not part of the mod source distribution.

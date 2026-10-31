@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "parts": [
+    {"id":"quartz_head","slot":"HEAD","title":"石英杖端","strength":65536,"speed":65536,"durability":64,"melee":0,"color":"dce8ed"},
+    {"id":"amethyst_head","slot":"HEAD","title":"紫晶杖端","strength":98304,"speed":49152,"durability":128,"melee":0,"color":"be9de8"},
+    {"id":"copper_head","slot":"HEAD","title":"铜制杖端","strength":49152,"speed":98304,"durability":96,"melee":0,"color":"e09c75"},
+    {"id":"oak_body","slot":"BODY","title":"橡木杖身","strength":65536,"speed":65536,"durability":128,"melee":0,"color":"b68e61"},
+    {"id":"iron_body","slot":"BODY","title":"铁制杖身","strength":65536,"speed":65536,"durability":320,"melee":0,"color":"b2c1cc"},
+    {"id":"blaze_body","slot":"BODY","title":"烈焰杖身","strength":65536,"speed":65536,"durability":512,"melee":0,"color":"e9bb60"},
+    {"id":"wood_tail","slot":"TAIL","title":"木质杖尾","strength":65536,"speed":65536,"durability":0,"melee":2,"color":"a88765"},
+    {"id":"iron_tail","slot":"TAIL","title":"铁制杖尾","strength":65536,"speed":65536,"durability":0,"melee":5,"color":"c3cdd2"},
+    {"id":"diamond_tail","slot":"TAIL","title":"钻石杖尾","strength":65536,"speed":65536,"durability":0,"melee":7,"color":"76d9cf"}
+  ]
+}

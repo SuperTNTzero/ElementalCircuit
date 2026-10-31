@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " B ",
+    "SCS",
+    "SSS"
+  ],
+  "key": {
+    "B": {
+      "item": "elementalcircuits:wood_plate"
+    },
+    "S": {
+      "item": "minecraft:stone"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "elementalcircuits:fixed_circuit",
+    "count": 1
+  }
+}

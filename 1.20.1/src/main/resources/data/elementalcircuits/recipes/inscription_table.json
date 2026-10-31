@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " B ",
+    "PCP",
+    "P P"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    },
+    "C": {
+      "item": "elementalcircuits:wood_plate"
+    }
+  },
+  "result": {
+    "item": "elementalcircuits:inscription_table",
+    "count": 1
+  }
+}

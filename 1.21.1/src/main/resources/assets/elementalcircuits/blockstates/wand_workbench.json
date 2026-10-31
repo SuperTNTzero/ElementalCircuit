@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "facing=north,part=foot": {
+      "model": "elementalcircuits:block/workstations/wand_workbench_foot",
+      "y": 0
+    },
+    "facing=north,part=head": {
+      "model": "elementalcircuits:block/workstations/wand_workbench_head",
+      "y": 0
+    },
+    "facing=east,part=foot": {
+      "model": "elementalcircuits:block/workstations/wand_workbench_foot",
+      "y": 90
+    },
+    "facing=east,part=head": {
+      "model": "elementalcircuits:block/workstations/wand_workbench_head",
+      "y": 90
+    },
+    "facing=south,part=foot": {
+      "model": "elementalcircuits:block/workstations/wand_workbench_foot",
+      "y": 180
+    },
+    "facing=south,part=head": {
+      "model": "elementalcircuits:block/workstations/wand_workbench_head",
+      "y": 180
+    },
+    "facing=west,part=foot": {
+      "model": "elementalcircuits:block/workstations/wand_workbench_foot",
+      "y": 270
+    },
+    "facing=west,part=head": {
+      "model": "elementalcircuits:block/workstations/wand_workbench_head",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-30",
+  "version": "0.14.0",
+  "branch": "codex/casting-audio",
+  "network_protocol": 10,
+  "assets": {
+    "count": 28,
+    "format": "OGG/Vorbis",
+    "sample_rate": 24000,
+    "channels": 1,
+    "bytes": 168015
+  },
+  "budget": {
+    "range_blocks": 24,
+    "events_per_world_step": 64,
+    "events_per_listener_step": 8,
+    "spatial_cell_blocks": 4,
+    "max_cooldown_records": 768
+  },
+  "verification": {
+    "core_assertions": 88526,
+    "minecraft_game_tests": 82,
+    "native_client_decoded": 28,
+    "native_client_heard": 28,
+    "native_active_voice_samples": 467,
+    "godot_suites": 23,
+    "godot_failures": 0,
+    "expected_invalid_save_errors": 7,
+    "log": "build/audio-boundary-final.log",
+    "godot_log": "build/audio-godot.log"
+  },
+  "artifact": {
+    "path": "build/libs/elemental-circuits-1.20.1-0.14.0.jar",
+    "bytes": 752295,
+    "sha256": "78dc96fed42c4129a59564ec63728fd214d4b441d56d3e496f5a9f11cdf8be19",
+    "test_classes": 0
+  },
+  "limits": [
+    "Synthetic initial sounds; formal listening and mix balance not accepted.",
+    "No sustained chanting or moving looping projectile audio.",
+    "Long-term multi-player server mixing and bandwidth not benchmarked."
+  ]
+}

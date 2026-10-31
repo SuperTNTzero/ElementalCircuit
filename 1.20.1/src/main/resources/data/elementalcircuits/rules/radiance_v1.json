@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "lightLife": 200,
+  "shadowLife": 200,
+  "trailLife": 3,
+  "trailCost": 1024,
+  "maxLights": 1024,
+  "orphanDelay": 20
+}

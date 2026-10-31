@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "minecraft:block/oak_planks",
+    "down": "minecraft:block/oak_planks",
+    "up": "elementalcircuits:block/inscription_table_top",
+    "north": "elementalcircuits:block/inscription_table_side",
+    "south": "elementalcircuits:block/inscription_table_side",
+    "east": "elementalcircuits:block/inscription_table_side",
+    "west": "elementalcircuits:block/inscription_table_side"
+  }
+}

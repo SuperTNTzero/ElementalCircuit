@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_material": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:amethyst_shard"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "elementalcircuits:crystal_plate"
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "variants": {
+    "facing=north,board=empty": {
+      "model": "elementalcircuits:block/workstations/inscription_empty",
+      "y": 0
+    },
+    "facing=north,board=wood": {
+      "model": "elementalcircuits:block/workstations/inscription_wood",
+      "y": 0
+    },
+    "facing=north,board=brass": {
+      "model": "elementalcircuits:block/workstations/inscription_brass",
+      "y": 0
+    },
+    "facing=north,board=crystal": {
+      "model": "elementalcircuits:block/workstations/inscription_crystal",
+      "y": 0
+    },
+    "facing=east,board=empty": {
+      "model": "elementalcircuits:block/workstations/inscription_empty",
+      "y": 90
+    },
+    "facing=east,board=wood": {
+      "model": "elementalcircuits:block/workstations/inscription_wood",
+      "y": 90
+    },
+    "facing=east,board=brass": {
+      "model": "elementalcircuits:block/workstations/inscription_brass",
+      "y": 90
+    },
+    "facing=east,board=crystal": {
+      "model": "elementalcircuits:block/workstations/inscription_crystal",
+      "y": 90
+    },
+    "facing=south,board=empty": {
+      "model": "elementalcircuits:block/workstations/inscription_empty",
+      "y": 180
+    },
+    "facing=south,board=wood": {
+      "model": "elementalcircuits:block/workstations/inscription_wood",
+      "y": 180
+    },
+    "facing=south,board=brass": {
+      "model": "elementalcircuits:block/workstations/inscription_brass",
+      "y": 180
+    },
+    "facing=south,board=crystal": {
+      "model": "elementalcircuits:block/workstations/inscription_crystal",
+      "y": 180
+    },
+    "facing=west,board=empty": {
+      "model": "elementalcircuits:block/workstations/inscription_empty",
+      "y": 270
+    },
+    "facing=west,board=wood": {
+      "model": "elementalcircuits:block/workstations/inscription_wood",
+      "y": 270
+    },
+    "facing=west,board=brass": {
+      "model": "elementalcircuits:block/workstations/inscription_brass",
+      "y": 270
+    },
+    "facing=west,board=crystal": {
+      "model": "elementalcircuits:block/workstations/inscription_crystal",
+      "y": 270
+    }
+  }
+}

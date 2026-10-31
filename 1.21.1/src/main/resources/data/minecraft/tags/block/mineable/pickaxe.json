@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "elementalcircuits:mana_crystal_ore",
+    "elementalcircuits:deepslate_mana_crystal_ore",
+    "elementalcircuits:natural_mana_node",
+    "elementalcircuits:mana_node"
+  ]
+}
