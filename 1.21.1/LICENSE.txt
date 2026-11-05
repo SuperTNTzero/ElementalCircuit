@@ -11,6 +11,11 @@ Project contributions to CC0-only mixes are dedicated under CC0-1.0; contributio
 to mixes containing CC-BY-3.0 material are offered under CC-BY-3.0. No endorsement
 by the original authors is implied.
 
+EXCEPTION: The adapted spell art atlas, third-party source art and project-authored
+glow/ribbon/stone masks are also excluded from the reservation. They are provided
+under CC0-1.0, with sources and adaptation records in THIRD_PARTY_NOTICES.md and
+assets/elementalcircuits/art/spell_sources.json. This does not relicense code.
+
 The included Gradle wrapper is an unmodified tool generated from Gradle 8.1.1,
 licensed under the Apache License, Version 2.0. Its license is available at:
 https://www.apache.org/licenses/LICENSE-2.0

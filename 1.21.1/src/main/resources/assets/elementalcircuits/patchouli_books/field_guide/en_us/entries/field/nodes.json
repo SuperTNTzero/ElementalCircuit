@@ -1,0 +1,22 @@
+{
+  "name": "Nodes and absorption",
+  "category": "elementalcircuits:field",
+  "icon": "elementalcircuits:mana_node",
+  "sortnum": 13,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Nodes and absorption",
+      "text": "Natural nodes recover over time; artificial nodes need crystal refills. Nodes emit into the local mana field. Absorption runes draw from their location rather than creating free energy."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "More intake runes can raise throughput, but reserves, replenishment, field concentration and emission limits remain. Heavy extraction lowers local concentration; extra intakes do not mean unlimited supply."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:mana_node"
+    }
+  ]
+}

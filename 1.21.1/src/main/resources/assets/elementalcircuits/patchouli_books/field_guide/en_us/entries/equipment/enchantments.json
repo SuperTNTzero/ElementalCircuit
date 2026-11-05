@@ -1,0 +1,33 @@
+{
+  "name": "Magic enchantments",
+  "category": "elementalcircuits:equipment",
+  "icon": "minecraft:enchanted_book",
+  "sortnum": 24,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Magic enchantments",
+      "text": "Mana Capacity, Mana Recovery and Spell Power reach III: each level adds 32 capacity, 0.5 fixed mana per second and 0.1 spell power respectively. Power affects both damage and mana cost. Wands, spellbooks, robes and rings apply these while held or worn; capacity never refills mana."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Swift Casting III adds 10% speed per level to the actual casting wand, armor piece or ring, shortening release cooldown and complexity delay. Board Preservation III reduces board wear by 15% per level on its carrier. Overload and meltdown thresholds stay the same."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Earth, Water, Fire, Wind, Lightning, Light, Shadow, Arcane and Frost Wards reach IV. Worn armor and rings give 4% protection per level against that magical element, capped at 80%. Wards are mutually exclusive per item. Mixed hits use damage shares; reactions and vanilla hurt immunity still apply."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Mana Mending II is a treasure enchantment incompatible with XP Mending. Each level repairs up to 1 durability per second at 4 mana per point, on held or worn items only. Item wear is repaired before circuit boards, including fractional board wear. Melted boards need replacement at a table. Repair never starts a circuit."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Ordinary magic enchantments join the vanilla table, anvil, trading and random enchanted-book pools. Mana Mending uses treasure channels. All 15 maximum-level books are in the creative tab; actual availability follows vanilla loot and trade rules."
+    }
+  ]
+}

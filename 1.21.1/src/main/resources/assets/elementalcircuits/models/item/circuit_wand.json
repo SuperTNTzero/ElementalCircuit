@@ -162,6 +162,168 @@
         "elementalcircuits:assembly": 26
       },
       "model": "elementalcircuits:item/circuit_wand_26"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 27
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_0"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 28
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_1"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 29
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_2"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 30
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_3"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 31
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_4"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 32
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_5"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 33
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_6"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 34
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_7"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 35
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_8"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 36
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_9"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 37
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_10"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 38
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_11"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 39
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_12"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 40
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_13"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 41
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_14"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 42
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_15"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 43
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_16"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 44
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_17"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 45
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_18"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 46
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_19"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 47
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_20"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 48
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_21"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 49
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_22"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 50
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_23"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 51
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_24"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 52
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_25"
+    },
+    {
+      "predicate": {
+        "elementalcircuits:assembly": 53
+      },
+      "model": "elementalcircuits:item/circuit_wand_broken_26"
     }
   ]
 }

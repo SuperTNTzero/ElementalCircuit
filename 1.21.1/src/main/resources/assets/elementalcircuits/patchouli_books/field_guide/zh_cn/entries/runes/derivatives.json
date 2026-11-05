@@ -1,0 +1,18 @@
+{
+  "name": "命中后的法术",
+  "category": "elementalcircuits:runes",
+  "icon": "elementalcircuits:spellbook",
+  "sortnum": 11,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "命中后的法术",
+      "text": "分裂、连锁、爆发、弹跳、追踪以及附加效果归入独立分类。它们改变投射物行为或命中后的派生过程，仍需支付对应成本并遵守性能预算。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "需要更复杂的后续效果时，在叠阵关系页新建同一基板上的子阵，并明确选择命中或定时触发。子阵从触发位置释放；递归受材质公式、深度和总激活预算限制。"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crystal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elementalcircuits:mana_crystal"
+            ]
+          }
+        ]
+      }
+    },
+    "has_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "elementalcircuits:wizard_robe"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_crystal",
+      "has_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "elementalcircuits:wizard_robe"
+    ]
+  }
+}

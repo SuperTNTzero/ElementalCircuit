@@ -1,0 +1,953 @@
+{
+  "version": 1,
+  "checked": "2026-11-01",
+  "sources": [
+    {
+      "id": "nyrthos",
+      "author": "Mikodrak",
+      "title": "2D Spell Effects",
+      "page": "https://opengameart.org/content/2d-spell-effects",
+      "download": "https://opengameart.org/sites/default/files/FX.zip",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "8d0c09487ab0337867e90333e9c26e455760b31414bf503bedcde94b0cddbc30"
+    },
+    {
+      "id": "pure",
+      "author": "Cethiel",
+      "title": "Pure Projectile - Magic Effect",
+      "page": "https://opengameart.org/content/pure-projectile-magic-effect",
+      "download": "https://opengameart.org/sites/default/files/Pure%20Projectile%20Effect.zip",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "c096b57597a291561c55763ad5e101e9946fe7606f017be936de27475aa4974e"
+    },
+    {
+      "id": "water",
+      "author": "Cethiel",
+      "title": "Water Magic Effect",
+      "page": "https://opengameart.org/content/water-magic-effect",
+      "download": "https://opengameart.org/sites/default/files/Water_Effect.zip",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "b069fde2ce7bcbad97f7d66537192fd5399cb03fa6f42a6503bbb3d672659583"
+    },
+    {
+      "id": "fire",
+      "author": "Cethiel",
+      "title": "Fire Wrath - Magic Effect",
+      "page": "https://opengameart.org/content/fire-wrath-magic-effect",
+      "download": "https://opengameart.org/sites/default/files/Fire%20Wrath%20-%20Magic%20Effect.zip",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "d21ddd244ba1d0b5f2fa50d74d1427dd20695481b24a40dbdd517b8f96ceaf07"
+    },
+    {
+      "id": "cosmic",
+      "author": "Cethiel",
+      "title": "Cosmic Time - Magic Effect",
+      "page": "https://opengameart.org/content/cosmic-time-magic-effect",
+      "download": "https://opengameart.org/sites/default/files/Cosmic%20Time%20-%20Magic%20Effect.zip",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "fcab45aa464adb3cd23306004c126f804cce0bf51ff0dd194baf4ce1fd8938c5"
+    },
+    {
+      "id": "circles",
+      "author": "Luke.RUSTLTD",
+      "title": "4 summoning circles",
+      "page": "https://opengameart.org/content/4-summoning-circles",
+      "download": "https://opengameart.org/sites/default/files/summoning_circles.zip",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "d07138ac5bee5242a4672abf321e2dff84dd7ababbe06b96f97ec530361eb5e9"
+    }
+  ],
+  "atlas": "textures/effect/elemental_spells.png",
+  "atlasSha256": "2e685ea1fc2469ac35a98e3d777e0bce36bc98130a9ce37b3b409aba0bc8b416",
+  "tileSize": 128,
+  "columns": 8,
+  "recipes": [
+    {
+      "slot": 0,
+      "source": "code",
+      "operation": "soft radial glow mask"
+    },
+    {
+      "slot": 1,
+      "source": "nyrthos",
+      "file": "fx10_blackExplosion/smoke_black_1_19_10.png",
+      "sourceFrameSha256": "c0e878ccfc5a81ddc5e0af16dc8467538d21e16ddcd670a7c1c5ec9cbf64b488",
+      "operation": "mask",
+      "unionCrop": [
+        2,
+        1,
+        49,
+        46
+      ],
+      "hue": null
+    },
+    {
+      "slot": 2,
+      "source": "code",
+      "operation": "soft ribbon mask"
+    },
+    {
+      "slot": 3,
+      "source": "water",
+      "file": "04/Water__03.png",
+      "sourceFrameSha256": "22de0151857d5a7037d514f8795d286e37bc2f8b034d0a8c7188884181931504",
+      "operation": "mask",
+      "unionCrop": [
+        26,
+        30,
+        111,
+        117
+      ],
+      "hue": null
+    },
+    {
+      "slot": 4,
+      "source": "pure",
+      "file": "Files/Pure_21.png",
+      "sourceFrameSha256": "96f7aedbcb81f3a0db03d939b2a6e906721c866d6e3e1ac02c2b1392cff5941e",
+      "operation": "mask",
+      "unionCrop": [
+        59,
+        59,
+        140,
+        139
+      ],
+      "hue": null
+    },
+    {
+      "slot": 5,
+      "source": "circles",
+      "file": "circle4.png",
+      "sourceFrameSha256": "368729d4ee4ac17de8758cb41154e02b916671c92768e96313c86dcf4cf4e4b0",
+      "operation": "ink",
+      "unionCrop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "hue": null
+    },
+    {
+      "slot": 6,
+      "source": "circles",
+      "file": "circle5.png",
+      "sourceFrameSha256": "de83d9eb5a78cfde41c440c5e70ddf3fa63e311db1fdf2b2ca5b7542835d75ba",
+      "operation": "ink",
+      "unionCrop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "hue": null
+    },
+    {
+      "slot": 7,
+      "source": "circles",
+      "file": "circle6.png",
+      "sourceFrameSha256": "d2d829fd75e8efcc134a1432cb9ea0bf96289da669a068b476c094183c33c2bb",
+      "operation": "ink",
+      "unionCrop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "hue": null
+    },
+    {
+      "slot": 8,
+      "source": "fire",
+      "file": "SD/4/Fire-Wrath__18.png",
+      "sourceFrameSha256": "9b74bf6dce535941b4836eccc01663996e03c9ec74951841fdb034ebb672568b",
+      "operation": "mask",
+      "unionCrop": [
+        35,
+        40,
+        167,
+        168
+      ],
+      "hue": null
+    },
+    {
+      "slot": 9,
+      "source": "water",
+      "file": "01/Water__03.png",
+      "sourceFrameSha256": "68bc09c5b959ea04f17c9b44346f497f522fa3213325fccff4fbfa9530e9396d",
+      "operation": "mask",
+      "unionCrop": [
+        32,
+        47,
+        111,
+        112
+      ],
+      "hue": null
+    },
+    {
+      "slot": 10,
+      "source": "code",
+      "operation": "faceted stone mask"
+    },
+    {
+      "slot": 11,
+      "source": "water",
+      "file": "03/Water__03.png",
+      "sourceFrameSha256": "ffd9e448ec9633c26a531e092873e1ced1474c4a7e148e6e7850f64841388f36",
+      "operation": "mask",
+      "unionCrop": [
+        20,
+        20,
+        121,
+        105
+      ],
+      "hue": null
+    },
+    {
+      "slot": 12,
+      "source": "pure",
+      "file": "Files/Pure_21.png",
+      "sourceFrameSha256": "96f7aedbcb81f3a0db03d939b2a6e906721c866d6e3e1ac02c2b1392cff5941e",
+      "operation": "mask",
+      "unionCrop": [
+        59,
+        59,
+        140,
+        139
+      ],
+      "hue": null
+    },
+    {
+      "slot": 13,
+      "source": "water",
+      "file": "04/Water__04.png",
+      "sourceFrameSha256": "3b3dae4debf88c95bab1961e9a23ab29fd11574adbea3e1b9edf70a75b001cf6",
+      "operation": "mask",
+      "unionCrop": [
+        22,
+        26,
+        119,
+        125
+      ],
+      "hue": null
+    },
+    {
+      "slot": 14,
+      "source": "circles",
+      "file": "circle7.png",
+      "sourceFrameSha256": "d2b2fc4fa51e9f58e9b67f3f2b7acf727360b5942ff067b1e9f6bd0934ae6cf6",
+      "operation": "ink",
+      "unionCrop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "hue": null
+    },
+    {
+      "slot": 15,
+      "source": "cosmic",
+      "file": "5/Cosmic_24.png",
+      "sourceFrameSha256": "66335ef69121b4e305209d0eb6d5e24b6e60eb7627baa4d89126b4869ac77e05",
+      "operation": "mask",
+      "unionCrop": [
+        33,
+        36,
+        112,
+        118
+      ],
+      "hue": null
+    },
+    {
+      "slot": 16,
+      "source": "nyrthos",
+      "file": "fx5_fire_scissors/spell_twoflames_2.png",
+      "sourceFrameSha256": "89aecca9595dd8b54c0b069af8e566cde5a7a59480e526d03a83bc107d3c7ea1",
+      "operation": "color",
+      "unionCrop": [
+        11,
+        27,
+        122,
+        138
+      ],
+      "hue": [
+        "#c02b05",
+        "#fff7ad"
+      ]
+    },
+    {
+      "slot": 17,
+      "source": "nyrthos",
+      "file": "fx5_fire_scissors/spell_twoflames_3.png",
+      "sourceFrameSha256": "1ea8f20315769cc411b313ccb891953f5d3ea133de58a59d3d221a05aabe4c4c",
+      "operation": "color",
+      "unionCrop": [
+        11,
+        27,
+        122,
+        138
+      ],
+      "hue": [
+        "#c02b05",
+        "#fff7ad"
+      ]
+    },
+    {
+      "slot": 18,
+      "source": "nyrthos",
+      "file": "fx5_fire_scissors/spell_twoflames_4.png",
+      "sourceFrameSha256": "ae6b02d7ea0355a353b7913d97e9d762260a64dd6b1b120dc5e5cd3f037fc37f",
+      "operation": "color",
+      "unionCrop": [
+        11,
+        27,
+        122,
+        138
+      ],
+      "hue": [
+        "#c02b05",
+        "#fff7ad"
+      ]
+    },
+    {
+      "slot": 19,
+      "source": "nyrthos",
+      "file": "fx5_fire_scissors/spell_twoflames_5.png",
+      "sourceFrameSha256": "39a882dd2f216f648bce60a9c2326301f589191cf990f6c75a2fdbb355f1f1a7",
+      "operation": "color",
+      "unionCrop": [
+        11,
+        27,
+        122,
+        138
+      ],
+      "hue": [
+        "#c02b05",
+        "#fff7ad"
+      ]
+    },
+    {
+      "slot": 20,
+      "source": "nyrthos",
+      "file": "fx5_fire_scissors/spell_twoflames_6.png",
+      "sourceFrameSha256": "83dbd0da08c4fae8218c0f932db17cf9c552db33bcac3031e7e81b73ee4142d5",
+      "operation": "color",
+      "unionCrop": [
+        11,
+        27,
+        122,
+        138
+      ],
+      "hue": [
+        "#c02b05",
+        "#fff7ad"
+      ]
+    },
+    {
+      "slot": 21,
+      "source": "nyrthos",
+      "file": "fx5_fire_scissors/spell_twoflames_7.png",
+      "sourceFrameSha256": "571a145d42dec93520794b12d2cec17c9356b456cbea8f4320bc8f865e1c3183",
+      "operation": "color",
+      "unionCrop": [
+        11,
+        27,
+        122,
+        138
+      ],
+      "hue": [
+        "#c02b05",
+        "#fff7ad"
+      ]
+    },
+    {
+      "slot": 22,
+      "source": "nyrthos",
+      "file": "fx5_fire_scissors/spell_twoflames_8.png",
+      "sourceFrameSha256": "0545d02d14ec04d47aeafbeeed730bcc631230f3fc0cdd55593cf297083912ef",
+      "operation": "color",
+      "unionCrop": [
+        11,
+        27,
+        122,
+        138
+      ],
+      "hue": [
+        "#c02b05",
+        "#fff7ad"
+      ]
+    },
+    {
+      "slot": 23,
+      "source": "nyrthos",
+      "file": "fx5_fire_scissors/spell_twoflames_9.png",
+      "sourceFrameSha256": "a87854601741a496643c6a07f124ed06e558a95f600920e99941c4b935172667",
+      "operation": "color",
+      "unionCrop": [
+        11,
+        27,
+        122,
+        138
+      ],
+      "hue": [
+        "#c02b05",
+        "#fff7ad"
+      ]
+    },
+    {
+      "slot": 24,
+      "source": "water",
+      "file": "02/Water__01.png",
+      "sourceFrameSha256": "fb897af452eb52a2c63ca74f0db93e57b1f2fee6936a82db7eddeb4c6b50f283",
+      "operation": "color",
+      "unionCrop": [
+        34,
+        0,
+        117,
+        120
+      ],
+      "hue": null
+    },
+    {
+      "slot": 25,
+      "source": "water",
+      "file": "02/Water__02.png",
+      "sourceFrameSha256": "cd314a4d7d2373988cf1a63e422cada7a6cec698cf3610090d57b0bbc9f3608e",
+      "operation": "color",
+      "unionCrop": [
+        34,
+        0,
+        117,
+        120
+      ],
+      "hue": null
+    },
+    {
+      "slot": 26,
+      "source": "water",
+      "file": "02/Water__02.png",
+      "sourceFrameSha256": "cd314a4d7d2373988cf1a63e422cada7a6cec698cf3610090d57b0bbc9f3608e",
+      "operation": "color",
+      "unionCrop": [
+        34,
+        0,
+        117,
+        120
+      ],
+      "hue": null
+    },
+    {
+      "slot": 27,
+      "source": "water",
+      "file": "02/Water__03.png",
+      "sourceFrameSha256": "563715842e8b36fce61e76a9bad508a41bf90db2f5652999631cc0200b9bbb92",
+      "operation": "color",
+      "unionCrop": [
+        34,
+        0,
+        117,
+        120
+      ],
+      "hue": null
+    },
+    {
+      "slot": 28,
+      "source": "water",
+      "file": "02/Water__03.png",
+      "sourceFrameSha256": "563715842e8b36fce61e76a9bad508a41bf90db2f5652999631cc0200b9bbb92",
+      "operation": "color",
+      "unionCrop": [
+        34,
+        0,
+        117,
+        120
+      ],
+      "hue": null
+    },
+    {
+      "slot": 29,
+      "source": "water",
+      "file": "02/Water__04.png",
+      "sourceFrameSha256": "1bc96f35604059e10a56e5fafd5d7b2735299c10e9b9fc946ad98a3f3c18948f",
+      "operation": "color",
+      "unionCrop": [
+        34,
+        0,
+        117,
+        120
+      ],
+      "hue": null
+    },
+    {
+      "slot": 30,
+      "source": "water",
+      "file": "02/Water__04.png",
+      "sourceFrameSha256": "1bc96f35604059e10a56e5fafd5d7b2735299c10e9b9fc946ad98a3f3c18948f",
+      "operation": "color",
+      "unionCrop": [
+        34,
+        0,
+        117,
+        120
+      ],
+      "hue": null
+    },
+    {
+      "slot": 31,
+      "source": "water",
+      "file": "02/Water__05.png",
+      "sourceFrameSha256": "ea560f671e66e3f2b1f4f915cc17be350a9f2d894649af0a283c12188e837ea8",
+      "operation": "color",
+      "unionCrop": [
+        34,
+        0,
+        117,
+        120
+      ],
+      "hue": null
+    },
+    {
+      "slot": 32,
+      "source": "pure",
+      "file": "Files/Pure_11.png",
+      "sourceFrameSha256": "d140c20cada191f1e011f888f2385c8cdc2e37fad8bc436dc43bad02f3f404ad",
+      "operation": "color",
+      "unionCrop": [
+        4,
+        68,
+        195,
+        130
+      ],
+      "hue": [
+        "#220a44",
+        "#ead6ff"
+      ]
+    },
+    {
+      "slot": 33,
+      "source": "pure",
+      "file": "Files/Pure_12.png",
+      "sourceFrameSha256": "8e03565bb81d80da07a13c647d403a46eafbae3ca0fb24ea9013b7c8720ee147",
+      "operation": "color",
+      "unionCrop": [
+        4,
+        68,
+        195,
+        130
+      ],
+      "hue": [
+        "#220a44",
+        "#ead6ff"
+      ]
+    },
+    {
+      "slot": 34,
+      "source": "pure",
+      "file": "Files/Pure_12.png",
+      "sourceFrameSha256": "8e03565bb81d80da07a13c647d403a46eafbae3ca0fb24ea9013b7c8720ee147",
+      "operation": "color",
+      "unionCrop": [
+        4,
+        68,
+        195,
+        130
+      ],
+      "hue": [
+        "#220a44",
+        "#ead6ff"
+      ]
+    },
+    {
+      "slot": 35,
+      "source": "pure",
+      "file": "Files/Pure_13.png",
+      "sourceFrameSha256": "7ea519805ee82327182afbed6c7910a75a2a8182ff92230b20ae7814121e652c",
+      "operation": "color",
+      "unionCrop": [
+        4,
+        68,
+        195,
+        130
+      ],
+      "hue": [
+        "#220a44",
+        "#ead6ff"
+      ]
+    },
+    {
+      "slot": 36,
+      "source": "pure",
+      "file": "Files/Pure_13.png",
+      "sourceFrameSha256": "7ea519805ee82327182afbed6c7910a75a2a8182ff92230b20ae7814121e652c",
+      "operation": "color",
+      "unionCrop": [
+        4,
+        68,
+        195,
+        130
+      ],
+      "hue": [
+        "#220a44",
+        "#ead6ff"
+      ]
+    },
+    {
+      "slot": 37,
+      "source": "pure",
+      "file": "Files/Pure_14.png",
+      "sourceFrameSha256": "adf68222dfdb4f77a2be9f321a7a367f0cbad021f93529707d62d317b6f9cd01",
+      "operation": "color",
+      "unionCrop": [
+        4,
+        68,
+        195,
+        130
+      ],
+      "hue": [
+        "#220a44",
+        "#ead6ff"
+      ]
+    },
+    {
+      "slot": 38,
+      "source": "pure",
+      "file": "Files/Pure_14.png",
+      "sourceFrameSha256": "adf68222dfdb4f77a2be9f321a7a367f0cbad021f93529707d62d317b6f9cd01",
+      "operation": "color",
+      "unionCrop": [
+        4,
+        68,
+        195,
+        130
+      ],
+      "hue": [
+        "#220a44",
+        "#ead6ff"
+      ]
+    },
+    {
+      "slot": 39,
+      "source": "pure",
+      "file": "Files/Pure_15.png",
+      "sourceFrameSha256": "ca76f529731a0f99f17586f05b351d408ee55ee2325b886036b3beb33d4437ea",
+      "operation": "color",
+      "unionCrop": [
+        4,
+        68,
+        195,
+        130
+      ],
+      "hue": [
+        "#220a44",
+        "#ead6ff"
+      ]
+    },
+    {
+      "slot": 40,
+      "source": "cosmic",
+      "file": "5/Cosmic_21.png",
+      "sourceFrameSha256": "18b49689a30dbdebc974d6d45df5f192a9c347d10535d8cedc2ffdf812bb2918",
+      "operation": "color",
+      "unionCrop": [
+        33,
+        36,
+        115,
+        118
+      ],
+      "hue": null
+    },
+    {
+      "slot": 41,
+      "source": "cosmic",
+      "file": "5/Cosmic_22.png",
+      "sourceFrameSha256": "fa9fbff894f3a893ce41bbbc583cc8fc209d09859a7f4ce5f49f7972639dd8f5",
+      "operation": "color",
+      "unionCrop": [
+        33,
+        36,
+        115,
+        118
+      ],
+      "hue": null
+    },
+    {
+      "slot": 42,
+      "source": "cosmic",
+      "file": "5/Cosmic_22.png",
+      "sourceFrameSha256": "fa9fbff894f3a893ce41bbbc583cc8fc209d09859a7f4ce5f49f7972639dd8f5",
+      "operation": "color",
+      "unionCrop": [
+        33,
+        36,
+        115,
+        118
+      ],
+      "hue": null
+    },
+    {
+      "slot": 43,
+      "source": "cosmic",
+      "file": "5/Cosmic_23.png",
+      "sourceFrameSha256": "f970216a478bed4359e2e12747f07572b5c5e15eef093fe44a96910d8461fa25",
+      "operation": "color",
+      "unionCrop": [
+        33,
+        36,
+        115,
+        118
+      ],
+      "hue": null
+    },
+    {
+      "slot": 44,
+      "source": "cosmic",
+      "file": "5/Cosmic_23.png",
+      "sourceFrameSha256": "f970216a478bed4359e2e12747f07572b5c5e15eef093fe44a96910d8461fa25",
+      "operation": "color",
+      "unionCrop": [
+        33,
+        36,
+        115,
+        118
+      ],
+      "hue": null
+    },
+    {
+      "slot": 45,
+      "source": "cosmic",
+      "file": "5/Cosmic_24.png",
+      "sourceFrameSha256": "66335ef69121b4e305209d0eb6d5e24b6e60eb7627baa4d89126b4869ac77e05",
+      "operation": "color",
+      "unionCrop": [
+        33,
+        36,
+        115,
+        118
+      ],
+      "hue": null
+    },
+    {
+      "slot": 46,
+      "source": "cosmic",
+      "file": "5/Cosmic_24.png",
+      "sourceFrameSha256": "66335ef69121b4e305209d0eb6d5e24b6e60eb7627baa4d89126b4869ac77e05",
+      "operation": "color",
+      "unionCrop": [
+        33,
+        36,
+        115,
+        118
+      ],
+      "hue": null
+    },
+    {
+      "slot": 47,
+      "source": "cosmic",
+      "file": "5/Cosmic_25.png",
+      "sourceFrameSha256": "ba0d4eed14a14e5459bf1423f9e5fea5206fd14d543b537a452b65cfa60e8146",
+      "operation": "color",
+      "unionCrop": [
+        33,
+        36,
+        115,
+        118
+      ],
+      "hue": null
+    },
+    {
+      "slot": 48,
+      "source": "nyrthos",
+      "file": "fx8_lighteningBall/lighteningball_1_20_4.png",
+      "sourceFrameSha256": "8aa7dcdeaaa56faa67ab7ee6997d146cbcaa783e89c3130c9ad785c955f9c168",
+      "operation": "mask",
+      "unionCrop": [
+        7,
+        1,
+        56,
+        58
+      ],
+      "hue": null
+    },
+    {
+      "slot": 49,
+      "source": "nyrthos",
+      "file": "fx8_lighteningBall/lighteningball_1_20_7.png",
+      "sourceFrameSha256": "1c2e59d49ea35a1d3dca493be616ec97baded5533bdffbebbe4c182d346f6f0c",
+      "operation": "mask",
+      "unionCrop": [
+        7,
+        1,
+        56,
+        58
+      ],
+      "hue": null
+    },
+    {
+      "slot": 50,
+      "source": "nyrthos",
+      "file": "fx8_lighteningBall/lighteningball_1_20_10.png",
+      "sourceFrameSha256": "fa8b47779dca6b778319532dcbc341d48a0c9406cf491fe3b1cf8799bdbe5533",
+      "operation": "mask",
+      "unionCrop": [
+        7,
+        1,
+        56,
+        58
+      ],
+      "hue": null
+    },
+    {
+      "slot": 51,
+      "source": "nyrthos",
+      "file": "fx8_lighteningBall/lighteningball_1_20_13.png",
+      "sourceFrameSha256": "10d36c4bf59cfb63b1fac8051db1d180861d6e65a4effe8ef01063758da08243",
+      "operation": "mask",
+      "unionCrop": [
+        7,
+        1,
+        56,
+        58
+      ],
+      "hue": null
+    },
+    {
+      "slot": 52,
+      "source": "water",
+      "file": "03/Water__02.png",
+      "sourceFrameSha256": "cf4a8637439fedb07dd8ad30cc6d745a4ca3452ea9b9a8fb7e158df12622dded",
+      "operation": "mask",
+      "unionCrop": [
+        13,
+        20,
+        133,
+        107
+      ],
+      "hue": null
+    },
+    {
+      "slot": 53,
+      "source": "water",
+      "file": "03/Water__03.png",
+      "sourceFrameSha256": "ffd9e448ec9633c26a531e092873e1ced1474c4a7e148e6e7850f64841388f36",
+      "operation": "mask",
+      "unionCrop": [
+        13,
+        20,
+        133,
+        107
+      ],
+      "hue": null
+    },
+    {
+      "slot": 54,
+      "source": "water",
+      "file": "03/Water__04.png",
+      "sourceFrameSha256": "86aa24b2e346248a5595e7d1a018d1c705964c41129b7a149c32dbc4e9afccb4",
+      "operation": "mask",
+      "unionCrop": [
+        13,
+        20,
+        133,
+        107
+      ],
+      "hue": null
+    },
+    {
+      "slot": 55,
+      "source": "water",
+      "file": "03/Water__05.png",
+      "sourceFrameSha256": "46087bb03033bbf010f36f32f0191b3637f713a2cf9b5a7fd153b65a6ab66d87",
+      "operation": "mask",
+      "unionCrop": [
+        13,
+        20,
+        133,
+        107
+      ],
+      "hue": null
+    },
+    {
+      "slot": 56,
+      "source": "pure",
+      "file": "Files/Pure_21.png",
+      "sourceFrameSha256": "96f7aedbcb81f3a0db03d939b2a6e906721c866d6e3e1ac02c2b1392cff5941e",
+      "operation": "mask",
+      "unionCrop": [
+        30,
+        24,
+        168,
+        170
+      ],
+      "hue": null
+    },
+    {
+      "slot": 57,
+      "source": "pure",
+      "file": "Files/Pure_22.png",
+      "sourceFrameSha256": "89204f01711e754399f1041bfe03cad96eaa5b2e0b43f5a2c23309021edd8ac3",
+      "operation": "mask",
+      "unionCrop": [
+        30,
+        24,
+        168,
+        170
+      ],
+      "hue": null
+    },
+    {
+      "slot": 58,
+      "source": "pure",
+      "file": "Files/Pure_23.png",
+      "sourceFrameSha256": "11c89e0e5f4ebd73e180194e092f08a6fa93bddbe7c86cf9d256c3d0ff8b037b",
+      "operation": "mask",
+      "unionCrop": [
+        30,
+        24,
+        168,
+        170
+      ],
+      "hue": null
+    },
+    {
+      "slot": 59,
+      "source": "pure",
+      "file": "Files/Pure_24.png",
+      "sourceFrameSha256": "8471e667740f8bd261a0945275f240034faf8e8f13f6c7343738f20820af240b",
+      "operation": "mask",
+      "unionCrop": [
+        30,
+        24,
+        168,
+        170
+      ],
+      "hue": null
+    },
+    {
+      "slot": 60,
+      "source": "code",
+      "operation": "faceted stone mask"
+    },
+    {
+      "slot": 61,
+      "source": "code",
+      "operation": "faceted stone mask"
+    },
+    {
+      "slot": 62,
+      "source": "code",
+      "operation": "faceted stone mask"
+    },
+    {
+      "slot": 63,
+      "source": "code",
+      "operation": "faceted stone mask"
+    }
+  ]
+}

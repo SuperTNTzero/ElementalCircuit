@@ -1,0 +1,22 @@
+{
+  "name": "魔力果实与药水",
+  "category": "elementalcircuits:field",
+  "icon": "elementalcircuits:mana_fruit",
+  "sortnum": 15,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "魔力果实与药水",
+      "text": "魔力水晶与苹果合成魔力果实，食用可永久提高玩家魔力上限，默认成长上限1024。属性和服务器设置仍可调整实际容量。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "粗制药水加入魔力水晶，酿成魔力恢复药水。红石延长时间，萤石粉提高等级。药水只提高恢复公式中的固定值部分，百分比恢复项不受它放大。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:mana_fruit"
+    }
+  ]
+}

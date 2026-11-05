@@ -1,0 +1,23 @@
+{
+  "name": "Anchors and target selection",
+  "category": "elementalcircuits:runes",
+  "icon": "elementalcircuits:circuit_wand",
+  "sortnum": 30,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Anchors and target selection",
+      "text": "World Anchor freezes the reference point when a link forms. With Constraint it can suspend an object independently of aim. Link Distance sets the initial reference distance. Turning does not reset it; releasing and recreating the link does. Anchor alone exerts no force. Supply, visibility and range still apply."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Target Selection restricts new links: 0 any, 1 dropped items, 2 living entities, 3 blocks. Other entities cannot steal the link; blocks still obstruct the ray. Filtering grants no pickup, damage or inventory access."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Connection accepts a release signal. High releases outputs passing through that connection rune and prevents re-establishment. Low permits linking again. Other connections on the board remain active, and held high never repeatedly releases and reacquires."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "description": {
+    "translate": "enchantment.elementalcircuits.ward_fire"
+  },
+  "supported_items": "#elementalcircuits:enchantable/wards",
+  "weight": 5,
+  "max_level": 4,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 40,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "armor",
+    "mainhand",
+    "offhand"
+  ],
+  "effects": {},
+  "exclusive_set": "#elementalcircuits:exclusive_set/elemental_wards"
+}

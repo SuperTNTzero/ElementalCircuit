@@ -1,0 +1,18 @@
+{
+  "name": "Shapes and volume",
+  "category": "elementalcircuits:runes",
+  "icon": "elementalcircuits:crystal_plate",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Shapes and volume",
+      "text": "Alongside sphere, beam and shield are fan, wall, ring, column, cross and dome. Range sets reach; radius sets width or area. Neither is a free damage multiplier."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Shape cost is based on affected block count and configurable coefficients. Defaults are resolved before quoting. Large volumes, spell power and charging need more output mana. Start small."
+    }
+  ]
+}

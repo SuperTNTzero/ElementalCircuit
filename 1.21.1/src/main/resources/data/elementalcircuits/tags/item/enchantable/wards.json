@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:enchantable/armor",
+    "elementalcircuits:circuit_ring",
+    "elementalcircuits:wizard_hat",
+    "elementalcircuits:wizard_robe",
+    "elementalcircuits:wizard_leggings",
+    "elementalcircuits:wizard_boots",
+    "elementalcircuits:circuit_monocle"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Read the mana budget",
+  "category": "elementalcircuits:reference",
+  "icon": "elementalcircuits:circuit_guide",
+  "sortnum": 21,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Read the mana budget",
+      "text": "The standard state anchors default parameters and preparation time. Shape volume, spell power, base mana cost, equipment reduction and charge determine output cost; link, rune and storage losses are accounted separately."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Spell power increases damage and demand through the cost exponent. Base cost and reduction are separate player attributes. Cheaper output does not shrink fixed input; eligible surplus follows source-ledger refunds."
+    }
+  ]
+}

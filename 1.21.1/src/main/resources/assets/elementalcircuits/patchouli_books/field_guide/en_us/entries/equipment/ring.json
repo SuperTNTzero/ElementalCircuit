@@ -1,0 +1,22 @@
+{
+  "name": "Inscribe a ring",
+  "category": "elementalcircuits:equipment",
+  "icon": "elementalcircuits:circuit_ring",
+  "sortnum": 18,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Inscribe a ring",
+      "text": "Equip the ring in a Curios ring slot and inscribe it at the inscription table. H casts its circuit by default; controls are rebindable."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "The ring, robes and spellbook each retain their own circuit data. They share the player’s mana reserve, so account for total demand when casting from several items."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:circuit_ring"
+    }
+  ]
+}

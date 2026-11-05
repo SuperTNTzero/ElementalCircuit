@@ -1,0 +1,22 @@
+{
+  "name": "Draw at the table",
+  "category": "elementalcircuits:workshop",
+  "icon": "elementalcircuits:inscription_table",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Draw at the table",
+      "text": "Expand rune categories on the left, preview and place runes. Switch between selection and wiring. Drag a selected rune; edit its parameters below the button and press Enter."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Links join explicit runes, including distant ones. Crossed cells and board material affect loss; crossing wires never joins them. In wire mode only, hover a link and press Delete to remove that link."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:inscription_table"
+    }
+  ]
+}

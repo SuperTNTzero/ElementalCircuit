@@ -1,0 +1,22 @@
+{
+  "name": "用书切换法阵",
+  "category": "elementalcircuits:equipment",
+  "icon": "elementalcircuits:spellbook",
+  "sortnum": 16,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "用书切换法阵",
+      "text": "法术书本身保存法阵，最多收录四张基板。副手持书时，书中法阵加入主手法杖的轮盘；杖阵仍可选用。轮盘用“杖”和“书”区分来源，法杖提供部件属性并承担磨损。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "默认Z、X依次切换杖阵和书阵，按住R打开轮盘，B打开法术书。收起或更换书会回到本杖，重新持有原书可恢复选择。各槽位保留独立现场，切换不会复制或补充魔力。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:spellbook"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Inspect and locate",
+  "category": "elementalcircuits:reference",
+  "icon": "elementalcircuits:probe_wand",
+  "sortnum": 19,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Inspect and locate",
+      "text": "Use the probe wand on a fixed circuit or node to inspect it. Use it away from a target to survey natural nodes nearby, with a default horizontal radius of 500 blocks, configurable by the server."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Surveys help choose a building site. They do not refill mana or count artificial nodes as natural ones. Large searches cost more work; server owners can tune radius and budgets."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:probe_wand"
+    }
+  ]
+}

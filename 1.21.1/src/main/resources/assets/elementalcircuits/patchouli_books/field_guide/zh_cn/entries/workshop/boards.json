@@ -1,0 +1,32 @@
+{
+  "name": "基板与固定法阵",
+  "category": "elementalcircuits:workshop",
+  "icon": "elementalcircuits:brass_plate",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "基板与固定法阵",
+      "text": "基板管理选择木、黄铜或水晶。材质决定格盘、损耗和派生深度。槽位对应不同基板，同一基板上的主阵和叠阵共用材质与尺寸。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "手持基板与法阵工作台互动，绘制并保存后才得到固定法阵。放置后它在世界中独立运行。天然节点和魔力场用于持续供能；不要把未刻印基板当成成品。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "木、黄铜、水晶基板默认承载128、512、1280点魔力，达到四倍承载量会熔毁。存储和在途魔力也计入，超载会加速磨损。损坏后回法阵工作台的基板页，用一张同材质基板修复，原设计保留。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:wood_plate",
+      "recipe2": "elementalcircuits:brass_plate"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:crystal_plate"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "elementalcircuits:ec_damage",
+    "elementalcircuits:ec_damage/pure",
+    "elementalcircuits:ec_damage/earth",
+    "elementalcircuits:ec_damage/water",
+    "elementalcircuits:ec_damage/fire",
+    "elementalcircuits:ec_damage/wind",
+    "elementalcircuits:ec_damage/lightning",
+    "elementalcircuits:ec_damage/light",
+    "elementalcircuits:ec_damage/shadow",
+    "elementalcircuits:ec_damage/arcane",
+    "elementalcircuits:ec_damage/frost",
+    "elementalcircuits:ec_damage/mixed"
+  ]
+}

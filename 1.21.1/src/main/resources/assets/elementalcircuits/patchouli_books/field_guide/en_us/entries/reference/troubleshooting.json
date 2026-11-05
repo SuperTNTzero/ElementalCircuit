@@ -1,0 +1,18 @@
+{
+  "name": "When a circuit will not cast",
+  "category": "elementalcircuits:reference",
+  "icon": "elementalcircuits:probe_wand",
+  "sortnum": 22,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "When a circuit will not cast",
+      "text": "Check in order: affordable input, a path to output, both AND inputs, switch state and signal direction, reachable storage threshold, and enough mana for the chosen volume."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Then check wand wear, cooldown, preparation, explicit child triggers and board fit. With a parameter editor open, Enter saves that parameter first; press Enter again to save the circuit."
+    }
+  ]
+}

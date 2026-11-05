@@ -1,0 +1,18 @@
+{
+  "name": "Storage and charging",
+  "category": "elementalcircuits:runes",
+  "icon": "elementalcircuits:mana_node",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Storage and charging",
+      "text": "Ordinary runes do not retain every passing packet. A storage rune has capacity, release amount and release threshold. Repeated or continuous input can fill it before releasing a batch."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Signals can also control release. Capacity must accommodate the threshold; released batches must cover output cost. Stored mana decays naturally, so storage is a buffer rather than a lossless vault."
+    }
+  ]
+}

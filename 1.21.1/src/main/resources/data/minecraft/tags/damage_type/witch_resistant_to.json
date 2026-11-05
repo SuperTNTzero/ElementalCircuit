@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "elementalcircuits:spell"
+    "#elementalcircuits:ec_damage"
   ]
 }

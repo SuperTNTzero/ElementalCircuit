@@ -1,0 +1,255 @@
+[
+  {
+    "title": "Start here",
+    "pages": [
+      "Prepare a wand, an inscription table and a wooden board. The wand workbench changes parts; the inscription table draws circuits.",
+      "Use a wand on the inscription table. Connect input, conversion, shape and output, save, then step away to test your spell.",
+      "Crafting materials: book, blue dye, gold nugget. Install Patchouli to view the full crafting grid in this entry."
+    ]
+  },
+  {
+    "title": "Your first cast",
+    "pages": [
+      "Build input → fire conversion → sphere → output. Separate parameter runes set amount, range, radius and precision. Test a small area first.",
+      "Tap right-click to cast; hold to charge and release to cast. Defaults: charging starts at tick 6, full charge at tick 40, up to 2× strength and output cost. Holding alone spends no input.",
+      "Crafting materials: Quartz Wand Head, Oak Wand Body, Wood Wand Tail. Install Patchouli to view the full crafting grid in this entry."
+    ]
+  },
+  {
+    "title": "Input and reserve",
+    "pages": [
+      "The input rune sets a fixed amount per injection. A weaker wand does not silently shrink it. Check your mana reserve; server numeric limits still apply.",
+      "Parameters are resolved before output cost. Insufficient mana fails the cast. Refunds follow each element’s configured ratio and source ledger; transmission, decay and failure losses stay spent."
+    ]
+  },
+  {
+    "title": "Draw at the table",
+    "pages": [
+      "Expand rune categories on the left, preview and place runes. Switch between selection and wiring. Drag a selected rune; edit its parameters below the button and press Enter.",
+      "Links join explicit runes, including distant ones. Crossed cells and board material affect loss; crossing wires never joins them. In wire mode only, hover a link and press Delete to remove that link.",
+      "Crafting materials: amethyst shard, Wood Circuit Plate, copper ingot. Install Patchouli to view the full crafting grid in this entry."
+    ]
+  },
+  {
+    "title": "Boards and fixed circuits",
+    "pages": [
+      "Board management offers wood, brass and crystal. Material controls grid, loss and recursion depth. Slots hold separate boards; layers on one board share material and size.",
+      "Use a blank board on the inscription table, draw and save to obtain a fixed circuit. Place it for independent world operation and arrange field supply nearby. Blank boards are not finished circuits.",
+      "Wood, brass and crystal safely hold 128, 512 and 1280 mana. Four times that load causes meltdown. Stored and travelling mana count; overload accelerates wear. Repair at the inscription table with a matching blank board. Circuit designs remain.",
+      "Crafting materials: planks. Install Patchouli to view the full crafting grid in this entry.",
+      "Crafting materials: copper ingot, gold nugget, redstone. Install Patchouli to view the full crafting grid in this entry.",
+      "Crafting materials: amethyst shard, glass. Install Patchouli to view the full crafting grid in this entry."
+    ]
+  },
+  {
+    "title": "Assemble a wand",
+    "pages": [
+      "Use your wand on the wand workbench. The head sets power, speed and wear thresholds; head and shaft set durability; the tail sets melee damage. Replacement parts must be in your inventory.",
+      "Parts determine cooldown; circuit complexity also adds preparation time. Branches, long links and feedback increase complexity. Exceeding head thresholds adds wear. Creative casting does not consume durability.",
+      "Melee wears only the staff. Casting wears the active circuit board plus a small fractional amount of staff durability. An exhausted board stops supply without destroying the wand or preventing melee. Book casts wear their book board, not a board inside the wand.",
+      "Crafting materials: quartz, copper ingot, crafting table, spruce planks. Install Patchouli to view the full crafting grid in this entry.",
+      "Crafting materials: copper ingot, stick. Install Patchouli to view the full crafting grid in this entry.",
+      "Crafting materials: iron ingot, stick. Install Patchouli to view the full crafting grid in this entry.",
+      "Crafting materials: iron ingot, stick. Install Patchouli to view the full crafting grid in this entry."
+    ]
+  },
+  {
+    "title": "Blueprint notebook",
+    "pages": [
+      "Blueprints save designs, not live mana. Use Share at the top of the editor to export and copy a text code; paste a complete code to import. Keep a copy before experimenting.",
+      "The notebook stores named designs with circuit previews. Open it to add, select, rename or delete pages. Apply a blueprint at the table; it must fit the carrier’s material and dimensions.",
+      "Crafting materials: paper, book, Wood Circuit Plate. Install Patchouli to view the full crafting grid in this entry."
+    ]
+  },
+  {
+    "title": "Element conversion",
+    "pages": [
+      "Conversion and shape are separate runes. Fire and water can create fire and water; light creates temporary illumination, darkness extinguishes lights, and positive arcane can pass through blocks.",
+      "Inverse arcane cancels other elements, including their inverses, one-to-one in arrival order within one contact. Pure mana is unaffected; excess negation deals no arcane damage. Lightning beams chain; fire fans spray flame. Valid targets and permissions still apply."
+    ]
+  },
+  {
+    "title": "Shapes and volume",
+    "pages": [
+      "Alongside sphere, beam and shield are fan, wall, ring, column, cross and dome. Range sets reach; radius sets width or area. Neither is a free damage multiplier.",
+      "Shape cost is based on affected block count and configurable coefficients. Defaults are resolved before quoting. Large volumes, spell power and charging need more output mana. Start small."
+    ]
+  },
+  {
+    "title": "Control and timing",
+    "pages": [
+      "AND, OR, NOT, switches and sensors process mana or signals through explicit interfaces. Counters count triggers, clocks provide timing, and state runes retain control state.",
+      "Signal state is not stored mana. Use signals to gate branches, change elements or alternate spells. Check ports and signal direction separately from mana paths. Test complex control in stages."
+    ]
+  },
+  {
+    "title": "Storage and charging",
+    "pages": [
+      "Ordinary runes do not retain every passing packet. A storage rune has capacity, release amount and release threshold. Repeated or continuous input can fill it before releasing a batch.",
+      "Signals can also control release. Capacity must accommodate the threshold; released batches must cover output cost. Stored mana decays naturally, so storage is a buffer rather than a lossless vault."
+    ]
+  },
+  {
+    "title": "Impact and layers",
+    "pages": [
+      "Fragmentation, chaining, bursts, bounces, homing and added effects have their own categories. They change projectile behavior or impact results and still pay costs within performance budgets.",
+      "For another circuit after impact, create a child layer on the same board and explicitly choose hit or timer triggering. Children cast at the trigger location. Material depth and total activation budgets bound recursion."
+    ]
+  },
+  {
+    "title": "Find mana crystals",
+    "pages": [
+      "Mana crystal ore occurs in stone and deepslate underground. Mine it with a suitable pickaxe. Crystals are used for nodes, equipment, fruit, brewing and crystal blocks.",
+      "Natural nodes are not ore: they hold and replenish mana. Read them with the probe wand and arrange extraction and fixed circuits around them for sustained supply."
+    ]
+  },
+  {
+    "title": "Nodes and absorption",
+    "pages": [
+      "Natural nodes recover over time; artificial nodes need crystal refills. Nodes emit into the local mana field. Absorption runes draw from their location rather than creating free energy.",
+      "More intake runes can raise throughput, but reserves, replenishment, field concentration and emission limits remain. Heavy extraction lowers local concentration; extra intakes do not mean unlimited supply.",
+      "Crafting materials: copper ingot, amethyst shard, stone. Install Patchouli to view the full crafting grid in this entry."
+    ]
+  },
+  {
+    "title": "Crystal foundations",
+    "pages": [
+      "Craft nine crystals into one block, or unpack it back into nine. Place it directly below a node or fixed circuit. Gaps, side placement and deeper stacks add no further bonus.",
+      "Defaults: node emission +50%, natural recovery +50%; fixed-circuit power, cost and preparation speed coefficients +25%. The block creates no free mana and does not grant artificial nodes natural recovery.",
+      "Crafting materials: Mana Crystal. Install Patchouli to view the full crafting grid in this entry.",
+      "Crafting materials: Mana Crystal Block. Install Patchouli to view the full crafting grid in this entry."
+    ]
+  },
+  {
+    "title": "Fruit and potions",
+    "pages": [
+      "Craft a mana fruit from an apple and mana crystals. Eating it permanently raises reserve capacity, up to the default growth cap of 1024. Attributes and server settings can adjust capacity.",
+      "Brew a mana crystal into an awkward potion for Mana Recovery. Redstone extends duration; glowstone improves level. The effect boosts only the fixed part of regeneration, not its percentage term.",
+      "Crafting materials: apple, Mana Crystal, Mana Crystal, Mana Crystal, Mana Crystal. Install Patchouli to view the full crafting grid in this entry."
+    ]
+  },
+  {
+    "title": "Carry a spellbook",
+    "pages": [
+      "A spellbook stores up to four boards. In the offhand, it adds its circuits to the main-hand wand’s wheel without hiding wand circuits. Entries identify their source. The wand provides stats and takes wear.",
+      "Z/X cycle across both sources; hold R for the wheel; B opens the book. Removing or swapping the book falls back to the wand. Holding the original book again restores its choice. Each slot retains its own state; switching never copies or refills mana.",
+      "Crafting materials: amethyst shard, book, Wood Circuit Plate. Install Patchouli to view the full crafting grid in this entry."
+    ]
+  },
+  {
+    "title": "Robes and casting",
+    "pages": [
+      "Leather and mana crystals make the hat, robe, leggings and boots. They add spell power, capacity and fixed regeneration, and reduce mana cost by 4%, 8%, 6% and 4%: 22% together.",
+      "Inscribe equipment at the inscription table. V opens the equipment wheel; J casts the selected equipment circuit. An on-hit casting mode is available and still respects mana and runtime limits.",
+      "Crafting materials: leather, Mana Crystal. Install Patchouli to view the full crafting grid in this entry.",
+      "Crafting materials: leather, Mana Crystal. Install Patchouli to view the full crafting grid in this entry.",
+      "Crafting materials: leather, Mana Crystal. Install Patchouli to view the full crafting grid in this entry.",
+      "Crafting materials: leather, Mana Crystal. Install Patchouli to view the full crafting grid in this entry."
+    ]
+  },
+  {
+    "title": "Inscribe a ring",
+    "pages": [
+      "Equip the ring in a Curios ring slot and inscribe it at the inscription table. H casts its circuit by default; controls are rebindable.",
+      "The ring, robes and spellbook each retain their own circuit data. They share the player’s mana reserve, so account for total demand when casting from several items.",
+      "Crafting materials: leather, Mana Crystal. Install Patchouli to view the full crafting grid in this entry."
+    ]
+  },
+  {
+    "title": "Inspect and locate",
+    "pages": [
+      "Use the probe wand on a fixed circuit or node to inspect it. Use it away from a target to survey natural nodes nearby, with a default horizontal radius of 500 blocks, configurable by the server.",
+      "Surveys help choose a building site. They do not refill mana or count artificial nodes as natural ones. Large searches cost more work; server owners can tune radius and budgets.",
+      "Crafting materials: Mana Crystal, copper ingot, amethyst shard, stick. Install Patchouli to view the full crafting grid in this entry."
+    ]
+  },
+  {
+    "title": "Reaction order",
+    "pages": [
+      "Mixed elements react in their actual circuit arrival order. For one hit, reactions resolve first; only remaining elements apply damage and effects. Opposed equal amounts can cancel before either deals damage.",
+      "A later projectile does not undo damage already dealt. Vanilla hurt immunity applies, so rapid contacts may not all damage a target. Check order, timing and remaining quantities together."
+    ]
+  },
+  {
+    "title": "Read the mana budget",
+    "pages": [
+      "The standard state anchors default parameters and preparation time. Shape volume, spell power, base mana cost, equipment reduction and charge determine output cost; link, rune and storage losses are accounted separately.",
+      "Spell power increases damage and demand through the cost exponent. Base cost and reduction are separate player attributes. Cheaper output does not shrink fixed input; eligible surplus follows source-ledger refunds."
+    ]
+  },
+  {
+    "title": "When a circuit will not cast",
+    "pages": [
+      "Check in order: affordable input, a path to output, both AND inputs, switch state and signal direction, reachable storage threshold, and enough mana for the chosen volume.",
+      "Then check wand wear, cooldown, preparation, explicit child triggers and board fit. With a parameter editor open, Enter saves that parameter first; press Enter again to save the circuit."
+    ]
+  },
+  {
+    "title": "Find settings",
+    "pages": [
+      "These are default controls and values; modpacks may change them. Check Controls for current bindings. Server configuration covers charge, mana fields, recursion depth and performance budgets.",
+      "Authorized admins can use /ec management commands and /attribute for power, base mana cost and reduction. Reading this guide never executes commands or changes circuit state."
+    ]
+  },
+  {
+    "title": "Magic enchantments",
+    "pages": [
+      "Mana Capacity, Mana Recovery and Spell Power reach III: each level adds 32 capacity, 0.5 fixed mana per second and 0.1 spell power respectively. Power affects both damage and mana cost. Wands, spellbooks, robes and rings apply these while held or worn; capacity never refills mana.",
+      "Swift Casting III adds 10% speed per level to the actual casting wand, armor piece or ring, shortening release cooldown and complexity delay. Board Preservation III reduces board wear by 15% per level on its carrier. Overload and meltdown thresholds stay the same.",
+      "Earth, Water, Fire, Wind, Lightning, Light, Shadow, Arcane and Frost Wards reach IV. Worn armor and rings give 4% protection per level against that magical element, capped at 80%. Wards are mutually exclusive per item. Mixed hits use damage shares; reactions and vanilla hurt immunity still apply.",
+      "Mana Mending II is a treasure enchantment incompatible with XP Mending. Each level repairs up to 1 durability per second at 4 mana per point, on held or worn items only. Item wear is repaired before circuit boards, including fractional board wear. Melted boards need replacement at a table. Repair never starts a circuit.",
+      "Ordinary magic enchantments join the vanilla table, anvil, trading and random enchanted-book pools. Mana Mending uses treasure channels. All 15 maximum-level books are in the creative tab; actual availability follows vanilla loot and trade rules."
+    ]
+  },
+  {
+    "title": "Mana Slimes and Aerial Nodes",
+    "pages": [
+      "Aerial Mana Nodes hover 8–16 blocks above the surface as blue-white orbs. Defaults: 1024 reserve, 2 mana regenerated per second and 1 emitted per field step. Ground nodes hold 4096, regenerate 1 per second and emit 0.5 per step. Both feed the mana field and are counted by the probe survey.",
+      "Mana Slimes may spawn within 24 blocks of natural nodes. A normal slime converts after 30 continuous seconds in a field cell holding at least 24 mana. Small Mana Slimes drop Mana Gel. Eat it to restore 16 mana, or brew it into an Awkward Potion for a Potion of Mana Restoration: 32 mana instantly, or 64 with glowstone. Existing Mana Recovery potions still accelerate regeneration instead.",
+      "Eat gel directly or use it for brewing."
+    ]
+  },
+  {
+    "title": "Materials and redstone",
+    "pages": [
+      "Inverse earth dismantles ordinary blocks at a default effective-mana cost of 1 plus hardness. Normal unenchanted diamond-pickaxe loot stays at the target. Bedrock, fluids and stateful containers or machines are excluded.",
+      "Combine normal earth with Container Read to place real blocks from a container immediately adjacent to the fixed circuit. Add Container Output to a dismantling path to collect its loot; overflow remains on the ground. Initial placement supports ordinary single-cell solid blocks. Wands do not implicitly read player inventory.",
+      "Use the existing rune parameter: 0 down, 1 up, 2 north, 3 south, 4 west, 5 east, in world coordinates. Conflicting input sides cannot merge. Missing stock, permissions or anchors never create items.",
+      "Redstone Sensor outputs a circuit signal at a threshold of 1–15, default 1. Wire it to a signal-controlled switch, or combine counters, inversion and latches. Manually start the continuous circuit first. Low power is a valid low signal; redstone never restarts stopped circuits."
+    ]
+  },
+  {
+    "title": "Connections and operations",
+    "pages": [
+      "Connection is a casting method alongside Directed and Area. It only binds the aimed entity or block; it grants no implicit grabbing, damage or inventory access. Do not add shape runes. Each output retains its own target across deliveries.",
+      "Force pushes along the casting direction; inverse mana pulls. Constraint uses finite spring force to hold an entity relative to the source. Aim to move the reference point, or set its distance separately. Gravity and collisions remain active; entities cannot be carried through walls.",
+      "Interaction requires a signal wire. Each low-to-high transition operates the linked lever, button or bell once. A held high signal never toggles repeatedly. Inventory operations still require Container Read and Container Output.",
+      "A continuous circuit containing Connection keeps supplying after click or charged release; right-click again to stop it. Other circuits retain single-shot gestures. Each link pays distance and load maintenance, then actual force work or interaction. Its remaining allowance cannot be refunded or used as circuit mana. Stopping, loss of supply, invalid targets, obstruction or excess range releases it. Server contact settings control costs and budgets."
+    ]
+  },
+  {
+    "title": "Angles and direction",
+    "pages": [
+      "Angle sets a fan spell's full aperture from 1 to 180 degrees, default 70. Fractional degrees are supported. The same aperture drives authoritative membership, block-footprint cost and visual effects. It changes neither radius nor range. Initially it applies only to Fan.",
+      "Yaw changes the horizontal casting direction by -180 to 180 degrees; positive turns right. Pitch ranges from -90 to 90 degrees; positive aims up. Yaw is applied before pitch. Precision remains a separate scatter parameter.",
+      "Link Distance sets the constraint reference point 0.5 to 256 blocks from the source, bounded by range and server policy. Without it, the original locking distance is retained. Force and Constraint strengths also accept decimals."
+    ]
+  },
+  {
+    "title": "Routing, delay and observation",
+    "pages": [
+      "Element Filter sends the chosen element and polarity to outlet 1 and the rest to outlet 2. Lines sharing an outlet divide its mana evenly. Provenance and arrival order survive. An unconnected nonempty outlet blocks instead of destroying its mana. Signal Router selects outlet 1 for low or invalid input, outlet 2 for high.",
+      "Select a rune and click its named outlet to start wiring, or choose an outlet number on the toolbar. Storage has three separate signal outlets: 1 full, 2 at threshold with release enabled, 3 empty. Each reflects the stored amount at sampling time.",
+      "Signal Delay postpones each transition by a fixed number of logical ticks, preserving order and pulse width. One tick is 0.05 seconds. The default is 10, with a format ceiling of 65536; servers can lower admission budgets. Stop freezes the queue, restart resumes it, reset clears it. Saving retains pending transitions.",
+      "Probe emits a read-only signal: 0 aimed block exists, 1 aimed inventory full, 2 this circuit has a link, 3 it has no link. Full means every slot is occupied to both slot and item stack limits. Default range is 16, configurable with probe.range. No chunk loading or inventory operation occurs. Link state is observed at the preceding world boundary."
+    ]
+  },
+  {
+    "title": "Anchors and target selection",
+    "pages": [
+      "World Anchor freezes the reference point when a link forms. With Constraint it can suspend an object independently of aim. Link Distance sets the initial reference distance. Turning does not reset it; releasing and recreating the link does. Anchor alone exerts no force. Supply, visibility and range still apply.",
+      "Target Selection restricts new links: 0 any, 1 dropped items, 2 living entities, 3 blocks. Other entities cannot steal the link; blocks still obstruct the ray. Filtering grants no pickup, damage or inventory access.",
+      "Connection accepts a release signal. High releases outputs passing through that connection rune and prevents re-establishment. Low permits linking again. Other connections on the board remain active, and held high never repeatedly releases and reacquires."
+    ]
+  }
+]

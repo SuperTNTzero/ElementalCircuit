@@ -1,0 +1,22 @@
+{
+  "name": "Blueprint notebook",
+  "category": "elementalcircuits:workshop",
+  "icon": "elementalcircuits:blueprint_notebook",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Blueprint notebook",
+      "text": "Blueprints save designs, not live mana. Use Share at the top of the editor to export and copy a text code; paste a complete code to import. Keep a copy before experimenting."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "The notebook stores named designs with circuit previews. Open it to add, select, rename or delete pages. Apply a blueprint at the table; it must fit the carrier’s material and dimensions."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:blueprint_notebook"
+    }
+  ]
+}

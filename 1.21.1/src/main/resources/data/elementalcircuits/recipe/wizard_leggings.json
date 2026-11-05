@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "LLL",
+    "LCL",
+    "L L"
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "C": {
+      "item": "elementalcircuits:mana_crystal"
+    }
+  },
+  "result": {
+    "id": "elementalcircuits:wizard_leggings",
+    "count": 1
+  }
+}

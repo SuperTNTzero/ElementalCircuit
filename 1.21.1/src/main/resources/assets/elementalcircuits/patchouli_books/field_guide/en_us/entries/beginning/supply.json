@@ -1,0 +1,18 @@
+{
+  "name": "Input and reserve",
+  "category": "elementalcircuits:beginning",
+  "icon": "elementalcircuits:mana_crystal",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Input and reserve",
+      "text": "The input rune sets a fixed amount per injection. A weaker wand does not silently shrink it. Check your mana reserve; server numeric limits still apply."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Parameters are resolved before output cost. Insufficient mana fails the cast. Refunds follow each element’s configured ratio and source ledger; transmission, decay and failure losses stay spent."
+    }
+  ]
+}

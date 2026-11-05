@@ -1,0 +1,18 @@
+{
+  "name": "法阵没有施法时",
+  "category": "elementalcircuits:reference",
+  "icon": "elementalcircuits:probe_wand",
+  "sortnum": 22,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "法阵没有施法时",
+      "text": "依次检查：输入能否支付；通路是否连到输出；与门两侧是否齐备；开关和信号方向是否正确；存储阈值是否能达到；输出范围是否超过现有魔力。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "再检查法杖是否损坏、是否仍在冷却或准备、子阵触发条件是否明确、蓝图是否适合当前基板。参数框展开时回车只保存参数，再按回车才保存整阵。"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Your first cast",
+  "category": "elementalcircuits:beginning",
+  "icon": "elementalcircuits:circuit_wand",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Your first cast",
+      "text": "Build input → fire conversion → sphere → output. Separate parameter runes set amount, range, radius and precision. Test a small area first."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Tap right-click to cast; hold to charge and release to cast. Defaults: charging starts at tick 6, full charge at tick 40, up to 2× strength and output cost. Holding alone spends no input."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:circuit_wand"
+    }
+  ]
+}

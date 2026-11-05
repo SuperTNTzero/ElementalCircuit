@@ -1,0 +1,18 @@
+{
+  "name": "Control and timing",
+  "category": "elementalcircuits:runes",
+  "icon": "elementalcircuits:wood_plate",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Control and timing",
+      "text": "AND, OR, NOT, switches and sensors process mana or signals through explicit interfaces. Counters count triggers, clocks provide timing, and state runes retain control state."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Signal state is not stored mana. Use signals to gate branches, change elements or alternate spells. Check ports and signal direction separately from mana paths. Test complex control in stages."
+    }
+  ]
+}

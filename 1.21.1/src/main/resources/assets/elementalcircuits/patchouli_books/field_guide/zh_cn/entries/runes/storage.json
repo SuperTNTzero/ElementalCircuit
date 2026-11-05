@@ -1,0 +1,18 @@
+{
+  "name": "存储与蓄能",
+  "category": "elementalcircuits:runes",
+  "icon": "elementalcircuits:mana_node",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "存储与蓄能",
+      "text": "普通符文不会把所有经过的魔力无限留住。存储符文有容量、释放量、释放阈值三个设置，可多次或持续注入，达到阈值后送出指定量。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "也可以用信号控制释放。检查容量是否容得下阈值、释放量是否能支付输出。缓存魔力自然衰减；它适合缓冲和蓄能，不能无损永久保存。"
+    }
+  ]
+}

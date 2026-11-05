@@ -1,0 +1,23 @@
+{
+  "name": "Crystal foundations",
+  "category": "elementalcircuits:field",
+  "icon": "elementalcircuits:mana_crystal_block",
+  "sortnum": 14,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Crystal foundations",
+      "text": "Craft nine crystals into one block, or unpack it back into nine. Place it directly below a node or fixed circuit. Gaps, side placement and deeper stacks add no further bonus."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Defaults: node emission +50%, natural recovery +50%; fixed-circuit power, cost and preparation speed coefficients +25%. The block creates no free mana and does not grant artificial nodes natural recovery."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:mana_crystal_block",
+      "recipe2": "elementalcircuits:mana_crystal_from_block"
+    }
+  ]
+}

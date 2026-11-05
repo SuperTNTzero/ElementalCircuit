@@ -1,0 +1,18 @@
+{
+  "name": "理解魔力成本",
+  "category": "elementalcircuits:reference",
+  "icon": "elementalcircuits:circuit_guide",
+  "sortnum": 21,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "理解魔力成本",
+      "text": "标准状态提供默认参数和准备时间的基准。实际成本由形状体积、法强、玩家基础魔耗、装备减免和蓄力共同决定；连线、符文及缓存损耗另行记账。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "法强提高伤害，也按成本指数提高需求。基础魔耗与减免在玩家属性中独立设置。降低输出成本不等于降低固定输入；多出的可返还部分按来源账本处理。"
+    }
+  ]
+}

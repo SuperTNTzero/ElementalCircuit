@@ -1,0 +1,18 @@
+{
+  "name": "Reaction order",
+  "category": "elementalcircuits:reference",
+  "icon": "elementalcircuits:mana_crystal",
+  "sortnum": 20,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Reaction order",
+      "text": "Mixed elements react in their actual circuit arrival order. For one hit, reactions resolve first; only remaining elements apply damage and effects. Opposed equal amounts can cancel before either deals damage."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "A later projectile does not undo damage already dealt. Vanilla hurt immunity applies, so rapid contacts may not all damage a target. Check order, timing and remaining quantities together."
+    }
+  ]
+}

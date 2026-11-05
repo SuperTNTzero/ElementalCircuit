@@ -1,0 +1,21 @@
+{
+  "name": "item.elementalcircuits.circuit_guide",
+  "landing_text": "guide.elementalcircuits.landing",
+  "subtitle": "guide.elementalcircuits.subtitle",
+  "version": 0,
+  "use_resource_pack": true,
+  "book_texture": "patchouli:textures/gui/book_blue.png",
+  "model": "elementalcircuits:circuit_guide",
+  "custom_book_item": "elementalcircuits:circuit_guide",
+  "dont_generate_book": true,
+  "show_progress": false,
+  "use_blocky_font": true,
+  "i18n": true,
+  "text_color": "332d28",
+  "header_color": "243b50",
+  "nameplate_color": "d2ac64",
+  "link_color": "245f80",
+  "link_hover_color": "a07832",
+  "pause_game": false,
+  "show_toasts": false
+}

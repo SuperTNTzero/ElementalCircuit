@@ -1,0 +1,18 @@
+{
+  "name": "输入与魔力槽",
+  "category": "elementalcircuits:beginning",
+  "icon": "elementalcircuits:mana_crystal",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "输入与魔力槽",
+      "text": "输入符文设置每次注入量。它是固定输入，不会因法杖较弱而偷偷缩小。施法前检查玩家魔力是否足够；大量输入也受服务器数值范围约束。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "参数先确定，输出再核算成本。魔力不足会施法失败，按元素返还系数和来源账本退回可返还部分。连线损耗、自然衰减与失败损失不退还。"
+    }
+  ]
+}

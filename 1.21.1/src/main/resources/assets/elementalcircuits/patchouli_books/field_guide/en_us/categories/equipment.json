@@ -1,0 +1,6 @@
+{
+  "name": "Equipment",
+  "description": "Browse entries and their crafting recipes.",
+  "icon": "elementalcircuits:wizard_hat",
+  "sortnum": 4
+}

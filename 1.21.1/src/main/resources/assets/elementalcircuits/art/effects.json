@@ -113,7 +113,7 @@
       "twist": 0.2
     },
     "WATER": {
-      "sprite": 6,
+      "sprite": 9,
       "color": "20baff",
       "core": "ceffff",
       "particles": 12,
@@ -122,7 +122,7 @@
       "twist": 0.9
     },
     "FIRE": {
-      "sprite": 5,
+      "sprite": 8,
       "color": "ff591d",
       "core": "fff2b0",
       "particles": 14,
@@ -140,7 +140,7 @@
       "twist": 2.5
     },
     "LIGHTNING": {
-      "sprite": 9,
+      "sprite": 12,
       "color": "ad7dff",
       "core": "f5edff",
       "particles": 12,

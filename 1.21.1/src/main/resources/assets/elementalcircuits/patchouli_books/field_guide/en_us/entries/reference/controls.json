@@ -1,0 +1,18 @@
+{
+  "name": "Find settings",
+  "category": "elementalcircuits:reference",
+  "icon": "elementalcircuits:circuit_guide",
+  "sortnum": 23,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Find settings",
+      "text": "These are default controls and values; modpacks may change them. Check Controls for current bindings. Server configuration covers charge, mana fields, recursion depth and performance budgets."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Authorized admins can use /ec management commands and /attribute for power, base mana cost and reduction. Reading this guide never executes commands or changes circuit state."
+    }
+  ]
+}

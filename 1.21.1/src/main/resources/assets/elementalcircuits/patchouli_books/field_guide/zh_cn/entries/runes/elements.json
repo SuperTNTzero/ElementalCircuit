@@ -1,0 +1,18 @@
+{
+  "name": "元素是独立符文",
+  "category": "elementalcircuits:runes",
+  "icon": "elementalcircuits:mana_crystal",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "元素是独立符文",
+      "text": "元素转化与形状分别设置。火与水能在允许的位置造火、造水；光产生临时光源并照亮弹道，暗会熄灭光源，正相奥术可穿透方块。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "反相奥术在同次命中中按到达顺序等量抵消其他元素，包括它们的反相；不抵消纯净魔力，剩余反相奥术不造成奥术伤害。雷配光束表现为闪电链，火配扇形表现为喷火。世界交互仍需有效目标并遵守权限。"
+    }
+  ]
+}

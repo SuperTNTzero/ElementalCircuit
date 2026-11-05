@@ -1,4 +1,4 @@
-param([string]$JavaHome = 'C:/Program Files/Java/jdk-17', [switch]$Plot)
+﻿param([string]$JavaHome = 'C:/Program Files/Java/jdk-21.0.10', [switch]$Plot)
 $ErrorActionPreference = 'Stop'
 $experimentRoot = Split-Path $PSScriptRoot -Parent
 & (Join-Path $PSScriptRoot 'test-core.ps1') -JavaHome $JavaHome

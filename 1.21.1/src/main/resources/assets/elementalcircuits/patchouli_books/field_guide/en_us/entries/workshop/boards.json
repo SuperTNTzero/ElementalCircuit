@@ -1,0 +1,32 @@
+{
+  "name": "Boards and fixed circuits",
+  "category": "elementalcircuits:workshop",
+  "icon": "elementalcircuits:brass_plate",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Boards and fixed circuits",
+      "text": "Board management offers wood, brass and crystal. Material controls grid, loss and recursion depth. Slots hold separate boards; layers on one board share material and size."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Use a blank board on the inscription table, draw and save to obtain a fixed circuit. Place it for independent world operation and arrange field supply nearby. Blank boards are not finished circuits."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Wood, brass and crystal safely hold 128, 512 and 1280 mana. Four times that load causes meltdown. Stored and travelling mana count; overload accelerates wear. Repair at the inscription table with a matching blank board. Circuit designs remain."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:wood_plate",
+      "recipe2": "elementalcircuits:brass_plate"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:crystal_plate"
+    }
+  ]
+}

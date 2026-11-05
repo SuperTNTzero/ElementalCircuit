@@ -2,7 +2,7 @@ plugins {
     id 'java-library'
     id 'net.neoforged.moddev' version '2.0.148'
 }
-version = '0.24.0'
+version = '0.54.0'
 group = 'dev.elementalcircuits'
 base { archivesName = 'elemental-circuits-1.21.1' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
@@ -15,6 +15,28 @@ neoForge {
     runs {
         client {
             client()
+            if (providers.gradleProperty('controlSmoke').orNull == 'true') { systemProperty 'elementalcircuits.controlSmoke', 'true'; gameDirectory = project.file('build/control-smoke') }
+            if (providers.gradleProperty('enchantmentSmoke').orNull == 'true') { systemProperty 'elementalcircuits.enchantmentSmoke', 'true'; gameDirectory = project.file('build/enchantment-smoke') }
+            if (providers.gradleProperty('ecologySmoke').orNull == 'true') { systemProperty 'elementalcircuits.ecologySmoke', 'true'; gameDirectory = project.file('build/ecology-smoke') }
+            if (providers.gradleProperty('relationSmoke').orNull == 'true') { systemProperty 'elementalcircuits.relationSmoke', 'true'; gameDirectory = project.file('build/relation-smoke') }
+            if (providers.gradleProperty('boardSmoke').orNull == 'true') { systemProperty 'elementalcircuits.boardSmoke', 'true'; gameDirectory = project.file('build/board-smoke') }
+            if (providers.gradleProperty('guideSmoke').orNull == 'true') { systemProperty 'elementalcircuits.guideSmoke', 'true'; gameDirectory = project.file(providers.gradleProperty('withoutPatchouli').orNull == 'true' ? 'build/guide-native-smoke' : 'build/guide-patchouli-smoke') }
+            if (providers.gradleProperty('crystalSmoke').orNull == 'true') { systemProperty 'elementalcircuits.crystalSmoke', 'true'; gameDirectory = project.file('build/crystal-smoke') }
+            if (providers.gradleProperty('blueprintSmoke').orNull == 'true') {
+                systemProperty 'elementalcircuits.blueprintSmoke', 'true'
+                systemProperty 'elementalcircuits.keepTestWorldOpen', providers.gradleProperty('keepTestWorldOpen').orElse('false').get()
+                gameDirectory = project.file('build/blueprint-smoke')
+            }
+            if (providers.gradleProperty('standardSmoke').orNull == 'true') { systemProperty 'elementalcircuits.standardSmoke', 'true'; gameDirectory = project.file('build/standard-smoke') }
+            if (providers.gradleProperty('equipmentSmoke').orNull == 'true') { systemProperty 'elementalcircuits.equipmentSmoke', 'true'; gameDirectory = project.file('build/equipment-smoke') }
+            if (providers.gradleProperty('combatSmoke').orNull == 'true') { systemProperty 'elementalcircuits.combatSmoke', 'true'; gameDirectory = project.file('build/combat-smoke') }
+            if (providers.gradleProperty('probeSmoke').orNull == 'true') { systemProperty 'elementalcircuits.probeSmoke', 'true'; gameDirectory = project.file('build/probe-smoke') }
+            if (providers.gradleProperty('recursionSmoke').orNull == 'true') { systemProperty 'elementalcircuits.recursionSmoke', 'true'; gameDirectory = project.file('build/recursion-smoke') }
+            if (providers.gradleProperty('settingsSmoke').orNull == 'true') { systemProperty 'elementalcircuits.settingsSmoke', 'true'; gameDirectory = project.file('build/settings-smoke') }
+            if (providers.gradleProperty('elementalSmoke').orNull == 'true') {
+                systemProperty 'elementalcircuits.elementalSmoke', 'true'
+                gameDirectory = project.file('build/elemental-smoke')
+            }
             if (providers.gradleProperty('editorSmoke').orNull == 'true') {
                 systemProperty 'elementalcircuits.editorSmoke', 'true'
                 if (providers.gradleProperty('showcaseCapture').orNull == 'true') systemProperty 'elementalcircuits.showcaseCapture', 'true'
@@ -27,6 +49,10 @@ neoForge {
             if (providers.gradleProperty('stationSmoke').orNull == 'true') {
                 systemProperty 'elementalcircuits.stationSmoke', 'true'
                 gameDirectory = project.file('build/station-smoke')
+            }
+            if (providers.gradleProperty('progressionSmoke').orNull == 'true') {
+                systemProperty 'elementalcircuits.progressionSmoke', 'true'
+                gameDirectory = project.file('build/progression-smoke')
             }
             if (providers.gradleProperty('bookSmoke').orNull == 'true') {
                 systemProperty 'elementalcircuits.bookSmoke', 'true'
@@ -54,14 +80,18 @@ neoForge {
         gameTestServer {
             type = 'gameTestServer'
             systemProperty 'neoforge.enabledGameTestNamespaces', 'elementalcircuits'
-            gameDirectory = project.file('build/gametest')
+            // A fresh isolated world prevents old SavedData links accumulating across runs.
+            gameDirectory = project.file('build/gametest-runs/' + System.currentTimeMillis())
         }
         configureEach { logLevel = org.slf4j.event.Level.INFO }
     }
     mods {
         elementalcircuits {
             sourceSet sourceSets.main
-            if (providers.gradleProperty('withGameTests').orNull == 'true' || providers.gradleProperty('editorSmoke').orNull == 'true' || providers.gradleProperty('audioSmoke').orNull == 'true' || providers.gradleProperty('vfxSmoke').orNull == 'true' || providers.gradleProperty('wandSmoke').orNull == 'true' || providers.gradleProperty('fieldSmoke').orNull == 'true' || providers.gradleProperty('stationSmoke').orNull == 'true' || providers.gradleProperty('shapeSmoke').orNull == 'true' || providers.gradleProperty('bookSmoke').orNull == 'true') sourceSet sourceSets.test
+            if (providers.gradleProperty('controlSmoke').orNull == 'true') sourceSet sourceSets.test
+            if (providers.gradleProperty('enchantmentSmoke').orNull == 'true' || providers.gradleProperty('ecologySmoke').orNull == 'true' || providers.gradleProperty('relationSmoke').orNull == 'true' || providers.gradleProperty('boardSmoke').orNull == 'true') sourceSet sourceSets.test
+            if (providers.gradleProperty('probeSmoke').orNull == 'true' || providers.gradleProperty('recursionSmoke').orNull == 'true' || providers.gradleProperty('elementalSmoke').orNull == 'true' || providers.gradleProperty('settingsSmoke').orNull == 'true') sourceSet sourceSets.test
+            if (providers.gradleProperty('guideSmoke').orNull == 'true' || providers.gradleProperty('crystalSmoke').orNull == 'true' || providers.gradleProperty('blueprintSmoke').orNull == 'true' || providers.gradleProperty('standardSmoke').orNull == 'true' || providers.gradleProperty('equipmentSmoke').orNull == 'true' || providers.gradleProperty('combatSmoke').orNull == 'true' || providers.gradleProperty('withGameTests').orNull == 'true' || providers.gradleProperty('editorSmoke').orNull == 'true' || providers.gradleProperty('audioSmoke').orNull == 'true' || providers.gradleProperty('vfxSmoke').orNull == 'true' || providers.gradleProperty('wandSmoke').orNull == 'true' || providers.gradleProperty('fieldSmoke').orNull == 'true' || providers.gradleProperty('stationSmoke').orNull == 'true' || providers.gradleProperty('shapeSmoke').orNull == 'true' || providers.gradleProperty('bookSmoke').orNull == 'true' || providers.gradleProperty('progressionSmoke').orNull == 'true') sourceSet sourceSets.test
         }
     }
 }
@@ -79,3 +109,14 @@ tasks.register('coreTest', JavaExec) {
 tasks.named('check') { dependsOn 'coreTest' }
 // Contract suites have an explicit main entry; Minecraft integration uses runGameTestServer.
 tasks.named('test', Test) { failOnNoDiscoveredTests = false }
+
+// Curios 9.x is the accessory API for NeoForge 1.21.1 (Baubles ended at 1.12).
+// Pinned official artifacts permit reproducible offline builds. Never shade the mod.
+dependencies {
+    compileOnly files('libs/Patchouli-1.21.1-93-NEOFORGE.jar')
+    testCompileOnly files('libs/Patchouli-1.21.1-93-NEOFORGE.jar')
+    if (providers.gradleProperty('withoutPatchouli').orNull != 'true') runtimeOnly files('libs/Patchouli-1.21.1-93-NEOFORGE.jar')
+    compileOnly files('libs/curios-neoforge-9.5.1+1.21.1-api.jar')
+    runtimeOnly files('libs/curios-neoforge-9.5.1+1.21.1.jar')
+    testCompileOnly files('libs/curios-neoforge-9.5.1+1.21.1-api.jar')
+}

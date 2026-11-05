@@ -1,0 +1,18 @@
+{
+  "name": "Find mana crystals",
+  "category": "elementalcircuits:field",
+  "icon": "elementalcircuits:mana_crystal_ore",
+  "sortnum": 12,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Find mana crystals",
+      "text": "Mana crystal ore occurs in stone and deepslate underground. Mine it with a suitable pickaxe. Crystals are used for nodes, equipment, fruit, brewing and crystal blocks."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Natural nodes are not ore: they hold and replenish mana. Read them with the probe wand and arrange extraction and fixed circuits around them for sustained supply."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Angles and direction",
+  "category": "elementalcircuits:runes",
+  "icon": "elementalcircuits:crystal_plate",
+  "sortnum": 28,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Angles and direction",
+      "text": "Angle sets a fan spell's full aperture from 1 to 180 degrees, default 70. Fractional degrees are supported. The same aperture drives authoritative membership, block-footprint cost and visual effects. It changes neither radius nor range. Initially it applies only to Fan."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Yaw changes the horizontal casting direction by -180 to 180 degrees; positive turns right. Pitch ranges from -90 to 90 degrees; positive aims up. Yaw is applied before pitch. Precision remains a separate scatter parameter."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Link Distance sets the constraint reference point 0.5 to 256 blocks from the source, bounded by range and server policy. Without it, the original locking distance is retained. Force and Constraint strengths also accept decimals."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Impact and layers",
+  "category": "elementalcircuits:runes",
+  "icon": "elementalcircuits:spellbook",
+  "sortnum": 11,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Impact and layers",
+      "text": "Fragmentation, chaining, bursts, bounces, homing and added effects have their own categories. They change projectile behavior or impact results and still pay costs within performance budgets."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "For another circuit after impact, create a child layer on the same board and explicitly choose hit or timer triggering. Children cast at the trigger location. Material depth and total activation budgets bound recursion."
+    }
+  ]
+}

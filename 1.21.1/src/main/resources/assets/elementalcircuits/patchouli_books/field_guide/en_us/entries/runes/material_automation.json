@@ -1,0 +1,28 @@
+{
+  "name": "Materials and redstone",
+  "category": "elementalcircuits:runes",
+  "icon": "elementalcircuits:fixed_circuit",
+  "sortnum": 26,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Materials and redstone",
+      "text": "Inverse earth dismantles ordinary blocks at a default effective-mana cost of 1 plus hardness. Normal unenchanted diamond-pickaxe loot stays at the target. Bedrock, fluids and stateful containers or machines are excluded."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Combine normal earth with Container Read to place real blocks from a container immediately adjacent to the fixed circuit. Add Container Output to a dismantling path to collect its loot; overflow remains on the ground. Initial placement supports ordinary single-cell solid blocks. Wands do not implicitly read player inventory."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Use the existing rune parameter: 0 down, 1 up, 2 north, 3 south, 4 west, 5 east, in world coordinates. Conflicting input sides cannot merge. Missing stock, permissions or anchors never create items."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Redstone Sensor outputs a circuit signal at a threshold of 1–15, default 1. Wire it to a signal-controlled switch, or combine counters, inversion and latches. Manually start the continuous circuit first. Low power is a valid low signal; redstone never restarts stopped circuits."
+    }
+  ]
+}

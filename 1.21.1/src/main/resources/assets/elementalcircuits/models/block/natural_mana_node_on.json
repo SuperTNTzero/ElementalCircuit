@@ -1,6 +1,12 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube",
   "textures": {
-    "all": "elementalcircuits:block/natural_mana_node_on"
+    "particle": "elementalcircuits:block/natural_mana_node_on",
+    "north": "elementalcircuits:block/natural_mana_node_on",
+    "south": "elementalcircuits:block/natural_mana_node_on",
+    "east": "elementalcircuits:block/natural_mana_node_on",
+    "west": "elementalcircuits:block/natural_mana_node_on",
+    "down": "elementalcircuits:block/natural_mana_node_on",
+    "up": "elementalcircuits:block/natural_mana_node_top_on"
   }
 }

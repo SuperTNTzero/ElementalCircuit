@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " M ",
+    "CAC",
+    " S "
+  ],
+  "key": {
+    "M": {
+      "item": "elementalcircuits:mana_crystal"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "elementalcircuits:probe_wand",
+    "count": 1
+  }
+}

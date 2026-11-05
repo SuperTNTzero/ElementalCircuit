@@ -1,0 +1,22 @@
+{
+  "name": "蓝图簿与分享",
+  "category": "elementalcircuits:workshop",
+  "icon": "elementalcircuits:blueprint_notebook",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "蓝图簿与分享",
+      "text": "蓝图保存法阵设计，不保存正在运行的魔力。编辑器顶部“分享”导出并复制文本码；导入时粘贴完整文本码。先保留原蓝图，再尝试别人的设计。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "蓝图簿可保存多份设计并预览。右键打开簿子，收录、命名、选择或删除蓝图。在工作台将蓝图应用到法阵，仍需符合当前载体的材质和尺寸。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:blueprint_notebook"
+    }
+  ]
+}

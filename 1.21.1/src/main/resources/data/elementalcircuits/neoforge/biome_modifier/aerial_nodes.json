@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "elementalcircuits:aerial_mana_node"
+  ],
+  "step": "vegetal_decoration"
+}

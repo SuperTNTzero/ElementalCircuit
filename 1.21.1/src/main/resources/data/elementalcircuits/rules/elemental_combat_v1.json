@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "baseDamage": {
+    "PURE": 0,
+    "EARTH": 65536,
+    "WATER": 32768,
+    "FIRE": 131072,
+    "WIND": 32768,
+    "LIGHTNING": 131072,
+    "LIGHT": 131072,
+    "SHADOW": 65536,
+    "ARCANE": 131072,
+    "FROST": 131072,
+    "MIXED": 0
+  },
+  "maxDamage": 8388608,
+  "threshold": 6554,
+  "multipliers": {
+    "wetFire": 32768,
+    "wetLightning": 98304,
+    "wetFrost": 131072,
+    "shatter": 98304,
+    "undeadLight": 131072
+  },
+  "status": {
+    "wetTicks": 120,
+    "freezePerMana": 40,
+    "thawPerMana": 80,
+    "maxFrozen": 300,
+    "freezeThreshold": 140,
+    "fireMaxSeconds": 4,
+    "fanTicks": 20,
+    "slowPerMana": 30,
+    "slowMaxTicks": 100,
+    "earthSlowPerMana": 15,
+    "earthSlowMaxTicks": 40,
+    "blindPerMana": 25,
+    "blindMaxTicks": 80,
+    "impulsePerMana": 16384,
+    "maxImpulse": 65536
+  }
+}

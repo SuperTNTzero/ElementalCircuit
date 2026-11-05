@@ -1,0 +1,22 @@
+{
+  "name": "Start here",
+  "category": "elementalcircuits:beginning",
+  "icon": "elementalcircuits:circuit_guide",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Start here",
+      "text": "Prepare a wand, an inscription table and a wooden board. The wand workbench changes parts; the inscription table draws circuits."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Use a wand on the inscription table. Connect input, conversion, shape and output, save, then step away to test your spell."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:circuit_guide"
+    }
+  ]
+}

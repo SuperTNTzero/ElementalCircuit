@@ -1,0 +1,18 @@
+{
+  "name": "控制与时序",
+  "category": "elementalcircuits:runes",
+  "icon": "elementalcircuits:wood_plate",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "控制与时序",
+      "text": "与、或、反、开关和感应器处理魔力或信号；两种载荷通过明确的接口关联。计数器记录触发次数，节拍器提供时序，状态符文可保存开关状态。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "信号状态不等于魔力储量。用信号控制支路、改变元素或安排轮换施法；先观察端口和信号方向，再检查魔力通路。复杂控制建议先拆成几段验证。"
+    }
+  ]
+}

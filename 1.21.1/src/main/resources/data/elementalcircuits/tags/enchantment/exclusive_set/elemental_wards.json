@@ -1,0 +1,13 @@
+{
+  "values": [
+    "elementalcircuits:ward_earth",
+    "elementalcircuits:ward_water",
+    "elementalcircuits:ward_fire",
+    "elementalcircuits:ward_wind",
+    "elementalcircuits:ward_lightning",
+    "elementalcircuits:ward_light",
+    "elementalcircuits:ward_shadow",
+    "elementalcircuits:ward_arcane",
+    "elementalcircuits:ward_frost"
+  ]
+}

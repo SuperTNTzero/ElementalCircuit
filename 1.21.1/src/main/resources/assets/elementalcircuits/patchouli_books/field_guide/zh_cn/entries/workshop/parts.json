@@ -1,0 +1,33 @@
+{
+  "name": "装配法杖",
+  "category": "elementalcircuits:workshop",
+  "icon": "elementalcircuits:wand_workbench",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "装配法杖",
+      "text": "手持法杖与法杖工作台互动。杖端决定法术强度、速度和耐载阈值；杖身与杖端共同决定耐久；杖尾决定近战伤害。更换部件需要背包里有对应实物。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "施法冷却由部件决定，法阵复杂度还会影响准备时间。分支、长线和反馈会增加复杂度。高强度或高速法术超过杖端阈值后磨损上升；创造模式不扣耐久。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "近战只磨损杖体；施法主要磨损当前法阵所在的基板，并累积少量杖体磨损。基板耗尽只会断供，法杖不消失，也仍可近战。书阵磨损书内基板，杖阵磨损杖内基板。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:wand_workbench",
+      "recipe2": "elementalcircuits:copper_head"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:iron_body",
+      "recipe2": "elementalcircuits:iron_tail"
+    }
+  ]
+}

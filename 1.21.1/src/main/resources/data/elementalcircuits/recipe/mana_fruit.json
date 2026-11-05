@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "item": "elementalcircuits:mana_crystal"
+    },
+    {
+      "item": "elementalcircuits:mana_crystal"
+    },
+    {
+      "item": "elementalcircuits:mana_crystal"
+    },
+    {
+      "item": "elementalcircuits:mana_crystal"
+    }
+  ],
+  "result": {
+    "id": "elementalcircuits:mana_fruit",
+    "count": 1
+  }
+}

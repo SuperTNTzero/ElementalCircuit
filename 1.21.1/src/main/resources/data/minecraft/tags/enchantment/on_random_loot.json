@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "elementalcircuits:mana_capacity",
+    "elementalcircuits:mana_recovery",
+    "elementalcircuits:swift_casting",
+    "elementalcircuits:board_preservation",
+    "elementalcircuits:spell_power",
+    "elementalcircuits:mana_mending",
+    "elementalcircuits:ward_earth",
+    "elementalcircuits:ward_water",
+    "elementalcircuits:ward_fire",
+    "elementalcircuits:ward_wind",
+    "elementalcircuits:ward_lightning",
+    "elementalcircuits:ward_light",
+    "elementalcircuits:ward_shadow",
+    "elementalcircuits:ward_arcane",
+    "elementalcircuits:ward_frost"
+  ]
+}

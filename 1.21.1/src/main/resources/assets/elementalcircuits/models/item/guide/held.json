@@ -1,0 +1,81 @@
+{
+  "loader": "neoforge:obj",
+  "model": "elementalcircuits:models/item/guide/held.obj",
+  "automatic_culling": false,
+  "flip_v": true,
+  "shade_quads": true,
+  "textures": {
+    "particle": "elementalcircuits:item/guide_atlas",
+    "guide": "elementalcircuits:item/guide_atlas"
+  },
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [
+        15,
+        0,
+        0
+      ],
+      "translation": [
+        -4,
+        5,
+        0
+      ],
+      "scale": [
+        0.46,
+        0.46,
+        0.46
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        15,
+        0,
+        0
+      ],
+      "translation": [
+        -4,
+        5,
+        0
+      ],
+      "scale": [
+        0.46,
+        0.46,
+        0.46
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        1,
+        0
+      ],
+      "scale": [
+        0.64,
+        0.64,
+        0.64
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        1,
+        0
+      ],
+      "scale": [
+        0.64,
+        0.64,
+        0.64
+      ]
+    }
+  }
+}

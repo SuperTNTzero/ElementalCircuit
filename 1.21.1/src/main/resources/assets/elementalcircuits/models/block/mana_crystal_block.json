@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "elementalcircuits:block/mana_crystal_block",
+    "end": "elementalcircuits:block/mana_crystal_block_top"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Robes and casting",
+  "category": "elementalcircuits:equipment",
+  "icon": "elementalcircuits:wizard_robe",
+  "sortnum": 17,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Robes and casting",
+      "text": "Leather and mana crystals make the hat, robe, leggings and boots. They add spell power, capacity and fixed regeneration, and reduce mana cost by 4%, 8%, 6% and 4%: 22% together."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Inscribe equipment at the inscription table. V opens the equipment wheel; J casts the selected equipment circuit. An on-hit casting mode is available and still respects mana and runtime limits."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:wizard_hat",
+      "recipe2": "elementalcircuits:wizard_robe"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:wizard_leggings",
+      "recipe2": "elementalcircuits:wizard_boots"
+    }
+  ]
+}

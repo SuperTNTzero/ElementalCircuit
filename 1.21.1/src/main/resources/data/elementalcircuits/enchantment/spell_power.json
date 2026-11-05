@@ -1,0 +1,36 @@
+{
+  "description": {
+    "translate": "enchantment.elementalcircuits.spell_power"
+  },
+  "supported_items": "#elementalcircuits:enchantable/magic_equipment",
+  "weight": 5,
+  "max_level": 3,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 40,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "armor",
+    "mainhand",
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "id": "elementalcircuits:enchantment.spell_power",
+        "attribute": "elementalcircuits:spell_power",
+        "operation": "add_value",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.1,
+          "per_level_above_first": 0.1
+        }
+      }
+    ]
+  }
+}

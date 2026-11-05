@@ -1,0 +1,18 @@
+{
+  "name": "寻找魔力水晶",
+  "category": "elementalcircuits:field",
+  "icon": "elementalcircuits:mana_crystal_ore",
+  "sortnum": 12,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "寻找魔力水晶",
+      "text": "地下的魔力水晶矿有石质与深板岩两种。准备合适的镐采掘，获得魔力水晶。水晶用于节点、装备、魔力果实、酿造和水晶块。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "天然节点与矿石不同：节点储存和补充魔力。用探测杖读出节点信息；想长久供能，优先围绕节点安排汲取和固定法阵。"
+    }
+  ]
+}

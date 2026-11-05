@@ -1,0 +1,18 @@
+{
+  "name": "形状与影响范围",
+  "category": "elementalcircuits:runes",
+  "icon": "elementalcircuits:crystal_plate",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "形状与影响范围",
+      "text": "球、光束、盾牌之外，还有扇形、墙、环、柱、十字和穹顶。范围符文设置射程，半径符文设置宽度或范围；两者不是免费的强度倍率。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "形状成本统一按影响的方块数估算，再乘可配置系数。先补齐默认参数再报价。大范围、高法强和蓄力都会提高输出要求，先用小规模检查魔力收支。"
+    }
+  ]
+}

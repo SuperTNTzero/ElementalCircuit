@@ -1,0 +1,22 @@
+{
+  "name": "Carry a spellbook",
+  "category": "elementalcircuits:equipment",
+  "icon": "elementalcircuits:spellbook",
+  "sortnum": 16,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Carry a spellbook",
+      "text": "A spellbook stores up to four boards. In the offhand, it adds its circuits to the main-hand wand’s wheel without hiding wand circuits. Entries identify their source. The wand provides stats and takes wear."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Z/X cycle across both sources; hold R for the wheel; B opens the book. Removing or swapping the book falls back to the wand. Holding the original book again restores its choice. Each slot retains its own state; switching never copies or refills mana."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:spellbook"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+# file	title
+fire-beam.ecblueprint	火焰光束
+fire-sphere.ecblueprint	火球
+fire-shield.ecblueprint	火焰屏障
+fire-fan.ecblueprint	扇形喷火
+fire-wall.ecblueprint	火焰墙
+fire-ring.ecblueprint	火焰环带
+fire-column.ecblueprint	火焰立柱
+fire-cross.ecblueprint	火焰十字
+fire-dome.ecblueprint	火焰穹顶
+alternating.ecblueprint	火水交替
+projectile.ecblueprint	追踪弹跳
+secondary.ecblueprint	分裂连锁
+ambient.ecblueprint	环境光束
+standard.ecblueprint	标准光束
+storage.ecblueprint	蓄能光束
+contact-constraint.ecblueprint	联系悬停

@@ -1,7 +1,10 @@
-param([string]$GsonJar, [string]$JavaHome)
+﻿param([string]$GsonJar, [string]$JavaHome)
 $ErrorActionPreference = 'Stop'
 $modRoot = Split-Path $PSScriptRoot -Parent
-if (-not $JavaHome) { $JavaHome = $env:JAVA_HOME }
+if (-not $JavaHome -and $env:JAVA_HOME) {
+    $versionText = (& (Join-Path $env:JAVA_HOME 'bin/java.exe') -version 2>&1 | Out-String)
+    if ($versionText -match 'version "21[.\"]') { $JavaHome = $env:JAVA_HOME }
+}
 if (-not $JavaHome) { $JavaHome = 'C:/Program Files/Java/jdk-21.0.10' }
 $javacPath = Join-Path $JavaHome 'bin/javac.exe'
 $javaPath = Join-Path $JavaHome 'bin/java.exe'
@@ -20,26 +23,32 @@ New-Item -ItemType Directory -Path $output -Force | Out-Null
 $localGson = Join-Path $output 'gson.jar'
 Copy-Item -LiteralPath $GsonJar -Destination $localGson -Force
 $GsonJar = $localGson
-$sources = @(Get-ChildItem (Join-Path $modRoot 'src/main/java/dev/elementalcircuits/domain') -Filter '*.java' | ForEach-Object FullName)
+$sources = @(Get-ChildItem (Join-Path $modRoot 'src/main/java/dev/elementalcircuits/domain') -Recurse -Filter '*.java' | ForEach-Object FullName)
 $sources += @(Get-ChildItem (Join-Path $modRoot 'src/main/java/dev/elementalcircuits/application') -Recurse -Filter '*.java' | ForEach-Object FullName)
-$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/JsonCodecs.java'
-$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/RuleResources.java'
-$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/WandResources.java'
-$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/WorldInteractionResources.java'
-$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/BlueprintTextCode.java'
-$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/RadianceResources.java'
-$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/AssemblyResources.java'
-$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/LogicResources.java'
-$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/ProjectileResources.java'
-$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/SecondaryResources.java'
-$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/client/EditorDraft.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/codec/JsonCodecs.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/resources/RuleResources.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/resources/WandResources.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/resources/WorldInteractionResources.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/codec/BlueprintTextCode.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/resources/RadianceResources.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/resources/AssemblyResources.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/resources/LogicResources.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/resources/ProjectileResources.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/resources/SecondaryResources.java'
 $sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/client/book/BookMotion.java'
 $sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/BookMotionContracts.java'
-$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/ShapeResources.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/resources/ShapeResources.java'
 $sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/ShapeContracts.java'
 $sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/client/effect/VolumeGeometry.java'
 $sources += @(Get-ChildItem (Join-Path $modRoot 'src/main/java/dev/elementalcircuits/client/editor') -Filter '*.java' | ForEach-Object FullName)
+$sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/WizardEquipmentContracts.java'
 $sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/CoreContracts.java'
+$sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/EditorInteractionContracts.java'
+$sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/CastingUpgradeContracts.java'
+$sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/testing/TestBlueprints.java'
+$sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/ServerPolicyContracts.java'
+$sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/ManaTransportContracts.java'
+$sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/RecursionContracts.java'
 $sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/EditorEquipmentContracts.java'
 $sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/DFlipFlopContracts.java'
 $sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/WorldEffectContracts.java'
@@ -54,19 +63,33 @@ $sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/Runti
 $sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/StateMachineContracts.java'
 $sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/VisualContracts.java'
 $sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/AudioContracts.java'
-$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/AudioResources.java'
-$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/CooldownResources.java'
-$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/ManaFieldResources.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/resources/AudioResources.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/resources/CooldownResources.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/resources/ManaFieldResources.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/resources/ManaGrowthResources.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/resources/ManaRecoveryResources.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/resources/ElementalCombatResources.java'
+$sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/ManaProgressionContracts.java'
+$sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/ManaRecoveryContracts.java'
+$sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/ElementalCombatContracts.java'
+$sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/QueuedElementContracts.java'
 $sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/ManaFieldContracts.java'
 $sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/CooldownContracts.java'
 $sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/client/effect/VisualStyles.java'
 $sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/client/effect/VisualTimeline.java'
 $sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/client/effect/SpellGeometry.java'
 $sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/client/effect/FeedbackPulse.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/adapter/resources/ElementalComboResources.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/client/effect/SpellAtlas.java'
+$sources += Join-Path $modRoot 'src/main/java/dev/elementalcircuits/client/effect/ElementalGeometry.java'
+$sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/ElementalVisualContracts.java'
+$sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/ProbeContracts.java'
+$sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/EconomyContracts.java'
+$sources += Join-Path $modRoot 'src/test/java/dev/elementalcircuits/domain/StandardManaContracts.java'
 & $javacPath -encoding UTF-8 --release 21 -cp $GsonJar -d $output @sources
 if ($LASTEXITCODE -ne 0) { throw '核心契约编译失败' }
 New-Item -ItemType Directory -Path (Join-Path $output 'META-INF') -Force | Out-Null
 Copy-Item -LiteralPath (Join-Path $modRoot 'THIRD_PARTY_NOTICES.md') -Destination (Join-Path $output 'META-INF/THIRD_PARTY_NOTICES.md') -Force
-$classpath = $output + [IO.Path]::PathSeparator + $GsonJar + [IO.Path]::PathSeparator + (Join-Path $modRoot 'src/main/resources')
+$classpath = $output + [IO.Path]::PathSeparator + $GsonJar + [IO.Path]::PathSeparator + (Join-Path $modRoot 'src/main/resources') + [IO.Path]::PathSeparator + (Join-Path $modRoot 'src/test/resources')
 & $javaPath -cp $classpath dev.elementalcircuits.domain.CoreContracts
 if ($LASTEXITCODE -ne 0) { throw '核心契约验证失败' }

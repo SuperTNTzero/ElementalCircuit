@@ -1,0 +1,22 @@
+{
+  "name": "一次施法",
+  "category": "elementalcircuits:beginning",
+  "icon": "elementalcircuits:circuit_wand",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "一次施法",
+      "text": "用魔力输入→元素转化（火）→球形→输出搭出一条通路。魔力量、射程、半径和精度另用参数符文调整。先从小范围测试。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "单击右键瞬发；按住右键蓄力，松手释放。默认按住6刻后进入蓄力，40刻蓄满，最高2倍强度，输出成本同步增加。按住期间不注入魔力。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:circuit_wand"
+    }
+  ]
+}

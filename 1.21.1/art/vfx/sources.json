@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "checked": "2026-11-01",
+  "sources": [
+    {
+      "id": "nyrthos",
+      "author": "Mikodrak",
+      "title": "2D Spell Effects",
+      "page": "https://opengameart.org/content/2d-spell-effects",
+      "download": "https://opengameart.org/sites/default/files/FX.zip",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "8d0c09487ab0337867e90333e9c26e455760b31414bf503bedcde94b0cddbc30"
+    },
+    {
+      "id": "pure",
+      "author": "Cethiel",
+      "title": "Pure Projectile - Magic Effect",
+      "page": "https://opengameart.org/content/pure-projectile-magic-effect",
+      "download": "https://opengameart.org/sites/default/files/Pure%20Projectile%20Effect.zip",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "c096b57597a291561c55763ad5e101e9946fe7606f017be936de27475aa4974e"
+    },
+    {
+      "id": "water",
+      "author": "Cethiel",
+      "title": "Water Magic Effect",
+      "page": "https://opengameart.org/content/water-magic-effect",
+      "download": "https://opengameart.org/sites/default/files/Water_Effect.zip",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "b069fde2ce7bcbad97f7d66537192fd5399cb03fa6f42a6503bbb3d672659583"
+    },
+    {
+      "id": "fire",
+      "author": "Cethiel",
+      "title": "Fire Wrath - Magic Effect",
+      "page": "https://opengameart.org/content/fire-wrath-magic-effect",
+      "download": "https://opengameart.org/sites/default/files/Fire%20Wrath%20-%20Magic%20Effect.zip",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "d21ddd244ba1d0b5f2fa50d74d1427dd20695481b24a40dbdd517b8f96ceaf07"
+    },
+    {
+      "id": "cosmic",
+      "author": "Cethiel",
+      "title": "Cosmic Time - Magic Effect",
+      "page": "https://opengameart.org/content/cosmic-time-magic-effect",
+      "download": "https://opengameart.org/sites/default/files/Cosmic%20Time%20-%20Magic%20Effect.zip",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "fcab45aa464adb3cd23306004c126f804cce0bf51ff0dd194baf4ce1fd8938c5"
+    },
+    {
+      "id": "circles",
+      "author": "Luke.RUSTLTD",
+      "title": "4 summoning circles",
+      "page": "https://opengameart.org/content/4-summoning-circles",
+      "download": "https://opengameart.org/sites/default/files/summoning_circles.zip",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "d07138ac5bee5242a4672abf321e2dff84dd7ababbe06b96f97ec530361eb5e9"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "铭刻戒指",
+  "category": "elementalcircuits:equipment",
+  "icon": "elementalcircuits:circuit_ring",
+  "sortnum": 18,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "铭刻戒指",
+      "text": "戒指通过Curios的戒指槽装备，并可在法阵工作台铭刻法阵。默认H使用戒指法阵，相关键位可在控制设置中修改。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "戒指与法袍、法术书各有自己的法阵数据。换装备不会合并魔力槽：玩家供能仍来自同一个玩家储备，连续施法时注意总消耗。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:circuit_ring"
+    }
+  ]
+}

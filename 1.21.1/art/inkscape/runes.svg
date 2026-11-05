@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" width="512" height="768" viewBox="0 0 512 768" version="1.1" data-ec-version="1" data-ec-cell="64" data-ec-columns="8" data-ec-padding="6">
+  <title>Elemental Circuits — rune and tool vector master</title>
+  <desc>Original mod glyphs. Editable paths and true ellipses; no embedded bitmap. Edit within a named glyph group, then run tools/artwork/bake-glyphs.py with local Inkscape.</desc>
+  <sodipodi:namedview id="namedview1" pagecolor="#102137" borderopacity="0.25" inkscape:document-units="px" />
+  <g id="glyph-rune-INPUT" inkscape:groupmode="layer" inkscape:label="rune/INPUT" data-ec-key="rune/INPUT" data-ec-index="0" transform="translate(32 32) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/INPUT</title>
+    <ellipse id="ink-0-0" cx="0" cy="0" rx="0.65" ry="0.65" />
+    <path id="ink-0-1" d="M -0.9 0 L 0.4 0 L 0 -0.4" />
+    <path id="ink-0-2" d="M 0.4 0 L 0 0.4" />
+  </g>
+  <g id="glyph-rune-CONVERT" inkscape:groupmode="layer" inkscape:label="rune/CONVERT" data-ec-key="rune/CONVERT" data-ec-index="1" transform="translate(96 32) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/CONVERT</title>
+    <path id="ink-1-0" d="M 0 -0.9 L 0.78 0.5 L -0.78 0.5 Z" />
+    <ellipse id="ink-1-1" cx="0" cy="0" rx="0.28" ry="0.28" />
+  </g>
+  <g id="glyph-rune-AND" inkscape:groupmode="layer" inkscape:label="rune/AND" data-ec-key="rune/AND" data-ec-index="2" transform="translate(160 32) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/AND</title>
+    <path id="ink-2-0" d="M -0.6 0.7 L -0.6 -0.7 L 0 -0.7 L 0.65 -0.35 L 0.65 0.35 L 0 0.7 Z" />
+    <path id="ink-2-1" d="M -0.95 -0.3 L -0.6 -0.3" />
+    <path id="ink-2-2" d="M -0.95 0.3 L -0.6 0.3" />
+  </g>
+  <g id="glyph-rune-OR" inkscape:groupmode="layer" inkscape:label="rune/OR" data-ec-key="rune/OR" data-ec-index="3" transform="translate(224 32) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/OR</title>
+    <path id="ink-3-0" d="M -0.7 -0.7 L 0.1 -0.6 L 0.8 0 L 0.1 0.6 L -0.7 0.7 L -0.35 0 Z" />
+  </g>
+  <g id="glyph-rune-NOT" inkscape:groupmode="layer" inkscape:label="rune/NOT" data-ec-key="rune/NOT" data-ec-index="4" transform="translate(288 32) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/NOT</title>
+    <path id="ink-4-0" d="M -0.7 -0.65 L 0.35 0 L -0.7 0.65 Z" />
+    <ellipse id="ink-4-1" cx="0.6" cy="0" rx="0.2" ry="0.2" />
+  </g>
+  <g id="glyph-rune-SIGNAL" inkscape:groupmode="layer" inkscape:label="rune/SIGNAL" data-ec-key="rune/SIGNAL" data-ec-index="5" transform="translate(352 32) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/SIGNAL</title>
+    <path id="ink-5-0" d="M -0.9 0.4 L -0.5 0.4 L -0.5 -0.5 L 0.1 -0.5 L 0.1 0.4 L 0.7 0.4 L 0.7 -0.5" />
+  </g>
+  <g id="glyph-rune-SWITCH" inkscape:groupmode="layer" inkscape:label="rune/SWITCH" data-ec-key="rune/SWITCH" data-ec-index="6" transform="translate(416 32) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/SWITCH</title>
+    <path id="ink-6-0" d="M -0.9 0.4 L -0.35 0.4 L 0.35 -0.4" />
+    <path id="ink-6-1" d="M 0.45 0.4 L 0.9 0.4" />
+    <ellipse id="ink-6-2" cx="-0.35" cy="0.4" rx="0.12" ry="0.12" />
+    <ellipse id="ink-6-3" cx="0.45" cy="0.4" rx="0.12" ry="0.12" />
+  </g>
+  <g id="glyph-rune-SENSOR" inkscape:groupmode="layer" inkscape:label="rune/SENSOR" data-ec-key="rune/SENSOR" data-ec-index="7" transform="translate(480 32) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/SENSOR</title>
+    <path id="ink-7-0" d="M -0.9 0 L -0.45 -0.5 L 0.45 -0.5 L 0.9 0 L 0.45 0.5 L -0.45 0.5 Z" />
+    <ellipse id="ink-7-1" cx="0" cy="0" rx="0.28" ry="0.28" />
+  </g>
+  <g id="glyph-rune-SPLIT" inkscape:groupmode="layer" inkscape:label="rune/SPLIT" data-ec-key="rune/SPLIT" data-ec-index="8" transform="translate(32 96) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/SPLIT</title>
+    <path id="ink-8-0" d="M -0.8 0 L -0.1 0 L 0.65 -0.65" />
+    <path id="ink-8-1" d="M -0.1 0 L 0.65 0.65" />
+    <path id="ink-8-2" d="M 0.2 -0.65 L 0.65 -0.65 L 0.65 -0.2" />
+    <path id="ink-8-3" d="M 0.2 0.65 L 0.65 0.65 L 0.65 0.2" />
+  </g>
+  <g id="glyph-rune-MERGE" inkscape:groupmode="layer" inkscape:label="rune/MERGE" data-ec-key="rune/MERGE" data-ec-index="9" transform="translate(96 96) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/MERGE</title>
+    <path id="ink-9-0" d="M -0.7 -0.7 L 0 0 L 0.8 0 L 0.4 -0.4" />
+    <path id="ink-9-1" d="M -0.7 0.7 L 0 0" />
+    <path id="ink-9-2" d="M 0.8 0 L 0.4 0.4" />
+  </g>
+  <g id="glyph-rune-AREA" inkscape:groupmode="layer" inkscape:label="rune/AREA" data-ec-key="rune/AREA" data-ec-index="10" transform="translate(160 96) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/AREA</title>
+    <ellipse id="ink-10-0" cx="0" cy="0" rx="0.7" ry="0.7" />
+    <ellipse id="ink-10-1" cx="0" cy="0" rx="0.3" ry="0.3" />
+    <path id="ink-10-2" d="M -0.9 0 L 0.9 0" />
+    <path id="ink-10-3" d="M 0 -0.9 L 0 0.9" />
+  </g>
+  <g id="glyph-rune-DIRECTED" inkscape:groupmode="layer" inkscape:label="rune/DIRECTED" data-ec-key="rune/DIRECTED" data-ec-index="11" transform="translate(224 96) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/DIRECTED</title>
+    <path id="ink-11-0" d="M -0.8 0.7 L 0.75 -0.75 L 0.1 -0.65" />
+    <path id="ink-11-1" d="M 0.75 -0.75 L 0.65 -0.1" />
+  </g>
+  <g id="glyph-rune-SPHERE" inkscape:groupmode="layer" inkscape:label="rune/SPHERE" data-ec-key="rune/SPHERE" data-ec-index="12" transform="translate(288 96) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/SPHERE</title>
+    <ellipse id="ink-12-0" cx="0" cy="0" rx="0.78" ry="0.78" />
+    <path id="ink-12-1" d="M -0.78 0 L 0.78 0" />
+    <path id="ink-12-2" d="M 0 -0.78 L -0.3 -0.3 L -0.3 0.3 L 0 0.78 L 0.3 0.3 L 0.3 -0.3 Z" />
+  </g>
+  <g id="glyph-rune-BEAM" inkscape:groupmode="layer" inkscape:label="rune/BEAM" data-ec-key="rune/BEAM" data-ec-index="13" transform="translate(352 96) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/BEAM</title>
+    <path id="ink-13-0" d="M -0.9 -0.35 L 0.9 -0.35" />
+    <path id="ink-13-1" d="M -0.9 0.35 L 0.9 0.35" />
+    <path id="ink-13-2" d="M -0.6 0 L 0.8 0" />
+    <path id="ink-13-3" d="M 0.5 -0.7 L 0.9 0 L 0.5 0.7" />
+  </g>
+  <g id="glyph-rune-SHIELD" inkscape:groupmode="layer" inkscape:label="rune/SHIELD" data-ec-key="rune/SHIELD" data-ec-index="14" transform="translate(416 96) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/SHIELD</title>
+    <path id="ink-14-0" d="M -0.7 -0.65 L 0.7 -0.65 L 0.65 0.25 L 0 0.9 L -0.65 0.25 Z" />
+    <path id="ink-14-1" d="M 0 -0.65 L 0 0.8" />
+  </g>
+  <g id="glyph-rune-AMOUNT" inkscape:groupmode="layer" inkscape:label="rune/AMOUNT" data-ec-key="rune/AMOUNT" data-ec-index="15" transform="translate(480 96) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/AMOUNT</title>
+    <path id="ink-15-0" d="M 0 -0.85 L 0.65 0.2 L 0.55 0.6 L 0 0.85 L -0.55 0.6 L -0.65 0.2 Z" />
+    <path id="ink-15-1" d="M -0.25 0.3 L 0.25 0.3" />
+  </g>
+  <g id="glyph-rune-RANGE" inkscape:groupmode="layer" inkscape:label="rune/RANGE" data-ec-key="rune/RANGE" data-ec-index="16" transform="translate(32 160) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/RANGE</title>
+    <path id="ink-16-0" d="M -0.85 0 L 0.85 0 L 0.5 -0.35" />
+    <path id="ink-16-1" d="M 0.85 0 L 0.5 0.35" />
+    <path id="ink-16-2" d="M -0.85 0 L -0.5 -0.35" />
+    <path id="ink-16-3" d="M -0.85 0 L -0.5 0.35" />
+  </g>
+  <g id="glyph-rune-RADIUS" inkscape:groupmode="layer" inkscape:label="rune/RADIUS" data-ec-key="rune/RADIUS" data-ec-index="17" transform="translate(96 160) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/RADIUS</title>
+    <ellipse id="ink-17-0" cx="0" cy="0" rx="0.75" ry="0.75" />
+    <path id="ink-17-1" d="M 0 0 L 0.65 -0.4 L 0.2 -0.5" />
+    <path id="ink-17-2" d="M 0.65 -0.4 L 0.45 0" />
+  </g>
+  <g id="glyph-rune-AIM" inkscape:groupmode="layer" inkscape:label="rune/AIM" data-ec-key="rune/AIM" data-ec-index="18" transform="translate(160 160) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/AIM</title>
+    <ellipse id="ink-18-0" cx="0" cy="0" rx="0.55" ry="0.55" />
+    <path id="ink-18-1" d="M -0.95 0 L -0.3 0" />
+    <path id="ink-18-2" d="M 0.3 0 L 0.95 0" />
+    <path id="ink-18-3" d="M 0 -0.95 L 0 -0.3" />
+    <path id="ink-18-4" d="M 0 0.3 L 0 0.95" />
+  </g>
+  <g id="glyph-rune-OUTPUT" inkscape:groupmode="layer" inkscape:label="rune/OUTPUT" data-ec-key="rune/OUTPUT" data-ec-index="19" transform="translate(224 160) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/OUTPUT</title>
+    <ellipse id="ink-19-0" cx="0" cy="0" rx="0.65" ry="0.65" />
+    <path id="ink-19-1" d="M -0.35 0 L 0.9 0 L 0.5 -0.4" />
+    <path id="ink-19-2" d="M 0.9 0 L 0.5 0.4" />
+  </g>
+  <g id="glyph-rune-MANA_RECEIVE" inkscape:groupmode="layer" inkscape:label="rune/MANA_RECEIVE" data-ec-key="rune/MANA_RECEIVE" data-ec-index="20" transform="translate(288 160) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/MANA_RECEIVE</title>
+    <path id="ink-20-0" d="M -0.8 -0.8 L 0.8 -0.8 L 0.8 0.8 L -0.8 0.8 Z" />
+    <path id="ink-20-1" d="M -0.9 0 L 0.4 0 L 0 -0.4" />
+    <path id="ink-20-2" d="M 0.4 0 L 0 0.4" />
+  </g>
+  <g id="glyph-rune-MANA_SEND" inkscape:groupmode="layer" inkscape:label="rune/MANA_SEND" data-ec-key="rune/MANA_SEND" data-ec-index="21" transform="translate(352 160) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/MANA_SEND</title>
+    <path id="ink-21-0" d="M -0.8 -0.8 L 0.8 -0.8 L 0.8 0.8 L -0.8 0.8 Z" />
+    <path id="ink-21-1" d="M -0.4 0 L 0.9 0 L 0.5 -0.4" />
+    <path id="ink-21-2" d="M 0.9 0 L 0.5 0.4" />
+  </g>
+  <g id="glyph-rune-SIGNAL_RECEIVE" inkscape:groupmode="layer" inkscape:label="rune/SIGNAL_RECEIVE" data-ec-key="rune/SIGNAL_RECEIVE" data-ec-index="22" transform="translate(416 160) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/SIGNAL_RECEIVE</title>
+    <path id="ink-22-0" d="M -0.8 -0.8 L 0.8 -0.8 L 0.8 0.8 L -0.8 0.8 Z" />
+    <path id="ink-22-1" d="M -0.9 0 L 0.4 0 L 0 -0.4" />
+    <path id="ink-22-2" d="M 0.4 0 L 0 0.4" />
+    <path id="ink-22-3" d="M -0.5 -0.9 L -0.5 -0.4 L 0 -0.4 L 0 -0.9" />
+  </g>
+  <g id="glyph-rune-SIGNAL_SEND" inkscape:groupmode="layer" inkscape:label="rune/SIGNAL_SEND" data-ec-key="rune/SIGNAL_SEND" data-ec-index="23" transform="translate(480 160) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/SIGNAL_SEND</title>
+    <path id="ink-23-0" d="M -0.8 -0.8 L 0.8 -0.8 L 0.8 0.8 L -0.8 0.8 Z" />
+    <path id="ink-23-1" d="M -0.4 0 L 0.9 0 L 0.5 -0.4" />
+    <path id="ink-23-2" d="M 0.9 0 L 0.5 0.4" />
+    <path id="ink-23-3" d="M -0.5 -0.9 L -0.5 -0.4 L 0 -0.4 L 0 -0.9" />
+  </g>
+  <g id="glyph-rune-COUNTER" inkscape:groupmode="layer" inkscape:label="rune/COUNTER" data-ec-key="rune/COUNTER" data-ec-index="24" transform="translate(32 224) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/COUNTER</title>
+    <path id="ink-24-0" d="M -0.8 -0.8 L 0.8 -0.8 L 0.8 0.8 L -0.8 0.8 Z" />
+    <path id="ink-24-1" d="M -0.45 -0.3 L -0.45 0.35" />
+    <path id="ink-24-2" d="M 0 -0.5 L 0 0.35" />
+    <path id="ink-24-3" d="M 0.45 -0.1 L 0.45 0.35" />
+    <path id="ink-24-4" d="M -0.6 0.55 L 0.6 0.55" />
+  </g>
+  <g id="glyph-rune-CLOCK" inkscape:groupmode="layer" inkscape:label="rune/CLOCK" data-ec-key="rune/CLOCK" data-ec-index="25" transform="translate(96 224) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/CLOCK</title>
+    <ellipse id="ink-25-0" cx="0" cy="0" rx="0.8" ry="0.8" />
+    <path id="ink-25-1" d="M 0 -0.55 L 0 0 L 0.5 0.2" />
+    <path id="ink-25-2" d="M -0.9 -0.65 L -0.6 -0.9" />
+    <path id="ink-25-3" d="M 0.6 -0.9 L 0.9 -0.65" />
+  </g>
+  <g id="glyph-rune-TOGGLE" inkscape:groupmode="layer" inkscape:label="rune/TOGGLE" data-ec-key="rune/TOGGLE" data-ec-index="26" transform="translate(160 224) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/TOGGLE</title>
+    <path id="ink-26-0" d="M -0.8 -0.8 L 0.8 -0.8 L 0.8 0.8 L -0.8 0.8 Z" />
+    <path id="ink-26-1" d="M -0.8 -0.3 L -0.4 0 L -0.8 0.3" />
+    <ellipse id="ink-26-2" cx="0.3" cy="0" rx="0.3" ry="0.3" />
+    <path id="ink-26-3" d="M 0.3 0 L 0.7 0.5" />
+  </g>
+  <g id="glyph-rune-BURST" inkscape:groupmode="layer" inkscape:label="rune/BURST" data-ec-key="rune/BURST" data-ec-index="27" transform="translate(224 224) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/BURST</title>
+    <path id="ink-27-0" d="M 0.35 0 L 0.9 0" />
+    <path id="ink-27-1" d="M 0.2474874 0.2474874 L 0.6363961 0.6363961" />
+    <path id="ink-27-2" d="M 0 0.35 L 0 0.9" />
+    <path id="ink-27-3" d="M -0.2474874 0.2474874 L -0.6363961 0.6363961" />
+    <path id="ink-27-4" d="M -0.35 0 L -0.9 0" />
+    <path id="ink-27-5" d="M -0.2474874 -0.2474874 L -0.6363961 -0.6363961" />
+    <path id="ink-27-6" d="M -0 -0.35 L -0 -0.9" />
+    <path id="ink-27-7" d="M 0.2474874 -0.2474874 L 0.6363961 -0.6363961" />
+    <ellipse id="ink-27-8" cx="0" cy="0" rx="0.24" ry="0.24" />
+  </g>
+  <g id="glyph-rune-BOUNCE" inkscape:groupmode="layer" inkscape:label="rune/BOUNCE" data-ec-key="rune/BOUNCE" data-ec-index="28" transform="translate(288 224) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/BOUNCE</title>
+    <path id="ink-28-0" d="M -0.9 0.6 L -0.2 -0.5 L 0.45 0.5 L 0.85 -0.2" />
+    <path id="ink-28-1" d="M -0.55 -0.75 L 0.25 -0.75" />
+    <path id="ink-28-2" d="M 0.4 -0.15 L 0.85 -0.2 L 0.9 0.3" />
+  </g>
+  <g id="glyph-rune-HOMING" inkscape:groupmode="layer" inkscape:label="rune/HOMING" data-ec-key="rune/HOMING" data-ec-index="29" transform="translate(352 224) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/HOMING</title>
+    <ellipse id="ink-29-0" cx="0.4" cy="-0.4" rx="0.4" ry="0.4" />
+    <path id="ink-29-1" d="M -0.85 0.8 L -0.65 0.1 L -0.2 -0.2 L 0.3 -0.3" />
+    <path id="ink-29-2" d="M -0.1 -0.6 L 0.3 -0.3 L 0.1 0.1" />
+  </g>
+  <g id="glyph-rune-FRAGMENT" inkscape:groupmode="layer" inkscape:label="rune/FRAGMENT" data-ec-key="rune/FRAGMENT" data-ec-index="30" transform="translate(416 224) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/FRAGMENT</title>
+    <path id="ink-30-0" d="M -0.85 0 L -0.3 0 L 0.5 -0.7" />
+    <path id="ink-30-1" d="M -0.3 0 L 0.8 0" />
+    <path id="ink-30-2" d="M -0.3 0 L 0.5 0.7" />
+    <ellipse id="ink-30-3" cx="0.65" cy="-0.7" rx="0.13" ry="0.13" />
+    <ellipse id="ink-30-4" cx="0.85" cy="0" rx="0.13" ry="0.13" />
+    <ellipse id="ink-30-5" cx="0.65" cy="0.7" rx="0.13" ry="0.13" />
+  </g>
+  <g id="glyph-rune-CHAIN" inkscape:groupmode="layer" inkscape:label="rune/CHAIN" data-ec-key="rune/CHAIN" data-ec-index="31" transform="translate(480 224) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/CHAIN</title>
+    <ellipse id="ink-31-0" cx="-0.5" cy="0.45" rx="0.32" ry="0.32" />
+    <ellipse id="ink-31-1" cx="0.5" cy="-0.45" rx="0.32" ry="0.32" />
+    <path id="ink-31-2" d="M -0.4 0.35 L 0.4 -0.35" />
+    <path id="ink-31-3" d="M -0.8 -0.75 L -0.4 -0.75" />
+    <path id="ink-31-4" d="M 0.4 0.75 L 0.8 0.75" />
+  </g>
+  <g id="glyph-rune-IGNITE" inkscape:groupmode="layer" inkscape:label="rune/IGNITE" data-ec-key="rune/IGNITE" data-ec-index="32" transform="translate(32 288) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/IGNITE</title>
+    <path id="ink-32-0" d="M -0.65 0.75 L -0.7 0 L -0.15 -0.8 L 0 -0.2 L 0.45 -0.6 L 0.7 0.2 L 0.3 0.8 L -0.3 0.8 Z" />
+    <path id="ink-32-1" d="M -0.9 -0.5 L -0.65 -0.85" />
+  </g>
+  <g id="glyph-rune-SLOW" inkscape:groupmode="layer" inkscape:label="rune/SLOW" data-ec-key="rune/SLOW" data-ec-index="33" transform="translate(96 288) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/SLOW</title>
+    <path id="ink-33-0" d="M -0.7 -0.75 L 0.7 -0.75 L -0.5 0.75 L 0.5 0.75" />
+    <path id="ink-33-1" d="M -0.55 -0.4 L 0.55 -0.4" />
+    <path id="ink-33-2" d="M -0.8 0.15 L -0.2 0.15" />
+  </g>
+  <g id="glyph-rune-KNOCKBACK" inkscape:groupmode="layer" inkscape:label="rune/KNOCKBACK" data-ec-key="rune/KNOCKBACK" data-ec-index="34" transform="translate(160 288) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/KNOCKBACK</title>
+    <path id="ink-34-0" d="M -0.9 -0.6 L -0.3 0 L -0.9 0.6" />
+    <path id="ink-34-1" d="M -0.3 -0.6 L 0.3 0 L -0.3 0.6" />
+    <path id="ink-34-2" d="M 0.3 -0.6 L 0.9 0 L 0.3 0.6" />
+  </g>
+  <g id="glyph-element-PURE" inkscape:groupmode="layer" inkscape:label="element/PURE" data-ec-key="element/PURE" data-ec-index="35" transform="translate(224 288) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>element/PURE</title>
+    <path id="ink-element-PURE" d="M 0 -.86 C .44 -.5 .73 -.18 .62 .25 C .52 .75 -.22 .86 -.56 .43 C -.94 -.05 -.28 -.41 0 -.86 Z M -.38 .05 L .38 .05 M 0 -.32 L 0 .46" />
+  </g>
+  <g id="glyph-element-EARTH" inkscape:groupmode="layer" inkscape:label="element/EARTH" data-ec-key="element/EARTH" data-ec-index="36" transform="translate(288 288) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>element/EARTH</title>
+    <path id="ink-36-0" d="M -0.8 0.65 L 0 -0.75 L 0.8 0.65 Z" />
+    <path id="ink-36-1" d="M -0.55 0.2 L 0.55 0.2" />
+    <path id="ink-36-2" d="M -0.6 0.85 L 0.6 0.85" />
+  </g>
+  <g id="glyph-element-WATER" inkscape:groupmode="layer" inkscape:label="element/WATER" data-ec-key="element/WATER" data-ec-index="37" transform="translate(352 288) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>element/WATER</title>
+    <path id="ink-element-WATER" d="M 0 -.92 C -.23 -.56 -.67 -.17 -.67 .22 C -.67 .98 .67 .98 .67 .22 C .67 -.17 .23 -.56 0 -.92 Z M -.36 .24 C -.35 .49 -.16 .61 .08 .59" />
+  </g>
+  <g id="glyph-element-FIRE" inkscape:groupmode="layer" inkscape:label="element/FIRE" data-ec-key="element/FIRE" data-ec-index="38" transform="translate(416 288) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>element/FIRE</title>
+    <path id="ink-element-FIRE" d="M .13 -.94 C .33 -.52 .08 -.34 .32 -.1 C .53 -.2 .58 -.39 .57 -.5 C 1 .06 .72 .79 .06 .83 C -.61 .9 -.89 .28 -.56 -.2 C -.54 .14 -.29 .22 -.27 -.05 C -.29 -.44 .09 -.55 .13 -.94 Z M .06 .13 C -.32 .43 -.22 .7 .08 .72 C .36 .65 .34 .45 .06 .13 Z" />
+  </g>
+  <g id="glyph-element-WIND" inkscape:groupmode="layer" inkscape:label="element/WIND" data-ec-key="element/WIND" data-ec-index="39" transform="translate(480 288) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>element/WIND</title>
+    <path id="ink-element-WIND" d="M -.87 -.43 L .29 -.43 C .89 -.43 .82 -1.02 .38 -.83 M -.96 0 L .56 0 C 1.05 0 .99 .59 .57 .56 M -.76 .43 L .11 .43 C .61 .43 .52 .95 .18 .84" />
+  </g>
+  <g id="glyph-element-LIGHTNING" inkscape:groupmode="layer" inkscape:label="element/LIGHTNING" data-ec-key="element/LIGHTNING" data-ec-index="40" transform="translate(32 352) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>element/LIGHTNING</title>
+    <path id="ink-40-0" d="M 0.15 -0.95 L -0.65 0.1 L -0.05 0.1 L -0.3 0.95 L 0.75 -0.25 L 0.15 -0.25 Z" />
+  </g>
+  <g id="glyph-element-LIGHT" inkscape:groupmode="layer" inkscape:label="element/LIGHT" data-ec-key="element/LIGHT" data-ec-index="41" transform="translate(96 352) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>element/LIGHT</title>
+    <path id="ink-element-LIGHT" d="M 0 -.54 A .54 .54 0 1 0 0 .54 A .54 .54 0 1 0 0 -.54 Z M 0 -.94 L 0 -.74 M 0 .74 L 0 .94 M -.94 0 L -.74 0 M .74 0 L .94 0 M -.67 -.67 L -.53 -.53 M .53 .53 L .67 .67 M -.67 .67 L -.53 .53 M .53 -.53 L .67 -.67" />
+  </g>
+  <g id="glyph-element-SHADOW" inkscape:groupmode="layer" inkscape:label="element/SHADOW" data-ec-key="element/SHADOW" data-ec-index="42" transform="translate(160 352) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>element/SHADOW</title>
+    <path id="ink-element-SHADOW" d="M .34 -.84 C -.87 -.81 -.96 .91 .32 .86 C -.26 .45 -.3 -.41 .34 -.84 Z M .62 -.39 L .62 -.13 M .49 -.26 L .75 -.26" />
+  </g>
+  <g id="glyph-element-ARCANE" inkscape:groupmode="layer" inkscape:label="element/ARCANE" data-ec-key="element/ARCANE" data-ec-index="43" transform="translate(224 352) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>element/ARCANE</title>
+    <path id="ink-element-ARCANE" d="M 0 -.94 L .77 .43 L -.77 .43 Z M 0 .94 L -.77 -.43 L .77 -.43 Z M .24 0 A .24 .24 0 1 0 -.24 0 A .24 .24 0 1 0 .24 0 Z" />
+  </g>
+  <g id="glyph-action-SELECT" inkscape:groupmode="layer" inkscape:label="action/SELECT" data-ec-key="action/SELECT" data-ec-index="44" transform="translate(288 352) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/SELECT</title>
+    <path id="ink-44-0" d="M -0.7 -0.9 L -0.65 0.8 L -0.15 0.3 L 0.3 0.95 L 0.65 0.7 L 0.2 0.1 L 0.9 -0.05 Z" />
+  </g>
+  <g id="glyph-action-ROUTE" inkscape:groupmode="layer" inkscape:label="action/ROUTE" data-ec-key="action/ROUTE" data-ec-index="45" transform="translate(352 352) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/ROUTE</title>
+    <path id="ink-45-0" d="M -0.8 0.8 L -0.15 0.15 L 0.35 -0.65 L 0.8 -0.15 L 0.15 0.5 Z" />
+    <path id="ink-45-1" d="M -0.15 0.15 L 0.15 0.5" />
+  </g>
+  <g id="glyph-action-START" inkscape:groupmode="layer" inkscape:label="action/START" data-ec-key="action/START" data-ec-index="46" transform="translate(416 352) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/START</title>
+    <path id="ink-46-0" d="M -0.5 -0.8 L 0.8 0 L -0.5 0.8 Z" />
+  </g>
+  <g id="glyph-action-STOP" inkscape:groupmode="layer" inkscape:label="action/STOP" data-ec-key="action/STOP" data-ec-index="47" transform="translate(480 352) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/STOP</title>
+    <path id="ink-47-0" d="M -0.7 -0.7 L 0.7 -0.7 L 0.7 0.7 L -0.7 0.7 Z" />
+  </g>
+  <g id="glyph-action-PLATE" inkscape:groupmode="layer" inkscape:label="action/PLATE" data-ec-key="action/PLATE" data-ec-index="48" transform="translate(32 416) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/PLATE</title>
+    <path id="ink-48-0" d="M -0.7 -0.7 L 0.7 -0.7 L 0.7 0.7 L -0.7 0.7 Z" />
+  </g>
+  <g id="glyph-action-SAVE" inkscape:groupmode="layer" inkscape:label="action/SAVE" data-ec-key="action/SAVE" data-ec-index="49" transform="translate(96 416) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/SAVE</title>
+    <path id="ink-49-0" d="M -0.8 -0.8 L 0.5 -0.8 L 0.8 -0.5 L 0.8 0.8 L -0.8 0.8 Z" />
+    <path id="ink-49-1" d="M -0.4 -0.8 L -0.4 -0.1 L 0.35 -0.1 L 0.35 -0.8" />
+    <path id="ink-49-2" d="M -0.4 0.8 L -0.4 0.3 L 0.4 0.3 L 0.4 0.8" />
+  </g>
+  <g id="glyph-action-IMPORT" inkscape:groupmode="layer" inkscape:label="action/IMPORT" data-ec-key="action/IMPORT" data-ec-index="50" transform="translate(160 416) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/IMPORT</title>
+    <path id="ink-50-0" d="M -0.8 0.1 L -0.8 0.8 L 0.8 0.8 L 0.8 0.1" />
+    <path id="ink-50-1" d="M 0 -0.9 L 0 0.35 L -0.4 -0.05" />
+    <path id="ink-50-2" d="M 0 0.35 L 0.4 -0.05" />
+  </g>
+  <g id="glyph-action-EXPORT" inkscape:groupmode="layer" inkscape:label="action/EXPORT" data-ec-key="action/EXPORT" data-ec-index="51" transform="translate(224 416) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/EXPORT</title>
+    <path id="ink-51-0" d="M -0.8 0.1 L -0.8 0.8 L 0.8 0.8 L 0.8 0.1" />
+    <path id="ink-51-1" d="M 0 0.9 L 0 -0.35 L -0.4 0.05" />
+    <path id="ink-51-2" d="M 0 -0.35 L 0.4 0.05" />
+  </g>
+  <g id="glyph-action-DELETE" inkscape:groupmode="layer" inkscape:label="action/DELETE" data-ec-key="action/DELETE" data-ec-index="52" transform="translate(288 416) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/DELETE</title>
+    <path id="ink-52-0" d="M -0.8 -0.5 L 0.8 -0.5" />
+    <path id="ink-52-1" d="M -0.5 -0.5 L -0.4 0.8 L 0.4 0.8 L 0.5 -0.5" />
+    <path id="ink-52-2" d="M -0.3 -0.8 L 0.3 -0.8" />
+  </g>
+  <g id="glyph-action-APPLY" inkscape:groupmode="layer" inkscape:label="action/APPLY" data-ec-key="action/APPLY" data-ec-index="53" transform="translate(352 416) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/APPLY</title>
+    <path id="ink-53-0" d="M -0.8 0 L -0.2 0.65 L 0.85 -0.7" />
+  </g>
+  <g id="glyph-action-BODY" inkscape:groupmode="layer" inkscape:label="action/BODY" data-ec-key="action/BODY" data-ec-index="54" transform="translate(416 416) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/BODY</title>
+    <path id="ink-54-0" d="M -0.35 -0.9 L 0.35 -0.9 L 0.35 0.9 L -0.35 0.9 Z" />
+  </g>
+  <g id="glyph-action-TAIL" inkscape:groupmode="layer" inkscape:label="action/TAIL" data-ec-key="action/TAIL" data-ec-index="55" transform="translate(480 416) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/TAIL</title>
+    <path id="ink-55-0" d="M -0.25 -0.85 L 0.25 -0.85 L 0.25 0.1 L 0.7 0.45 L 0 0.9 L -0.7 0.45 L -0.25 0.1 Z" />
+  </g>
+  <g id="glyph-action-REPAIR" inkscape:groupmode="layer" inkscape:label="action/REPAIR" data-ec-key="action/REPAIR" data-ec-index="56" transform="translate(32 480) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/REPAIR</title>
+    <path id="ink-56-0" d="M -0.7 0.8 L 0.4 -0.35 L 0.8 -0.3 L 0.8 -0.8 L 0.3 -0.8 L 0.3 -0.4 L -0.8 0.7" />
+  </g>
+  <g id="glyph-action-UNDO" inkscape:groupmode="layer" inkscape:label="action/UNDO" data-ec-key="action/UNDO" data-ec-index="57" transform="translate(96 480) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/UNDO</title>
+    <path id="ink-57-0" d="M -0.8 -0.1 L 0.25 -0.1 L 0.7 0.3 L 0.45 0.8" />
+    <path id="ink-57-1" d="M -0.8 -0.1 L -0.3 -0.6" />
+    <path id="ink-57-2" d="M -0.8 -0.1 L -0.3 0.4" />
+  </g>
+  <g id="glyph-action-REDO" inkscape:groupmode="layer" inkscape:label="action/REDO" data-ec-key="action/REDO" data-ec-index="58" transform="translate(160 480) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/REDO</title>
+    <path id="ink-58-0" d="M 0.8 -0.1 L -0.25 -0.1 L -0.7 0.3 L -0.45 0.8" />
+    <path id="ink-58-1" d="M 0.8 -0.1 L 0.3 -0.6" />
+    <path id="ink-58-2" d="M 0.8 -0.1 L 0.3 0.4" />
+  </g>
+  <g id="glyph-action-CLOSE" inkscape:groupmode="layer" inkscape:label="action/CLOSE" data-ec-key="action/CLOSE" data-ec-index="59" transform="translate(224 480) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/CLOSE</title>
+    <path id="ink-59-0" d="M -0.65 -0.65 L 0.65 0.65" />
+    <path id="ink-59-1" d="M 0.65 -0.65 L -0.65 0.65" />
+  </g>
+  <g id="glyph-shape-HEX" inkscape:groupmode="layer" inkscape:label="shape/HEX" data-ec-key="shape/HEX" data-ec-index="60" transform="translate(288 480) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>shape/HEX</title>
+    <path id="ink-60-0" d="M 0.8660254 -0.5 L 0.8660254 0.5 L 0 1 L -0.8660254 0.5 L -0.8660254 -0.5 L -0 -1 Z" />
+  </g>
+  <g id="glyph-action-HEAD" inkscape:groupmode="layer" inkscape:label="action/HEAD" data-ec-key="action/HEAD" data-ec-index="61" transform="translate(352 480) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>action/HEAD</title>
+    <path id="ink-61-0" d="M 0.7794229 -0.45 L 0.7794229 0.45 L 0 0.9 L -0.7794229 0.45 L -0.7794229 -0.45 L -0 -0.9 Z" />
+    <path id="ink-61-1" d="M 0 -0.65 L -0.4 0 L 0 0.65 L 0.4 0 Z" />
+  </g>
+  <g id="glyph-rune-ABSORB" inkscape:groupmode="layer" inkscape:label="rune/ABSORB" data-ec-key="rune/ABSORB" data-ec-index="62" transform="translate(416 480) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/ABSORB</title>
+    <path id="ink-62-0" d="M 0.35 0 L 0.175 0.3031089" />
+    <path id="ink-62-1" d="M 0.85 0 L 0.48 0 L 0.5855385 0.1309378" />
+    <path id="ink-62-2" d="M 0.175 0.3031089 L -0.175 0.3031089" />
+    <path id="ink-62-3" d="M 0.425 0.7361216 L 0.24 0.4156922 L 0.1793738 0.5725601" />
+    <path id="ink-62-4" d="M -0.175 0.3031089 L -0.35 4.286264e-17" />
+    <path id="ink-62-5" d="M -0.425 0.7361216 L -0.24 0.4156922 L -0.4061647 0.4416223" />
+    <path id="ink-62-6" d="M -0.35 4.286264e-17 L -0.175 -0.3031089" />
+    <path id="ink-62-7" d="M -0.85 1.04095e-16 L -0.48 5.878305e-17 L -0.5855385 -0.1309378" />
+    <path id="ink-62-8" d="M -0.175 -0.3031089 L 0.175 -0.3031089" />
+    <path id="ink-62-9" d="M -0.425 -0.7361216 L -0.24 -0.4156922 L -0.1793738 -0.5725601" />
+    <path id="ink-62-10" d="M 0.175 -0.3031089 L 0.35 -3.965877e-16" />
+    <path id="ink-62-11" d="M 0.425 -0.7361216 L 0.24 -0.4156922 L 0.4061647 -0.4416223" />
+  </g>
+  <g id="glyph-rune-FAN" inkscape:groupmode="layer" inkscape:label="rune/FAN" data-ec-key="rune/FAN" data-ec-index="63" transform="translate(480 480) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/FAN</title>
+    <path id="ink-63-0" d="M -0.8 -0.65 L 0 0.8 L 0.8 -0.65" />
+    <path id="ink-63-1" d="M -0.7969108 -0.5294485 L -0.7054264 -0.5801716 L -0.6107291 -0.6246087 L -0.5132502 -0.6625574 L -0.4134337 -0.6938449 L -0.3117343 -0.7183286 L -0.208615 -0.7358971 L -0.1045456 -0.7464702 L 0 -0.75 L 0.1045456 -0.7464702 L 0.208615 -0.7358971 L 0.3117343 -0.7183286 L 0.4134337 -0.6938449 L 0.5132502 -0.6625574 L 0.6107291 -0.6246087 L 0.7054264 -0.5801716 L 0.7969108 -0.5294485" />
+    <path id="ink-63-2" d="M 0 0.8 L 0 -0.72" />
+    <path id="ink-63-3" d="M -0.4 -0.68 L 0 0.8" />
+    <path id="ink-63-4" d="M 0.4 -0.68 L 0 0.8" />
+  </g>
+  <g id="glyph-rune-WALL" inkscape:groupmode="layer" inkscape:label="rune/WALL" data-ec-key="rune/WALL" data-ec-index="64" transform="translate(32 544) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/WALL</title>
+    <path id="ink-64-0" d="M -0.8 -0.65 L 0.8 -0.65 L 0.8 0.65 L -0.8 0.65 Z" />
+    <path id="ink-64-1" d="M -0.8 0 L 0.8 0" />
+    <path id="ink-64-2" d="M 0 -0.65 L 0 0.65" />
+    <path id="ink-64-3" d="M -0.4 -0.65 L -0.4 0" />
+    <path id="ink-64-4" d="M 0.4 0 L 0.4 0.65" />
+  </g>
+  <g id="glyph-rune-RING" inkscape:groupmode="layer" inkscape:label="rune/RING" data-ec-key="rune/RING" data-ec-index="65" transform="translate(96 544) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/RING</title>
+    <ellipse id="ink-65-0" cx="0" cy="0" rx="0.85" ry="0.85" />
+    <ellipse id="ink-65-1" cx="0" cy="0" rx="0.48" ry="0.48" />
+    <path id="ink-65-2" d="M -0.85 0 L -0.48 0" />
+    <path id="ink-65-3" d="M 0.48 0 L 0.85 0" />
+    <path id="ink-65-4" d="M 0 -0.85 L 0 -0.48" />
+    <path id="ink-65-5" d="M 0 0.48 L 0 0.85" />
+  </g>
+  <g id="glyph-rune-COLUMN" inkscape:groupmode="layer" inkscape:label="rune/COLUMN" data-ec-key="rune/COLUMN" data-ec-index="66" transform="translate(160 544) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/COLUMN</title>
+    <ellipse id="ink-66-0" cx="0" cy="-0.6" rx="0.6" ry="0.23" />
+    <ellipse id="ink-66-1" cx="0" cy="0.6" rx="0.6" ry="0.23" />
+    <path id="ink-66-2" d="M -0.6 -0.6 L -0.6 0.6" />
+    <path id="ink-66-3" d="M 0.6 -0.6 L 0.6 0.6" />
+    <path id="ink-66-4" d="M 0 -0.36 L 0 0.36" />
+  </g>
+  <g id="glyph-rune-CROSS" inkscape:groupmode="layer" inkscape:label="rune/CROSS" data-ec-key="rune/CROSS" data-ec-index="67" transform="translate(224 544) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/CROSS</title>
+    <path id="ink-67-0" d="M -0.25 -0.85 L 0.25 -0.85 L 0.25 -0.25 L 0.85 -0.25 L 0.85 0.25 L 0.25 0.25 L 0.25 0.85 L -0.25 0.85 L -0.25 0.25 L -0.85 0.25 L -0.85 -0.25 L -0.25 -0.25 Z" />
+  </g>
+  <g id="glyph-rune-DOME" inkscape:groupmode="layer" inkscape:label="rune/DOME" data-ec-key="rune/DOME" data-ec-index="68" transform="translate(288 544) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/DOME</title>
+    <path id="ink-68-0" d="M 0.85 0.55 L 0.8427281 0.3868423 L 0.821037 0.2264762 L 0.7852976 0.07164571 L 0.7361216 -0.075 L 0.6743503 -0.2109518 L 0.6010408 -0.3338835 L 0.5174472 -0.4416917 L 0.425 -0.5325318 L 0.3252809 -0.6048494 L 0.2199962 -0.6574073 L 0.1109473 -0.6893061 L 5.204749e-17 -0.7 L -0.1109473 -0.6893061 L -0.2199962 -0.6574073 L -0.3252809 -0.6048494 L -0.425 -0.5325318 L -0.5174472 -0.4416917 L -0.6010408 -0.3338835 L -0.6743503 -0.2109518 L -0.7361216 -0.075 L -0.7852976 0.07164571 L -0.821037 0.2264762 L -0.8427281 0.3868423 L -0.85 0.55" />
+    <ellipse id="ink-68-1" cx="0" cy="0.55" rx="0.85" ry="0.23" />
+    <path id="ink-68-2" d="M 0.35 0.55 L 0.3470057 0.3868423 L 0.338074 0.2264762 L 0.3233578 0.07164571 L 0.3031089 -0.075 L 0.2776737 -0.2109518 L 0.2474874 -0.3338835 L 0.2130665 -0.4416917 L 0.175 -0.5325318 L 0.1339392 -0.6048494 L 0.09058667 -0.6574073 L 0.04568417 -0.6893061 L 2.143132e-17 -0.7 L -0.04568417 -0.6893061 L -0.09058667 -0.6574073 L -0.1339392 -0.6048494 L -0.175 -0.5325318 L -0.2130665 -0.4416917 L -0.2474874 -0.3338835 L -0.2776737 -0.2109518 L -0.3031089 -0.075 L -0.3233578 0.07164571 L -0.338074 0.2264762 L -0.3470057 0.3868423 L -0.35 0.55" />
+    <path id="ink-68-3" d="M -0.66 -0.25 L 0.66 -0.25" />
+  </g>
+  <g id="glyph-rune-STORAGE" inkscape:groupmode="layer" inkscape:label="rune/STORAGE" data-ec-key="rune/STORAGE" data-ec-index="69" transform="translate(352 544) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/STORAGE</title>
+    <path id="ink-69-0" d="M -0.5 -0.6 L 0.5 -0.6 L 0.65 -0.4 L 0.65 0.4 L 0.5 0.6 L -0.5 0.6 L -0.65 0.4 L -0.65 -0.4 Z" />
+    <path id="ink-69-1" d="M -0.4 -0.15 L 0.4 -0.15" />
+    <path id="ink-69-2" d="M -0.4 0.2 L 0.4 0.2" />
+    <path id="ink-69-3" d="M 0 -0.85 L 0 -0.4" />
+    <path id="ink-69-4" d="M 0 0.4 L 0 0.85" />
+  </g>
+  <g id="glyph-rune-ITEM_INPUT" data-ec-key="rune/ITEM_INPUT" data-ec-index="70" transform="translate(416 544) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/ITEM_INPUT</title>
+    <path d="M -.7 -.45 L -.7 .65 L .7 .65 L .7 -.45 M -.7 .05 L .7 .05 M 0 -.85 L 0 -.2 M -.25 -.45 L 0 -.2 L .25 -.45"/>
+  </g>
+  <g id="glyph-rune-ITEM_OUTPUT" data-ec-key="rune/ITEM_OUTPUT" data-ec-index="71" transform="translate(480 544) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/ITEM_OUTPUT</title>
+    <path d="M -.7 -.45 L -.7 .65 L .7 .65 L .7 -.45 M -.7 .05 L .7 .05 M 0 -.2 L 0 -.85 M -.25 -.6 L 0 -.85 L .25 -.6"/>
+  </g>
+  <g id="glyph-rune-REDSTONE" data-ec-key="rune/REDSTONE" data-ec-index="72" transform="translate(32 608) scale(26)" fill="none" stroke="#ffffff" stroke-width="0.08461538" stroke-linecap="round" stroke-linejoin="round">
+    <title>rune/REDSTONE</title>
+    <path d="M 0 -.8 L .5 -.25 L 0 .2 L -.5 -.25 Z M 0 .2 L 0 .8 M -.8 .5 L 0 .5 L .8 .5 M -.8 .35 L -.8 .65 M .8 .35 L .8 .65"/>
+  </g>
+  <g id="glyph-rune-CONTACT" data-ec-key="rune/CONTACT" data-ec-index="73" transform="translate(96 608) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="-.5" cy="0" r=".25"/><circle cx=".5" cy="0" r=".25"/>
+    <path d="M -.25 0 L .25 0 M -.8 -.6 L -.5 -.8 L -.2 -.6 M .2 .6 L .5 .8 L .8 .6"/>
+  </g>
+  <g id="glyph-rune-FORCE" data-ec-key="rune/FORCE" data-ec-index="74" transform="translate(160 608) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -.8 0 L .8 0 M .3 -.5 L .8 0 L .3 .5 M -.7 -.45 L -.35 -.45 M -.7 .45 L -.35 .45"/>
+  </g>
+  <g id="glyph-rune-CONSTRAINT" data-ec-key="rune/CONSTRAINT" data-ec-index="75" transform="translate(224 608) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="0" cy="0" r=".3"/><path d="M -.5 -.75 L -.75 -.75 L -.75 .75 L -.5 .75 M .5 -.75 L .75 -.75 L .75 .75 L .5 .75 M 0 -.75 L 0 -.3 M 0 .3 L 0 .75"/>
+  </g>
+  <g id="glyph-rune-INTERACT" data-ec-key="rune/INTERACT" data-ec-index="76" transform="translate(288 608) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -.7 .7 L .7 .7 M 0 .7 L 0 .3 L .5 -.5 M -.45 -.65 L -.45 -.3 M -.8 -.3 L -.45 -.3 L -.45 .05 M -.6 .1 L -.3 .4"/>
+    <circle cx=".58" cy="-.63" r=".18"/>
+  </g>
+  <g id="glyph-rune-ANGLE" data-ec-key="rune/ANGLE" data-ec-index="77" transform="translate(352 608) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -.7 -.7 L -.7 .7 L .8 .7 M -.7 -.25 C -.2 -.25 .25 .2 .25 .7"/>
+  </g>
+  <g id="glyph-rune-YAW" data-ec-key="rune/YAW" data-ec-index="78" transform="translate(416 608) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -.8 .55 L .8 .55 M -.65 .15 C -.55 -.75 .55 -.75 .65 .15 M .3 -.1 L .65 .15 L .85 -.2 M 0 .55 L 0 -.1"/>
+  </g>
+  <g id="glyph-rune-PITCH" data-ec-key="rune/PITCH" data-ec-index="79" transform="translate(480 608) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -.6 -.8 L -.6 .8 M -.2 .65 C .75 .55 .75 -.55 -.2 -.65 M -.45 -.3 L -.2 -.65 L .15 -.85 M -.6 0 L .1 0"/>
+  </g>
+  <g id="glyph-rune-DISTANCE" data-ec-key="rune/DISTANCE" data-ec-index="80" transform="translate(32 672) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -.75 -.6 L -.75 .6 M .75 -.6 L .75 .6 M -.75 0 L .75 0 M -.45 -.25 L -.75 0 L -.45 .25 M .45 -.25 L .75 0 L .45 .25"/>
+  </g>
+  <g id="glyph-rune-FILTER" data-ec-key="rune/FILTER" data-ec-index="81" transform="translate(96 672) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -.8 -.6 L .8 -.6 L .25 .05 L .25 .65 L -.25 .8 L -.25 .05 Z M .4 .25 L .8 .25 M .6 .05 L .8 .25 L .6 .45"/>
+  </g>
+  <g id="glyph-rune-SELECT" data-ec-key="rune/SELECT" data-ec-index="82" transform="translate(160 672) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -.8 0 L -.3 0 L .45 -.6 L .8 -.6 M .45 .6 L .8 .6 M -.1 .7 L -.1 .3"/><circle cx="-.3" cy="0" r=".12"/>
+  </g>
+  <g id="glyph-rune-DELAY" data-ec-key="rune/DELAY" data-ec-index="83" transform="translate(224 672) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -.65 -.8 L .65 -.8 M -.65 .8 L .65 .8 M -.5 -.8 L -.5 -.4 L .5 .4 L .5 .8 M .5 -.8 L .5 -.4 L -.5 .4 L -.5 .8 M -.3 .6 L .3 .6"/>
+  </g>
+  <g id="glyph-rune-ANCHOR" data-ec-key="rune/ANCHOR" data-ec-index="84" transform="translate(288 672) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="0" cy="-.55" r=".2"/><path d="M 0 -.35 L 0 .8 M -.4 0 L .4 0 M -.75 .1 L -.65 .5 L 0 .8 L .65 .5 L .75 .1 M -.75 .1 L -.4 .25 M .75 .1 L .4 .25"/>
+  </g>
+  <g id="glyph-rune-TARGET" data-ec-key="rune/TARGET" data-ec-index="85" transform="translate(352 672) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="0" cy="0" r=".5"/><path d="M -.8 0 L -.3 0 M .3 0 L .8 0 M 0 -.8 L 0 -.3 M 0 .3 L 0 .8 M -.15 .05 L 0 .2 L .3 -.2"/>
+  </g>
+  <g id="glyph-rune-PROBE" data-ec-key="rune/PROBE" data-ec-index="86" transform="translate(416 672) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -.85 0 L -.4 -.45 L .4 -.45 L .85 0 L .4 .45 L -.4 .45 Z M -.3 .7 L .3 .7"/><circle cx="0" cy="0" r=".23"/>
+  </g>
+  <g id="glyph-rune-EDGE" data-ec-key="rune/EDGE" data-ec-index="87" transform="translate(480 672) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -.8 .6 L -.35 .6 L -.35 -.25 L .25 -.25 L .25 -.65 L .8 -.65 M .45 -.85 L .8 -.65 L .45 -.45"/>
+  </g>
+  <g id="glyph-rune-THROTTLE" data-ec-key="rune/THROTTLE" data-ec-index="88" transform="translate(32 736) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -.85 -.55 L -.45 -.55 L -.2 0 L -.45 .55 L -.85 .55 M .05 -.65 L .05 .65 M .35 -.55 L .85 -.55 M .35 .55 L .85 .55"/>
+  </g>
+  <g id="glyph-rune-MATERIAL_FILTER" data-ec-key="rune/MATERIAL_FILTER" data-ec-index="89" transform="translate(96 736) scale(26)" fill="none" stroke="#ffffff" stroke-width=".08461538" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -.8 -.65 L .8 -.65 L .25 -.05 L .25 .65 L -.25 .65 L -.25 -.05 Z M -.55 .05 L -.4 .2 L -.55 .35 M -.55 .2 L -.35 .2"/>
+  </g>
+</svg>

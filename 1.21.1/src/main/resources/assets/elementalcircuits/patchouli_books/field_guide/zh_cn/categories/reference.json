@@ -1,0 +1,6 @@
+{
+  "name": "查阅与排错",
+  "description": "按条目查阅，配方可直接翻看。",
+  "icon": "elementalcircuits:probe_wand",
+  "sortnum": 5
+}

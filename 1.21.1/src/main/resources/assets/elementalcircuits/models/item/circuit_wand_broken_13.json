@@ -1,0 +1,149 @@
+{
+  "loader": "neoforge:obj",
+  "model": "elementalcircuits:models/item/wand3d/wand_13.obj",
+  "automatic_culling": false,
+  "flip_v": false,
+  "shade_quads": true,
+  "emissive_ambient": false,
+  "gui_light": "front",
+  "textures": {
+    "particle": "elementalcircuits:item/wand/inactive_1",
+    "p0": "elementalcircuits:item/wand/inactive_0",
+    "p1": "elementalcircuits:item/wand/inactive_1",
+    "p2": "elementalcircuits:item/wand/inactive_2",
+    "p3": "elementalcircuits:item/wand/inactive_3",
+    "p4": "elementalcircuits:item/wand/inactive_4",
+    "p5": "elementalcircuits:item/wand/inactive_5",
+    "p6": "elementalcircuits:item/wand/inactive_6",
+    "p7": "elementalcircuits:item/wand/inactive_7",
+    "p8": "elementalcircuits:item/wand/inactive_8",
+    "p9": "elementalcircuits:item/wand/inactive_9",
+    "p10": "elementalcircuits:item/wand/inactive_10",
+    "p11": "elementalcircuits:item/wand/inactive_11",
+    "p12": "elementalcircuits:item/wand/inactive_12",
+    "p13": "elementalcircuits:item/wand/inactive_13",
+    "p14": "elementalcircuits:item/wand/inactive_14",
+    "p15": "elementalcircuits:item/wand/inactive_15"
+  },
+  "display": {
+    "gui": {
+      "rotation": [
+        18,
+        -35,
+        -38
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        -85,
+        12
+      ],
+      "translation": [
+        2.0,
+        1.0,
+        0
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        85,
+        -12
+      ],
+      "translation": [
+        2.0,
+        1.0,
+        0
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        25,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        1.016192,
+        2.406474
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        25,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        1.016192,
+        2.406474
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        -35
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Routing, delay and observation",
+  "category": "elementalcircuits:runes",
+  "icon": "elementalcircuits:brass_plate",
+  "sortnum": 29,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Routing, delay and observation",
+      "text": "Element Filter sends the chosen element and polarity to outlet 1 and the rest to outlet 2. Lines sharing an outlet divide its mana evenly. Provenance and arrival order survive. An unconnected nonempty outlet blocks instead of destroying its mana. Signal Router selects outlet 1 for low or invalid input, outlet 2 for high."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Select a rune and click its named outlet to start wiring, or choose an outlet number on the toolbar. Storage has three separate signal outlets: 1 full, 2 at threshold with release enabled, 3 empty. Each reflects the stored amount at sampling time."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Signal Delay postpones each transition by a fixed number of logical ticks, preserving order and pulse width. One tick is 0.05 seconds. The default is 10, with a format ceiling of 65536; servers can lower admission budgets. Stop freezes the queue, restart resumes it, reset clears it. Saving retains pending transitions."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Probe emits a read-only signal: 0 aimed block exists, 1 aimed inventory full, 2 this circuit has a link, 3 it has no link. Full means every slot is occupied to both slot and item stack limits. Default range is 16, configurable with probe.range. No chunk loading or inventory operation occurs. Link state is observed at the preceding world boundary."
+    }
+  ]
+}

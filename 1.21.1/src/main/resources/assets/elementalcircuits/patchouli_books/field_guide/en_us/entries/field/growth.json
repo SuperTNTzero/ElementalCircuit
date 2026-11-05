@@ -1,0 +1,22 @@
+{
+  "name": "Fruit and potions",
+  "category": "elementalcircuits:field",
+  "icon": "elementalcircuits:mana_fruit",
+  "sortnum": 15,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Fruit and potions",
+      "text": "Craft a mana fruit from an apple and mana crystals. Eating it permanently raises reserve capacity, up to the default growth cap of 1024. Attributes and server settings can adjust capacity."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Brew a mana crystal into an awkward potion for Mana Recovery. Redstone extends duration; glowstone improves level. The effect boosts only the fixed part of regeneration, not its percentage term."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:mana_fruit"
+    }
+  ]
+}

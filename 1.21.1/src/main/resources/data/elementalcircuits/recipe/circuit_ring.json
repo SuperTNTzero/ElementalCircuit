@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " C ",
+    "L L",
+    " L "
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "C": {
+      "item": "elementalcircuits:mana_crystal"
+    }
+  },
+  "result": {
+    "id": "elementalcircuits:circuit_ring",
+    "count": 1
+  }
+}

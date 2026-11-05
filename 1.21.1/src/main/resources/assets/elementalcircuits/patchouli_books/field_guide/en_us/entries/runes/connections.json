@@ -1,0 +1,28 @@
+{
+  "name": "Connections and operations",
+  "category": "elementalcircuits:runes",
+  "icon": "elementalcircuits:circuit_wand",
+  "sortnum": 27,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Connections and operations",
+      "text": "Connection is a casting method alongside Directed and Area. It only binds the aimed entity or block; it grants no implicit grabbing, damage or inventory access. Do not add shape runes. Each output retains its own target across deliveries."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Force pushes along the casting direction; inverse mana pulls. Constraint uses finite spring force to hold an entity relative to the source. Aim to move the reference point, or set its distance separately. Gravity and collisions remain active; entities cannot be carried through walls."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Interaction requires a signal wire. Each low-to-high transition operates the linked lever, button or bell once. A held high signal never toggles repeatedly. Inventory operations still require Container Read and Container Output."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "A continuous circuit containing Connection keeps supplying after click or charged release; right-click again to stop it. Other circuits retain single-shot gestures. Each link pays distance and load maintenance, then actual force work or interaction. Its remaining allowance cannot be refunded or used as circuit mana. Stopping, loss of supply, invalid targets, obstruction or excess range releases it. Server contact settings control costs and budgets."
+    }
+  ]
+}

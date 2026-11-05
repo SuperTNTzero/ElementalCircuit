@@ -1,0 +1,22 @@
+{
+  "name": "节点与汲取",
+  "category": "elementalcircuits:field",
+  "icon": "elementalcircuits:mana_node",
+  "sortnum": 13,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "节点与汲取",
+      "text": "天然节点会自然恢复，人工节点需要补入水晶。节点向周围魔力场释放能量；汲取符文从所在位置取得魔力，不能凭空创造能量。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "多个汲取口能提高吞吐，但节点储量、自然补能、场浓度和释放上限仍会限制供能。集中汲取会让局部浓度下降，增加汲取口不等于无限供给。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:mana_node"
+    }
+  ]
+}

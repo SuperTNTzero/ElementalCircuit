@@ -1,0 +1,22 @@
+{
+  "name": "从这里开始",
+  "category": "elementalcircuits:beginning",
+  "icon": "elementalcircuits:circuit_guide",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "从这里开始",
+      "text": "先备好法杖、法阵工作台和木质基板。法杖工作台用于换部件，法阵工作台用于刻印。两张桌子的用途不同。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "手持法杖与法阵工作台互动，进入编辑器。把输入、元素转化、形状和输出按顺序连接，保存后离开工作台试射。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:circuit_guide"
+    }
+  ]
+}

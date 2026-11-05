@@ -1,0 +1,28 @@
+{
+  "name": "法袍与装备施法",
+  "category": "elementalcircuits:equipment",
+  "icon": "elementalcircuits:wizard_robe",
+  "sortnum": 17,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "法袍与装备施法",
+      "text": "皮革与魔力水晶制作帽、法袍、绑腿和靴子。它们提高法强、魔力容量和固定恢复量，也降低魔力消耗。默认四件减免为4%、8%、6%、4%，合计22%。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "装备也可在法阵工作台铭刻。默认V打开装备轮盘，J使用选中装备法阵；可配置受击触发施法。受击触发仍受魔力与运行限制，不是无代价的反击。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:wizard_hat",
+      "recipe2": "elementalcircuits:wizard_robe"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:wizard_leggings",
+      "recipe2": "elementalcircuits:wizard_boots"
+    }
+  ]
+}

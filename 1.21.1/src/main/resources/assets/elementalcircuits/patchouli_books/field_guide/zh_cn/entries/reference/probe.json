@@ -1,0 +1,22 @@
+{
+  "name": "探测与定位",
+  "category": "elementalcircuits:reference",
+  "icon": "elementalcircuits:probe_wand",
+  "sortnum": 19,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "探测与定位",
+      "text": "探测杖负责读取固定法阵、节点等对象的信息。对着目标右键查看状态；右键空地探测附近天然节点，默认水平搜索半径500格，可由服务器配置。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "探测结果用于决定在哪里建设，不会向玩家免费补能，也不会让人工节点冒充天然节点。范围越大，搜索成本越高；大型服务器可调整预算与半径。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:probe_wand"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Mana Slimes and Aerial Nodes",
+  "category": "elementalcircuits:field",
+  "icon": "elementalcircuits:mana_gel",
+  "sortnum": 25,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Mana Slimes and Aerial Nodes",
+      "text": "Aerial Mana Nodes hover 8–16 blocks above the surface as blue-white orbs. Defaults: 1024 reserve, 2 mana regenerated per second and 1 emitted per field step. Ground nodes hold 4096, regenerate 1 per second and emit 0.5 per step. Both feed the mana field and are counted by the probe survey."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Mana Slimes may spawn within 24 blocks of natural nodes. A normal slime converts after 30 continuous seconds in a field cell holding at least 24 mana. Small Mana Slimes drop Mana Gel. Eat it to restore 16 mana, or brew it into an Awkward Potion for a Potion of Mana Restoration: 32 mana instantly, or 64 with glowstone. Existing Mana Recovery potions still accelerate regeneration instead."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Eat gel directly or use it for brewing."
+    }
+  ]
+}

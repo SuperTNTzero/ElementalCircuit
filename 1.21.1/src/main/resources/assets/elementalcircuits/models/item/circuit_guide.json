@@ -1,0 +1,24 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "particle": "elementalcircuits:item/circuit_guide"
+  },
+  "base": {
+    "parent": "elementalcircuits:item/guide/flat"
+  },
+  "perspectives": {
+    "firstperson_righthand": {
+      "parent": "elementalcircuits:item/guide/held"
+    },
+    "firstperson_lefthand": {
+      "parent": "elementalcircuits:item/guide/held"
+    },
+    "thirdperson_righthand": {
+      "parent": "elementalcircuits:item/guide/held"
+    },
+    "thirdperson_lefthand": {
+      "parent": "elementalcircuits:item/guide/held"
+    }
+  }
+}

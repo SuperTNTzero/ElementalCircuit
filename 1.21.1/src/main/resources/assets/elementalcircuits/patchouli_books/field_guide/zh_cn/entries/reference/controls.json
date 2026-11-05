@@ -1,0 +1,18 @@
+{
+  "name": "查找设置",
+  "category": "elementalcircuits:reference",
+  "icon": "elementalcircuits:circuit_guide",
+  "sortnum": 23,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "查找设置",
+      "text": "这里记录的是默认键位和默认数值，整合包可以修改。键位以游戏控制设置为准；服务器配置可调整输入、蓄力、魔力场、递归深度和性能预算。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "有权限的管理员可用/ec管理命令调整魔力和配置；/attribute可调整法强、基础魔耗与减免。指南只阅读，不执行管理命令，也不改变已有法阵现场。"
+    }
+  ]
+}

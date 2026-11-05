@@ -1,0 +1,6 @@
+{
+  "name": "Field reference",
+  "description": "Browse entries and their crafting recipes.",
+  "icon": "elementalcircuits:probe_wand",
+  "sortnum": 5
+}

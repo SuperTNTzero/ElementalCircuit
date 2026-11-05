@@ -78,6 +78,8 @@
     0.5,
     0.5
   ],
-  "max_angle_degrees": 145,
+  "max_angle_degrees": 180,
+  "open_binding_scale_y": 0.5,
+  "open_binding_drop_y": 0.065,
   "atlas": "Aseprite 512px with padded 64px paintings"
 }

@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "method": "per-face dominant-normal projection inside each original Blender group",
+  "geometryChanged": false,
+  "variants": [
+    {
+      "file": "wand_0.obj",
+      "vertices": 331,
+      "faces": 386,
+      "uvs": 1334,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_1.obj",
+      "vertices": 324,
+      "faces": 380,
+      "uvs": 1308,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_10.obj",
+      "vertices": 358,
+      "faces": 424,
+      "uvs": 1448,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_11.obj",
+      "vertices": 376,
+      "faces": 432,
+      "uvs": 1488,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_12.obj",
+      "vertices": 397,
+      "faces": 470,
+      "uvs": 1610,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_13.obj",
+      "vertices": 390,
+      "faces": 464,
+      "uvs": 1584,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_14.obj",
+      "vertices": 408,
+      "faces": 472,
+      "uvs": 1624,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_15.obj",
+      "vertices": 429,
+      "faces": 510,
+      "uvs": 1746,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_16.obj",
+      "vertices": 422,
+      "faces": 504,
+      "uvs": 1720,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_17.obj",
+      "vertices": 440,
+      "faces": 512,
+      "uvs": 1760,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_18.obj",
+      "vertices": 357,
+      "faces": 430,
+      "uvs": 1466,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_19.obj",
+      "vertices": 350,
+      "faces": 424,
+      "uvs": 1440,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_2.obj",
+      "vertices": 342,
+      "faces": 388,
+      "uvs": 1348,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_20.obj",
+      "vertices": 368,
+      "faces": 432,
+      "uvs": 1480,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_21.obj",
+      "vertices": 389,
+      "faces": 470,
+      "uvs": 1602,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_22.obj",
+      "vertices": 382,
+      "faces": 464,
+      "uvs": 1576,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_23.obj",
+      "vertices": 400,
+      "faces": 472,
+      "uvs": 1616,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_24.obj",
+      "vertices": 421,
+      "faces": 510,
+      "uvs": 1738,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_25.obj",
+      "vertices": 414,
+      "faces": 504,
+      "uvs": 1712,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_26.obj",
+      "vertices": 432,
+      "faces": 512,
+      "uvs": 1752,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_3.obj",
+      "vertices": 363,
+      "faces": 426,
+      "uvs": 1470,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_4.obj",
+      "vertices": 356,
+      "faces": 420,
+      "uvs": 1444,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_5.obj",
+      "vertices": 374,
+      "faces": 428,
+      "uvs": 1484,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_6.obj",
+      "vertices": 395,
+      "faces": 466,
+      "uvs": 1606,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_7.obj",
+      "vertices": 388,
+      "faces": 460,
+      "uvs": 1580,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_8.obj",
+      "vertices": 406,
+      "faces": 468,
+      "uvs": 1620,
+      "boundedUVs": true
+    },
+    {
+      "file": "wand_9.obj",
+      "vertices": 365,
+      "faces": 430,
+      "uvs": 1474,
+      "boundedUVs": true
+    }
+  ]
+}

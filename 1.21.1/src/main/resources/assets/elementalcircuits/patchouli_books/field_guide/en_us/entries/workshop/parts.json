@@ -1,0 +1,33 @@
+{
+  "name": "Assemble a wand",
+  "category": "elementalcircuits:workshop",
+  "icon": "elementalcircuits:wand_workbench",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Assemble a wand",
+      "text": "Use your wand on the wand workbench. The head sets power, speed and wear thresholds; head and shaft set durability; the tail sets melee damage. Replacement parts must be in your inventory."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Parts determine cooldown; circuit complexity also adds preparation time. Branches, long links and feedback increase complexity. Exceeding head thresholds adds wear. Creative casting does not consume durability."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "Melee wears only the staff. Casting wears the active circuit board plus a small fractional amount of staff durability. An exhausted board stops supply without destroying the wand or preventing melee. Book casts wear their book board, not a board inside the wand."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:wand_workbench",
+      "recipe2": "elementalcircuits:copper_head"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:iron_body",
+      "recipe2": "elementalcircuits:iron_tail"
+    }
+  ]
+}

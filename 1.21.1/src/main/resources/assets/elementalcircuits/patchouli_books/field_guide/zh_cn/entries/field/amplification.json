@@ -1,0 +1,23 @@
+{
+  "name": "水晶基座",
+  "category": "elementalcircuits:field",
+  "icon": "elementalcircuits:mana_crystal_block",
+  "sortnum": 14,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "水晶基座",
+      "text": "九枚魔力水晶可压成一块，也可拆回九枚。把水晶块紧贴放在节点或固定法阵正下方生效；隔层、侧邻和继续向下堆叠不额外叠加。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "默认节点释放上限提高50%，天然节点恢复提高50%。固定法阵的强度、成本和准备速度系数提高25%。增幅不会赠送魔力，人工节点也不会因此自然恢复。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:mana_crystal_block",
+      "recipe2": "elementalcircuits:mana_crystal_from_block"
+    }
+  ]
+}

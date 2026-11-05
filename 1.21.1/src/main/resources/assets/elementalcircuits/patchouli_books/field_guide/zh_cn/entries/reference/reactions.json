@@ -1,0 +1,18 @@
+{
+  "name": "元素反应顺序",
+  "category": "elementalcircuits:reference",
+  "icon": "elementalcircuits:mana_crystal",
+  "sortnum": 20,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "元素反应顺序",
+      "text": "混合元素按法阵实际到达顺序排队反应。同次命中先完成反应，剩余元素量再造成伤害和附加效果。等量相克元素可以互相抵消，避免把两份伤害都先结算。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "已经由前一发法术造成的伤害不会被后一发撤销。伤害遵循原版受击间隔，快速命中不保证每次都扣血。排错时同时观察元素顺序、间隔和实际剩余量。"
+    }
+  ]
+}

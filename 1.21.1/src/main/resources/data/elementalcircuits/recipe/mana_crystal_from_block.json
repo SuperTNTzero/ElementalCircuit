@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "elementalcircuits:mana_crystal_block"
+    }
+  ],
+  "result": {
+    "id": "elementalcircuits:mana_crystal",
+    "count": 9
+  }
+}

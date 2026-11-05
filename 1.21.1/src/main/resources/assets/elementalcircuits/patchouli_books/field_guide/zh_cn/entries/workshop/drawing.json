@@ -1,0 +1,22 @@
+{
+  "name": "在工作台刻印",
+  "category": "elementalcircuits:workshop",
+  "icon": "elementalcircuits:inscription_table",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "在工作台刻印",
+      "text": "左侧按分类展开符文，预览后放入格盘。工具栏切换选择与布线。选中符文可拖动；选中参数后在按钮下方编辑，回车确认该参数。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "连线连接明确的两个符文，允许非相邻连接。经过格数与基板共同影响损耗，线条交叉不会自动接通。只有布线模式下，指向单根连线按Delete才删除它。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "elementalcircuits:inscription_table"
+    }
+  ]
+}
