@@ -1,0 +1,25 @@
+{
+  "source": "https://maven.theillusivec4.top/top/theillusivec4/curios/curios-neoforge/9.5.1+1.21.1/",
+  "files": [
+    {
+      "file": "curios-neoforge-9.5.1+1.21.1-api.jar",
+      "size": 131888,
+      "sha256": "4a249c280a9d9be0e6b1a79bd832c4db84ea80ae6a00608a28832cba991900ec"
+    },
+    {
+      "file": "curios-neoforge-9.5.1+1.21.1-sources.jar",
+      "size": 265975,
+      "sha256": "6a7065229335303b883e4db950c83ab8e39bb6bfe44117819d40140545d8e829"
+    },
+    {
+      "file": "curios-neoforge-9.5.1+1.21.1.jar",
+      "size": 410690,
+      "sha256": "a45df2125c26219974aba7507ffc9afe7b83acc941a386af3faacb1cc0056fde"
+    },
+    {
+      "file": "curios-neoforge-9.5.1+1.21.1.pom",
+      "size": 428,
+      "sha256": "8b6c3d294578f660b3fd3124d190419c5502d0ac3dd6633b3dbd42213b7d473f"
+    }
+  ]
+}

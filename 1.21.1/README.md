@@ -2,7 +2,7 @@
 
 符文现已物品化：红石粉＋萤石粉＋魔力水晶合成 8 份魔力粉，在符文篆刻台用一张纸和一份粉撰写一枚符文。绘制/导入实际法阵并保存时消耗新增符文，导出和蓝图簿收录不消耗。服务器配置 `inscription.requireRunes=0` 可恢复自由绘制；创造模式免消耗。详见 [符文物品与篆刻](docs/systems/符文物品与篆刻.md)。
 
-当前开发版本 **0.55.0**，目标 **Minecraft Java 1.21.1 / NeoForge 21.1.265 / Java 21**。刻阵、组杖通过实体工作台交互；木质、黄铜和水晶基板分别制作对应的固定法阵。保留世界魔力场、三维部件法杖与独立施法冷却。原1.20.1工程位于相邻的 `../1.20.1/`，Godot工程仍位于工作区 `game/`。
+当前开发版本 **0.55.1**，目标 **Minecraft Java 1.21.1 / NeoForge 21.1.265 / Java 21**。刻阵、组杖通过实体工作台交互；木质、黄铜和水晶基板分别制作对应的固定法阵。保留世界魔力场、三维部件法杖与独立施法冷却。原1.20.1工程位于相邻的 `../1.20.1/`，Godot工程仍位于工作区 `game/`。
 
 v0.55修复持续联系施法重复触发法杖冷却、联系锚点逐步丢失的问题。首次建链消耗一次施法间隔，运行法阵逐步续持；停阵、断供、释放信号、目标失效、遮挡、超距或联系魔力耗尽都会自动解除。联系束表现改为更醒目的连续元素束。符文可制作成物品并在法阵保存/导入时结算；魔力粉可为固定法阵布线。客户端可从 `config/elementalcircuits/effects/` 加载 `.ecfx` 动画包，内含自制 PNG 帧与可选 WAV，不依赖 Minecraft 资源包。详见 [符文物品与篆刻](docs/systems/符文物品与篆刻.md)、[自定义特效包](docs/systems/自定义特效包.md) 和 [联系施法与空间参数](docs/systems/联系施法与空间参数.md)。
 
@@ -102,7 +102,7 @@ v0.26接入六组已核验CC0奇幻素材，重做元素与形状的材质和运
 
 ## 安装与首次体验
 
-安装 NeoForge 21.1.265，将 `../releases/elemental-circuits-1.21.1-0.40.0.jar` 放入1.21.1实例的 `mods` 文件夹。客户端与服务端都安装同一版本，使用 Java 21。另需安装 Curios API 9.5.1+1.21.1，依赖包位于 `../releases/dependencies/`。
+安装 NeoForge 21.1.265，将 `../releases/elemental-circuits-1.21.1-0.55.1.jar` 放入1.21.1实例的 `mods` 文件夹。客户端与服务端都安装同一版本，使用 Java 21。另需安装 Curios API 9.5.1+1.21.1，依赖包位于 `../releases/dependencies/`。
 
 1. 放置法阵工作台，主手持法杖右键工作台，进入刻印界面。蹲下对空使用法杖只显示操作提示。
 2. 右栏选择“火焰光束”，保存草稿，关闭界面后瞄准目标右键起阵。再次使用可停止供给。
@@ -145,7 +145,7 @@ python tools/prepare-promo.py
 
 脚本使用 Gradle 9.2.1、ModDevGradle 2.0.148，共享工具缓存位于 `../tooling/`，执行结束恢复原进程环境。源码单独取出时可直接使用 `./gradlew.bat build`；Wrapper固定官方Gradle校验值。默认使用官方依赖源，网络需要时添加 `-Mirror` 使用 NeoForge 官方CDN域名；依赖已经下载完整时可添加 `-Offline`。
 
-构建输出 `build/libs/elemental-circuits-1.21.1-0.34.0.jar`。`build`执行纯Java核心契约；193项Minecraft集成契约通过专门的 `runGameTestServer` 运行。测试类、测试结构及客户端验证器只在显式测试运行中加载，不打包进正式JAR。客户端测试使用 `build/client-smoke/`、`build/audio-world-smoke/`、`build/book-smoke/`、`build/progression-smoke/`、`build/elemental-smoke/`、`build/settings-smoke/`、`build/recursion-smoke/`、`build/probe-smoke/`、`build/wand-smoke/`、`build/combat-smoke/` 下的独立实例与世界；服务端集成每次新建 `build/gametest-runs/` 子目录。
+构建输出 `build/libs/elemental-circuits-1.21.1-0.55.1.jar`。`build`执行纯Java核心契约；285项Minecraft集成契约通过专门的 `runGameTestServer` 运行。测试类、测试结构及客户端验证器只在显式测试运行中加载，不打包进正式JAR。客户端测试使用 `build/client-smoke/`、`build/audio-world-smoke/`、`build/book-smoke/`、`build/progression-smoke/`、`build/elemental-smoke/`、`build/settings-smoke/`、`build/recursion-smoke/`、`build/probe-smoke/`、`build/wand-smoke/`、`build/combat-smoke/` 下的独立实例与世界；服务端集成每次新建 `build/gametest-runs/` 子目录。
 
 ## 版本迁移
 

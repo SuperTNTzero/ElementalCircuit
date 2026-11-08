@@ -96,6 +96,7 @@ public final class LayerMinecraftContracts {
                         originalWater.runes(),
                         originalWater.routes(),
                         originalWater.continuous());
+        RuneTestInventory.stock(p, water);
         command(p, a, 2, 0, JsonCodecs.blueprint(water));
         h.assertTrue(
                 a.layers(1).definition(2).equals(water)

@@ -1,11 +1,12 @@
 # 模组安装包
 
-当前开发包 0.55.0，适用于 Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21。需同时安装 [Curios API 9.5.1+1.21.1](dependencies/curios-neoforge-9.5.1+1.21.1.jar)，客户端和服务器均须更新。修复持续联系的冷却复触发和锚点丢失，补充自动停止条件、联系启动反馈；加入物品化符文/篆刻台、固定法阵魔力粉布线及独立 `.ecfx` 动画包导入。见[联系施法](../1.21.1/docs/systems/联系施法与空间参数.md)、[符文物品与篆刻](../1.21.1/docs/systems/符文物品与篆刻.md)和[自定义特效包](../1.21.1/docs/systems/自定义特效包.md)。
+当前开发包 0.55.1，适用于 Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21。需同时安装 [Curios API 9.5.1+1.21.1](dependencies/curios-neoforge-9.5.1+1.21.1.jar)，客户端和服务器均须更新。修复持续联系的冷却复触发和锚点丢失，补充自动停止条件、联系启动反馈；加入物品化符文/篆刻台、固定法阵魔力粉布线及独立 `.ecfx` 动画包导入。见[联系施法](../1.21.1/docs/systems/联系施法与空间参数.md)、[符文物品与篆刻](../1.21.1/docs/systems/符文物品与篆刻.md)和[自定义特效包](../1.21.1/docs/systems/自定义特效包.md)。
 
 | Minecraft | NeoForge | Java | 模组安装包 |
 |---|---|---|---|
-| 1.21.1（持续联系修复与符文物品化，当前开发包） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.55.0.jar](elemental-circuits-1.21.1-0.55.0.jar) |
-| 1.21.1（分流、时序与观察，当前开发包） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.52.0.jar](elemental-circuits-1.21.1-0.52.0.jar) |
+| 1.21.1（main 基线，当前开发包） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.55.1.jar](elemental-circuits-1.21.1-0.55.1.jar) |
+| 1.21.1（持续联系修复与符文物品化归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.55.0.jar](elemental-circuits-1.21.1-0.55.0.jar) |
+| 1.21.1（分流、时序与观察归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.52.0.jar](elemental-circuits-1.21.1-0.52.0.jar) |
 | 1.21.1（联系施法与空间参数归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.51.0.jar](elemental-circuits-1.21.1-0.51.0.jar) |
 | 1.21.1（物料与红石自动化归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.50.0.jar](elemental-circuits-1.21.1-0.50.0.jar) |
 | 1.21.1（质量与运行开销修复，推荐） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.49.0.jar](elemental-circuits-1.21.1-0.49.0.jar) |

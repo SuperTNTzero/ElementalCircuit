@@ -78,6 +78,7 @@ public final class WorkstationMinecraftContracts {
     @GameTest(template = "empty")
     public static void graphEditingRequiresARealStationSession(GameTestHelper h) {
         var p = player(h);
+        RuneTestInventory.stock(p, line());
         var pos = table(h, p);
         var w = wand(p);
         String code = JsonCodecs.blueprint(line());
@@ -106,6 +107,7 @@ public final class WorkstationMinecraftContracts {
     @GameTest(template = "empty")
     public static void platesAreEngravedBeforeThreeMaterialCarriersAreDelivered(GameTestHelper h) {
         var p = player(h);
+        RuneTestInventory.stock(p, line());
         var pos = table(h, p);
         long mana = PlayerMana.get(p).available();
         for (var material : Rules.Material.values()) {
@@ -182,6 +184,7 @@ public final class WorkstationMinecraftContracts {
     @GameTest(template = "empty")
     public static void stackedPlatesAreConsumedOneAtATime(GameTestHelper h) {
         var p = player(h);
+        RuneTestInventory.stock(p, line());
         var pos = table(h, p);
         p.getInventory().setItem(0, new ItemStack(ElementalCircuits.BRASS_PLATE.get(), 3));
         InscriptionAccess.interact(p, pos);
@@ -342,6 +345,7 @@ public final class WorkstationMinecraftContracts {
     @GameTest(template = "empty")
     public static void placedCircuitEditingMustGoThroughInscriptionTable(GameTestHelper h) {
         var p = player(h);
+        RuneTestInventory.stock(p, line());
         var pos = table(h, p);
         var w = wand(p);
         var target = pos.offset(2, 0, 0);
@@ -513,6 +517,7 @@ public final class WorkstationMinecraftContracts {
             p.getInventory().setItem(i, new ItemStack(Items.COBBLESTONE, 64));
         var plate = new ItemStack(ElementalCircuits.CRYSTAL_PLATE.get(), 2);
         p.getInventory().setItem(0, plate);
+        RuneTestInventory.stock(p, line());
         InscriptionAccess.interact(p, pos);
         var draft = InscriptionAccess.draft(p);
         var id = CarrierService.identity(draft);

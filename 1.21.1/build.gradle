@@ -2,7 +2,7 @@ plugins {
     id 'java-library'
     id 'net.neoforged.moddev' version '2.0.148'
 }
-version = '0.55.0'
+version = '0.55.1'
 group = 'dev.elementalcircuits'
 base { archivesName = 'elemental-circuits-1.21.1' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)

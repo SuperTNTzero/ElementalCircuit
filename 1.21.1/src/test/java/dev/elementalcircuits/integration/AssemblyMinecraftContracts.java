@@ -70,6 +70,8 @@ public final class AssemblyMinecraftContracts {
         p.getInventory().setItem(0, wand);
         p.getInventory().selected = 0;
         p.getInventory().setItem(1, new ItemStack(ElementalCircuits.CRYSTAL_PLATE.get(), 2));
+        RuneTestInventory.stock(p, AssemblyContracts.line(
+                false, Route.Payload.MANA, Rune.Kind.INPUT, Rune.Kind.OUTPUT));
         var id = CarrierService.identity(wand);
         request(p, wand, 1, 4, "CRYSTAL");
         var a = CarrierService.assembly(wand);

@@ -211,6 +211,7 @@ public final class BookMinecraftContracts {
     @GameTest(template = "empty")
     public static void bookEditsMaterialAndIndependentWand(GameTestHelper h) {
         var p = player(h);
+        RuneTestInventory.stock(p, line());
         var w = wand(p);
         var b = book(p);
         String wandBefore = JsonCodecs.assembly(CarrierService.assembly(w));
