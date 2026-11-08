@@ -1,180 +1,108 @@
-# 元素法阵 · Minecraft 1.21.1
+# Elemental Circuits — Minecraft 1.21.1
 
-符文现已物品化：红石粉＋萤石粉＋魔力水晶合成 8 份魔力粉，在符文篆刻台用一张纸和一份粉撰写一枚符文。绘制/导入实际法阵并保存时消耗新增符文，导出和蓝图簿收录不消耗。服务器配置 `inscription.requireRunes=0` 可恢复自由绘制；创造模式免消耗。详见 [符文物品与篆刻](docs/systems/符文物品与篆刻.md)。
+Design spells by engraving connected runes on hexagonal circuit plates. Elements, delivery methods, shapes, parameters, and secondary effects are separate building blocks; signal paths control when mana flows and when a spell is released.
 
-当前开发版本 **0.55.1**，目标 **Minecraft Java 1.21.1 / NeoForge 21.1.265 / Java 21**。刻阵、组杖通过实体工作台交互；木质、黄铜和水晶基板分别制作对应的固定法阵。保留世界魔力场、三维部件法杖与独立施法冷却。原1.20.1工程位于相邻的 `../1.20.1/`，Godot工程仍位于工作区 `game/`。
+**Version:** 0.55.2 · **Mod ID:** `elementalcircuits`
 
-v0.55修复持续联系施法重复触发法杖冷却、联系锚点逐步丢失的问题。首次建链消耗一次施法间隔，运行法阵逐步续持；停阵、断供、释放信号、目标失效、遮挡、超距或联系魔力耗尽都会自动解除。联系束表现改为更醒目的连续元素束。符文可制作成物品并在法阵保存/导入时结算；魔力粉可为固定法阵布线。客户端可从 `config/elementalcircuits/effects/` 加载 `.ecfx` 动画包，内含自制 PNG 帧与可选 WAV，不依赖 Minecraft 资源包。详见 [符文物品与篆刻](docs/systems/符文物品与篆刻.md)、[自定义特效包](docs/systems/自定义特效包.md) 和 [联系施法与空间参数](docs/systems/联系施法与空间参数.md)。
+## Requirements and installation
 
-v0.54将生产 Java 源码中的玩家文本移至双语语言 JSON，包含界面、符文说明、物品提示、验证信息和服务器反馈。新增文本必须使用语言键，并通过 `python tools/maintenance/check-texts.py` 检查。详情见 [文本资源规范](docs/maintenance/文本资源规范.md)。
+| Component | Version | Requirement |
+| --- | --- | --- |
+| Minecraft Java Edition | 1.21.1 | Required |
+| NeoForge | 21.1.265 | Required; reference loader version |
+| Java | 21 | Required |
+| Curios API | 9.5.1+1.21.1 | Required on client and server |
+| Patchouli | 1.21.1-93-NEOFORGE | Optional guide integration |
 
-v0.53新增边沿、魔力限流、物料筛选与迟滞感应符文。限流器按逻辑步区分额度内和余量，缺少必要出口时阻塞整批；物料筛选约束容器输入和产物回收。当前分支只读取蓝图v5、法阵现场v14与法阵组v4，不迁移旧开发格式。见[分流、时序与世界观察](docs/systems/分流时序与世界观察.md)。客户端与服务器须同时升级。
+Place [the mod JAR](../releases/elemental-circuits-1.21.1-0.55.2.jar) and [Curios](../releases/dependencies/curios-neoforge-9.5.1+1.21.1.jar) in the instance's `mods/` directory. Use the same mod version on both sides of a server connection. Patchouli adds search, bookmarks, and recipe pages to the guide; without it, the same guide item opens a vanilla-style reader.
 
-v0.51新增联系施法，以及独立的施力、约束、交互效果。续供保留目标，断供解除，交互由信号上升沿驱动。新增角度、偏转、俯仰和联系距离参数，扇形张角贯通作用域、费用和批量特效。详见 [联系施法与空间参数](docs/systems/联系施法与空间参数.md)。客户端与服务器须同时升级。
+This edition is a development build. Back up worlds before updating. It reads the current data formats and does not promise migration from earlier development versions or the historical 1.20.1 edition.
 
-v0.50新增土元素物料自动化：反相土拆解、正相土配合容器读取放置实物，容器输出回收拆解掉落。红石感应符文与现有开关、计数及锁存组合，配置沿用符文参数，不增专用GUI。规则及首期边界见 [物料与红石自动化](docs/systems/物料与红石自动化.md)。
+## Your first circuit
 
-v0.49修复稀疏大编号编辑与预览、返还历史占用活动预算；按小节读取NBT，预建VM接口索引，分流校验改为单次遍历，特效按逻辑变更发布观察列表。审查与实测见 [代码质量与运行开销审查](docs/maintenance/代码质量与运行开销审查.md)。
+1. Craft a **Circuit Field Guide** from a book, blue dye, and a gold nugget. It explains equipment, engraving, mana, and troubleshooting in English or Simplified Chinese.
+2. Obtain an **Inscribed Wand**, an **Inscription Table**, and rune materials. New wands are blank. To assemble or replace wand components, use the separate **Wand Workbench**, which needs two adjacent spaces.
+3. Craft mana dust from redstone dust, glowstone dust, and a mana crystal; the recipe yields eight. At a **Rune Engraving Table**, one paper and one mana dust produce one selected rune item.
+4. Use the wand on the Inscription Table. Place and connect a simple chain: **Mana Input → Fire conversion → Directed casting → Beam → Output**. Keep the input within your available mana and save the circuit.
+5. Close the editor and right-click to cast. A short click casts once; holding and releasing charges a cast. Circuits configured for continuous operation keep supplying mana until stopped or a termination condition is reached.
 
-v0.48使用本地Inkscape将70个符文、元素和工具图标改为SVG源稿，统一导出高清图集与三档鼠标指针；侧栏、阵盘、选中和拖放预览同步更新，保留静态批量渲染。见 [符文矢量化与预览](docs/art/Inkscape符文矢量化.md)、[源稿与导出命令](art/inkscape/README.md)。
+The editor changes a draft until you save. Survival engraving charges only positive increases in each rune type; moving a rune, changing its parameters, or saving the same design again does not charge another item. Removing runes does not refund them. Creative mode is exempt. Blueprint imports follow the same rule when installed on a real carrier; exporting or adding a design to a notebook is free.
 
-v0.46新增15种原版数据驱动附魔：扩容、源流、迅咒、护板、增幅、魔力维修与九种元素庇护。附魔台、铁砧、交易与附魔书可用；魔力维修按实际耐久扣魔，熔毁基板仍需更换。详见[魔法附魔](docs/systems/魔法附魔.md)。
+## Editing and selecting spells
 
-v0.45新增魔力史莱姆、魔力凝胶与瞬间恢复的魔力复原药水，以及悬在地表上空的浮光节点。地脉偏储量，浮光偏吞吐；探测杖支持两种天然节点。详见[魔力史莱姆与浮光节点](docs/systems/魔力史莱姆与浮光节点.md)。
+The left sidebar groups runes into expandable categories with shape previews. Select a rune to place it, or use the selection tool to move an existing rune. The top rows select the physical plate slot and the circuit layer; plate management and derived-circuit relationships have separate pages.
 
-v0.43将基板耐久与杖体耐久分离。木/黄铜/水晶安全承载128/512/1280，超载加剧磨损，达到四倍承载量时熔毁；先断供并耗散魔力，再按实际量、元素与阈值计算爆炸。法杖和设计保留，回法阵工作台消耗一张同材质基板修复。近战只耗杖体，施法主耗基板并累积少量杖体磨损；参数均可配置。公式见 [基板承载与熔断](docs/systems/基板承载与熔断.md)。客户端与服务器须同时升级。
+| Input | Action |
+| --- | --- |
+| Route tool, then source and destination | Draw a directed mana or signal connection; nonadjacent runes are supported |
+| Empty cells while routing | Add bends to the route |
+| Right-click / Esc | Cancel placement or routing |
+| Delete in route mode | Remove the highlighted individual connection |
+| Delete in selection mode | Remove the selected rune |
+| Ctrl+Z / Ctrl+Y | Undo / redo draft edits |
+| Enter | Save an open parameter field first; otherwise save the circuit |
+| Mouse wheel / middle-button drag on the grid | Zoom / pan |
 
-v0.42将反相奥术设为同次命中中的等量元素抵消，按既有到达队列结算；纯净魔力不受影响，剩余反相奥术不再造成奥术伤害。副手法术书向法杖轮盘添加选项，保留杖阵，最多同时选择八个槽位；Z/X跨来源切换，轮盘标明“杖/书”。选择按物品身份保存，换书不误用同号槽位。客户端与服务器须同时升级。见 [反相奥术与联合选阵](docs/systems/反相奥术与联合选阵.md)。
+Routes may cross or share cells without connecting. They cannot pass through an unrelated rune. Transmission loss depends on the actual route, material, and endpoints.
 
-v0.41为法阵手札加入Blender制作的展开式三维模型，只在左右手的第一、第三人称显示；物品栏保留像素封面。源码按法阵、施法、魔力、装备等职责分包，Java统一四空格排版，美术脚本归入 `tools/artwork/`。见 [文档导航](docs/README.md)、[工程结构与排版](docs/maintenance/工程结构与排版.md)。
+Default gameplay bindings are rebindable in Minecraft's Controls menu:
 
-v0.40加入“法阵手札”：书＋蓝色染料＋金粒合成。深蓝黄铜封面，6类24条双语说明。安装Patchouli时提供搜索、书签和配方页；未安装时使用原版翻页阅读器，同一物品入口。见 [指南与Patchouli兼容](docs/systems/法阵手札与Patchouli.md)。
+| Key | Action |
+| --- | --- |
+| Z / X | Previous / next circuit while holding a wand |
+| Hold R | Wand circuit selection wheel |
+| B | Book interface |
+| Hold V | Equipment circuit selection wheel |
+| J | Cast the selected equipment circuit |
+| H | Cast an inscribed ring circuit |
 
-v0.39 改为单击释放、长按蓄力后松手释放；蓄力内环独立于冷却外环。分享、基板管理和叠阵关系移到页头，保存保留左下角，Enter 优先保存展开的参数，否则保存整阵。矿石与节点改用16×16像素贴图；新增九枚水晶合成的魔力水晶块，可增幅正上方节点和固定法阵。玩家新增基础魔耗倍率与消耗减免属性，法袍四件合计减免22%。公式、配置和实机截图见 [蓄力、水晶增幅与魔耗属性](docs/systems/蓄力水晶增幅与魔耗属性.md)。客户端与服务器须同时升级到0.39.0。
+A spellbook stores its own circuits. When held offhand beside a wand, its circuits join the wand's selection wheel rather than replacing the wand's own choices. A blueprint notebook stores designs and previews, without copying mana, durability, item identity, or running state.
 
-v0.38 将编辑器中的测试模板移为 [15 张蓝图文件](src/test/resources/blueprints/index.tsv)，右侧只保留日常设置。参数点击展开，在输入框内按 Enter 或小键盘回车保存；参数保存后仍须保存整张法阵才会应用到物品。连线模式中指向高亮线段按 Delete 删除单线，Ctrl+Z 撤销；展开左侧目录保留滚动位置。
+## Mana, equipment, and fixed circuits
 
-自动测试与手动试验：
+- **Mana and timing:** input is a fixed request; insufficient supply fails the cast rather than silently reducing it. A standard-state model defines costs, circuit complexity contributes to preparation time, and wand components determine the release interval. Dedicated storage runes can accumulate repeated inputs; ordinary runes are not long-term mana batteries.
+- **Elements:** fire and water can create real fire and water sources; light creates temporary illumination, darkness suppresses light sources, and arcane mana can pass through blocks. Reactions resolve in arrival order, with opposing elements consumed before remaining effects apply. Vanilla damage immunity intervals are respected.
+- **Wands and plates:** the head determines strength and speed, the head and body contribute durability, and the tail determines melee damage. Plate durability is separate from wand durability. Default safe loads are 128 / 512 / 1280 for wood / brass / crystal; overload increases wear, and reaching four times the safe load causes a meltdown. The wand and design remain, but a ruined plate needs replacement at the Inscription Table.
+- **Layered circuits:** derived spells use additional circuit layers on the same plate. Choose an explicit hit or timer trigger. Material-based recursion limits and server budgets bound execution.
+- **Fixed circuits:** use a plate on the Inscription Table, draw the circuit, and finish engraving to obtain a placeable circuit. The plate is consumed on completion. A Tuning Wand controls operation, slot selection, and charging; mana dust connects fixed circuits. The gold-framed Circuit Monocle fits either a helmet slot or a functional Curios head slot and reveals nearby loaded connections.
+- **Mana ecology:** crystal ore, natural nodes, artificial nodes, and floating nodes feed a finite mana field. Environmental intake runes draw from it. A Survey Wand inspects circuits and nodes and surveys natural nodes without forcing chunks to load. Mana fruit increases capacity; potions provide regeneration or instant restoration, depending on the recipe.
+- **Equipment and automation:** crystal-studded robes and inscribed rings add attributes and equipment spells. Earth magic combines with container access, output, filtering, and redstone runes for material handling. Contact casting combines with independent force, constraint, and interaction effects.
 
-```powershell
-./tools/test-blueprints.ps1 -Mirror -Offline              # 隔离世界，自动注入与验证后退出
-./tools/test-blueprints.ps1 -Mirror -Offline -Interactive # 注入后保留游戏，供手动使用蓝图簿
+Recipes are available through the in-game guide; detailed formulas and system limits are linked from the [documentation index](docs/README.md).
+
+## Blueprints and custom effects
+
+The sharing page imports and exports blueprint text codes. Loading a blueprint changes the draft; saving applies it and checks the target plate, server limits, and rune inventory. A notebook can keep multiple named designs with previews.
+
+Custom casting and impact effects use `.ecfx` packages in `config/elementalcircuits/effects/`. Packages contain a JSON manifest, a PNG spritesheet, and optional PCM WAV audio, independent of Minecraft resource packs. Assign them through the custom-effects rune category. Effects are client presentation only: they do not change authoritative damage or world interactions, and other clients need the same local packages to see the same custom assets. See the [package format](docs/systems/自定义特效包.md) and [manifest example](config_examples/effects/ember/manifest.json).
+
+## Server configuration
+
+Administrators can manage mana, recovery, field dynamics, circuit limits, and performance budgets through `/ec` commands and the mod's server settings. Use command completion to inspect available options. For example:
+
+```text
+/ec config set inscription.requireRunes 0
+/ec config set probe.radius 500
 ```
 
-试验世界位于 `build/blueprint-smoke/`，每次新建世界，快捷栏 1 为法杖、2 为已收录全部示例的蓝图簿、3 为法阵工作台。也可直接将 `.ecblueprint` 文件全文粘贴到普通导入界面；不会向正常游戏自动赠送模板。操作与验收见 [编辑器交互与蓝图测试](docs/verification/编辑器交互与蓝图测试.md)。
+`inscription.requireRunes` defaults to `1`; set it to `0` for direct engraving without crafting rune items. See [server settings](docs/systems/服务端配置与符文边界.md), [costs and mana dynamics](docs/systems/施法成本与魔力动力学.md), and [standard state and storage](docs/systems/标准状态与专用储魔.md) for the underlying rules. These reference documents are in Chinese.
 
-v0.37新增统一标准状态、按有效法阵复杂度计算准备时间、专用魔力存储符文；线路和转化等损失比例降低至原来的十分之一，普通符文不再作为长期蓄能容器。输入10000完整请求，供给不足整次失败；射程与半径的小数输入明确拒绝，连续魔力数量按定点量化。公式、缓存语义与调整方法见 [标准状态与专用储魔](docs/systems/标准状态与专用储魔.md)。
+## Build from source
 
-v0.36.1校正全部法杖组合的双手握柄位置与持杖角度，法袍水晶改为竖直朝向，四件装备图标重绘为对称的16×16像素图。源文件与实机验证见 [握持与法袍美术修正](docs/art/握持与法袍美术修正.md)。
-
-v0.36新增深蓝水晶法袍、可刻印戒指、装备施法快捷键与轮盘，以及带防循环来源标记的受击触发。顶部槽位/阵层/工具居中，管理页父子按钮分级。**需同时安装 Curios API 9.5.1+1.21.1**。默认 V 选择装备法阵、J 施法、H 使用戒指；套装提供法强 +0.55、容量 +88、固定回复 +2.75/秒。详见 [法袍、戒指与装备施法](docs/systems/法袍戒指与装备施法.md)。
-
-
-当前公式与配置见 [施法成本与魔力动力学](docs/systems/施法成本与魔力动力学.md)。v0.35先解析实际参数再报价，固定输入不足时失败并按元素返还原供给源；加入缓存衰减、形状占格成本、分段耐久、混合回复、节点恢复和原生法强属性。
-
-改革前的0.34核对表保留在 [关键公式与变量关系](docs/systems/关键公式与变量关系.md)，用于比较旧公式。
-
-v0.34按法阵实际接收顺序处理元素反应：先完成相克抵消，再让剩余量依次生效。水→雷导电，雷→水不追溯增伤；新存档保留队列，旧数量数据按明确兼容顺序迁移。说明与验证见 [元素反应队列](docs/systems/元素反应队列.md)。
-
-v0.33注册`ec_damage`系列元素伤害，加入潮湿抗火/导电、寒霜冻结/碎冰、水土泥泞、风助燃和光暗反应；混合攻击统一结算，保留逐元素明细。设计、ID、倍率与兼容说明见 [元素伤害与反应](docs/systems/元素伤害与反应.md)。
-
-v0.32使用Aseprite更新三种基板、九种法杖部件及三维材质，加入原版酿造的魔力回复药水。粗制药水＋魔力水晶制成普通药水，红石延时、萤石增强。配方、倍率和美术源文件见 [基板部件与魔力药水](docs/art/基板部件与魔力药水.md)。
-
-v0.31采用同基板叠阵：编辑页上方直接切换槽位和阵层，派生移至独立子界面；材料深度按可配置初值与倍率计算，默认1/2/4。移除编辑器起阵/停供按钮。用法与旧数据处理见 [同基板叠阵与编辑导航](docs/systems/同基板叠阵与编辑导航.md)。
-
-v0.30.1中，派生条件由玩家明确选择，未选择前不能保存；命中/定时通过独立策略接口判定，保留已有配置。
-
-v0.30新增专用探测杖，读取法阵、节点和场强；右键空处统计默认500格球形范围内的天然节点，包含已生成的未加载区块，分批异步读取且不强加载。旧水晶/空手诊断入口已移除。操作、配方、配置与验证见 [探测杖与天然节点勘测](docs/systems/探测杖与天然节点勘测.md)。
-
-v0.29精简法阵管理，基板改为展开选择；无书法杖支持Z/X和按住R轮盘。管理页可把母投射物绑定到另一槽位，以预付魔力触发独立子法阵，支持命中、定时和有界循环。设计、用法、配置与实机截图见 [法阵管理与递归施法](docs/systems/法阵管理与递归施法方案.md)。
-
-v0.28将法术书与蓝图簿改为平摊展开，法阵默认每逻辑步执行8轮魔力传输，同时保留控制、注入和CD节拍。旧法阵完整保留现场后采用新流速，可通过 `circuit.manaSteps` 调整。说明、实机截图与性能样本见 [书籍姿态与魔力流转加速](docs/art/书籍姿态与魔力流转加速.md)。
-
-v0.16新增发射法环、分层亮核弹道、元素冲击与碎屑、成功伤害准星、可关闭的轻微后坐，以及更明显的音效瞬态。具体表现、配置与验证见 [施法表现与打击反馈](docs/art/施法表现与打击反馈.md)。
-
-v0.17整理界面、美术和玩家文本，选中符文后直接显示参数，法杖组装提供大图预览。参考图与验证见 [界面与美术整理](docs/art/界面与美术整理.md)，宣传分镜及素材见 [首支宣传片脚本](docs/systems/首支宣传片脚本.md)。
-
-v0.18增加Blender制作的三维法杖；速度越快，释放CD越短。HUD独立显示冷却，阵内逻辑继续按固定步运行。用法、源文件和验证见 [三维法杖与施法冷却](docs/art/三维法杖与施法冷却.md)。
-
-v0.18.1将冷却移到准星周围：灰黑底环、蓝色恢复进度；魔力条增加黄铜框与粗体蓝字。实际截图见 [准星冷却环与魔力条](docs/art/准星冷却环与魔力条.md)。
-
-v0.19新增独立世界魔力场：节点释放、浓度扩散、环境耗散和法阵汲取均使用真实有限数量。法杖提示与左下文本精简，冷却环改为更透明的混合绘制。玩法、数值和验证见 [魔力场与节点](docs/systems/魔力场与节点.md)。
-
-v0.20改用实体工作台作为修改入口；模型、贴图源、配方、固定法阵流程与截图见 [工作台模型与交互](docs/art/工作台模型与交互.md)。
-
-v0.20.1修复UV拉伸与缩小时串色、斜面接缝、法杖悬空/嵌入和水晶碰撞；双格桌子的两半分别烘焙。细节和验证见 [贴图与穿模修复](docs/art/工作台贴图与穿模修复.md)。
-
-v0.21将工作台选框简化为方块边界，固定法阵重做为三种材质的六角阵盘；制作须完成刻印后才消耗基板。源文件、流程和验证见 [固定法阵刻印与外观](docs/art/固定法阵刻印与外观.md)。
-
-v0.27放宽符文输入、作用量与计数时序，增加服务端配置页和 `/ec` 管理指令。格盘/图规模与施法范围改为可配置的性能预算，大格盘支持缩放和平移。配置项、管理示例和旧数据生效规则见 [服务端配置与符文边界](docs/systems/服务端配置与符文边界.md)。
-
-v0.21.1重新绘制三种阵盘贴图：128×128有效画稿、双层刻槽、分区符文与材质细节。前后对照和实机近景见 [法阵贴图细化](docs/art/法阵贴图细化.md)。
-
-v0.22新增扇形喷洒、元素墙、环带、立柱、十字和穹顶冲击，包含独立符印、示例、实际范围与世界作用。用法与实机截图见 [扩展形状符文](docs/systems/扩展形状符文.md)。
-
-v0.23使用核验授权的免费素材重做施法音效：39个源文件混制成74个变体，保留原生空间播放与声音预算。素材判断、试听、作者署名与验证见 [奇幻音效素材与适配](docs/art/奇幻音效素材与适配.md)。
-
-v0.24修正法杖冷却时反复收回，物品栏增加独立CD遮罩；法术书和蓝图簿改为Blender三维模型与Aseprite贴图，加入翻开和翻页动画。实机截图与验证见 [三维书籍与稳定持杖](docs/art/三维书籍与稳定持杖.md)。
-
-v0.25允许分别设置魔力输入/环境汲取符文的数量，新增永久扩容至1024的魔力果实，并修正创造模式法杖磨损。操作与验证见 [魔力输入与永久成长](docs/systems/魔力输入与永久成长.md)。
-
-v0.26接入六组已核验CC0奇幻素材，重做元素与形状的材质和运动；纯雷光束默认两次真实连锁，火扇表现为向外喷火，新增风柱、岩墙、暗环等独立表现。说明、授权和截图见 [元素组合与奇幻特效](docs/art/元素组合与奇幻特效.md)。
-
-## 安装与首次体验
-
-安装 NeoForge 21.1.265，将 `../releases/elemental-circuits-1.21.1-0.55.1.jar` 放入1.21.1实例的 `mods` 文件夹。客户端与服务端都安装同一版本，使用 Java 21。另需安装 Curios API 9.5.1+1.21.1，依赖包位于 `../releases/dependencies/`。
-
-1. 放置法阵工作台，主手持法杖右键工作台，进入刻印界面。蹲下对空使用法杖只显示操作提示。
-2. 右栏选择“火焰光束”，保存草稿，关闭界面后瞄准目标右键起阵。再次使用可停止供给。
-3. 左栏折叠目录选择符文，拖动或点击落笔；选择魔力/信号线路，沿六角格布线，支持远距离连接。材料、线路长度和端点共同决定损耗。
-4. “基板管理”中安装木质/黄铜/水晶基板，新增最多4个物理槽位；安装消费材料并回收旧板。顶部两行按钮分别切换槽位和阵层，“叠阵关系”子界面新增同基板叠阵并配置命中/定时派生。跨槽位互联保留数据和接口，当前页面不使用。
-5. 腾出两个连续空格放置法杖工作台，主手持法杖右键组装杖端、杖身、杖尾。蓝图簿保存并预览设计；主手法杖时Z/X切换，按住R轮盘选择；副手法术书优先使用书中槽位，B查看书，右键起停。
-
-6. 手持木质、黄铜或水晶基板右键法阵工作台，先绘制法阵；点击“完成刻印”才消耗一张基板并获得对应的固定法阵，随后放置。关闭界面取消本次草稿，不消耗基板。已放置的固定法阵：持杖蹲下右键选定，再到附近刻阵台修改。
-
-7. 采集魔力水晶矿石，合成人工节点并右键装入水晶。在节点附近绘制“环境光束”，保存后起阵；固定法阵无需预先充能。改用探测杖读取节点或法阵信息；右键空处勘测天然节点，蹲下右键地面读取当地场强。矿石与地脉只生成在新的主世界区块。
-
-八元素的世界作用、球状/光束/盾牌、时序符文、命中分裂/连锁/附加效果、固定法阵方块、实体书籍、部件外观、批量特效与空间施法音效均沿用既有规则。完整玩法、配方与历史说明见 [1.20.1玩法说明](../1.20.1/README.md)。默认玩家槽64，恢复等待40个服务器步，之后每秒恢复4点；创建物品、导入蓝图和版本升级不会补满旧法阵。
-
-8. 合成探测杖：顶部居中放魔力水晶，中排为铜锭／紫水晶碎片／铜锭，底部居中放木棍。主手探测杖、另一只手放法杖或法术书，蹲下对空右键查看其槽位信息。勘测半径可用 `/ec config set probe.radius 500` 调整。
-
-## 构建与验证
-
-在本文件夹执行，需要 JDK 21：
+Run from this directory with JDK 21:
 
 ```powershell
-$env:JAVA_HOME = '你的JDK21目录'
-./tools/build.ps1
+./tools/build.ps1 -Tasks build
 ./tools/build.ps1 -Tasks build,runGameTestServer
 ./tools/build.ps1 -Tasks runClient
-./tools/build.ps1 -Tasks runClient -EditorSmoke
-./tools/build.ps1 -Tasks runClient -AudioSmoke
-./tools/build.ps1 -Tasks runClient -VfxSmoke
-./tools/build.ps1 -Tasks runClient -Showcase
-./tools/build.ps1 -Tasks runClient -WandSmoke
-./tools/build.ps1 -Tasks runClient -FieldSmoke
-./tools/build.ps1 -Tasks runClient -StationSmoke
-./tools/build.ps1 -Tasks runClient -ShapeSmoke
-./tools/build.ps1 -Tasks runClient -ProbeSmoke -Mirror -Offline
-./tools/build.ps1 -Tasks runClient -RecursionSmoke -Mirror -Offline
-./tools/build.ps1 -Tasks runClient -BookSmoke
-./tools/build.ps1 -Tasks runClient -ProgressionSmoke
-./tools/build.ps1 -Tasks runClient -ElementalSmoke
-python tools/prepare-promo.py
 ```
 
-脚本使用 Gradle 9.2.1、ModDevGradle 2.0.148，共享工具缓存位于 `../tooling/`，执行结束恢复原进程环境。源码单独取出时可直接使用 `./gradlew.bat build`；Wrapper固定官方Gradle校验值。默认使用官方依赖源，网络需要时添加 `-Mirror` 使用 NeoForge 官方CDN域名；依赖已经下载完整时可添加 `-Offline`。
+The script uses Gradle 9.2.1 and ModDevGradle 2.0.148. Prepare the Curios and Patchouli JARs specified in `build.gradle` under `libs/`. Use `-JavaHome` to select a JDK, `-Mirror` for the alternate NeoForge endpoint, and `-Offline` only after dependencies are cached. The Gradle wrapper also supports `./gradlew.bat build`.
 
-构建输出 `build/libs/elemental-circuits-1.21.1-0.55.1.jar`。`build`执行纯Java核心契约；285项Minecraft集成契约通过专门的 `runGameTestServer` 运行。测试类、测试结构及客户端验证器只在显式测试运行中加载，不打包进正式JAR。客户端测试使用 `build/client-smoke/`、`build/audio-world-smoke/`、`build/book-smoke/`、`build/progression-smoke/`、`build/elemental-smoke/`、`build/settings-smoke/`、`build/recursion-smoke/`、`build/probe-smoke/`、`build/wand-smoke/`、`build/combat-smoke/` 下的独立实例与世界；服务端集成每次新建 `build/gametest-runs/` 子目录。
+The output is `build/libs/elemental-circuits-1.21.1-0.55.2.jar`. `build` includes the pure Java core contracts; `runGameTestServer` runs Minecraft integration tests in isolated worlds. Test fixtures and client smoke tools are excluded from the release JAR.
 
-## 版本迁移
+For tool details and optional client checks, see [tools](tools/README.md), [architecture](ARCHITECTURE.md), and [contribution guidelines](../CONTRIBUTING.md).
 
-- 0.34现场v9、世界法术v10、包v2和递归表v2保留元素队列；网络协议1.21.1-16，两端同时更新。旧数量向量按明确兼容顺序迁移。
-- 0.31程序集v3保存同基板阵层，冻结程序v2；旧程序集恢复为空叠阵并保留旧跨槽数据，旧在途v1程序继续执行。编辑传输含槽位与阵层，协议1.21.1-15，两端同时更新。
-- 0.30探测为临时只读会话，不新增世界运行保存格式；原法阵、节点和场保留。新增单向报告包使用网络协议1.21.1-14，两端同时更新。
+## License
 
-- 0.29新增派生设置的程序集v2和世界法术v9；旧世界显式初始化空递归表，保留原有飞行体。单张蓝图不含跨槽位引用；VM仍为v8。网络协议1.21.1-13，两端同时更新。
-
-- 0.28魔力流转采用Rules v3 / VM现场v8；旧法阵在调度边界保留全部状态后采用当前服务器传输轮数，默认8。控制与注入仍按20Hz，跨阵仍按世界步交付；网络协议1.21.1-12。
-- 0.27新建法阵冻结格盘规则v2，旧法阵保留规格；魔力场显式采用配置时升为v2并保留历史账本，个人恢复覆盖进入版本化玩家数据。网络协议1.21.1-11要求两端更新。
-- 0.26世界法术保存升为v8并记录屏障元素，旧版保留奥术外观与容量寿命；蓝图、程序集和VM格式不变。协议1.21.1-10要求两端统一更新。
-
-- 0.25首次修改输入量时将对应蓝图升为v2、VM现场升为v7；旧v1蓝图继续使用冻结默认值。玩家永久容量沿用原完整保存字段。协议1.21.1-9要求两端同时更新。
-
-- 0.22含扩展形状符文或缓存包的VM现场升为v6；蓝图与程序集外层保持，旧图继续v4/v5。新形状是瞬时元素体积，持续供给重复释放；网络要求两端同时更新。
-
-- 0.20两座工作台保留原注册ID。旧单格法杖台在互动时向侧面展开，有占用则拒绝并提示；法杖、法术书与固定阵的完整数据保留。两格工作台拆任意半边只掉落一件。固定阵新增三材质方块状态；历史材质由原聚合恢复。
-- 蓝图和程序集外层格式保留。含汲取符文的VM现场使用v5，旧图仍为v4，旧现场按原语义恢复；新增魔力场与节点的独立v1保存。0.18新增独立持久化冷却组件；旧法杖缺组件时视为就绪。速度改为只影响释放间隔，不再加速法阵VM。
-- 原版物品NBT改为1.21数据组件；自定义内容存于 `minecraft:custom_data`，读取副本、显式写回。固定法阵私有嵌套的1.20物品记录另外经过原版DataFixer转换，保留损伤、身份、余额和运行状态。
-- 自定义网络全面换为NeoForge原生Payload及StreamCodec，协议标识 `1.21.1-12`。0.27及更早的客户端无法连接使用该协议的服务器。
-- 配方、战利品表和测试结构采用1.21单数资源目录，注册、事件、方块交互、绘制和音频解码接口均已适配。
-- 1.21新增的普通魔法伤害自动击退由本模组独立伤害类型消除；风与付费击退效果继续由原规则结算，不改变其他模组的魔法伤害。
-
-全量真实旧世界升级尚未完成手工验收。需要保留原世界备份，在副本上由Minecraft执行版本升级；模组数据契约测试不能代替整张世界的升级验证。不可将升级后的世界交回1.20.1使用。
-
-实现边界见 [架构说明](ARCHITECTURE.md)，完整迁移记录和验证证据见 [1.21.1迁移报告](docs/maintenance/1.21.1迁移报告.md)。
-
-
-v0.44 新增调律杖和金框观阵单片镜：起停固定法阵、切换槽位与充能；佩戴后显示带方向的魔力/信号互联。用法与验证见 [固定法阵调律与观阵](docs/systems/固定法阵调律与观阵.md)。
-
-0.47：观阵单片镜支持头盔槽或Curios头部饰品槽，短镜腿向后折回头侧，可与巫师帽同戴；法阵与玩家属性修复见[数值审查与输出效率](docs/systems/数值审查与输出效率.md)。
+See [LICENSE.txt](LICENSE.txt) for project rights and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for third-party asset licenses and attribution.

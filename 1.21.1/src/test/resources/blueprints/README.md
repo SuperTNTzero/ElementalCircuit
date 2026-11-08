@@ -1,9 +1,19 @@
-# 编辑器试验蓝图
+# Blueprint fixtures
 
-`index.tsv` 是文件与簿页名称的显式有序清单。15 个 `.ecblueprint` 文件分别保存一个完整 EC1 文本码，可以直接复制全文，在游戏中的蓝图导入页粘贴。文件内只保存配置，不含魔力储量、物品身份或运行快照。基准为水晶基板、新版低损耗与专用储魔规则；从实体簿载入刻印草稿时仍遵守目标物品的材料、尺寸和服务器规则。
+[index.tsv](index.tsv) is the ordered mapping of blueprint files to notebook page names. Each `.ecblueprint` file contains one complete EC1 text code. Copy the whole file into the in-game blueprint import page to load its design.
 
-涵盖火焰光束、火球、屏障、扇形、墙、环、柱、十字、穹顶、火水交替、追踪弹跳、分裂连锁、环境汲取、标准光束与蓄能光束。示例并不绕过输入成本、魔力场条件或派生预算。
+The fixtures cover beams, fireballs, shields, fans, walls, rings, columns, crosses, domes, alternating elements, homing / bouncing, splitting / chaining, environmental intake, and stored-mana casting. Designs use crystal plates and the dedicated-storage rules. They contain configuration only: no mana reserves, item identities, inventory, or runtime snapshots.
 
-在工程根目录执行 `./tools/test-blueprints.ps1 -Mirror -Offline -Interactive`，会在独立测试世界给玩家一册已收录所有文件的实体蓝图簿。去掉 `-Interactive` 会执行自动选页、预览和复制校验，然后退出。测试资源与注入器均不会打入正式模组。
+Loading a fixture still respects the destination plate's material and size, available mana, environmental conditions, server budgets, and rune-item requirements. Saving to a real carrier applies the same material checks as a hand-drawn circuit.
 
-修改示例时直接更改对应文件，并通过文本码校验或重新导出；不要在编辑器侧重新添加专用模板按钮。
+## Use an isolated test notebook
+
+Run from the `1.21.1/` project directory with the build dependencies cached:
+
+```powershell
+./tools/test-blueprints.ps1 -Mirror -Offline -Interactive
+```
+
+The client creates an isolated world under `build/blueprint-smoke/` with a notebook populated from the index. Omit `-Interactive` to check page selection, previews, and copying automatically, then exit. The fixtures and injector are excluded from the release JAR; normal worlds do not receive these designs automatically.
+
+To edit a fixture, replace its text code with a valid export and keep the index in sync. Example circuits belong in blueprint data rather than dedicated editor buttons.

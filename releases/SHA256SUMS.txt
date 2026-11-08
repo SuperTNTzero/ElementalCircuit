@@ -41,3 +41,4 @@ a30b191d8abb7c43445d70e9c163c5d5185c045ebdfa5d16bdfff629aff91cef  elemental-circ
 5c4d338de5df1bf6eb641e6023ffb8f1f0ec56daaefb8fe6fe39ec205cbeb3df  elemental-circuits-1.21.1-0.49.0.jar
 d3223c574958446a864a411cda1f8f341643a9af8a5c251545e2fe30e3f952a5  elemental-circuits-1.21.1-0.55.0.jar
 e9aa8613b509cd8688db086033d51b2550a2f7401ef4cf0e27f710d50b166fed  elemental-circuits-1.21.1-0.55.1.jar
+d418d01d868eb3f72221d97ffe4a6ed39b1315308c9ddebf1cef9bb24db52b7f  elemental-circuits-1.21.1-0.55.2.jar

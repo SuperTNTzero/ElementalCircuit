@@ -1,101 +1,33 @@
-# 模组安装包
+# Elemental Circuits installation packages
 
-当前开发包 0.55.1，适用于 Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21。需同时安装 [Curios API 9.5.1+1.21.1](dependencies/curios-neoforge-9.5.1+1.21.1.jar)，客户端和服务器均须更新。修复持续联系的冷却复触发和锚点丢失，补充自动停止条件、联系启动反馈；加入物品化符文/篆刻台、固定法阵魔力粉布线及独立 `.ecfx` 动画包导入。见[联系施法](../1.21.1/docs/systems/联系施法与空间参数.md)、[符文物品与篆刻](../1.21.1/docs/systems/符文物品与篆刻.md)和[自定义特效包](../1.21.1/docs/systems/自定义特效包.md)。
+## Current edition
 
-| Minecraft | NeoForge | Java | 模组安装包 |
-|---|---|---|---|
-| 1.21.1（main 基线，当前开发包） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.55.1.jar](elemental-circuits-1.21.1-0.55.1.jar) |
-| 1.21.1（持续联系修复与符文物品化归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.55.0.jar](elemental-circuits-1.21.1-0.55.0.jar) |
-| 1.21.1（分流、时序与观察归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.52.0.jar](elemental-circuits-1.21.1-0.52.0.jar) |
-| 1.21.1（联系施法与空间参数归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.51.0.jar](elemental-circuits-1.21.1-0.51.0.jar) |
-| 1.21.1（物料与红石自动化归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.50.0.jar](elemental-circuits-1.21.1-0.50.0.jar) |
-| 1.21.1（质量与运行开销修复，推荐） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.49.0.jar](elemental-circuits-1.21.1-0.49.0.jar) |
-| 1.21.1（Inkscape矢量符文归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.48.0.jar](elemental-circuits-1.21.1-0.48.0.jar) |
-| 1.21.1（观阵镜与数值修复归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.47.0.jar](elemental-circuits-1.21.1-0.47.0.jar) |
-| 1.21.1（魔法附魔归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.46.0.jar](elemental-circuits-1.21.1-0.46.0.jar) |
-| 1.21.1（基板耐久与熔断归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.43.0.jar](elemental-circuits-1.21.1-0.43.0.jar) |
-| 1.21.1（反相奥术与联合选阵） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.42.0.jar](elemental-circuits-1.21.1-0.42.0.jar) |
-| 1.21.1（手持三维手册与目录整理） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.41.0.jar](elemental-circuits-1.21.1-0.41.0.jar) |
-| 1.21.1（标准状态、复杂度与专用储魔归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.37.0.jar](elemental-circuits-1.21.1-0.37.0.jar) |
-| 1.21.1（握持与法袍美术修正归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.36.1.jar](elemental-circuits-1.21.1-0.36.1.jar) |
-| 1.21.1（法袍、Curios戒指与装备施法归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.36.0.jar](elemental-circuits-1.21.1-0.36.0.jar) |
-| 1.21.1（施法成本与魔力动力学归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.35.0.jar](elemental-circuits-1.21.1-0.35.0.jar) |
-| 1.21.1（元素反应队列归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.34.0.jar](elemental-circuits-1.21.1-0.34.0.jar) |
-| 1.21.1（元素伤害与反应归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.33.0.jar](elemental-circuits-1.21.1-0.33.0.jar) |
-| 1.21.1（Aseprite部件与魔力酿造归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.32.0.jar](elemental-circuits-1.21.1-0.32.0.jar) |
-| 1.21.1（同基板叠阵与编辑导航归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.31.0.jar](elemental-circuits-1.21.1-0.31.0.jar) |
-| 1.21.1（明确选择派生条件归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.30.1.jar](elemental-circuits-1.21.1-0.30.1.jar) |
-| 1.21.1（探测杖与天然节点勘测归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.30.0.jar](elemental-circuits-1.21.1-0.30.0.jar) |
-| 1.21.1（槽位轮盘与递归施法归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.29.0.jar](elemental-circuits-1.21.1-0.29.0.jar) |
-| 1.21.1（书籍平摊与魔力流转加速归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.28.0.jar](elemental-circuits-1.21.1-0.28.0.jar) |
-| 1.21.1（服务端配置与符文边界归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.27.0.jar](elemental-circuits-1.21.1-0.27.0.jar) |
-| 1.21.1（元素组合与奇幻特效归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.26.0.jar](elemental-circuits-1.21.1-0.26.0.jar) |
-| 1.21.1（魔力输入与永久成长归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.25.0.jar](elemental-circuits-1.21.1-0.25.0.jar) |
-| 1.21.1（三维书籍与稳定持杖归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.24.0.jar](elemental-circuits-1.21.1-0.24.0.jar) |
-| 1.21.1（奇幻施法音效归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.23.0.jar](elemental-circuits-1.21.1-0.23.0.jar) |
-| 1.21.1（扩展形状符文归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.22.0.jar](elemental-circuits-1.21.1-0.22.0.jar) |
-| 1.21.1（法阵贴图细化归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.21.1.jar](elemental-circuits-1.21.1-0.21.1.jar) |
-| 1.21.1（固定阵盘与完成刻印归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.21.0.jar](elemental-circuits-1.21.1-0.21.0.jar) |
-| 1.21.1（贴图与穿模修复归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.20.1.jar](elemental-circuits-1.21.1-0.20.1.jar) |
-| 1.21.1（工作台模型与交互归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.20.0.jar](elemental-circuits-1.21.1-0.20.0.jar) |
-| 1.21.1（魔力场与节点归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.19.0.jar](elemental-circuits-1.21.1-0.19.0.jar) |
-| 1.21.1（准星HUD基线归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.18.1.jar](elemental-circuits-1.21.1-0.18.1.jar) |
-| 1.21.1（三维法杖基线归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.18.0.jar](elemental-circuits-1.21.1-0.18.0.jar) |
-| 1.21.1（界面与像素资源归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.17.0.jar](elemental-circuits-1.21.1-0.17.0.jar) |
-| 1.21.1（施法表现基线归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.16.0.jar](elemental-circuits-1.21.1-0.16.0.jar) |
-| 1.21.1（迁移基线归档） | 21.1.265 | 21 | [elemental-circuits-1.21.1-0.15.0.jar](elemental-circuits-1.21.1-0.15.0.jar) |
-| 1.20.1 | 47.1.106 | 17 | [elemental-circuits-1.20.1-0.14.0.jar](elemental-circuits-1.20.1-0.14.0.jar) |
+**Elemental Circuits 0.55.2** requires **Minecraft 1.21.1**, **NeoForge 21.1.265**, and **Java 21**.
 
-选择对应游戏版本，在客户端与服务器的 `mods` 目录安装同一个JAR。无需额外玩法模组。完整校验值见 [SHA256SUMS.txt](SHA256SUMS.txt)，机器可读信息见 [manifest.json](manifest.json)。
+| Package | Purpose |
+| --- | --- |
+| [elemental-circuits-1.21.1-0.55.2.jar](elemental-circuits-1.21.1-0.55.2.jar) | Main mod; install on client and server |
+| [Curios API 9.5.1+1.21.1](dependencies/curios-neoforge-9.5.1+1.21.1.jar) | Required dependency on both sides |
+| Patchouli 1.21.1-93-NEOFORGE | Optional searchable guide and recipe pages |
 
-新版源码及运行说明位于 [1.21.1工程](../1.21.1/README.md)，迁移和测试证据位于 [迁移报告](../1.21.1/docs/maintenance/1.21.1迁移报告.md)。旧工程完整保留于 `../1.20.1/`。整张真实旧世界升级仍需要在备份副本上验收。
+Put the mod and Curios JARs into the instance's `mods/` directory. Client and server must use the same Elemental Circuits version. Without Patchouli, the guide uses a vanilla-style book reader. See the [player guide](../1.21.1/README.md) for crafting and controls.
 
-0.16.0加入分层施法特效、元素冲击、成功伤害反馈及强化音效，预览和配置见 [施法表现与打击反馈](../1.21.1/docs/art/施法表现与打击反馈.md)。同一实例只保留一个版本的本模组JAR。
+These are development packages. Back up worlds before changing versions; older development save and blueprint formats are not guaranteed to load. Do not install different Minecraft editions together in one instance.
 
-0.17.0更新界面、像素资源与玩家文本，详情及预览见 [界面与美术整理](../1.21.1/docs/art/界面与美术整理.md)。
+## Package verification
 
-0.18.0增加27种三维法杖组合与按部件速度计算的独立施法CD，见 [三维法杖与施法冷却](../1.21.1/docs/art/三维法杖与施法冷却.md)。
+[manifest.json](manifest.json) records Minecraft, loader, Java, dependency, file size, and SHA-256 metadata by package. [SHA256SUMS.txt](SHA256SUMS.txt) provides checksums. To inspect a downloaded file in PowerShell:
 
-0.18.1将CD改为准星蓝色圆环，魔力条采用黄铜边框和粗体蓝字，见 [HUD说明](../1.21.1/docs/art/准星冷却环与魔力条.md)。
+```powershell
+Get-FileHash ./elemental-circuits-1.21.1-0.55.2.jar -Algorithm SHA256
+```
 
-0.19.0新增有限魔力场、水晶矿物、天然/人工节点和环境汲取符文，清理文本并提高冷却环透明度，见 [玩法与机制](../1.21.1/docs/systems/魔力场与节点.md)。新矿物只在新区块生成；两端统一使用新协议版本。
+Compare the result with the matching manifest entry. The manifest includes historical packages; not every historical binary is included in every checkout.
 
-0.20.0更新工作台模型与贴图，并将刻印和组杖收拢到对应工作台；持三种基板与刻阵台互动可制作固定法阵。两端统一更新，操作与源文件见 [工作台说明](../1.21.1/docs/art/工作台模型与交互.md)。
+## Historical edition
 
-0.20.1修复贴图拉伸和缩小时串色、桌面/工具/法杖穿插、悬浮水晶碰撞及双格模型边界，见 [修复与验证](../1.21.1/docs/art/工作台贴图与穿模修复.md)。因碰撞数据更新，客户端与服务端都要更新本版（协议1.21.1-6）。
+The Minecraft **1.20.1** edition ends at mod version **0.14.0**, targeting **NeoForge 47.1.106 / Java 17**. Its features and installation requirements differ from the current edition. See its [own README](../1.20.1/README.md).
 
-0.21.0更新三种六角固定阵盘、简化工作台选框，基板完成刻印后才成为固定法阵；说明与证据见 [固定法阵刻印与外观](../1.21.1/docs/art/固定法阵刻印与外观.md)。
+## Licenses
 
-0.21.1重绘三种阵盘的高密度纹理，模型和制作规则保持0.21.0规则，见 [贴图细化](../1.21.1/docs/art/法阵贴图细化.md)。
-
-0.22.0新增六种实际体积形状与静态符印，网络协议1.21.1-8要求两端一起更新，用法与验证见 [扩展形状符文](../1.21.1/docs/systems/扩展形状符文.md)。
-
-0.23.0以核验授权的CC0 / CC BY 3.0素材替换占位音，混制74个变体。JAR内含作者署名与许可原文；来源、试听及验证见 [奇幻音效素材与适配](../1.21.1/docs/art/奇幻音效素材与适配.md)。
-
-0.24.0去除施法冷却的持物收回，增加独立物品栏CD遮罩；法术书与蓝图簿三维化，并有翻开、翻页动画。见 [模型与验证](../1.21.1/docs/art/三维书籍与稳定持杖.md)。
-
-0.25.0允许按输入符文设置注入量，魔力果实永久增加容量至1024，创造模式不再消耗法杖耐久。两端统一更新为协议1.21.1-9，见 [操作与验证](../1.21.1/docs/systems/魔力输入与永久成长.md)。
-
-0.26.0引入CC0奇幻美术，雷束真实连锁、火扇喷火，八元素与形状具备不同材质和运动。客户端和服务端统一更新。授权、组合矩阵与测试见 [元素组合与奇幻特效](../1.21.1/docs/art/元素组合与奇幻特效.md)。
-
-0.27.0的配置页、魔力管理指令、性能预算及旧数据规则见 [服务端配置与符文边界](../1.21.1/docs/systems/服务端配置与符文边界.md)。客户端与服务端均需更新。
-
-0.28.0使两类书籍平摊展开，默认每逻辑步推进8轮魔力传输，保留注入、控制与CD节拍。旧法阵在完整保留现场后采用新速度；客户端与服务端统一更新为协议1.21.1-12。用法、截图及局部CPU样本见 [书籍姿态与魔力流转加速](../1.21.1/docs/art/书籍姿态与魔力流转加速.md)。
-
-0.29.0精简管理页、展开式基板、明确槽位、Z/X和R轮盘，并加入有界的预付子法阵调用。用法、冻结语义、限制和验证见 [法阵管理与递归施法](../1.21.1/docs/systems/法阵管理与递归施法方案.md)。
-
-0.30.0加入专用探测杖和可配置的500格球形天然节点勘测；旧水晶和空手节点诊断入口移除。配方、范围、异步读取与验收见 [探测杖与天然节点勘测](../1.21.1/docs/systems/探测杖与天然节点勘测.md)。
-
-0.30.1取消新派生配置的触发条件预选，未选择不能保存；触发判定经纯领域策略接口扩展。旧配置与现场保持原样，详见 [法阵管理与递归施法](../1.21.1/docs/systems/法阵管理与递归施法方案.md)。
-
-0.31.0采用同基板重叠阵层、独立关系页、可直接切换的两行导航及材料递归公式，移除刻印页起阵/停供；旧跨槽派生不用于新发射，旧冻结程序继续恢复。用法、配置与兼容规则见 [同基板叠阵与编辑导航](../1.21.1/docs/systems/同基板叠阵与编辑导航.md)。
-
-
-0.32.0用Aseprite更新基板、部件图标及三维材质，添加原版魔力酿造与临时恢复效果。配方、倍率、配置与美术源文件见 [基板部件与魔力药水](../1.21.1/docs/art/基板部件与魔力药水.md)。
-
-
-0.33.0注册ec_damage系列伤害，加入潮湿、导电、寒霜/碎冰、泥泞、助燃与光暗反应，统一混合伤害和原版保护边界。详细设计、ID与验证见 [元素伤害与反应](../1.21.1/docs/systems/元素伤害与反应.md)。
-
-0.35.0调整固定输入与成本结算，加入按元素退回原来源、缓存衰减、逻辑占格成本、分段耐久、混合回复、天然节点恢复和原生法强。公式与配置见 [施法成本与魔力动力学](../1.21.1/docs/systems/施法成本与魔力动力学.md)。
-
-0.41.0为法阵手札加入仅手持时显示的三维模型，并将源码、美术脚本与文档按职责分类。见 [工程结构与排版](../1.21.1/docs/maintenance/工程结构与排版.md)。
+Project rights and third-party spell asset attribution are documented in [LICENSE.txt](../1.21.1/LICENSE.txt) and [THIRD_PARTY_NOTICES.md](../1.21.1/THIRD_PARTY_NOTICES.md). Curios provenance and redistribution notices are retained in [dependencies/curios-PROVENANCE.md](dependencies/curios-PROVENANCE.md) and the accompanying license files.

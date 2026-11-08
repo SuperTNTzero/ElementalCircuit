@@ -1,141 +1,53 @@
-# 元素法阵 · Minecraft 模组
+# Elemental Circuits — Minecraft 1.20.1
 
-将本仓库当前的法术设计移植为独立的 **Minecraft Java 1.20.1 / NeoForge 47.1.106 / Java 17** 模组，标识 `elementalcircuits`，版本 `0.14.0`。原 Godot 工程保持原位；这里使用 Java 实现独立运行核心及 Minecraft 适配。
+This is the historical **0.14.0** edition of Elemental Circuits, a mod for engraving programmable spells on hexagonal circuit plates. It targets **Minecraft Java 1.20.1**, **NeoForge 47.1.106**, and **Java 17**. The mod ID is `elementalcircuits`.
 
-这是法术核心的第一批移植，不代表原游戏的机械网络、袭击、真实热学和完整安全系统已经迁移。对应关系、固定规则与边界见 [迁移设计](docs/迁移设计.md)，实际执行结果见 [验证记录](docs/验证记录.md)。
+For the current edition, use the separate [Minecraft 1.21.1 project](../1.21.1/README.md). Features, controls, and data formats described there should not be assumed to exist in this edition.
 
-当前模块边界、状态所有权和存储迁移见 [架构说明](ARCHITECTURE.md)，此前的模块重构见 [底层抽象与运行边界重构](docs/底层抽象与运行边界重构.md)，本次转换规则与验证见 [状态机审查与稳定性修复](docs/状态机审查与稳定性修复.md)。静态资源、批次特效和测量结果见 [静态美术与批量特效](docs/静态美术与批量特效.md)。施法音效、静态素材和播放预算见 [施法音效](docs/施法音效.md)。客户端和服务器均需更新至0.14.0，网络协议继续为10。
+## Features
 
-## 构建与运行
+- Directed mana and signal paths, elemental conversion, logic gates, counters, clocks, and latches.
+- Separate casting methods, sphere / beam / shield shapes, and projectile effects such as splitting, chaining, homing, and bouncing.
+- Elemental world interactions: fire, water sources, temporary light, suppressed light sources, and arcane block penetration.
+- Three-part wands, multiple circuit slots, fixed circuits, blueprint notebooks, and spellbooks with their own saved circuits.
+- A finite player mana pool, persistent circuit state, static spell visuals, and spatial casting sounds.
 
-设置 `JAVA_HOME` 指向 JDK 17，在本文件夹执行：
+This edition does not include the current rune-item economy, mana-node ecology, robes, rings, or custom `.ecfx` import system.
 
-```powershell
-.\gradlew.bat --gradle-user-home .gradle-home build
-.\gradlew.bat --gradle-user-home .gradle-home runClient
-# 专用服务器开发运行：首次按 Minecraft 自身流程接受 EULA
-.\gradlew.bat --gradle-user-home .gradle-home runServer
-```
+## Install
 
-标准构建产物：`build/libs/elemental-circuits-1.20.1-0.14.0.jar`。将它放入安装了 **NeoForge 47.1.106** 的 1.20.1 实例 `mods` 文件夹，客户端和服务器均需安装。没有其他玩法模组依赖。NeoForge 这一代仍沿用 `net.minecraftforge` API 包和 `mods.toml` 中的 `forge` 标识；Gradle 的目标依赖明确是 `net.neoforged:forge:1.20.1-47.1.106`。
+Build the mod or obtain `elemental-circuits-1.20.1-0.14.0.jar` from an available installation archive. Put it in the `mods/` directory of a NeoForge 47.1.106 instance. Both client and server need the mod; no additional gameplay mod is required by this edition.
 
-Wrapper 使用 Gradle 8.1.1，并固定官方 SHA-256。默认从官方源下载依赖。NeoForge 源无法连接时，可以显式添加 `-PuseDependencyMirror=true` 使用南京大学 BMCLAPI 镜像下载 NeoForge 依赖；它不改变目标平台。
+NeoForge for this Minecraft version still uses `net.minecraftforge` API packages and the `forge` identifier in `mods.toml`. The build targets `net.neoforged:forge:1.20.1-47.1.106`.
 
-## 首次体验
+## Engraving and casting
 
-v0.13将现有符形与工具图标烘焙为共享图集，法杖预览复用静态部件组合贴图；光束、投射轨迹、屏障、命中和蒸汽按世界步批量同步，客户端使用共享特效材质统一绘制。美术源、烘焙命令、资源重载与预算边界见 [静态美术与批量特效](docs/静态美术与批量特效.md)。
+Use an Inscribed Wand on an Inscription Table to open the circuit editor. Choose runes in the left sidebar, place them on empty hexes, and connect mana or signal paths with the route tool. Connections can span nonadjacent runes; crossing routes do not automatically connect. Save the draft before casting.
 
-v0.12修复法阵重启旧信号、失去持有关系的排队任务、故障报告中断其他宿主、损坏现场恢复及卸载屏障仍参与碰撞等状态边界。停阵后仅有回收储备或发送口缓存时不再空转；刻印请求按编号关联回复，修改会作废旧刷新，超时不会自动重复扣料。详见 [状态机审查](docs/状态机审查与稳定性修复.md)。
+A simple spell connects mana input, elemental conversion, directed delivery, a beam shape, and output. Right-click with the wand to start the saved circuit; use it again to stop supply. A new wand contains no free spell. Wand component changes use the separate Wand Workbench.
 
-v0.10新增 [独立工作台、蓝图簿和法术书](docs/工作台与书籍.md)：部件装配及修缮移至法杖工作台；实体蓝图簿保存16页设计并预览；法术书自己保存最多4个法阵及完整状态。主手法杖＋副手法术书时，Z/X切换书中当前法阵，B查看，右键法杖起停；按键可重绑。
+The default player mana capacity is 64. Recovery begins 40 server ticks after spending and restores 4 mana per second. This edition injects 4 mana per input, with continuous supply attempts every 10 ticks. These historical input rules differ from the configurable input system in the current edition.
 
-v0.4已接入 [元素世界交互](docs/元素世界交互.md)：火创造火焰、点燃和融冰；水创造水源、灭火和湿润耕地；风推拉掉落物；雷驱动避雷针、清理铜锈。生成水/火参与原版流动、燃烧和水/岩浆反应。
+A blueprint notebook stores shareable designs and previews. A spellbook stores runnable circuits; in this edition, holding it offhand beside a wand selects the book's circuits for casting. Z / X change the selection and B opens the book interface. Bindings can be changed in Controls.
 
-v0.5新增 [光、暗、奥术与蓝图子界面](docs/光暗奥术与蓝图子界面.md)：光创造10秒、15级临时光源并实际照亮光束/球状弹道；暗熄灭火焰、营火和蜡烛，并将火把及常见灯块压暗10秒；正奥术穿透方块，混合包只有奥术成分穿墙。编辑器底部“蓝图”进入独立导入/导出页。
+## Build and test
 
-v0.5.1修复 [编辑器鼠标卡顿](docs/编辑器指针与绘制性能修复.md)：原生工具指针、格盘与按钮绘制批处理、逐格预览缓存及常量邻域命中。同机217格测试场景的同步绘制中位耗时由67–69ms降为3.4–4.2ms；该结果不是世界场景帧率承诺。
-
-v0.6新增 [多法阵、明确基板安装与固定法阵](docs/多法阵与固定法阵.md)：底部“法阵管理”支持每载体4槽位、魔力/信号互联；基板可直接选木头/黄铜/水晶安装。新增可合成的固定法阵方块，右键刻印、蹲下右键从玩家槽充能，两个方块可在16格内互联。
-
-v0.7新增 [计数器、节拍器与翻转锁存](docs/计数器与时序符文.md)：计数器按上升沿计数并在阈值输出脉冲，节拍器按逻辑步发出周期脉冲，翻转锁存每次上升沿翻转状态。左侧“逻辑控制”可选，右侧可编辑参数、查看运行进度并复位；“示例 / 计数切换”提供每四拍交替火/水的完整法阵。
-
-v0.8新增 [投射物派生效果](docs/投射物派生效果.md)：独立“派生效果”类提供爆裂、弹跳和追踪，参数可编辑、可组合，并随魔力包跨阵传输。右侧“示例 / 派生投射”可载入完整法阵。爆裂共享原作用预算，弹跳逐次扣损，追踪预付且限制转向；完整飞行现场可保存恢复。
-
-v0.9新增 [命中分裂、连锁与附加效果](docs/命中派生与附加效果.md)：在“派生效果”类继续加入命中分裂、连锁、灼烧、迟缓和击退。分支共享原预算、子代后续世界步运行、只分裂一代、连锁排除已命中对象。右侧新增“示例 / 命中派生”，完整保存飞行现场和光束子代队列。
-
-v0.3 交互更新见 [元素目录与交互预览](docs/元素目录与交互预览.md)。
-
-前版部件数值见 [编辑器与部件化设计](docs/编辑器与部件化设计.md)。
-
-基于基础门电路的 [D触发器与火/水切换实验](docs/D触发器与双元素施法实验.md)提供接线蓝图、真实VM轨迹及运行输入的现有边界。
-
-1. 创造模式中打开“元素法阵”物品栏，取出刻阵法杖；或者按下文配方合成。新法杖为空白，没有免费预制法阵。
-2. 主手持杖，**蹲下＋右键**打开刻印界面；主手持杖右键刻印台也能打开。世界在刻印时继续运行。
-3. 右栏点击“示例：光束”，然后点击“保存”。这会明确载入 `输入 → 火元素 → 指向 → 光束 → 输出` 草稿。
-4. 关闭界面，瞄准生物后右键手动起阵。法阵每条线路至少经过一个法阵逻辑步；右下角原版物品栏之外的左下角区域显示玩家魔力槽。
-5. 回到编辑器，选中元素符文可切换八本源及纯净；右栏可滚动。更改后保存，再起阵。运行期间拒绝配置修改，右键再次使用或点击“停供”可停止新供给。
-
-默认玩家魔力容量 64；成功消费后等待 40 个服务器步，再以每秒 4 点恢复。多根法杖及副手法术书共享该玩家的槽。每个输入单次注入 4 点；持续模式每 10 步尝试再次注入。单次控制窗口 40 步，持续模式没有历史窗口上限；断供后不会因为槽恢复而自行重启。
-
-## 自由刻印
-
-- 左栏选择符文，在空六角格落笔。鼠标滚轮滚动左侧目录；右侧也可滚动查看参数。
-- “元素转化”是独立父项，展开后可直接选择纯净及八种本源；不同元素具有不同符形和颜色，点击即进入该元素的落笔模式。
-- 落笔时格盘显示半透明目标符文，鼠标旁显示相同图标和名称；占用格、穿符线路等无效位置显示红色提示。
-- 点击“选择”，再点符文，显示双边框高亮及右侧所选符文卡片，可编辑本源、数值、分流权重、开关初态或控制方式。
-- 选择工具下按住符文拖动，超过3个GUI像素后显示原位置淡化、新位置虚影及相关线路预览，松开后将移动和线路重算一起写入草稿。右键/Esc取消；目标非法或无法重算时保留原图。Ctrl+Z可一次撤销符文及线路变化。
-- 选择、连线、放置具有独立的原生工具指针，对应按钮使用相同符形；无效落点变红，拖动显示所选符文。指针移动由系统显示，格盘虚影和名称提示按画面更新。离开格盘、进入子页或退出编辑器会恢复普通指针并释放原生资源。
-- 左侧为可折叠的父项/子项目录，按魔力流转、元素转化、逻辑控制、方式、形状、派生效果、参数分类；子项直接预览与格盘一致的矢量符形，滚轮浏览。
-- 点击“连线”，选择魔力线或信号线，依次点击源符文和任意距离的目标符文，自动计算绕开其他符文的最短六邻接路径。点击空格指定转折点，也可拖画。落笔前显示路径格数和参考损耗，保存的实际跨格步数参与逐格损耗。
-- 每条线指定载荷和方向。不同线路允许交叉、共格，不会隐式接通；不能穿第三个符文或在自身路线中重复格子。
-- 右键或 Esc 取消未完成线路；Esc 再关闭界面。Delete 删除选中符文；Ctrl＋Z / Ctrl＋Y 撤销 / 重做。
-- 改图只修改草稿，“保存”才向服务器申请应用。“起阵”运行服务器已保存的法阵。
-- 点击底部“蓝图”打开子界面：“导入”页输入/粘贴文本码，再点击“导入草稿”；“导出”页点击“生成并复制”，生成当前草稿的EC1文本码并复制。支持此前JSON蓝图。导入先完整校验，失败保留输入和当前草稿，成功返回后仍需保存。蓝图不含玩家魔力、物品身份、历史收支或运行现场，也不能扩大当前载体材料。
-- 基板按钮进入独立安装页，直接选择木头、黄铜或水晶；消费一张目标板并回收旧板，同时保存当前草稿。降级布局放不下、仍有互联引用、运行中或缺板时整次拒绝。新增法阵槽位也消费一张基板，无免费魔力。
-- 停供后改图会回收尚未交付的成分到法杖内部储备，后续注入优先使用它；不退回损耗或已交付量，也不会补满玩家槽。超过 64 点回收规格时须先释放部分缓存。
-- 运行中的手动开关可通过“切换运行阀门”操作；它不改变蓝图初态。信号控制门读取上一步线路值。
-
-| 符文 | 行为 |
-|---|---|
-| 入、元、出 | 从有限供给注入；将纯净部分转为指定本源；终止阵内流并交付 |
-| 与、或、反 | 魔力与等待所有魔力入线；或处理可用输入；反翻转元素正反相；信号线路独立执行布尔逻辑 |
-| 信、阀、感 | 有限成本常量信号；手动或信号通路开关；观测本地魔力阈值且不消费被测包 |
-| 计、拍、存 | 上升沿计数并在阈值输出一步脉冲；周期节拍；上升沿翻转锁存。运行状态可保存与复位 |
-| 分、汇 | 按已保存出口顺序守恒加权分流；汇聚可用兼容输入并计互斥损耗 |
-| 域、向 | 范围、指向两种独立投送方式 |
-| 球、束、盾 | 球形作用域 / 弹道、首次接触光束、有限寿命的前向圆盘屏障 |
-| 收、送、听、传 | 魔力接收/发送、信号接收/发送；互联面板配置明确目标，至少一世界步延迟 |
-| 爆、弹、追 | 命中释放球形元素作用；方块反射并逐次耗散；前方可见目标追踪并预付成本。独立于元素与形状 |
-| 裂、链、灼、缓、推 | 命中后分裂/连锁；独立灼烧、迟缓和击退，分别预留预算，参数为数量/跳数/持续上限/等级 |
-| 量、程、径、准 | 实际支付量、射程、半径、指向散布；修饰冲突保留输入，扩大参数降低相同支付的交付强度 |
-
-## 配方
-
-所有配方为原版工作台配方，无 Create 依赖。“黄铜基板”是本模组铜、金、红石加工配方的名称，不注册通用黄铜金属。
-
-| 物品 | 配方 |
-|---|---|
-| 木质基板 ×2 | 任意木板 2×2 |
-| 黄铜基板 ×2 | `铜 金粒 铜 / 铜 红石 铜 / 铜 金粒 铜` |
-| 水晶基板 ×2 | `空 紫水晶 空 / 紫水晶 玻璃 紫水晶 / 空 紫水晶 空` |
-| 刻阵法杖 | `空 空 石英杖端 / 空 橡木杖身 空 / 木质杖尾 空 空` |
-| 九种法杖部件 | 各部件材料置于木棍上方：石英/紫水晶碎片/铜锭；木棍/铁锭/烈焰棒；橡木板/铁锭/钻石 |
-| 固定法阵 | `空 木质基板 空 / 石头 铜锭 石头 / 石头 石头 石头` |
-| 法杖工作台 | `空 石英 空 / 铜锭 原版工作台 铜锭 / 木板 木板 木板` |
-| 蓝图簿 | 纸、书、木质基板在同一竖列 |
-| 法术书 | 紫水晶碎片、书、木质基板在同一竖列 |
-| 刻印台 | `空 书 空 / 木板 木质基板 木板 / 木板 空 木板` |
-
-## 书籍操作
-
-- **法术书自身保存法阵**。主手持书蹲下右键进入本书刻印页；底部法阵管理新增槽位时消费对应基板。书内每阵保留自己的配置、运行时钟、逻辑态、魔力缓存及互联线路。
-- 主手持杖、副手持书时，Z/X切换当前页，B打开预览列表，右键法杖起停当前页。切换只改选择，其他已起阵槽位继续运行；可在管理页逐阵停供。换杖不会清空书。
-- 书中法阵使用主手杖端强度/速度并消耗主手法杖耐久；两者共用玩家唯一魔力槽。移走书或主手不再是法杖时，书停供且冻结残余，重新装备须手动起阵。副手书装备期间主手法杖自身法阵停供并冻结。
-- **蓝图簿保存设计**。右键簿子查看、选页、命名和删除；输入EC1文本码新增页面，复制选页文本码分享。随身携带簿子，在刻印页右上角点击“蓝图簿”，可保存当前草稿或载入选页。载入保持目标基板规格，仍需保存到法阵；不会复制运行资源。
-
-## 法杖部件
-
-主手持杖右键独立的“法杖工作台”，先预览部件再点击安装，实际消耗背包中的一件并回收旧件；先停止法杖与副手法术书全部槽位的供给。法阵刻印页只负责符文、布线及法阵管理，部件装配和修缮入口已移除。杖端决定法术强度和施法速度，杖端与杖身共同提供耐久，杖尾决定近战伤害。物品外观随三种部件组合变化，共 27 种。
-
-默认石英杖端＋橡木杖身＋木质杖尾：强度 1×、速度 1×、耐久 192、近战伤害 2。紫晶杖端为强度 1.5×/速度 0.75×；铜制杖端为强度 0.75×/速度 1.5×。速度按服务器固定步精确累计，影响法阵推进及持续供给频率；不提高玩家槽恢复速度。强度影响实际元素响应和屏障容量，不复制法阵内部魔力。
-
-每次法术交付、每次近战命中各磨损 1 点；多槽位同时施法分别计磨损。耐久耗尽停止法阵并取消杖尾近战加成，保留物品和法阵现场；法杖工作台可消费一张木质基板修复 48 点。更换部件不清零磨损，材料基板升级也不重置部件或耐久。
-
-## 测试
+Set `JAVA_HOME` to JDK 17 and run from this directory:
 
 ```powershell
-.\gradlew.bat --gradle-user-home .gradle-home check
-.\gradlew.bat --gradle-user-home .gradle-home runGameTestServer
-# 只编译纯 Java 核心及 JSON 适配器，不启动 Minecraft；需要现有 Gson 2.10.1
-.\tools\test-core.ps1 -JavaHome 'C:/Program Files/Java/jdk-17'
-# 重新生成占位像素资源，需要 Python + Pillow；正常构建无需运行
-python .\tools\generate-resources.py
+./gradlew.bat --gradle-user-home .gradle-home build
+./gradlew.bat --gradle-user-home .gradle-home runClient
+./gradlew.bat --gradle-user-home .gradle-home runGameTestServer
 ```
 
-如需重现真实客户端截图检查，使用 `-PeditorSmoke=true runClient`，截图输出到 `build/client-smoke/screenshots/`；此模式只在测试源中启用，不连接世界，结束后自动关闭自己的客户端。
+The Gradle 8.1.1 wrapper verifies the official distribution checksum. The mod output is `build/libs/elemental-circuits-1.20.1-0.14.0.jar`. The optional `-PuseDependencyMirror=true` switch selects the configured NeoForge dependency mirror.
 
-法杖全部槽位、内部连接、运行现场、部件组合、施法速度小数余数和磨损保存在物品 NBT；固定法阵的槽位与有限储量保存在方块NBT，跨方块连接保存在维度SavedData。玩家槽保存在玩家持久数据，弹道与屏障保存在各维度 SavedData。未加载区域和服务器未运行的现实时间不补算模拟；已加载固定设备不依赖所有者在线，使用本地有限供给。抛出的法杖停止新供给并冻结内部残余，拾取后继续；已交付的弹道不依赖法杖仍被持有。损坏的记录保留原始数据并停用，拒绝用重新补满的现场替代。
+For core-only checks, use `./tools/test-core.ps1 -JavaHome '<JDK 17 directory>'` with the required Gson dependency available. Historical defect-reproduction tools under [tools/audit](tools/audit/README.md) are separate from the normal test suite.
 
-尚未移植：独立能量节点、移动载体间的外部网络、逐基底安全负载/温度/失效、完整热学和机械量、土系临时物质、复合符文封装。屏障只拦截本模组球状法术弹道，不阻挡生物、近战、光束或原版箭矢。火/水可以生成真实原版火焰和水源，光/暗实际改变方块光，正奥术可穿透方块；正式玩法平衡及多人压力测试另行验收。
+## Reference and limits
 
-施法具备起阵、发射、命中及屏障展开音效，各元素使用独立静态音色；在“音乐和声音 → 玩家”调节音量，开启“显示字幕”可显示对应提示。声音按距离衰减，附近重复事件合并，持续屏障不会每步叠音。
+See [ARCHITECTURE.md](ARCHITECTURE.md) for state ownership and adapter boundaries. System references include [workstations and books](docs/工作台与书籍.md), [elemental world interactions](docs/元素世界交互.md), [light, darkness, arcane, and blueprints](docs/光暗奥术与蓝图子界面.md), and [timing runes](docs/计数器与时序符文.md). These documents are in Chinese.
+
+Simulation does not catch up for unloaded chunks or real time spent offline. Shields intercept this mod's spherical spell projectiles, not vanilla arrows, melee attacks, or all entities. Keep separate world backups when moving between Minecraft editions; blueprint import is not a Minecraft world-upgrade mechanism.
+
+See [LICENSE.txt](LICENSE.txt) for project rights.

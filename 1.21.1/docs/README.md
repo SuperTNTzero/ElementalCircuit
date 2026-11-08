@@ -1,30 +1,42 @@
-# 文档导航
+# Documentation
 
-| 目录 | 内容 |
+Reference material for Elemental Circuits: circuit rules, mana, equipment, automation, art assets, and source organization. Most detailed documents are in Simplified Chinese. For installation and basic controls in English, start with the [mod guide](../README.md).
+
+## Systems
+
+| Topic | Reference |
 | --- | --- |
-| [systems](systems/) | 法阵规则、公式、配置、装备与指南书 |
-| [art](art/) | 模型、贴图、音效、界面与资源制作 |
-| [verification](verification/) | 版本验收记录、测试入口与截图证据 |
-| [maintenance](maintenance/) | 版本迁移、源码结构和开发约定 |
-| [images](images/) | 游戏截图；按功能分目录 |
-| [promo](promo/) | 宣传素材与分镜成品 |
+| Standard costs, preparation time, and mana storage | [Standard state and dedicated storage](systems/标准状态与专用储魔.md) |
+| Mana costs, refunds, recovery, and node dynamics | [Casting costs and mana dynamics](systems/施法成本与魔力动力学.md) |
+| Crafting and spending rune items | [Rune items and engraving](systems/符文物品与篆刻.md) |
+| Elemental damage and reaction order | [Elemental damage](systems/元素伤害与反应.md), [reaction queues](systems/元素反应队列.md) |
+| Plates, overload, and meltdown | [Plate capacity and failure](systems/基板承载与熔断.md) |
+| Circuit layers and derived spells | [Layered circuits](systems/同基板叠阵与编辑导航.md) |
+| Contact casting, forces, constraints, and angles | [Contact casting and spatial parameters](systems/联系施法与空间参数.md) |
+| Containers, material handling, and redstone | [Material and redstone automation](systems/物料与红石自动化.md) |
+| Timing, filtering, and observation runes | [Routing, timing, and world observation](systems/分流时序与世界观察.md) |
+| Spellbook and wand selection | [Arcane inversion and combined selection](systems/反相奥术与联合选阵.md) |
+| Robes, rings, and equipment casting | [Equipment circuits](systems/法袍戒指与装备施法.md) |
+| Fixed-circuit control and connection overlays | [Tuning Wand and monocle](systems/固定法阵调律与观阵.md) |
+| Mana ecology and instant restoration | [Mana slimes and floating nodes](systems/魔力史莱姆与浮光节点.md) |
+| Enchantments | [Magic enchantments](systems/魔法附魔.md) |
+| In-game guide and optional Patchouli integration | [Circuit Field Guide](systems/法阵手札与Patchouli.md) |
+| Server commands and performance limits | [Server configuration](systems/服务端配置与符文边界.md) |
+| Custom animations and sounds | [The .ecfx package format](systems/自定义特效包.md) |
 
-维护代码先读 [工程结构与排版](maintenance/工程结构与排版.md) 和 [架构说明](../ARCHITECTURE.md)。查看当前玩法公式请读 [标准状态与专用储魔](systems/标准状态与专用储魔.md)、[施法成本与魔力动力学](systems/施法成本与魔力动力学.md)。历史报告中的版本、数值和测试结论属于当时版本。
+## Assets and source
 
-指南入口：[法阵手札与 Patchouli](systems/法阵手札与Patchouli.md)。
+| Directory or reference | Contents |
+| --- | --- |
+| [art](art/) | Models, textures, sound attribution, UI, and asset export references |
+| [images](images/) | Screenshots grouped by feature |
+| [promo](promo/) | Promotional images and storyboard material |
+| [Source layout and formatting](maintenance/工程结构与排版.md) | Package responsibilities and Java conventions |
+| [Text resource contract](maintenance/文本资源规范.md) | Localization keys and text validation |
+| [Architecture](../ARCHITECTURE.md) | Domain, Minecraft adapter, persistence, and presentation boundaries |
+| [Vector rune assets](../art/inkscape/README.md) | Editable SVG sources and exports |
+| [Tools](../tools/README.md) | Build, test, and artwork commands |
 
-联系施法及角度参数：[联系、施力、约束与交互](systems/联系施法与空间参数.md)。
+## Versioned references
 
-当前元素与轮盘规则：[反相奥术与联合选阵](systems/反相奥术与联合选阵.md)。
-
-当前基板耐久与爆炸公式：[基板承载与熔断](systems/基板承载与熔断.md)。
-
-固定法阵控制：[调律杖与金框单片镜](systems/固定法阵调律与观阵.md)。
-
-魔力生态：[魔力史莱姆、凝胶药水与浮光节点](systems/魔力史莱姆与浮光节点.md)。
-
-最新数值修订：[数值审查与输出效率](systems/数值审查与输出效率.md)，区分实际支付、投射运输与名义效果。
-
-当前符文美术：[Inkscape矢量源稿与导出](art/Inkscape符文矢量化.md)、[验收记录](verification/符文矢量化验收.md)。
-
-当前工程审查：[代码质量、运行开销与待办](maintenance/代码质量与运行开销审查.md)。
+Documents under [verification](verification/) preserve test evidence for the version named in each record. [Maintenance](maintenance/) includes historical migration and code-review notes. Older documents may describe superseded behavior; use the current [mod README](../README.md), in-game guide, and source configuration for supported controls and defaults.

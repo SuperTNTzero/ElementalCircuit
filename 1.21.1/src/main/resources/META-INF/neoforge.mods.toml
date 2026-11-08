@@ -3,7 +3,7 @@ loaderVersion="[4,)"
 license="All Rights Reserved (code); CC0-1.0 / CC-BY-3.0 (spell audio); see META-INF/THIRD_PARTY_NOTICES.md"
 [[mods]]
 modId="elementalcircuits"
-version="0.55.1"
+version="0.55.2"
 displayName="元素法阵 · Elemental Circuits"
 authors="Elemental Circuits Project"
 description='''绘制法阵、组装法杖，把火球改成会追踪和分裂的法术。'''

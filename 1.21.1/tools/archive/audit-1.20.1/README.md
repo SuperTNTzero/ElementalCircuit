@@ -1,5 +1,11 @@
-# 1.20.1 历史审计夹具
+# Historical 1.20.1 audit fixtures
 
-这些文件用于复现旧版本的 NBT、端点与运行开销问题，保留旧 Forge API 和当时的失败预期。它们不加入当前 1.21.1 源集，也不代表当前版本验收结论。
+Archived probes for NBT serialization, connection endpoints, and runtime overhead in the old Minecraft 1.20.1 edition. They retain the old Forge APIs and defect-reproduction expectations. They are excluded from the current 1.21.1 source sets and release JAR.
 
-当前测试请运行工程根目录的 `./tools/build.ps1 -Tasks build,runGameTestServer -Mirror -Offline`。旧执行笔记见 `HISTORICAL.md`；其中路径、工具与假设属于历史环境。
+Passing a defect-reproduction probe does not establish correct behavior. Use the current contract suite for regression checks; from the `1.21.1/` project directory:
+
+```powershell
+./tools/build.ps1 -Tasks build,runGameTestServer -Mirror -Offline
+```
+
+[HISTORICAL.md](HISTORICAL.md) preserves the original execution notes. Its paths, dependencies, and assumptions apply to the historical environment only; do not inject these fixtures into a current game or normal player world.

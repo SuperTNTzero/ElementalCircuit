@@ -16,3 +16,4 @@ tooling/
 releases/*.jar
 releases/dependencies/*.jar
 !releases/elemental-circuits-1.21.1-0.55.1.jar
+!releases/elemental-circuits-1.21.1-0.55.2.jar

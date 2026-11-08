@@ -1,7 +1,17 @@
-# 魔力矿物与节点像素源文件
+# Mana mineral and node textures
 
-13张16×16贴图，使用有限色阶、整像素色块和原生方块UV；不含外部素材或Minecraft贴图副本。保留深蓝水晶和黄铜的模组配色，降低旧32×32纹理的噪点和细描边。
+Editable 16×16 pixel-art sources for mana ore, crystals, and node blocks. The palette combines deep-blue crystals and brass with solid pixel clusters and native Minecraft block UVs. These are original textures, without copied Minecraft texture files.
 
-`tools/draw-mana-blocks.py` 保存可复现的像素形状和原生JSON模型；`tools/export-mana-blocks.ps1` 通过本机Aseprite保存`.aseprite`源文件并导出实际游戏PNG。全部几何由Minecraft原生方块模型烘焙，运行时不生成纹理、不调用Blender或Aseprite。
+Natural nodes place crystals inside a rock block. Artificial nodes use a brass base, corner fittings, and an upright faceted crystal. The mana crystal block is a full building block with full collision and occlusion.
 
-天然节点为完整岩块内的结晶；人工节点使用黄铜底座、护角和竖直的分面水晶。魔力水晶块为整方块，保留原版建材的完整碰撞与遮挡。
+## Regenerate and export
+
+Run from the `1.21.1/` project directory:
+
+```powershell
+./tools/artwork/export-mana-blocks.ps1 -Aseprite '<path-to-aseprite.exe>'
+```
+
+The command runs `tools/artwork/draw-mana-blocks.py` to rebuild source PNGs and native JSON models, then uses Aseprite to save editable `.aseprite` files and export the runtime block textures. It requires Python with Pillow and Aseprite. Rebuilding replaces generated source images; export an edited `.aseprite` file directly to retain manual changes.
+
+Runtime textures live under `src/main/resources/assets/elementalcircuits/textures/block/`. Minecraft bakes the native block models; gameplay does not generate textures or invoke artwork applications.
