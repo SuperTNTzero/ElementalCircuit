@@ -213,11 +213,23 @@ final class MinecraftCircuitHost implements CircuitHost {
 
     @Override
     public ReleasePermit releasePermit() {
-        return !worn
-                ? () -> false
-                : block == null
-                        ? () -> CastingEquipment.release(equipment, player)
-                        : ReleasePermit.UNLIMITED;
+        if (!worn) return () -> false;
+        if (block != null) return ReleasePermit.UNLIMITED;
+        return new ReleasePermit() {
+            @Override
+            public boolean tryAcquire() {
+                return CastingEquipment.release(equipment, player);
+            }
+
+            @Override
+            public boolean tryAcquire(int slot, int output, SpellSpec spell) {
+                if (spell.method() == SpellSpec.Method.CONTACT
+                        && WorldConnections.get(level)
+                                .contains(new WorldConnections.Key(assembly.identity(), slot, output)))
+                    return true;
+                return CastingEquipment.release(equipment, player);
+            }
+        };
     }
 
     @Override
@@ -374,6 +386,15 @@ final class MinecraftCircuitHost implements CircuitHost {
                 if (rune.kind() == Rune.Kind.CONTACT && circuit.contactReleased(rune.id()))
                     WorldConnections.get(level)
                             .releaseControl(assembly.identity(), slot, rune.id());
+            if (circuit.powered())
+                WorldConnections.get(level)
+                        .refreshSlot(
+                                level,
+                                assembly.identity(),
+                                slot,
+                                block == null ? player.getUUID() : block.owner(),
+                                block == null ? player.getEyePosition() : block.origin(),
+                                direction());
         }
         if (player != null
                 && assembly.slots().stream().mapToLong(s -> assembly.circuit(s).failures()).sum()

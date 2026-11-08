@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    },
+    {
+      "item": "elementalcircuits:mana_crystal"
+    }
+  ],
+  "result": {
+    "id": "elementalcircuits:mana_dust",
+    "count": 8
+  }
+}

@@ -68,6 +68,7 @@ public final class VisualNetwork {
             b.writeFloat(e.size());
             b.writeVarInt(e.intensity());
             b.writeFloat(e.aperture());
+            b.writeUtf(e.customEffectId(), 48);
         }
     }
 
@@ -89,7 +90,8 @@ public final class VisualNetwork {
                             point(b),
                             b.readFloat(),
                             b.readVarInt(),
-                            b.readFloat()));
+                            b.readFloat(),
+                            b.readUtf(48)));
         return new Batch(dimension, tick, events);
     }
 

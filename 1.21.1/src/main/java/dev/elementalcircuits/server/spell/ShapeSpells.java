@@ -70,7 +70,8 @@ public final class ShapeSpells {
                     frame.normal(),
                     radius,
                     1,
-                    (float) spell.spatial().aperture(rules.fanDegrees()));
+                    (float) spell.spatial().aperture(rules.fanDegrees()),
+                    spell.customEffectId());
         }
     }
 }

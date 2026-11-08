@@ -283,6 +283,18 @@ public final class ElementalCircuits {
                                     .displayItems(
                                             (parameters, output) -> {
                                                 output.accept(GUIDE.get());
+                                                output.accept(
+                                                        dev.elementalcircuits.server.workshop
+                                                                .RuneEngraving.DUST
+                                                                .get());
+                                                output.accept(
+                                                        dev.elementalcircuits.server.workshop
+                                                                .RuneEngraving.TABLE_ITEM
+                                                                .get());
+                                                dev.elementalcircuits.server.workshop.RuneEngraving
+                                                        .RUNES
+                                                        .values()
+                                                        .forEach(rune -> output.accept(rune.get()));
                                                 output.accept(WAND.get());
                                                 output.accept(WizardEquipment.HAT.get());
                                                 output.accept(WizardEquipment.ROBE.get());
@@ -323,6 +335,7 @@ public final class ElementalCircuits {
                                     .build());
 
     public ElementalCircuits(IEventBus bus, ModContainer container) {
+        dev.elementalcircuits.server.workshop.RuneEngraving.MENUS.register(bus);
         container.registerConfig(
                 net.neoforged.fml.config.ModConfig.Type.CLIENT, FeedbackConfig.SPEC);
         container.registerConfig(

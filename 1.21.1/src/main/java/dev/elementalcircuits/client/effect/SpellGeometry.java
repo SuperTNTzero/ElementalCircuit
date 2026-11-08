@@ -234,25 +234,28 @@ public final class SpellGeometry {
         double size = Math.min(2, e.size()) * (.8 + Math.sqrt(e.intensity()) * .06),
                 expansion = 1 - Math.pow(1 - p, 3),
                 radius = size * art.spread() * (.15 + expansion * 1.6);
-        billboard(a, radius, 3, art.color(), alpha * .85, p * .2);
+        int color = art.color();
+        int core = art.core();
+        int sprite = SpellAtlas.frame(e.element(), p * 12);
+        billboard(a, radius, 3, color, alpha * .85, p * .2);
         billboard(
                 a,
                 size * (e.element() == Element.SHADOW ? 1.35 - p * .8 : .6 + expansion * .7),
-                SpellAtlas.frame(e.element(), p * 12),
-                SpellAtlas.colored(e.element()) ? 0xffffff : art.color(),
+                sprite,
+                SpellAtlas.colored(e.element()) ? 0xffffff : color,
                 alpha * .9,
                 e.element() == Element.SHADOW ? -p * 2 : p * .3);
         billboard(
                 a,
                 radius * .63,
                 e.element() == Element.ARCANE ? 7 : e.element() == Element.WIND ? 11 : 3,
-                art.core(),
+                core,
                 alpha * .55,
                 -p * 1.5);
         if (p < .4) {
             double burst = 1 - p / .4;
-            billboard(a, size * (.5 + expansion) * burst, 0, art.color(), burst * .8, 0);
-            billboard(a, size * .52 * burst, 4, art.core(), burst, 0);
+            billboard(a, size * (.5 + expansion) * burst, 0, color, burst * .8, 0);
+            billboard(a, size * .52 * burst, 4, core, burst, 0);
         }
         if (e.element() == Element.SHADOW)
             billboard(a, size * (.7 - p * .5), 0, 0x160c25, alpha * .95, 0);

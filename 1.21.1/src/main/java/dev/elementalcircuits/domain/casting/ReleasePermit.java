@@ -6,4 +6,12 @@ public interface ReleasePermit {
     ReleasePermit UNLIMITED = () -> true;
 
     boolean tryAcquire();
+
+    default boolean tryAcquire(int output, SpellSpec spell) {
+        return tryAcquire();
+    }
+
+    default boolean tryAcquire(int slot, int output, SpellSpec spell) {
+        return tryAcquire(output, spell);
+    }
 }

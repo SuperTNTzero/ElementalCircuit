@@ -495,6 +495,7 @@ public final class CoreContracts {
         assertions += ManaTransportContracts.run();
         assertions += RecursionContracts.run();
         assertions += ProbeContracts.run();
+        assertions += RuneMaterialsContracts.run();
         System.out.println("CORE CONTRACTS PASSED: " + assertions);
     }
 }

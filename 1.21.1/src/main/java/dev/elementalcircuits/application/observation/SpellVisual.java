@@ -15,10 +15,17 @@ public record SpellVisual(
         Point to,
         float size,
         int intensity,
-        float aperture) {
+        float aperture,
+        String customEffectId) {
     public SpellVisual(
             Kind kind, Element element, Point from, Point to, float size, int intensity) {
-        this(kind, element, from, to, size, intensity, 0);
+        this(kind, element, from, to, size, intensity, 0, "");
+    }
+
+    public SpellVisual(
+            Kind kind, Element element, Point from, Point to, float size, int intensity,
+            float aperture) {
+        this(kind, element, from, to, size, intensity, aperture, "");
     }
 
     public enum Kind {
@@ -72,6 +79,11 @@ public record SpellVisual(
         Objects.requireNonNull(element);
         Objects.requireNonNull(from);
         Objects.requireNonNull(to);
+        Objects.requireNonNull(customEffectId);
+        if (!customEffectId.isEmpty() && !customEffectId.matches("[a-z0-9_.-]{1,48}"))
+            throw new IllegalArgumentException(
+                    dev.elementalcircuits.text.Texts.get(
+                            "text.elementalcircuits.application.observation._spell_visual.007"));
         if (!Float.isFinite(size)
                 || size <= 0
                 || size > CircuitBounds.RADIUS

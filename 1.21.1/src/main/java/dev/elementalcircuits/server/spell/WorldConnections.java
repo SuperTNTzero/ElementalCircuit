@@ -3,6 +3,7 @@ package dev.elementalcircuits.server.spell;
 import dev.elementalcircuits.adapter.codec.JsonCodecs;
 import dev.elementalcircuits.adapter.config.ServerSettings;
 import dev.elementalcircuits.adapter.persistence.JsonNbt;
+import dev.elementalcircuits.application.observation.SpellSound;
 import dev.elementalcircuits.application.observation.SpellVisual;
 import dev.elementalcircuits.domain.Fixed;
 import dev.elementalcircuits.domain.casting.*;
@@ -142,6 +143,14 @@ public final class WorldConnections extends SavedData {
         live.put(key, new Source(owner, origin, direction.normalize(), level.getGameTime()));
     }
 
+    /** Keep prepaid links anchored while their owning circuit remains powered. */
+    public void refreshSlot(
+            ServerLevel level, UUID carrier, int slot, UUID owner, Vec3 origin, Vec3 direction) {
+        for (Key key : links.keySet().stream()
+                .filter(k -> k.carrier().equals(carrier) && k.slot() == slot)
+                .toList()) touch(level, key, owner, origin, direction);
+    }
+
     public void offer(ServerLevel level, Key key, MagicCircuit.Cast cast) {
         offer(level, key, cast, Fixed.ONE);
     }
@@ -174,6 +183,7 @@ public final class WorldConnections extends SavedData {
         mana = new dev.elementalcircuits.domain.mana.Mixture(mana.values());
         source = oriented(source, spec);
         Link link = links.get(key);
+        boolean created = false;
         if (link != null
                 && (!Objects.equals(link.owner, source.owner)
                         || !sameEffects(link.packet.spell(), spec))) {
@@ -239,6 +249,7 @@ public final class WorldConnections extends SavedData {
                 link.reference = source.origin.add(source.direction.scale(hold));
             }
             links.put(key, link);
+            created = true;
         }
         // Delivery has already paid circuit losses/costs. This allowance cannot be withdrawn or
         // refunded.
@@ -247,6 +258,36 @@ public final class WorldConnections extends SavedData {
         link.strength = strength;
         if (link.budget.edge(spec.connection().interact() && spec.connection().high()))
             link.pending = true;
+        if (created) {
+            Vec3 target =
+                    link.target == null
+                            ? Vec3.atCenterOf(link.block)
+                            : Optional.ofNullable(level.getEntity(link.target))
+                                    .map(Entity::getBoundingBox)
+                                    .map(AABB::getCenter)
+                                    .orElse(source.origin.add(source.direction));
+            Element element = link.packet.mana().dominant();
+            SpellVisuals.observe(
+                    level,
+                    SpellVisual.Kind.CAST,
+                    element,
+                    source.origin,
+                    source.direction,
+                    .9f,
+                    2,
+                    spec.customEffectId());
+            SpellVisuals.observe(
+                    level,
+                    SpellVisual.Kind.IMPACT,
+                    element,
+                    target,
+                    source.direction,
+                    1.15f,
+                    3,
+                    spec.customEffectId());
+            SpellSounds.observe(level, SpellSound.Kind.CAST, element, source.origin);
+            SpellSounds.observe(level, SpellSound.Kind.IMPACT, element, target);
+        }
         setDirty();
     }
 
@@ -419,15 +460,15 @@ public final class WorldConnections extends SavedData {
                             ConnectionBudget.cost(ServerSettings.get("contact.interactionCost"))))
                 interact(level, link, source);
         }
-        if (level.getGameTime() % 4 == 0)
+        if (level.getGameTime() % 2 == 0)
             SpellVisuals.observe(
                     level,
-                    SpellVisual.Kind.TRAIL,
+                    SpellVisual.Kind.BEAM,
                     link.packet.mana().dominant(),
                     source.origin,
                     target,
-                    .35f,
-                    1);
+                    .62f,
+                    3);
         return true;
     }
 

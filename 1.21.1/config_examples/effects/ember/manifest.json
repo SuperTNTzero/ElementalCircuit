@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "id": "ember",
+  "frameWidth": 64,
+  "frameHeight": 64,
+  "cast": {
+    "frames": [0, 1, 2, 3],
+    "fps": 20,
+    "loop": false,
+    "opacity": 0.95,
+    "scale": 0.8,
+    "pulse": 0.15
+  },
+  "hit": {
+    "frames": [4, 5, 6, 7, 8],
+    "fps": 30,
+    "loop": false,
+    "opacity": 1.0,
+    "scale": 1.2,
+    "pulse": 0.25
+  }
+}

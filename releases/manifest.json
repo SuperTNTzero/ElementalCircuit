@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "date": "2026-10-31",
+  "date": "2026-11-04",
   "artifacts": [
     {
       "file": "elemental-circuits-1.20.1-0.14.0.jar",
@@ -118,10 +118,426 @@
       "java": 21,
       "size": 2130452,
       "sha256": "0a85d3cc87bb542c6cf4fe60d739b1634b82266392544c51f7a90c6040e03283"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.24.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.24.0",
+      "java": 21,
+      "size": 2251280,
+      "sha256": "2d78d1455cf69bfb3f7d4a5b32b1e1ff30189828c73415c5ba9e79107c99a7ca"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.25.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.25.0",
+      "java": 21,
+      "size": 2260658,
+      "sha256": "eaf3567f38c1eb5fab3dd1c1be5917d7fa77d4017f5250fdf717f725fca6240e"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.26.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.26.0",
+      "java": 21,
+      "size": 2528051,
+      "sha256": "0669d4a027ac4c9f70036f5caa307b58b03cd34bd170686df1530eb82825ecaf"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.27.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.27.0",
+      "java": 21,
+      "size": 2558443,
+      "sha256": "6b3163125dba4bc3ebfc47f708f013e8350a98ba69381a6f217debf85f9afa0b"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.28.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.28.0",
+      "java": 21,
+      "size": 2560269,
+      "sha256": "97bdbda1d796776a0281acecbd11b83392f1c71f9f875f4dd2cc23136aac1c00"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.29.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.29.0",
+      "java": 21,
+      "size": 2619199,
+      "sha256": "a8c7037c68e9c3974646d919998b25a697861f2729cf77ea9309c2edcaeaceab"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.30.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.30.0",
+      "java": 21,
+      "size": 2658090,
+      "sha256": "d5b0b81cc1addd37b3aa0e84e9ffc48c46c661cd5c0c868f45d74e742d9f20b8"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.30.1.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.30.1",
+      "java": 21,
+      "size": 2664754,
+      "sha256": "929127f2f2b737e71f5f699d3c7285bb4b1e71ea81c24d0e09cb0d4c22d25a0e"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.31.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.31.0",
+      "java": 21,
+      "size": 2685694,
+      "sha256": "3f655e338fb739d8e87d364a0ad1b43e0299e4eef030080630b1b4d1796e5152"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.32.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.32.0",
+      "java": 21,
+      "size": 2821773,
+      "sha256": "321d6238e6b9d420301034c2b5a613bd37c82d1056bd40d1638ea5e059f0c573"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.33.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.33.0",
+      "java": 21,
+      "size": 2857086,
+      "sha256": "947211ce576070c889456c7b68ea320aa14f10e19c96bb3fa60207e420c803fb"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.34.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.34.0",
+      "java": 21,
+      "size": 2873954,
+      "sha256": "ecdfaf0b4943d282853242cd8f4ed7199c0021310bcbc4d0702ad2708e0bec81"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.35.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.35.0",
+      "java": 21,
+      "size": 2923008,
+      "sha256": "2794e75b08a12a8aa84bb8bfcfbeea28919aafabb62819ee983e905c3010056e"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.36.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.36.0",
+      "java": 21,
+      "size": 2999668,
+      "sha256": "f2fbafe40049bbbba80ef74612d1d85cb85b84ec7eb5847f61bc26318f3b0725",
+      "dependencies": [
+        {
+          "modId": "curios",
+          "version": "9.5.1+1.21.1",
+          "file": "dependencies/curios-neoforge-9.5.1+1.21.1.jar"
+        }
+      ]
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.36.1.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.36.1",
+      "java": 21,
+      "size": 3000083,
+      "sha256": "df48e99166882ac33532f18d2620596cba7deefc0e1a7146a70fa4f905d3dcfa",
+      "dependencies": [
+        {
+          "modId": "curios",
+          "version": "9.5.1+1.21.1",
+          "file": "dependencies/curios-neoforge-9.5.1+1.21.1.jar"
+        }
+      ]
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.37.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.37.0",
+      "java": 21,
+      "size": 3020435,
+      "sha256": "e76b5ecc0bcc12ff96c04786417e29b9103b2ed5f86ae05914d2d8d485b26f03",
+      "dependencies": [
+        {
+          "modId": "curios",
+          "version": "9.5.1+1.21.1",
+          "file": "dependencies/curios-neoforge-9.5.1+1.21.1.jar"
+        }
+      ]
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.38.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.38.0",
+      "java": 21,
+      "size": 3025533,
+      "sha256": "efe1047f74d3a9aaba694d0e087c9f61240f9bc19dcf9e122ae9d2acf02a5c1c",
+      "dependencies": [
+        {
+          "modId": "curios",
+          "version": "9.5.1+1.21.1",
+          "file": "dependencies/curios-neoforge-9.5.1+1.21.1.jar"
+        }
+      ]
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.39.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.39.0",
+      "java": 21,
+      "size": 3038651,
+      "sha256": "39947f713bf64671a31c8880cc4884595285b3da4762a5bb58ecb7014a6f773b",
+      "dependencies": [
+        {
+          "modId": "curios",
+          "version": "9.5.1+1.21.1",
+          "file": "dependencies/curios-neoforge-9.5.1+1.21.1.jar"
+        }
+      ]
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.40.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.40.0",
+      "java": 21,
+      "size": 3099891,
+      "sha256": "9852e2a717a73de4963b1815657e727c2c2203092e40ac014805e1bf9708a581",
+      "dependencies": [
+        {
+          "modId": "curios",
+          "version": "9.5.1+1.21.1",
+          "file": "dependencies/curios-neoforge-9.5.1+1.21.1.jar"
+        }
+      ],
+      "optionalDependencies": [
+        {
+          "modId": "patchouli",
+          "version": "1.21.1-93-NEOFORGE",
+          "url": "https://modrinth.com/mod/patchouli/version/BIogJv2D",
+          "sha256": "959af52ed6640c316c3a8469203420be4aeea11ad6603890ba83bf48f5d9f993"
+        }
+      ]
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.41.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.41.0",
+      "java": 21,
+      "size": 3159284,
+      "sha256": "c446c1c9d4181f01f25e598e0be109d53bedcadd0dbd4e2894b94e4ef2a8f444",
+      "dependencies": [
+        {
+          "modId": "curios",
+          "version": "9.5.1+1.21.1",
+          "file": "dependencies/curios-neoforge-9.5.1+1.21.1.jar"
+        }
+      ],
+      "optionalDependencies": [
+        {
+          "modId": "patchouli",
+          "version": "1.21.1-93-NEOFORGE",
+          "url": "https://modrinth.com/mod/patchouli/version/BIogJv2D",
+          "sha256": "959af52ed6640c316c3a8469203420be4aeea11ad6603890ba83bf48f5d9f993"
+        }
+      ]
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.42.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.42.0",
+      "java": 21,
+      "size": 3165825,
+      "sha256": "a980a76d85717cd81e1c6d1233083666e14b398a107c274f5f1b67300507ec7b",
+      "dependencies": [
+        {
+          "modId": "curios",
+          "version": "9.5.1+1.21.1",
+          "file": "dependencies/curios-neoforge-9.5.1+1.21.1.jar"
+        }
+      ],
+      "optionalDependencies": [
+        {
+          "modId": "patchouli",
+          "version": "1.21.1-93-NEOFORGE",
+          "url": "https://modrinth.com/mod/patchouli/version/BIogJv2D",
+          "sha256": "959af52ed6640c316c3a8469203420be4aeea11ad6603890ba83bf48f5d9f993"
+        }
+      ]
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.43.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.43.0",
+      "java": 21,
+      "size": 3226107,
+      "sha256": "18e769fe036082e64f481c189af2917c5d3c65144f91ec9d189e547273825fbd",
+      "dependencies": [
+        {
+          "modId": "curios",
+          "version": "9.5.1+1.21.1",
+          "file": "dependencies/curios-neoforge-9.5.1+1.21.1.jar"
+        }
+      ],
+      "optionalDependencies": [
+        {
+          "modId": "patchouli",
+          "version": "1.21.1-93-NEOFORGE",
+          "url": "https://modrinth.com/mod/patchouli/version/BIogJv2D",
+          "sha256": "959af52ed6640c316c3a8469203420be4aeea11ad6603890ba83bf48f5d9f993"
+        }
+      ]
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.44.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.44.0",
+      "java": 21,
+      "size": 3255919,
+      "sha256": "dbc0c78bf431fa7de98c621574ad81ff280d4394a80784e8b28e5db65445a844"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.45.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.45.0",
+      "java": 21,
+      "size": 3282885,
+      "sha256": "3ec2b29b58f48d2697c6f5c73496709401c5ba9137b6ef562033b015acd25b91"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.46.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.46.0",
+      "java": 21,
+      "size": 3308002,
+      "sha256": "40b07e3711d1cdc452de85d18d9b3b5574b360b145682dbe933171ee0294af7d"
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.47.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.47.0",
+      "java": 21,
+      "size": 3316974,
+      "sha256": "b89b48b3b64cc1b042f9bd61fe0031288ac00fff811e57cecbfd1c588493c1b7",
+      "dependencies": [
+        {
+          "modId": "curios",
+          "version": "9.5.1+1.21.1",
+          "file": "dependencies/curios-neoforge-9.5.1+1.21.1.jar"
+        }
+      ],
+      "optionalDependencies": [
+        {
+          "modId": "patchouli",
+          "version": "1.21.1-93-NEOFORGE",
+          "url": "https://modrinth.com/mod/patchouli/version/BIogJv2D",
+          "sha256": "959af52ed6640c316c3a8469203420be4aeea11ad6603890ba83bf48f5d9f993"
+        }
+      ]
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.48.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.48.0",
+      "java": 21,
+      "size": 3748936,
+      "sha256": "a30b191d8abb7c43445d70e9c163c5d5185c045ebdfa5d16bdfff629aff91cef",
+      "dependencies": [
+        {
+          "modId": "curios",
+          "version": "9.5.1+1.21.1",
+          "file": "dependencies/curios-neoforge-9.5.1+1.21.1.jar"
+        }
+      ],
+      "optionalDependencies": [
+        {
+          "modId": "patchouli",
+          "version": "1.21.1-93-NEOFORGE",
+          "url": "https://modrinth.com/mod/patchouli/version/BIogJv2D",
+          "sha256": "959af52ed6640c316c3a8469203420be4aeea11ad6603890ba83bf48f5d9f993"
+        }
+      ]
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.49.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.49.0",
+      "java": 21,
+      "size": 3750509,
+      "sha256": "5c4d338de5df1bf6eb641e6023ffb8f1f0ec56daaefb8fe6fe39ec205cbeb3df",
+      "dependencies": [
+        {
+          "modId": "curios",
+          "version": "9.5.1+1.21.1",
+          "file": "dependencies/curios-neoforge-9.5.1+1.21.1.jar"
+        }
+      ],
+      "optionalDependencies": [
+        {
+          "modId": "patchouli",
+          "version": "1.21.1-93-NEOFORGE",
+          "url": "https://modrinth.com/mod/patchouli/version/BIogJv2D",
+          "sha256": "959af52ed6640c316c3a8469203420be4aeea11ad6603890ba83bf48f5d9f993"
+        }
+      ]
+    },
+    {
+      "file": "elemental-circuits-1.21.1-0.55.0.jar",
+      "minecraft": "1.21.1",
+      "neoforge": "21.1.265",
+      "modVersion": "0.55.0",
+      "java": 21,
+      "size": 4116579,
+      "sha256": "d3223c574958446a864a411cda1f8f341643a9af8a5c251545e2fe30e3f952a5",
+      "dependencies": [
+        {
+          "modId": "curios",
+          "version": "9.5.1+1.21.1",
+          "file": "dependencies/curios-neoforge-9.5.1+1.21.1.jar"
+        }
+      ],
+      "optionalDependencies": [
+        {
+          "modId": "patchouli",
+          "version": "1.21.1-93-NEOFORGE",
+          "url": "https://modrinth.com/mod/patchouli/version/BIogJv2D",
+          "sha256": "959af52ed6640c316c3a8469203420be4aeea11ad6603890ba83bf48f5d9f993"
+        }
+      ]
     }
   ],
   "recommended": {
-    "1.21.1": "elemental-circuits-1.21.1-0.23.0.jar",
+    "1.21.1": "elemental-circuits-1.21.1-0.55.0.jar",
     "1.20.1": "elemental-circuits-1.20.1-0.14.0.jar"
   }
 }

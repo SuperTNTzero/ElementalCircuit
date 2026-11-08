@@ -375,7 +375,8 @@ public final class WorldSpells extends SavedData {
                         magic);
             else
                 SpellEffects.impact(
-                        level, owner, at, radius, mana, strength, effects, excluded, magic);
+                        level, owner, at, radius, mana, strength, effects, excluded, magic,
+                        packet.spell().customEffectId());
         }
     }
 
@@ -609,7 +610,10 @@ public final class WorldSpells extends SavedData {
                             f.radius,
                             impactPacket.mana(),
                             f.strength,
-                            f.effects);
+                            f.effects,
+                            Set.of(),
+                            ContactMagic.NEUTRAL,
+                            impactPacket.spell().customEffectId());
             } else
                 next.add(
                         new Flight(

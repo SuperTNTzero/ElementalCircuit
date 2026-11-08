@@ -27,6 +27,7 @@ public final class SpellVisualClient {
             TIMELINE.clear();
             world = next;
             latestTick = -1;
+            CustomEffectProfiles.reload();
         }
     }
 
@@ -36,6 +37,16 @@ public final class SpellVisualClient {
                 || !world.dimension().location().equals(batch.dimension())
                 || batch.tick() < latestTick - 20) return;
         latestTick = Math.max(latestTick, batch.tick());
+        for (var visual : batch.events()) {
+            boolean hit = visual.kind() ==
+                    dev.elementalcircuits.application.observation.SpellVisual.Kind.IMPACT;
+            var animation = CustomEffectProfiles.get(visual.customEffectId(), hit);
+            if (animation != null && animation.sound() != null &&
+                    (hit || visual.kind() ==
+                            dev.elementalcircuits.application.observation.SpellVisual.Kind.CAST)) {
+                CustomEffectAudio.play(animation.sound());
+            }
+        }
         TIMELINE.add(batch.events());
     }
 

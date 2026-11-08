@@ -1122,7 +1122,7 @@ public final class TickCircuit extends MagicCircuit {
                 // Pure mana has no world spell. Only a real elemental release uses the wand.
                 if ((batch.spell().method() == SpellSpec.Method.CONTACT
                                 || effect.total() > effect.values()[0])
-                        && !release.tryAcquire()) return;
+                                && !release.tryAcquire(nodes.get(i).id(), batch.spell())) return;
                 consume(i);
                 if (!remainder.empty()) {
                     int first = manaIncoming[i][0];
@@ -1284,7 +1284,7 @@ public final class TickCircuit extends MagicCircuit {
         if (explicitStorage() && !canReturn(remainder)) return;
         if ((batch.spell().method() == SpellSpec.Method.CONTACT
                         || effect.total() > effect.values()[0])
-                && !release.tryAcquire()) return;
+                && !release.tryAcquire(nodes.get(i).id(), batch.spell())) return;
         consume(i);
         if (!remainder.empty()) {
             if (explicitStorage()) returnUnused(remainder);

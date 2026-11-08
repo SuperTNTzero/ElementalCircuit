@@ -18,7 +18,16 @@ public record SpellSpec(
         EffectScale effectScale,
         MaterialPorts materials,
         ConnectionEffects connection,
-        SpatialParameters spatial) {
+        SpatialParameters spatial,
+        String customEffectId) {
+    public SpellSpec(
+            Method method, Shape shape, long amount, int range, int radius, int aim,
+            ProjectileEffects effects, long damageMultiplier, boolean reactive,
+            EffectScale effectScale, MaterialPorts materials, ConnectionEffects connection,
+            SpatialParameters spatial) {
+        this(method, shape, amount, range, radius, aim, effects, damageMultiplier, reactive,
+                effectScale, materials, connection, spatial, "");
+    }
     public SpellSpec(
             Method method,
             Shape shape,
@@ -62,7 +71,8 @@ public record SpellSpec(
                 effectScale,
                 materials,
                 connection,
-                value);
+                value,
+                customEffectId);
     }
 
     public SpellSpec(
@@ -106,7 +116,8 @@ public record SpellSpec(
                 effectScale,
                 materials,
                 value,
-                spatial);
+                spatial,
+                customEffectId);
     }
 
     public SpellSpec(
@@ -148,7 +159,8 @@ public record SpellSpec(
                 effectScale,
                 ports,
                 connection,
-                spatial);
+                spatial,
+                customEffectId);
     }
 
     public SpellSpec(
@@ -188,7 +200,8 @@ public record SpellSpec(
                 scale,
                 materials,
                 connection,
-                spatial);
+                spatial,
+                customEffectId);
     }
 
     public SpellSpec(
@@ -217,7 +230,8 @@ public record SpellSpec(
                 effectScale,
                 materials,
                 connection,
-                spatial);
+                spatial,
+                customEffectId);
     }
 
     public SpellSpec(
@@ -245,7 +259,8 @@ public record SpellSpec(
                 effectScale,
                 materials,
                 connection,
-                spatial);
+                spatial,
+                customEffectId);
     }
 
     public SpellSpec(Method method, Shape shape, long amount, int range, int radius, int aim) {
@@ -275,7 +290,9 @@ public record SpellSpec(
     public static final SpellSpec EMPTY = new SpellSpec(Method.UNSET, Shape.UNSET, 0, 0, 0, -1);
 
     public SpellSpec {
-        if (spatial == null
+        if (customEffectId == null
+                || !customEffectId.isEmpty() && !customEffectId.matches("[a-z0-9_.-]{1,48}")
+                || spatial == null
                 || connection == null
                 || materials == null
                 || effectScale == null
@@ -324,7 +341,21 @@ public record SpellSpec(
                                 : incompatibleScale(),
                 materials.merge(b.materials),
                 connection.merge(b.connection),
-                spatial.merge(b.spatial));
+                spatial.merge(b.spatial),
+                mergeCustomEffect(customEffectId, b.customEffectId));
+    }
+
+    private static String mergeCustomEffect(String a, String b) {
+        if (a.isEmpty()) return b;
+        if (b.isEmpty() || a.equals(b)) return a;
+        throw new IllegalArgumentException(
+                dev.elementalcircuits.text.Texts.get(
+                        "text.elementalcircuits.domain.casting._spell_spec.004"));
+    }
+
+    public SpellSpec withCustomEffect(String id) {
+        return new SpellSpec(method, shape, amount, range, radius, aim, effects, damageMultiplier,
+                reactive, effectScale, materials, connection, spatial, id);
     }
 
     private static EffectScale incompatibleScale() {
@@ -334,6 +365,8 @@ public record SpellSpec(
     }
 
     public SpellSpec modify(Rune rune) {
+        if (rune.kind() == Rune.Kind.CUSTOM_EFFECT)
+            return withCustomEffect(rune.filter());
         if (rune.kind() == Rune.Kind.MATERIAL_FILTER)
             return withMaterials(materials.merge(new MaterialPorts(-1, -1, null, rune.filter())));
         if (rune.kind() == Rune.Kind.ANCHOR || rune.kind() == Rune.Kind.TARGET)

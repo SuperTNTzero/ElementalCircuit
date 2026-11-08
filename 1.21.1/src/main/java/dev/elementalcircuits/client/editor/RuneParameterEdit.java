@@ -35,6 +35,7 @@ public final class RuneParameterEdit {
                             EDGE,
                             THROTTLE,
                             MATERIAL_FILTER,
+                            CUSTOM_EFFECT,
                             AMOUNT,
                             RANGE,
                             RADIUS,
@@ -71,7 +72,7 @@ public final class RuneParameterEdit {
         } else if (r.kind() == Rune.Kind.SENSOR) {
             values.add(format(r.value()));
             values.add(format(r.weights().isEmpty() ? 0 : r.weights().getFirst()));
-        } else if (r.kind() == Rune.Kind.MATERIAL_FILTER) {
+        } else if (r.kind() == Rune.Kind.MATERIAL_FILTER || r.kind() == Rune.Kind.CUSTOM_EFFECT) {
             values.add(r.filter());
         } else
             values.add(
@@ -115,7 +116,7 @@ public final class RuneParameterEdit {
             value = RuneParameterValue.parse(Rune.Kind.SENSOR, value(0));
             weights =
                     List.of(Math.toIntExact(RuneParameterValue.parse(Rune.Kind.SENSOR, value(1))));
-        } else if (r.kind() == Rune.Kind.MATERIAL_FILTER) {
+        } else if (r.kind() == Rune.Kind.MATERIAL_FILTER || r.kind() == Rune.Kind.CUSTOM_EFFECT) {
             filter = value(0).trim();
         } else if (r.kind() == Rune.Kind.SPLIT) {
             weights = new ArrayList<>();
@@ -200,6 +201,8 @@ public final class RuneParameterEdit {
             case MATERIAL_FILTER ->
                     dev.elementalcircuits.client.text.UiText.string(
                             "text.elementalcircuits.client.editor._rune_parameter_edit.017");
+            case CUSTOM_EFFECT -> dev.elementalcircuits.client.text.UiText.string(
+                    "rune.elementalcircuits.custom_effect.parameter");
             case SPLIT ->
                     dev.elementalcircuits.client.text.UiText.string(
                             "text.elementalcircuits.client.editor._rune_parameter_edit.018");

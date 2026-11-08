@@ -245,7 +245,10 @@ public record Rune(
                         "text.elementalcircuits.domain.circuit._rune.062")),
         MATERIAL_FILTER(
                 dev.elementalcircuits.text.Texts.get(
-                        "text.elementalcircuits.domain.circuit._rune.063"));
+                        "text.elementalcircuits.domain.circuit._rune.063")),
+        CUSTOM_EFFECT(
+                dev.elementalcircuits.text.Texts.get(
+                        "rune.elementalcircuits.custom_effect.title"));
         public final String glyph;
 
         Kind(String glyph) {
@@ -363,7 +366,12 @@ public record Rune(
                 throw new IllegalArgumentException(
                         dev.elementalcircuits.text.Texts.get(
                                 "text.elementalcircuits.domain.circuit._rune.077"));
-        } else if (kind != Kind.MATERIAL_FILTER && !filter.isEmpty()) {
+        } else if (kind == Kind.CUSTOM_EFFECT && !filter.isEmpty()) {
+            if (!filter.matches("[a-z0-9_.-]{1,48}"))
+                throw new IllegalArgumentException(
+                        dev.elementalcircuits.text.Texts.get(
+                                "text.elementalcircuits.domain.circuit._rune.078"));
+        } else if (kind != Kind.MATERIAL_FILTER && kind != Kind.CUSTOM_EFFECT && !filter.isEmpty()) {
             throw new IllegalArgumentException(
                     dev.elementalcircuits.text.Texts.get(
                             "text.elementalcircuits.domain.circuit._rune.078"));

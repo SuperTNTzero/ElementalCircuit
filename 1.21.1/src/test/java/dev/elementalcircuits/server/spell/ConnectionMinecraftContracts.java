@@ -384,6 +384,30 @@ public final class ConnectionMinecraftContracts {
         h.succeed();
     }
 
+    @GameTest(template = "empty")
+    public static void poweredCircuitRefreshesLinkUntilStopped(GameTestHelper h) {
+        try (var f = fixture(h)) {
+            f.item(4);
+            f.touch(new Vec3(0, 0, 1));
+            f.offer(spec(new ConnectionEffects(0, 0, false, false, false, 1, 7)), 4 * Fixed.ONE);
+            long initial = f.data.allowance(f.key);
+            f.data.refreshSlot(
+                    h.getLevel(),
+                    f.key.carrier(),
+                    f.key.slot(),
+                    f.player.getUUID(),
+                    f.origin,
+                    new Vec3(0, 0, 1));
+            f.data.tick(h.getLevel());
+            h.assertTrue(
+                    f.data.contains(f.key) && f.data.allowance(f.key) < initial,
+                    "运行中的法阵逐步续持联系，同时持续支付维护魔力");
+            f.data.tick(h.getLevel());
+            h.assertTrue(!f.data.contains(f.key), "法阵停止续持后联系自动解除");
+        }
+        h.succeed();
+    }
+
     private static BlockPos lever(Fixture f) {
         var pos = BlockPos.containing(f.origin.add(0, 0, 4));
         f.h.getLevel().setBlockAndUpdate(pos.below(), Blocks.STONE.defaultBlockState());

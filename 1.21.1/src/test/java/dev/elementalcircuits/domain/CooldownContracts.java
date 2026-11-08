@@ -5,6 +5,7 @@ import dev.elementalcircuits.adapter.resources.AssemblyResources;
 import dev.elementalcircuits.adapter.resources.CooldownResources;
 import dev.elementalcircuits.domain.casting.CastCooldown;
 import dev.elementalcircuits.domain.casting.ReleasePermit;
+import dev.elementalcircuits.domain.casting.SpellSpec;
 import dev.elementalcircuits.domain.circuit.CircuitAssembly;
 import dev.elementalcircuits.domain.circuit.Route;
 import dev.elementalcircuits.domain.circuit.Rune;
@@ -84,11 +85,21 @@ public final class CooldownContracts {
         CastCooldown[] shared = {CastCooldown.READY};
         int releases = 0;
         boolean second = false;
+        Set<Integer> scopedSlots = new HashSet<>();
         ReleasePermit permit =
-                () -> {
-                    if (!shared[0].ready()) return false;
-                    shared[0] = shared[0].release(rules, Fixed.ONE);
-                    return true;
+                new ReleasePermit() {
+                    @Override
+                    public boolean tryAcquire() {
+                        if (!shared[0].ready()) return false;
+                        shared[0] = shared[0].release(rules, Fixed.ONE);
+                        return true;
+                    }
+
+                    @Override
+                    public boolean tryAcquire(int slot, int output, SpellSpec spell) {
+                        scopedSlots.add(slot);
+                        return tryAcquire();
+                    }
                 };
         for (int t = 0; t < 40; t++) {
             shared[0] = shared[0].tick();
@@ -104,7 +115,9 @@ public final class CooldownContracts {
                         "共享冷却逐阵守恒");
             }
         }
-        check(releases == 2 && second, "两个阵均能保留并交付一次，不把CD当作丢弃过滤器");
+        check(
+                releases == 2 && second && scopedSlots.containsAll(group.slots()),
+                "槽位上下文抵达共享许可，两个阵均保留并交付一次");
         var pure =
                 new TickCircuit(
                         AssemblyContracts.line(

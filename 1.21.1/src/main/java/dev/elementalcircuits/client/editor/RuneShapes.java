@@ -87,7 +87,8 @@ public final class RuneShapes {
                         dev.elementalcircuits.client.text.UiText.string(
                                 "text.elementalcircuits.client.editor._rune_shapes.007"));
             ART = Collections.unmodifiableMap(art);
-            for (var kind : Rune.Kind.values()) glyph("rune/" + kind.name());
+            for (var kind : Rune.Kind.values())
+                if (kind != Rune.Kind.CUSTOM_EFFECT) glyph("rune/" + kind.name());
             for (var element : Element.values()) glyph("element/" + element.name());
         } catch (IOException e) {
             throw new ExceptionInInitializerError(e);
@@ -109,6 +110,7 @@ public final class RuneShapes {
     }
 
     public static String key(Rune.Kind kind, Element element) {
+        if (kind == Rune.Kind.CUSTOM_EFFECT) return "rune/FRAGMENT";
         return kind == Rune.Kind.CONVERT && element != null
                 ? "element/" + element.name()
                 : "rune/" + kind.name();

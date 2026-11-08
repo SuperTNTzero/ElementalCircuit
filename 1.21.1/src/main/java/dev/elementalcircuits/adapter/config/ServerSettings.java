@@ -43,6 +43,14 @@ public final class ServerSettings {
 
     static {
         add(
+                "inscription.requireRunes",
+                1,
+                0,
+                1,
+                true,
+                dev.elementalcircuits.text.Texts.get(
+                        "configuration.elementalcircuits.require_runes.description"));
+        add(
                 "contact.enabled",
                 1,
                 0,

@@ -32,10 +32,19 @@ public final class VisualTimeline {
                     new Frame(
                             event,
                             0,
-                            VisualStyles.of(event.kind()).ticks(),
+                            lifetime(event),
                             existing == null ? 0 : existing.animationAge));
             dirty = true;
         }
+    }
+
+    private static int lifetime(SpellVisual event) {
+        boolean hit = event.kind() == SpellVisual.Kind.IMPACT;
+        var animation = CustomEffectProfiles.get(event.customEffectId(), hit);
+        if (animation == null) return VisualStyles.of(event.kind()).ticks();
+        if (animation.loop()) return VisualStyles.of(event.kind()).ticks();
+        return Math.max(1, Math.min(40,
+                (int) Math.ceil(animation.frames().length * 20f / animation.fps())));
     }
 
     public void tick() {

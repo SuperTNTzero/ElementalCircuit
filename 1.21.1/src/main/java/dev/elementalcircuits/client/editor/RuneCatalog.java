@@ -73,6 +73,9 @@ public final class RuneCatalog {
                 Rune.Kind.IGNITE,
                 Rune.Kind.SLOW,
                 Rune.Kind.KNOCKBACK),
+        CUSTOMIZATION(
+                "rune_group.elementalcircuits.customization",
+                Rune.Kind.CUSTOM_EFFECT),
         PARAMETER(
                 "rune_group.elementalcircuits.parameter",
                 Rune.Kind.AMOUNT,

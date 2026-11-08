@@ -4,6 +4,7 @@ import dev.elementalcircuits.domain.casting.CastContext;
 import dev.elementalcircuits.domain.casting.CastingRules;
 import dev.elementalcircuits.domain.casting.ReleasePermit;
 import dev.elementalcircuits.domain.casting.ShapeRules;
+import dev.elementalcircuits.domain.casting.SpellSpec;
 import dev.elementalcircuits.domain.casting.TriggerBinding;
 import dev.elementalcircuits.domain.mana.ManaSource;
 
@@ -419,17 +420,31 @@ public final class CircuitAssembly {
         List<Output> output = new ArrayList<>();
         for (int step = 0; step < steps; step++)
             for (var entry : slots.entrySet())
-                if (!boardBroken(entry.getKey()) && entry.getValue().needsStep())
+                if (!boardBroken(entry.getKey()) && entry.getValue().needsStep()) {
+                    int slot = entry.getKey();
+                    ReleasePermit scopedRelease =
+                            new ReleasePermit() {
+                                @Override
+                                public boolean tryAcquire() {
+                                    return release.tryAcquire();
+                                }
+
+                                @Override
+                                public boolean tryAcquire(int output, SpellSpec spell) {
+                                    return release.tryAcquire(slot, output, spell);
+                                }
+                            };
                     for (var cast :
                             entry.getValue()
                                     .tick(
                                             source,
-                                            release,
+                                            scopedRelease,
                                             ambient,
                                             context,
                                             shapes,
                                             protection.apply(entry.getKey())))
                         output.add(new Output(entry.getKey(), cast));
+                }
         return List.copyOf(output);
     }
 

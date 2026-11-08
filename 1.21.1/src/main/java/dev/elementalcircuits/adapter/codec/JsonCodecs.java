@@ -469,7 +469,8 @@ public final class JsonCodecs {
                                 : dev.elementalcircuits.domain.casting.EffectScale.IDENTITY,
                         materialPorts(s),
                         connectionEffects(s),
-                        spatialParameters(s)));
+                        spatialParameters(s),
+                        s.has("customEffectId") ? string(s, "customEffectId") : ""));
     }
 
     private static dev.elementalcircuits.domain.casting.SpatialParameters spatialParameters(

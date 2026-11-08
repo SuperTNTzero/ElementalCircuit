@@ -47,6 +47,22 @@ public final class SpellVisuals {
                                 kind, element, point(from), point(to), size, intensity, aperture));
     }
 
+    public static void observe(
+            ServerLevel level, SpellVisual.Kind kind, Element element, Vec3 from, Vec3 to,
+            float size, int intensity, String customEffectId) {
+        OUTBOX.computeIfAbsent(level, l -> new VisualBudget())
+                .add(new SpellVisual(kind, element, point(from), point(to), size, intensity, 0,
+                        customEffectId));
+    }
+
+    public static void observe(
+            ServerLevel level, SpellVisual.Kind kind, Element element, Vec3 from, Vec3 to,
+            float size, int intensity, float aperture, String customEffectId) {
+        OUTBOX.computeIfAbsent(level, l -> new VisualBudget())
+                .add(new SpellVisual(kind, element, point(from), point(to), size, intensity,
+                        aperture, customEffectId));
+    }
+
     public static List<SpellVisual> pending(ServerLevel level) {
         var q = OUTBOX.get(level);
         return q == null ? List.of() : q.snapshot();

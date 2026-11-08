@@ -164,6 +164,7 @@ public final class CarrierCommands {
                 throw new IllegalArgumentException(
                         dev.elementalcircuits.text.Texts.get(
                                 "text.elementalcircuits.server.circuit._carrier_commands.010"));
+            Map<String, Integer> runeCost = Map.of();
             switch (action) {
                 case 20 -> {
                     if (a.powered())
@@ -222,6 +223,9 @@ public final class CarrierCommands {
                                 dev.elementalcircuits.text.Texts.get(
                                         "text.elementalcircuits.server.circuit._carrier_commands.018"));
                     ServerSettings.admit(checked);
+                    runeCost =
+                            dev.elementalcircuits.server.workshop.RuneInventory.prepare(
+                                    player, edited, checked);
                     a.replaceLayer(slot, layer, checked);
                     if (action == 4) {
                         player.getInventory().getItem(inventory).shrink(1);
@@ -402,6 +406,7 @@ public final class CarrierCommands {
                                         "text.elementalcircuits.server.circuit._carrier_commands.044"));
             }
             CarrierRepository.commit(stack);
+            dev.elementalcircuits.server.workshop.RuneInventory.consume(player, runeCost);
             if (stack.is(ElementalCircuits.CIRCUIT_ITEM.get()))
                 FixedCircuitAppearance.update(stack);
             if (block != null) {

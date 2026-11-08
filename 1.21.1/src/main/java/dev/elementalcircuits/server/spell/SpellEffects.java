@@ -120,7 +120,8 @@ public final class SpellEffects {
                 origin.add(direction.scale(.95)).add(right.scale(.30)).add(0, -.22, 0),
                 direction,
                 visualPower,
-                1);
+                1,
+                spec.customEffectId());
         if (SpellFeedback.handCast(level, ownerId, carrier))
             SpellFeedback.observe(level, ownerId, true, false, cast.mana().dominant(), visualPower);
         if (spec.shape() == SpellSpec.Shape.SHIELD) {
@@ -152,7 +153,8 @@ public final class SpellEffects {
                         strength,
                         3,
                         Set.of(),
-                        ContactMagic.of(packet.spell()));
+                        ContactMagic.of(packet.spell()),
+                        packet.spell().customEffectId());
             return;
         }
         if (spec.shape() == SpellSpec.Shape.BEAM) {
@@ -176,7 +178,8 @@ public final class SpellEffects {
                             hit.position().subtract(direction.scale(.04)),
                             hit.position(),
                             visualPower,
-                            8);
+                            8,
+                            spec.customEffectId());
                 if (hit.blocked())
                     SpellSounds.observe(
                             level,
@@ -218,7 +221,8 @@ public final class SpellEffects {
                             strength,
                             3,
                             Set.of(),
-                            ContactMagic.of(remaining.spell()));
+                            ContactMagic.of(remaining.spell()),
+                            remaining.spell().customEffectId());
                 } else
                     ElementInteractions.beam(
                             level,
@@ -470,6 +474,20 @@ public final class SpellEffects {
             int effects,
             Set<UUID> excluded,
             ContactMagic magic) {
+        impact(level, owner, center, radius, mana, strength, effects, excluded, magic, "");
+    }
+
+    static void impact(
+            ServerLevel level,
+            UUID owner,
+            Vec3 center,
+            int radius,
+            Mixture mana,
+            long strength,
+            int effects,
+            Set<UUID> excluded,
+            ContactMagic magic,
+            String customEffectId) {
         if (mana.empty()) return;
         boolean world = effects >= 2;
         var targets = targets(level, owner, center, radius, mana, effects, excluded);
@@ -490,7 +508,7 @@ public final class SpellEffects {
                         strength,
                         magic);
         }
-        contactFeedback(level, center, mana.dominant(), 16);
+        contactFeedback(level, center, mana.dominant(), 16, customEffectId);
     }
 
     static void apply(
@@ -508,8 +526,14 @@ public final class SpellEffects {
     }
 
     static void contactFeedback(ServerLevel level, Vec3 p, Element element, int count) {
+        contactFeedback(level, p, element, count, "");
+    }
+
+    static void contactFeedback(
+            ServerLevel level, Vec3 p, Element element, int count, String customEffectId) {
         SpellVisuals.observe(
-                level, SpellVisual.Kind.IMPACT, element, p, p, 1, Math.max(1, Math.min(32, count)));
+                level, SpellVisual.Kind.IMPACT, element, p, p, 1,
+                Math.max(1, Math.min(32, count)), customEffectId);
         SpellSounds.observe(level, SpellSound.Kind.IMPACT, element, p);
     }
 }

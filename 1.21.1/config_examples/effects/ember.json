@@ -1,0 +1,23 @@
+{
+  "id": "ember",
+  "cast": {
+    "sprite": 14,
+    "color": "ff7a24",
+    "core": "fff1a8",
+    "ticks": 16,
+    "opacity": 0.92,
+    "scale": 1.0,
+    "pulse": 0.22,
+    "sound": "elementalcircuits:spell.cast_fire"
+  },
+  "hit": {
+    "sprite": 4,
+    "color": "ff3d14",
+    "core": "fff7cc",
+    "ticks": 10,
+    "opacity": 1.0,
+    "scale": 1.25,
+    "pulse": 0.42,
+    "sound": "elementalcircuits:spell.impact_fire"
+  }
+}
